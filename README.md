@@ -1,6 +1,8 @@
 # ct-bot-doku
 Documentation for the ct-Bot project.
 
+A temporary markdown version of the former wiki can be found **[here](_tmp_trac_wiki_export/WikiStart/WikiStart.md)**.
+
 ## Notice on licensing terms:
 
 In general the licensing terms which can be found in LICENSE.md apply to this project, with the following __exception__:
