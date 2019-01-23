@@ -6,7 +6,7 @@ The official c't project website can be found [here](http://www.heise.de/ct/proj
 
 ## Markdown [Documentation](WikiStart/WikiStart.md)
 
-<img src="WikiStart/bot3.jpg" style="float: right; margin-left:2em; height: 64px;" >
+<img src="WikiStart/bot.png" style="float: right; margin-left:2em; height: 64px;" />
 
 This documentation was exported from the former Trac, but keep in mind, that the converted markdown version available here is currently work in progress and still **incomplete, unchecked and partly deprecated!** Therefore the not yet revised files contain a marker at the beginning of the document.
 

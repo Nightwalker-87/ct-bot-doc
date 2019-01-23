@@ -7,7 +7,7 @@
 >
 >> **Trac-2-Markdown Konvertierung:** *deprecated*
 
-<img style="float: right; margin-left:2em; height: 100px;" src="bot3.jpg">
+<img style="float: right; margin-left:2em;" src="bot.png" />
 
 c't-Bot und c't-Sim gehören zusammen und sind ein Roboterprojekt der Zeitschrift c't. Dies hier ist die im Laufe des Projekts entstandene Dokumentation, die ursprünglich im Trac zum Projekt entstanden war. Auf diese Weise soll sichergestellt werden, dass das Projekt auch nach dem Erscheinen des letzten c't-Artikels in der Community weiterleben kann. Daher ergänzen diese Seiten die offizielle **[c't-Projektseite](http://www.heise.de/ct/projekte/ct-bot)**. Sämtliche Inhalte sind unter [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) lizenziert.
 
