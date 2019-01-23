@@ -1,8 +1,13 @@
-# ct-bot
-This is a fork of the ct-Bot code which belongs to the robotic project c't-Bot of the German c't magazine (www.heise.de/ct).
-The official c't project website can be found at http://www.heise.de/ct/projekte/c-t-Bot-und-c-t-Sim-284119.html and the related Trac at https://www.heise.de/ct/projekte/machmit/ctbot/wiki.
+# c't-Bot
 
-### Documentation
-Exported from Trac at https://www.heise.de/ct/projekte/machmit/ctbot/wiki.
+This repository contains the documentation belonging to the robotic project **c't-Bot** initiated in 2006 by the German c't magazine (www.heise.de/ct).
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+The official c't project website can be found [here](http://www.heise.de/ct/projekte/c-t-Bot-und-c-t-Sim-284119.html).
+
+## Markdown [Documentation](WikiStart/WikiStart.md)
+
+<img src="WikiStart/bot3.jpg" style="float: right; margin-left:2em; height: 64px;" >
+
+This documentation was exported from the former Trac, but keep in mind, that the converted markdown version available here is currently work in progress and still **incomplete, unchecked and partly deprecated!** Therefore the not yet revised files contain a marker at the beginning of the document.
+
+[![License: CC BY-SA 4.0](license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
