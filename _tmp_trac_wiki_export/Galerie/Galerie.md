@@ -1,9 +1,5 @@
 # c't-Bot in Aktion
 
->>> **Trac-2-Markdown Konvertierung:** *incomplete*
-
-> **Hinweis:** Diese Dokumentationsseite wurde aus dem ehemaligen Trac des Projekts exportiert und nach Markdown konvertiert, einige Videos die ursprünglich im SVN abgelegt waren, sind aktuell nicht verfügbar.
-
 ## Videos
 
 * [Video](http://www.youtube.com/watch?v=GX4phyGY-Z4) über c't-Bots an der Uni Tübingen. Stand 26.05.2009
