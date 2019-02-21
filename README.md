@@ -1,5 +1,5 @@
 # ct-bot-doku
-Documentation for the ct-Bot project.
+Documentation for the c't-Bot project.
 
 A temporary markdown version of the former wiki can be found **[here](_tmp_trac_wiki_export/WikiStart/WikiStart.md)**.
 
