@@ -59,4 +59,4 @@ Zum Laden, Speichern, Übertragen und Starten von Basic-Programmen dient dasselb
 
 Display-Anzeige des uBasic-Interpreters (links) und Programm-Fenster mit Editor und Management-Funktionen.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

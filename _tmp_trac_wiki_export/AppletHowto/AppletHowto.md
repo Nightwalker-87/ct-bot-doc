@@ -232,4 +232,4 @@ Der Webserver des c't-Bot-WLAN-Moduls (WiPort-Moduls) kann nur Dateien kleiner a
 * In den `<antcall>`-Tags den `exclude`-Parameter benutzen, um Dateien anzugeben, die das Applet nicht braucht und die weggelassen werden können
 * Oder ein weiteres Jar einführen, indem man einen zusätzlichen `<antcall>`-Tag einführt. Nicht vergessen: In der applet.html muss man das neue Jar im `archive`-Parameter eintragen, sonst wird es vom Browser später nicht gefunden.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

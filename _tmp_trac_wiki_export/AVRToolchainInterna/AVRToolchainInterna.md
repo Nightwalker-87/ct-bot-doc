@@ -61,4 +61,4 @@ Nun möchte man aber vielleicht alle Feiertage gleich mitgeliefert bekommen. Das
 
 * [avr-libc-Handbuch](http://www.nongnu.org/avr-libc/user-manual/index.html)
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

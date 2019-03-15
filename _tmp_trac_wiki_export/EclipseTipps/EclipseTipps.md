@@ -43,4 +43,4 @@
 
 Die Zahl am Ende des Befehls gibt die Zeitspanne in ms an, der Standardwert beträgt 2000 (2 Sekunden).
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

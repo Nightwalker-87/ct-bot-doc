@@ -1,7 +1,12 @@
 # wiki-Hauptseite
 
-lorem ipsum lorem ipsum lorem ipsum
+* Die Liste aller [c't-Artikel](wiki_pages/ct_articles.md) zum Projekt.
+* Anforderung der [Code-Richtlinien](wiki_pages/coding_conventions.md)
 
+## c't-Bot:
+* Sourcecode:
+    * [Code-Optionen in ct-Bot.h](wiki_pages/ct-bot_h.md)
+    * [Logging-Funktionen](wiki_pages/logging.md)
 
 ## Lizenzbestimmungen:
 Diese digitale Enzyklopädie (Wiki) unterliegt den [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode) Lizenzbestimmungen.

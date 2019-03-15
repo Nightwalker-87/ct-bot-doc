@@ -97,4 +97,4 @@ Die hochauflösenden Fotos von den fertig bestückten Platinen sollten alle Zwei
   * Beide CNY-70-Sensoren auf der Mausplatine müssen in die selbe Richtung orientiert sein:
     ![Image: 'det02.jpg'](det02.jpg)
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

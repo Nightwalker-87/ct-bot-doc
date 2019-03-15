@@ -56,4 +56,4 @@ Als Frontend für Doxygen dient das Eclipse-Plugin Eclox, das ebenfalls über de
 
 Nach der Installation von Eclox muss man in Eclipse unter *Preferences* für *Doxygen/Compiler Path* den Pfad zum Programm *doxygen(.exe)* eintragen.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

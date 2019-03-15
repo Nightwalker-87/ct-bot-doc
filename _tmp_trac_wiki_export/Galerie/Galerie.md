@@ -54,4 +54,4 @@
 
 * [Mission Impossible](https://www.newscientist.com/article/dn20791-robot-mission-impossible-wins-video-prize/) mit Roboter
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

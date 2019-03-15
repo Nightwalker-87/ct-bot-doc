@@ -175,4 +175,4 @@ Eine Liste mit allen Verfügbarenn Kommandos befindet sich im C-Code in der Date
  </ul>
  </p>
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

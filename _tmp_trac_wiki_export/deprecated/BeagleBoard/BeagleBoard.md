@@ -305,4 +305,4 @@ Die wesentlichen Unterschiede zum originalen ct-Bot-Code:
 
 Ein BeagleBoard lässt sich (inkl. Linux Installation) mit Qemu emulieren. Eine Installationsanleitung für Ubuntu Hosts ist [hier](http://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) zu finden.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

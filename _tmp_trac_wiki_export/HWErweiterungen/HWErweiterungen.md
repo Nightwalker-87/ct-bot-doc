@@ -6,11 +6,11 @@ Siehe [PDF-Dokumentation](sp03.pdf) von Harald W. Leschner.
 
 ## CMPS03-Kompass
 
-Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `CMPS03_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
+Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `CMPS03_AVAILABLE` (siehe [Konfigurationsschalter](../../doc/wiki_pages/ct-bot_h.md)).
 
 ## Ultraschallsensor SRF10
 
-Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `SRF10_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
+Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `SRF10_AVAILABLE` (siehe [Konfigurationsschalter](../../doc/wiki_pages/ct-bot_h.md)).
 
 ## MMC per Hardware-SPI
 
@@ -31,4 +31,4 @@ Siehe [Lokalisierung des c't-Bots](../Localization/Localization.md) mit Zusatzha
 
 Siehe [CPU-Erweiterung](../RaspberryPi/RaspberryPi.md) für den c't-Bot.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -10,4 +10,4 @@ Wenn Ant nicht so tut wie man sich's vorstellt (was ziemlich oft vorkommt), hilf
 
 ![Image: 'ant-verbose-schalter.png'](ant-verbose-schalter.png)
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

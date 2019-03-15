@@ -264,4 +264,4 @@ avrdude schickt dem Bootloader zuerst ein Start-Kommando und erwartet daraufhin 
     * Das Flash-Kommando starten und daraufhin den Reset-Knopf loslassen.
 5. Serielle Verbindung in Empfangsrichtung (vom Bot aus gesehen) gestört: wenn der Bot keine Daten vom PC empfangen kann, funktioniert der Bootloader nicht, die Verbindung zum ct-Sim jedoch grundsätzlich trotzdem. Ob die Empfangsrichtung gestört ist lässt sich leicht überprüfen, indem man vom Sim aus die Fernbedienung benutzt oder einen RemoteCall startet - reagiert der Bot entsprechend, ist auch die serielle Verbindung in beiden Richtungen in Ordnung.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

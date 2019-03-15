@@ -169,4 +169,4 @@ Wer beide Teile nur mit Handschuhen anfasst und nach dem Löten mit einer dünne
 
 Nun schraubt man je zwei Abstandsbolzen (3x12) inneinander und erhält somit drei lange Bolzen mit denen man die Hauptplatine wieder festschraubt.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

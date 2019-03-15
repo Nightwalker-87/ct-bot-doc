@@ -9,7 +9,7 @@ Das c't-Bot-/c't-Sim-Projekt läuft schon eine ganze Weile und folglich gibt es 
 Zum Projekt gibt es viel Dokumentation, hier ein paar generelle Anlaufadressen:
 
 1. Die [Projektseite](http://www.ct-bot.de)
-1. Die [c't-Artikel](../Artikelliste/Artikelliste.md)
+1. Die [c't-Artikel](../../doc/wiki_pages/ct_articles.md)
 1. Das [Wiki](../Wikistart/WikiStart.md)
 1. Das [Forum](https://www.ctbot.de)
 1. Die [FAQ](http://www.heise.de/ct/artikel/FAQ-fuer-c-t-Bot-und-c-t-SIM-291940.html)
@@ -50,4 +50,4 @@ Nun hat man einen virtuellen Bot im Simulator. Möchte man dem Bot eigene Kunsts
 
 Für alle, die einen Bot besitzen, geht es nun auf der [Hardware-Seite](../ct-Bot-Hardware/ct-Bot-Hardware.md) weiter.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

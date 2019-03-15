@@ -127,4 +127,4 @@ Etwas abstrakter gesehen läuft die Payload-Übertragung also nach folgendem Sch
 
 Für den Anwender sind letztlich nur die Aktivitäten auf der Verhaltensebene (*sendeseitig* `bot_2_bot_send_payload_request()` und *empfangsseitig* der Aufruf der in `bot_2_bot_payload_mappings[]` eingetragenen *Callback-Funktion*) wichtig. Alle weiteren Schritte erledigt das Framework automatisch.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

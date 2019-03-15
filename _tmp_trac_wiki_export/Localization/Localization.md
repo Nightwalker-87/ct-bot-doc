@@ -91,7 +91,7 @@ Als Erweiterung ist eine aufsteckbare Zusatzplatine denkbar, die eine Eingabe de
 
 ### Sensor Software
 
-Damit der Landmarken-Sensor softwareseitig ausgewertet wird, muss mindestens Code-Version *1652* auf dem Bot verwendet und in [ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h) die [Option](../ctBotH/ctBotH.md) `BPS_AVAILABLE` aktiviert werden.
+Damit der Landmarken-Sensor softwareseitig ausgewertet wird, muss mindestens Code-Version *1652* auf dem Bot verwendet und in [ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h) die [Option](../../doc/wiki_pages/ct-bot_h.md) `BPS_AVAILABLE` aktiviert werden.
 
 Der aktuelle Sensor-Messwert wird auf dem Display-Screen *Odometrie* in Zeile 4 angezeigt.
 
@@ -116,4 +116,4 @@ Ein Sim-Feld ist 240 mm x 240 mm groß, die Position einer Bake ist der Mittelpu
 
 Hinweis: Die simulierten Baken "leuchten" durch die Wände der Welt hindurch. Eine Absorption des Bakenlichts an den Wänden würde einen umfangreichen Umbau am Welt-Code und einen deutlich höheren Rechenaufwand für die Simulation bedeuten.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -136,4 +136,4 @@ Die wesentlichen Unterschiede zum ct-Bot-Code für ATmega oder PC:
 * Anpassungen für Motorsteuerung (1:1 Weitergabe der Geschwindigkeit)
 * Anpassungen für RC5-Code (Toggle-Bit Auswertung)
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

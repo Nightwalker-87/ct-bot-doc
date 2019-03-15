@@ -341,4 +341,4 @@ werden. Die neueste Version des Codes ist im CVS erhältlich, die
 Änderungen beschreibt ein Eintrag in der Datei Changelog.txt.
 </p>
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

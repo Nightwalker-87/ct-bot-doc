@@ -9,7 +9,7 @@
  1. [Hohe Schule](http://www.heise.de/ct/artikel/Hohe-Schule-290392.html) *c't-Bots bewältigen komplexe Aufgaben*
  1. [An der Leine](http://www.heise.de/ct/artikel/An-der-Leine-290394.html) *Debuggen des c't-Bot über USB*
  1. [Steuermann](http://www.heise.de/ct/artikel/Steuermann-290434.html) *Mit einer Drehzahlregelung fährt der c't-Bot geradeaus und mit konstanter Geschwindigkeit*
- 1. [Ausgang gesucht!](http://www.heise.de/ct/artikel/Ausgang-gesucht-290460.html) *Komplexe Verhalten für den c't-Bot selbst entwickelt* [PDF-Version](http://www.heise.de/artikel-archiv/ct/2006/10/236_kiosk)
+ 1. [Ausgang gesucht!](http://www.heise.de/ct/artikel/Ausgang-gesucht-290460.html) *Komplexe Verhalten für den c't-Bot selbst entwickelt*
  1. [Genesis](http://www.heise.de/ct/artikel/Genesis-290480.html) *c't-Sim: Weltenbau und Netzwerkzuschauer*
  1. [Kammerjäger](http://www.heise.de/ct/artikel/Kammerjaeger-290506.html) *Fehlersuche in elektronischen Schaltungen*
  1. [Wo bin ich?](http://www.heise.de/ct/artikel/Wo-bin-ich-290526.html) *Positionsbestimmung für den c't-Bot*
@@ -20,4 +20,4 @@
  1. [c’t-Bot: Programmieren leicht gemacht](http://www.heise.de/hardware-hacks/inhalt/2012/1/100) *Tutorial in c't-Hacks*
  1. [c’t-Bot: Roboter selbst bauen](http://www.heise.de/hardware-hacks/inhalt/2012/1/108/) *Projektübersicht und Leserprojekte in c't-Hacks*
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

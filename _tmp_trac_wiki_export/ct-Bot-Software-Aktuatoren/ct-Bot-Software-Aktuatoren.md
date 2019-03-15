@@ -60,7 +60,7 @@ Um die optimalen Fahreingenschaften des Bots zu erreichen, muss die Motorregelun
 Das Wichtigste für eine gut funktionierende Regelung sind die passenden Parameter *Kp*, *Ki* und *Kd*. Allerdings ist das Berechnen nicht ganz einfach. Deshalb gibt es ein kleines Verhalten, das automatisch versucht die besten Parameter zu finden. Um es zu benutzen, sind folgende Schritte nötig:
 
 1. Idealerweise zunächst die Radencoder kalibrieren (Vorwiderstand anpassen, siehe [Sensorauswertung](#Sensorauswertung)).
-1. Einschalten des Verhaltens `BEHAVIOUR_CALIBRATE_PID_AVAILABLE` in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)* (siehe auch [Übersicht der optionalen Codeteile](../ctBotH/ctBotH.md)).
+1. Einschalten des Verhaltens `BEHAVIOUR_CALIBRATE_PID_AVAILABLE` in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)* (siehe auch [Übersicht der optionalen Codeteile](../../doc/wiki_pages/ct-bot_h.md)).
 1. Code neu Übersetzen und auf den Bot übertragen (siehe auch **[Übertragen von Firmware in den AVR-Mikrocontroller](../Flash/Flash.md)**).
 1. Die Funktion **`bot_calibrate_pid(Behaviour_t* caller, int16_t speed)`** aufrufen, sehr elegant geht das per Bot-Remote-Call. Alternativ kann man auch einfach eine Taste der Fernbedienung (FB Taste **6**) für den Aufruf verwenden. Als Parameter **`speed`** übergibt man eine Geschwindigkeit, mit der kalibriert werden soll, `BOT_SPEED_SLOW` eignet sich hier am besten.
 1. Nun führt der Bot einige Drehungen aus, auf dem Regelungs-Screen im Display sieht man den aktuellen Status und die verbleibende Zeit bis zum Ende der Kalibrierung. Dabei werden per LOG Zwischenergebnisse ausgegeben, falls LOG aktiviert ist im Code. Ist die Kalibrierung beendet, stellt das Verhalten die gefundenen Parameter ein und zeigt sie im Display an. Allerdings werden sie **nicht** dauerhaft gespeichert, hierzu überträgt man sie in *[include/bot-local.h](https://github.com/tsandmann/ct-bot/blob/master/include/bot-local.h)* und deaktiviert das Verhalten wieder (ist das Verhalten aktiv, arbeitet die Regelung nicht ganz so effizient, weil die Parameter variabel sind).
@@ -98,4 +98,4 @@ Es sei noch angemerkt, dass die Priorität dieses Log-Verfahrens zum Entstehungs
 
 ToDo
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

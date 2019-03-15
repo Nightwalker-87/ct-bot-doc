@@ -10,4 +10,4 @@ The official c't project website can be found [here](http://www.heise.de/ct/proj
 
 This documentation was exported from the former Trac, but keep in mind, that the converted markdown version available here is currently work in progress and still **incomplete, unchecked and partly deprecated!** Therefore the not yet revised files contain a marker at the beginning of the document.
 
-[![License: CC BY-SA 4.0](license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

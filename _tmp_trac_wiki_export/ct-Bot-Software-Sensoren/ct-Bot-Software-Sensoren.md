@@ -102,4 +102,4 @@ void bot_base_behaviour(Behaviour_t* data) {
 
 Der Maussensor ist [tiefer gelegt](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md), der linke Distanzsensor um 180° gedreht eingebaut (Stecker umgelötet) und beide Sharps sind wie [hier](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md) beschrieben stabilisiert. Die Distanzsensor-Linearisierung erfolgt per Lookup-Table. Zur Berechnung von `x_pos` war `MEASURE_MOUSE_AVAILABLE` an und `MEASURE_COUPLED_AVAILABLE` aus.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

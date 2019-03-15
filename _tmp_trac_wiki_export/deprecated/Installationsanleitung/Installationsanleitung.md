@@ -289,4 +289,4 @@ Wenn Sie trotzdem auf das Zip-Archiv zugreifen wollen oder müssen, laden Sie es
 
 [Zurück zum Überblick](#ueberblick)
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

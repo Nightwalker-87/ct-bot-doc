@@ -90,4 +90,4 @@ Wenn man BotFS-Dateien am PC erzeugen und auf dem echten Bot verwenden möchte, 
 * Möchte man Daten zwischen dem echten und einem simulierten Bot austauschen, kann man die *botfs.img*-Datei beliebig zwischen diesen kopieren, oder den simulierten Bot mit dem Parameter *-i* und der Image-Datei (z.B. auch direkt von der eingelegten SD-Karte) starten.
 * In der BotFS-Verwaltung (über `ct-Bot(.exe) -f [Pfad zur Image-Datei]` aufzurufen) zeigt das Kommando `help` eine Übersicht aller verfuegbaren Tools an. Wird im Normalbetrieb aber eigentlich nicht benötigt.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

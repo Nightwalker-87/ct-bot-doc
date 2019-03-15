@@ -19,7 +19,7 @@ Zur Einstimmung gibt es in der **[Galerie](../Galerie/Galerie.md)** Videos und B
 
 Zum Projekt gibt es viel Doku, hier ein paar generelle Anlaufadressen:
 
-1. **[c't-Artikel](../Artikelliste/Artikelliste.md)**
+1. **[c't-Artikel](../../doc/wiki_pages/ct_articles.md)**
 1. Dieses **[Wiki](../WikiStart/WikiStart.md)**
 1. Das **[Fan Forum zum c't-Bot](https://www.ctbot.de)**
 1. Die **[Projektseite](http://www.ct-bot.de)**
@@ -77,7 +77,7 @@ Dieses Teilprojekt umfasst den Java-Code für den Simulator c't-Sim
 
 ### Zugang zum Sourcecode
 
-Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Damit eigener Code den Weg in das Repository findet, sollte er den **[Code Richtlinien](../Coderichtlinien/Coderichtlinien.md)** entsprechen.
+Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Damit eigener Code den Weg in das Repository findet, sollte er den **[Code Richtlinien](../../doc/wiki_pages/coding_conventions.md)** entsprechen.
 
 * Code Repository: Ab sofort findet sich der aktuelle Bot-Code in einem [Repository auf GitHub](https://github.com/tsandmann/ct-bot). Die URLs, um den Code in Eclipse oder andere Tools zu holen lauten: `https://github.com/tsandmann/ct-bot.git` und `https://github.com/tsandmann/ct-sim.git`.
 * **[Detailierte Beschreibung](../GITUndEclipse/GITUndEclipse.md)** zum Repository und der Integration in Eclipse.
@@ -107,4 +107,4 @@ Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Da
 * Die **[Projekthistorie](../Historie/Historie.md)**
 * Weitere **[Links](../Links/Links.md)** rund um den c't-Bot und auf Leserprojekte
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

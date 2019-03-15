@@ -34,4 +34,4 @@ Jeder Parameter kann bei Bedarf ein Attribut "os" haben. So kann man verschieden
 * **mapSectionSize**: Parameter der Map-Section-Größe (für Export). *default=16*
 * **mapMacroblockSize**: Parameter der Map-Makroblock-Größe (für Export). *default=512*
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

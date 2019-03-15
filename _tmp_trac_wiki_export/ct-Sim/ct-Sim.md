@@ -9,4 +9,4 @@
 * [Applet kompilieren und installieren](../AppletHowto/AppletHowto.md)
 * [Mini-Howto zu Ant](../AntMiniHowto/AntMiniHowto.md), dem bei c't-Sim verwendeten Build-System
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -50,4 +50,4 @@ An das freie Ende des Kabels die 8-polige Buchsenleiste in der Reihenfolge der K
 
 Informationen zur Treiberinstallation finden sich in unserer allgemeinen [Installationsanleitung](../InstallationsanleitungR23/InstallationsanleitungR23.md). Wie der USB-2-Bot-Adapter mit dem Erweiterungsmodul harmoniert findet sich in der [Beschreibung zu Letzterem](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md).
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

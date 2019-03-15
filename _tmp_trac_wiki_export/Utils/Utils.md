@@ -16,4 +16,4 @@
   1. Dem Compiler mit `-ffunction-sections -fdata-sections` sagen, dass er jede Funktion in eine eigene Section stecken soll.
   1. Den Linker mit `-Wl,--gc-sections` anweisen, nicht verwendete Sections zu verwerfen (*gc* für *Garbage Collection*) - damit werden dann allerdings auch alle zurzeit nicht benutzten EEPROM-Daten entfernt.
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

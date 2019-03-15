@@ -167,10 +167,10 @@ Bevor Sie einen Patch einreichen, sollten Sie folgende Dinge prüfen. Patches, d
 * Falls ein neues Verhalten hinzugefügt wurde, wurde das #define im **Doxygen-File** aktiviert?
 * Falls neue Quellcode-Dateien hinuzgefügt wurden, wurde auch das **Makefile** entsprechend aktualisiert?
 * Enthält der Patch keine Änderungen, die nur beim Debuggen nötig waren? ([siehe FAQ](https://www.heise.de/ct/artikel/FAQ-fuer-c-t-Bot-und-c-t-SIM-291940.html))
-* Befolgt der Patch alle Anforderung der [Coding-Richtlinien](../Coderichtlinien/Coderichtlinien.md)?
+* Befolgt der Patch alle Anforderung der [Coding-Richtlinien](../../doc/wiki_pages/coding_conventions.md)?
 * Ist der Quellcode passend zum Projekt **formatiert**? Hier hilft die automatische Formatierung von Eclipse, die über *Sources -> Format* zu erreichen ist.
 * Benötigt der Patch zusätzliche **Dokumentation** hier im Wiki?
 * Wenn der Patch Code von Dritten enthält: Ist geprüft, ob deren Code in einem GPL-Projekt veröffentlicht werden darf? Sind die Namen der ursprünglichen Autoren genannt?
 * Enthält die Mail zum Einreichen des Patches folgende **Informationen**: Zweck und Motivation des Patches, den Patch selbst (als eine komprimierte Zip-Datei) und eine Beschreibung der durchgeführten Tests?
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -833,4 +833,4 @@ Alu-Tr&auml;ger</td>
 <tr><td>IC1</td><td>FT232RL</td><td>0</td><td>bereits vorbestückt</td></tr>
 </table>
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

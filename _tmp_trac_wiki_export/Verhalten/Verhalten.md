@@ -79,4 +79,4 @@ Die System-Verhalten sind auf der untersten Schicht des Verhaltenssystems angesi
 * **BEHAVIOUR_GET_UTILIZATION_AVAILABLE**: Ein Verhalten, das die CPU-Auslastung eines anderen Verhaltens misst und diese per LOG ausgibt. Dazu übergibt man dem Verhalten beim Start die Priorität des zu überwachenden Verhaltens.
 * **BEHAVIOUR_HW_TEST_AVAILABLE**: Dieses Verhalten implementiert die drei Test-Programme Analog-, Digital- und Motor-Test (siehe [Inbetriebnahme-Artikel](../ct-Bot-Hardware/ct-Bot-Hardware.md#Aufbau-und-Montage))
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -143,4 +143,4 @@ F&uuml;r die MCU gibt es derzeit noch keine entsprechende Ausgabem&ouml;glichkei
     <li><span class="function"> VM_FILENAME_MAX</span> ist die maximale L&auml;nge eines Dateinamens in Zeichen.</li>
 </ul>
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -53,4 +53,4 @@ Die Funktion *Compare With* lässt sich analog benutzen um Änderungen nachzuver
 
 ToDo
 
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
