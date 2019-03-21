@@ -2,15 +2,15 @@
 
 ## Sprachmodul SP03
 
-Siehe [PDF-Dokumentation](https://github.com/tsandmann/ct-bot/blob/master/Documentation/sp03.pdf) von Harald W. Leschner.
+Siehe [PDF-Dokumentation](sp03.pdf) von Harald W. Leschner.
 
 ## CMPS03-Kompass
 
-Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](SprachmodulSP03) beschrieben. Softwareseitiger Konfigurationsschalter `CMPS03_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
+Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `CMPS03_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
 
 ## Ultraschallsensor SRF10
 
-Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](#SprachmodulSP03) beschrieben. Softwareseitiger Konfigurationsschalter `SRF10_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
+Anschluss an den I^2^C-Bus des ATmegas wie unter [Sprachmodul SP03](sp03.pdf) beschrieben. Softwareseitiger Konfigurationsschalter `SRF10_AVAILABLE` (siehe [Konfigurationsschalter](../ctBotH/ctBotH.md)).
 
 ## MMC per Hardware-SPI
 

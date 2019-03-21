@@ -56,8 +56,8 @@ Die Anwendungs-Verhalten befinden sich auf der höchsten Schicht des Verhaltenss
 * **BEHAVIOUR_SCAN_BEACONS_AVAILABLE**: Sucht (IR-)Landmarken in einem 360 Grad Scan und berechnet aus den gemessenen Winkeln die aktuelle Position des Bots. Siehe auch [Lokalisierung des ct-Bots](../Localization/Localization.md).
 * **BEHAVIOUR_UBASIC_AVAILABLE**: Ermöglicht die Ausführung von Basic-Programmen, die auf der SD-Karte abgelegt sind. Im Zusammenhang mit ct-Sim lassen sich Basic-Programme zur Bot-Laufzeit auf den Bot übertragen (per USB-2-Bot oder (W)LAN) und können dort gestartet und beendet werden. Die Dokumentation des Basic-Interpreters befindet sich im Unterverzeichnis *Documentation/avrbasic* des Bot-Codes.
 * **BEHAVIOUR_ABL_AVAILABLE**: Ermöglicht die Ausführung von einfachen Skript-Programmen, die auf der SD-Karte abgelegt sind. Im Zusammenhang mit ct-Sim lassen sich diese Programme zur Bot-Laufzeit auf den Bot übertragen (per USB-2-Bot oder (W)LAN) und können dort gestartet und beendet werden.
-* **BEHAVIOUR_NEURALNET_AVAILABLE**: Neuroyales Netzwerk (siehe auch Documentation/dok_bot_nn.htm)
-* **BEHAVIOUR_DRIVE_NEURALNET_AVAILABLE**: Fahrverhalten für das neuroyale Netzwerk (siehe auch Documentation/dok_bot_nn.htm)
+* **BEHAVIOUR_NEURALNET_AVAILABLE**: Neuronales Netzwerk (zur [Dokumentation](../Doku_Neuralnet/dok_bot_nn.htm)
+* **BEHAVIOUR_DRIVE_NEURALNET_AVAILABLE**: Fahrverhalten für das neuronale Netzwerk (zur [Dokumentation](../Doku_Neuralnet/dok_bot_nn.htm)
 
 ## Kalibrierungs-Verhalten
 

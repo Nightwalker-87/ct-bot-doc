@@ -18,7 +18,7 @@ Soll es mit dem eigenen Code richtig losgehen, sind erst einmal ein paar Vorraus
 ## Erste Geh- und Modifikationsversuche mit der Demo-Firmware
 
 Damit die hier beschriebenen Schritte Sinn ergeben, sollte man entweder einen **[realen Bot](../ct-Bot-Hardware/ct-Bot-Hardware.md)** **[aufgebaut](../ct-Bot-Hardware/ct-Bot-Hardware.md#Aufbau-und-Montage) und [erfolgreich getestet](../ct-Bot-Hardware/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)** haben. Solange die beschriebenen Testprogramme nicht einwandfrei laufen, handelt man sich mit unten beschriebenen Gehversuchen nur Ärger und Frust ein. Auch die empfohlenen **[Hardware-Mods](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md)** sollten eingebaut sein.
-**Bitte beachten:** Die auf dem Display angezeigten absoluten Sensorwerte sind nicht korrekt, solange die [Kalibrierung](#Kalibrierung) noch nicht durchgeführt wurde! Gleiches gilt für den Gleichlauf der Motoren.
+**Bitte beachten:** Die auf dem Display angezeigten absoluten Sensorwerte sind nicht korrekt, solange die Kalibrierung noch nicht durchgeführt wurde! Gleiches gilt für den Gleichlauf der Motoren.
 
 Alle erwähnten Code-Optionen finden sich in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)*. Siehe auch: [Übersicht der optionalen Codeteile](../ctBotH/ctBotH.md)
 
@@ -82,6 +82,7 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 * Dokumentation zum Verhalten [bot_drive_area](../DokuDriveArea/DokuDriveArea.md)
 * Dokumentation zur [Lokalisierung](../Localization/Localization.md)
 * Dokumentation zur [Programmierung des c't-Bots in weiteren Programmiersprachen](../DokuScriptLanguages/DokuScriptLanguages.md)
+* Dokumentation zum [Neuronalen Netz für den c't-Bot](../DokuNeuralnet/dok_bot_nn.htm)
 
 ### Deprecated Doku
 
