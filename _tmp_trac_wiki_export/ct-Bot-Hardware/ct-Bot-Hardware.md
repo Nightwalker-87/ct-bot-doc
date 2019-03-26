@@ -48,13 +48,6 @@ Noch mehr Hardware gibt es auch:
 
 Wenn der c't-Bot erst einmal fährt, gibt es ein paar Erweiterungen:
 
-### USB-2-Bot
-
-Das [USB-2-Bot-Modul](../USB2Bot/USB2Bot.md) verbindet einen c't-Bot per USB mit dem PC. So lassen sich Debug-Informationen und Steuerbefehle leicht übertragen. Es dient **nicht** zur *ersten* Programmierung eines neuen ct-Bots. Siehe auch:
-
-* **[c't 7/2006, S. 223](https://www.heise.de/ct/artikel/An-der-Leine-290394.html)**: An der Leine, Debuggen des c't-Bot über USB
-* **[Aufbauanleitung USB-2-Bot-Adapter](../USB2Bot/USB2Bot.md)** mit Fotos
-
 ### Erweiterungsmodul
 
 Das **[Erweiterungsmodul](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md)** beschert dem c't-Bot WLAN, MMC- oder SD-Karten und eine Transportklappe. Siehe auch:
@@ -815,22 +808,6 @@ Alu-Tr&auml;ger</td>
 <td align="right">1</td>
 <td>&nbsp;</td>
 </tr>
-</table>
-
-### Bauteile des USB-2-Bot-Adapters
-
-<table>
-<tr><th align="left">Bauteil</th><th align="left">Bezeichnung </th><th align="left">Anzahl </th><th align="left">Bemerkung</th></tr>
-<tr><td>C1</td><td>10 nF</td><td>1</td><td>Stempelung "103"</td></tr>
-<tr><td>C2, C4</td><td>100 nF</td><td>2</td><td>Stempelung "104"</td></tr>
-<tr><td>C3</td><td>4,7 &#181;F</td><td>1</td><td>Polung beachten</td></tr>
-<tr><td>L1</td><td>BL01RN1</td><td>1</td><td></td></tr>
-<tr><td>R1, R2</td><td>270 Ohm</td><td>2</td><td></td></tr>
-<tr><td>LED1, LED2</td><td>LED</td><td>2</td><td>langes Bein ist der Pluspol</td></tr>
-<tr><td>P1</td><td>USB-Buchse</td><td>1</td><td></td></tr>
-<tr><td>J1</td><td>Stiftleiste</td><td>1</td><td></td></tr>
-<tr><td>J2</td><td>Stiftleiste</td><td>0</td><td>unbestückt für Erweiterungen</td></tr>
-<tr><td>IC1</td><td>FT232RL</td><td>0</td><td>bereits vorbestückt</td></tr>
 </table>
 
 [![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

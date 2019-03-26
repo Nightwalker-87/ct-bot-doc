@@ -51,6 +51,8 @@ Zum Projekt gibt es viel Doku, hier ein paar generelle Anlaufadressen:
   * **[Erweiterungen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Erweiterungen)**
   * **[Firmware flashen](../Flash/Flash.md)**
 * c't-Bot **[testen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)**
+* Die Datenblätter für die Elektronik-Komponenten finden sich [hier](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/datasheets).
+* Herzstück des Funkmoduls [WiPort](http://www.lantronix.com/pdf/WiPort_UG.pdf)
 
 ## Software
 
@@ -95,7 +97,7 @@ Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Da
 * AVR-Toolchain
   * **[Installation der AVR-Toolchain](../AVRToolchain/AVRToolchain.md)** zur Entwicklung des Steuercodes eines *realen* c't-Bots
   * **[Hintergründe](../AVRToolchainInterna/AVRToolchainInterna.md)** zur AVR-Toolchain
-  * **[AVR-Tools und Tricks](../Utils/Utils.md)** für die (Bot-)Softwareentwicklung
+  * **[AVR-Tools und Tricks](../AVRToolchain/AVRToolchain.md#Nützliche Tools für AVR)** für die (Bot-)Softwareentwicklung
 
 ## Jagd auf den Fehlerteufel
 
@@ -104,7 +106,10 @@ Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Da
 
 ## Organisatorisches
 
-* Die **[Projekthistorie](../Historie/Historie.md)**
-* Weitere **[Links](../Links/Links.md)** rund um den c't-Bot und auf Leserprojekte
+* Die **[Projekthistorie](../../doc/wiki_pages/project_history.md)**
+
+## Leserprojekte
+* Diplomarbeit mit einer [Ladestation und WLAN](http://www.db-thueringen.de/servlets/DerivateServlet/Derivate-13826/Schmidt_Diplom_ct-Bot.pdf) sowie einer guten Einführung in den c't-Bot.
+
 
 [![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

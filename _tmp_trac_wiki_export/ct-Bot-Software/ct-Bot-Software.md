@@ -96,7 +96,7 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 * [Firmware](../Flash/Flash.md) auf den c't-Bot übertragen
 * [Protokollieren](../../doc/wiki_pages/logging.md) von Messdaten vom c't-Bot aus
 * [Hintergründe](../AVRToolchainInterna/AVRToolchainInterna.md) zur AVR-Toolchain
-* [AVR-Tools und Tricks](../Utils/Utils.md) für die (Bot-)Softwareentwicklung
+* [AVR-Tools und Tricks](../AVRToolchain/AVRToolchain.md#Nützliche Tools für AVR) für die (Bot-)Softwareentwicklung
 
 ## Ideen und mehr
 

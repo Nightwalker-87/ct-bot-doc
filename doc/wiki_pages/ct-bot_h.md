@@ -108,4 +108,4 @@ Details finden sich in der zugehörigen [Dokumentation](../RaspberryPi/Raspberry
 * `OS_AVAILABLE`: Aktiviert ein Mini-Betriebssystem mit Threads und Scheduling. Details finden sich in der zugehörigen [Dokumentation](../DokuOS/DokuOS.md) und in [mcu/os_thread.c](https://github.com/tsandmann/ct-bot/blob/master/mcu/os_thread.c).
 * `POS_STORE_AVAILABLE`: Stellt einen globalen Speicher für Positionsdaten bereit, der von Verhalten benutzt werden kann. Die möglichen Policies sind FIFO und LIFO (Stack).
 
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

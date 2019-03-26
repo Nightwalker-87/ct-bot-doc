@@ -229,15 +229,6 @@ Ein ebenfalls nettes und nützliches Tool ist Graphviz (bei Linux ebenfalls meis
 
 [Zurück zum Überblick](#ueberblick)
 
-### USB-Adapter
-
-[Zugehörige Hardware-Dokumentation](../USB2Bot/USB2Bot.md)
-
-#### USB-Adapter Treiber
-
-Wer noch alte D2XX-Treiber installiert hat, sollte diese zuallererst entfernen. Die ursprünglich von uns vorgeschlagene Kommunikation über die JD2XX-Bibliothek und den D2XX-Treiber für Windows erforderte Klimmzüge unter Linux und harmonierte nicht mit anderen Adaptern zum c't-Bot. Daher haben wir nun die Kommunikation mit tatkräftiger Unterstützung einiger Leser auf die RXTX-Bibliothek umgestellt.
-
-Steckt man den USB-2-Bot-Adapter zum ersten Mal an einen Windows-PC, so fragt Windows nach einem Treiber. Hier gibt man den [VCP-Treiber](http://ftdichip.com/Drivers/VCP.htm) an, der einen virtuellen COM-Port einrichtet. Aktuelle Linux-Kernel erkennen den FTDI-Chip bereits von Haus aus und machen ihn über /dev/ttyUSB0 zugänglich.
 
 #### USB und Java
 

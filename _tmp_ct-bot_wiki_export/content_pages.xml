@@ -4853,61 +4853,6 @@ Beim c't-Bot liegen die UART-Signale nur als TTL-Pegel auf dem Steckverbinder J4
 
 Das USB-Modul ist eine USB-UART Bridge. Über einen virtuellen COM-Port (VCP) Treiber wird dem PC vorgegaukelt, das eine zusätzliche serielle Schnittstelle im PC vorhanden ist. Auf diese serielle Schnittstelle können dann PC-Programme wie über jeden normalen seriellen Port zugreifen. Auf der UART Seite der USB-UART Bridge wird der c't-Bot über J4 angeschlossen. 
 
-=== USB-2-Bot Adapter ===
-
-{|
- |-
- |[[Bild:usb2bot.jpg|thumb|400px|USB-2-Bot Adapter]]
- |-
- |}
-
-Der USB-2-Bot Adapter ist ein Diagnose Tool, um vom PC aus mit dem c't-Bot über die [[Glossar#USB|USB-Schnittstelle]] zu kommunizieren.
-Der Adapter wird als Bausatz und Platine mit vorbestücktem SMD Chip von [http://www.segor.de Segor Electronics] angeboten.
-
-Als USB-Chip wird hier der [http://www.ftdichip.com/Products/FT232R.htm FTDI232RL] eingesetzt. Die neuesten Treiber erlauben es das Gerät sowohl nativ über D2XX Treibern anzusprechen, als auch über VCP (Virtual Com Port) Treiber. Allerdings darf man nur eine Treiberart gleichzeitig benutzen.
-
-=== Anschlußbelegung ===
-
-Die Anschlußbelegung des USB Moduls entspricht der Steckerbelegung J4 des c't-Bots. Man muß lediglich an ein Ende des 8poligen Flachbandkabel die 2 x 4 Buchse crimpen (am besten im Schraubstock zusammenpressen) und an das andere Ende die einreihige Buchsenleiste anlöten.
-
-{|
-|'''Pin'''
-|'''Funktion'''
-|'''Beschreibung'''
-|---
-|1
-|
-|
-|---
-|2
-|RXD
-|UART Empfänger
-|---
-|3
-|TXD
-|UART Sender
-|---
-|4
-|
-|
-|---
-|5
-|
-|
-|---
-|6
-|
-|
-|---
-|7
-|
-|
-|---
-|8
-|GND
-|
-|}
-
 === mySmartUSB Flasher ===
 
 Wer bereits den [[AVR_ISP_Programmer#myAVR_mySmartUSB_bzw._AVR910_kompatible_Flasher|mySmartUSB Programmer]] besitzt, kann diesen ebenso als Diagnose Tool verwenden wie den USB-2-Bot Adapter.
