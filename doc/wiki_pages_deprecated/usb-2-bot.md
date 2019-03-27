@@ -96,14 +96,13 @@ Die Anschlussbelegung des USB-2-Bot Adapters entspricht der Steckerbelegung J4 d
 | 7     | _(unbelegt)_ |                                     |
 | 8     | GND          |                                     |
 
-
-Informationen zur Treiberinstallation finden sich in der allgemeinen [Installationsanleitung](../InstallationsanleitungR23/InstallationsanleitungR23.md).
-Wie der USB-2-Bot-Adapter mit dem Erweiterungsmodul harmoniert findet sich in der [Beschreibung zu Letzterem](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md).
+Informationen zur Treiberinstallation finden sich in der allgemeinen [Installationsanleitung](../../_tmp_trac_wiki_export/InstallationsanleitungR23/InstallationsanleitungR23.md).
+Wie der USB-2-Bot-Adapter mit dem Erweiterungsmodul harmoniert findet sich in der [Beschreibung zu Letzterem](../../_tmp_trac_wiki_export/ct-Bot-Erweiterung/ct-Bot-Erweiterung.md).
 
 
 ## Treiberinstallation
 
-Die Treiber erlauben es das Gerät entweder nativ über [D2XX-Treiber](https://www.ftdichip.com/Drivers/D2XX.htm), oder über einen [VCP-Treiber](https://www.ftdichip.com/Drivers/VCP.htm) (Virtual Com Port) anzusprechen.
+Die Treiber erlauben es das Gerät entweder nativ über [D2XX-Treiber](https://www.ftdichip.com/Drivers/D2XX.htm), oder über einen [VCP-Treiber](https://www.ftdichip.com/Drivers/VCP.htm) (Virtual COM Port) anzusprechen.
 
 Wer noch alte D2XX-Treiber installiert hat, sollte diese zuerst entfernen.
 Die ursprünglich vorgeschlagene Kommunikation über die JD2XX-Bibliothek und den D2XX-Treiber für Windows erforderte Klimmzüge unter Linux und harmonierte nicht mit anderen Adaptern zum c't-Bot.
