@@ -5,7 +5,7 @@
 
 Mit dem USB-2-Bot Adapter lässt sich ein c't-Bot über eine USB-Schnittstelle an einen PC anschließen.
 Es handelt sich hierbei um ein Diagnose-Tool mit dem sich vom PC aus Debug-Informationen vom Bot auslesen und Steuerbefehle zwischen PC und Bot austauschen lassen.
-Diese UART-Schnittstelle dient **nicht** zur *erstmaligen* Programmierung eines neuen Bots, kann zu einem späteren Zeitpunkt jedoch auch dafür verwendet werden (siehe dazu: [Firmware übertragen mit Bootloader und USB-2-Bot-Adapter](../../_tmp_trac_wiki_export/Flash/Flash.md))
+Diese UART-Schnittstelle dient **nicht** zur *erstmaligen* Programmierung eines neuen Bots, kann zu einem späteren Zeitpunkt jedoch auch zur Programmierung verwendet werden (siehe dazu: [Firmware übertragen mit Bootloader und USB-2-Bot-Adapter](../../_tmp_trac_wiki_export/Flash/Flash.md))
 
 Der Adapter wurde als Bausatz und Platine mit vorbestücktem SMD-Chip von Segor Electronics angeboten. _(Bausatz ist nicht mehr verfügbar)_
 
@@ -23,14 +23,14 @@ Stückliste:
 
 | Bauteil    | Bezeichnung                   | Bemerkung                                                    |
 | :---       | :---                          | :---                                                         |
-| C1         | Tantal-Kondensator 10 nF      | Stempelung 103                                               |
-| C2, C4     | Tantal-Kondensator 100 nF     | Stempelung 104                                               |
+| C1         | Kondensator 10 nF             | Stempelung 103                                               |
+| C2, C4     | Kondensator 100 nF            | Stempelung 104                                               |
 | C3         | Elektrolyt-Kondensator 4,7 µF | Polung beachten!                                             |
 | L1         | axialer Ferrit BL01RN1        |                                                              |
 | R1, R2     | Widerstand 270 Ω              |                                                              |
 | LED1, LED2 | Leuchtdiode                   | Polung beachten!                                             |
 | P1         | USB 2.0 Buchse Typ B          |                                                              |
-| J1, J2     | Striftleiste                  | J2 ist für Erweiterungen gedacht und kann unbestückt bleiben |
+| J1, J2     | Stiftleiste                   | J2 ist für Erweiterungen gedacht und kann unbestückt bleiben |
 | IC1        | FT232RL Controller            | SMD-IC ist bereits vorbestückt                               |
 
 
@@ -53,7 +53,7 @@ Am praktikabelsten ist hier die Nutzung eines Teppichmessers.
 **ACHTUNG:** Bei den folgenen Aktionen sollte unbedingt vorsichtig und behutsam vorgegangen werden um Verletzungen vorzubeugen.
 Das Messer sollte stets vom Körper weggerichtet verwendet werden.
 Beim Schneiden des Materials empfiehlt es sich mit ruhiger Hand und keinesfalls mit Gewalt vorzugehen.
- 
+
 Am Besten ritzt man, wie in den folgenden Bildern gezeigt, mit dem Teppichmesser das Gehäuse an den vorgesehenen Stellen vorsichtig ein und bricht dann die überflüssigen Teile anschließend mit einer Zange heraus.
 Anschließend können die Ränder der Gehäuseaussparung mit der Messerklinge etwas nachprofiliert werden.
 
@@ -64,12 +64,12 @@ Je nach Toleranzen kann es erforderlich sein, nach dem Aufstecken des Flachkabel
 
 ![Image: 'usb-2-bot_04.jpg'](../images/usb-2-bot_04.jpg)
 
-Die beiden LED sind für eine erste Funktionskontrolle des Adapters mit geöffnetem Gehäuse sinnvoll.
+Die beiden LEDs sind für eine erste Funktionskontrolle des Adapters mit geöffnetem Gehäuse sinnvoll.
 Bei der späteren Verwendung des Adapters müssen sie nicht unbedingt sichtbar sein.
 Wer die LED-Zustandsanzeige auch später noch sehen möchte, kann für die Sichtkontrolle jedoch eine kleine Öffnung an der entsprechenden Stelle in den Gehäusedeckel schneiden oder bohren.
 
 Anschließend ist noch das Kabel zu konfektionieren:
-Hier muss die 2x4-Buchse an ein Ende des 8poligen Flachbandkabels gecrimpt und an das andere Ende die einreihige Buchsenleiste angelötet werden.
+Hier muss die 2x4-Buchse an ein Ende des 8-poligen Flachbandkabels gecrimpt und an das andere Ende die einreihige Buchsenleiste angelötet werden.
 Am besten gelingt das durch ein Zusammenpressen der Buchse mit einem im Schraubstock oder einer Schraubzange.
 
 An das freie Ende des Kabels ist die 8-polige Buchsenleiste in der Reihenfolge der Kabeladern anzulöten.
@@ -85,16 +85,16 @@ Pin 1 zeigt hier zum benachbarten Quarz. Ein verdrehtes Aufstecken ist bei einem
 
 Die Anschlussbelegung des USB-2-Bot Adapters entspricht der Steckerbelegung J4 des c't-Bots:
 
-| Pin   | Funktion     | Beschreibung |
-| :---: | :---         | :---         |
-| 1     | _(unbelegt)_ |              |
-| 2     | RXD          | UART Receive |
-| 3     | TXD          | UART Send    |
-| 4     | _(unbelegt)_ |              |
-| 5     | _(unbelegt)_ |              |
-| 6     | _(unbelegt)_ |              |
-| 7     | _(unbelegt)_ |              |
-| 8     | GND          |              |
+| Pin   | Funktion     | Beschreibung                        |
+| :---: | :---         | :---                                |
+| 1     | _(unbelegt)_ |                                     |
+| 2     | RXD          | UART Receive (aus Sicht des ATmega) |
+| 3     | TXD          | UART Send (aus Sicht des ATmega)    |
+| 4     | _(unbelegt)_ |                                     |
+| 5     | _(unbelegt)_ |                                     |
+| 6     | _(unbelegt)_ |                                     |
+| 7     | _(unbelegt)_ |                                     |
+| 8     | GND          |                                     |
 
 
 Informationen zur Treiberinstallation finden sich in der allgemeinen [Installationsanleitung](../InstallationsanleitungR23/InstallationsanleitungR23.md).
