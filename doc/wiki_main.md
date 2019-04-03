@@ -10,6 +10,7 @@
    * [Code-Optionen in ct-Bot.h](wiki_pages/ct-bot_h.md)
    * [Logging-Funktionen](wiki_pages/logging.md)
    * [USB-2-Bot-Adapter](wiki_pages_deprecated/usb-2-bot.md) _(deprecated)_
+   * [BeagleBoard-Erweiterung](wiki_pages_deprecated/beagleboard.md) _(deprecated)_
 
 
 ### Lizenzbestimmungen:

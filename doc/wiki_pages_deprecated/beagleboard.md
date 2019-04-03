@@ -30,13 +30,40 @@ Vielmehr geht es darum, Ideen und Lösungsansätze zusammenzutragen um das Konze
 * Erweiterung des c't-Bots um eine Kamera, die über den Kamera-Port des BeagleBoards xM oder per USB angeschlossen wird
 
 
+## Konzept
+
+### Low-level Bot-Code für den ATmega Mikrocontroller
+
+Der ATmega1284P auf dem Interface-Board führt den Low-level Code aus und stellt somit die Schnittstelle zur c't-Bot-Hardware bereit.
+Der Vorteil durch die Verwendung eines zusätzlichen Mikrocontrollers neben dem BeagleBoard besteht in der Kompatibilität zum originalen c't-Bot und der Wiederverwendbarkeit sämtlicher Treiber für die Bot-Hardware.
+Der Low-level Code besteht aus einer leicht modifizierten Untermenge des originalen c't-Bot-Codes.
+Verzichtet wird dabei auf sämtlichen Verhaltenscode und weitere Features wie Kartographie oder Positionsspeicher - all das übernimmt der High-level Code, den die BeagleBoard-CPU ausführt.
+Zusätzlich implementiert ist eine CRC16-Prüfsumme, welche die Kommunikation mit dem BeagleBoard gegen Übertragungsfehler absichert.
+Um den Low-level Code zu aktivieren, muss in _ct-Bot.h_ der Schalter `BOT_2_RPI_AVAILABLE` aktiviert werden.
+
+
+### High-level Bot-Code für den ARM-Prozessor
+
+Das BeagleBoard führt den für die ARM-Linux Architektur compilierten High-level Code aus und übernimmt somit die Ausführung von Verhalten, Kartographie usw.
+
+Um den c't-Bot Code für einen Bot mit BeagleBoard-Erweiterung zu übersetzen als Build-Konfiguration in Eclipse _Debug-ARM-Linux_ wählen und den Schalter `ARM_LINUX_BOARD` in _ct-Bot.h_ aktivieren.
+
+Die wesentlichen Unterschiede zum originalen ct-Bot-Code:
+
+* CRC16-Prüfsumme für Kommunikation
+* Anpassungen für Kommunikation (Synchronisation, Anmeldung als realer Bot)
+* Anpassungen für Auswertung der Distanzsensoren (Umrechnung gemäß Kennlinie erfolgt bereits im Low-level Code)
+* Anpassungen für Motorsteuerung (1:1 Weitergabe der Geschwindigkeit)
+* Anpassungen für RC5-Code (Toggle-Bit Auswertung)
+
+
 ## Voraussetzungen
 
 * Bastelinteresse an Hard- und Software
 * c't-Bot (oder kompatibler Roboter bzw. ähnliche Hardware)
 * PC oder virtuelle Maschine mit installiertem Linux (Linux-VM)
 * Eingebundene Cross-Toolchain für die Übersetzung des Bot-Codes nach ARM-Linux (Archtektur: ARMv7-A, hardfloat), verfügbar für Linux und Windows in Form der Linaro Toolchain
-* Installierte c't-Bot [Toolchain](../Installationsanleitung/Installationsanleitung.md)
+* Installierte c't-Bot [Toolchain](../../_tmp_trac_wiki_export/Installationsanleitung/Installationsanleitung.md)
 
 Als Betriebssystem wurde Ubuntu 12.04 verwendet - die Nutzung verwandter Distributionen ist vermutlich ebenfalls möglich.
 
@@ -55,7 +82,7 @@ Diese Seite umfasst keine detaillierte Anleitung zur Einrichtung eines BeagleBoa
 
 #### Technische Daten / Versionen
 
-Zum Zeitpunkt der Erstellung dieser Seite gibt es drei Versionen des BeagleBoards _(Stand: Januar 2012)_ :
+Zum Zeitpunkt der Erstellung dieser Seite gibt es zwei für das Vorhaben geeignete Versionen des BeagleBoards _(Stand: Januar 2012)_ :
 
 1. **BeagleBoard Rev. C4**
 
@@ -73,7 +100,7 @@ Zum Zeitpunkt der Erstellung dieser Seite gibt es drei Versionen des BeagleBoard
     * SD/MMC slot
     * Preis: 119 € (in Deutschland)
 
-1. **BeagleBoard-xM Rev. C**
+2. **BeagleBoard-xM Rev. C**
 
     Diese Version unterscheidet sich vom obigen Board im Wesentlichen durch einen schnelleren Prozessor, mehr Speicher und einen integrierten USB-Hub; im Folgenden als _BeagleBoard-xM_ bezeichnet
 
@@ -97,6 +124,7 @@ Ein technischer Vergleich von _BeagleBoard-xM_ und _BeagleBone_ findet sich [hie
 
 * [BeagleBoard Reference Manual](https://beagleboard.org/static/BBSRM_latest.pdf)
 * [BeagleBoard-xM Reference Manual](https://beagleboard.org/static/BBxMSRM_latest.pdf)
+
 
 #### Weblinks
 
@@ -137,6 +165,7 @@ Getestete USB-WLAN-Dongles:
     * \- relativ große Gehäuse-Abmessungen (73 mm x 24,5 mm x 10,5 mm)
     * \- Anschluss über eine USB-Verlängerung sinnvoll
 
+
 ### Interface-Board
 
 Das Interface-Board bindet das BeagleBoard (BeagleBoard und BeagleBoard-xM) an die Hardware des c't-Bots an und bietet die folgenden Features:
@@ -149,10 +178,11 @@ Das Interface-Board bindet das BeagleBoard (BeagleBoard und BeagleBoard-xM) an d
 
 Hinweise zum Interface-Board:
 * Das Interface-Board verwendet belegt den SPI-Port des ATmega Mikrocontrollers, weshalb der Maus-Sensor nicht mehr verwendet werden kann.
-* Auf dem Interface-Board befinden sich zwei SMD-Bauteile: *IC3* im SOIC-14 Package und *IC2* im TSSOP-16 Package.
+* Auf dem Interface-Board befinden sich zwei SMD-Bauteile: _IC3_ im SOIC-14 Package und _IC2_ im TSSOP-16 Package.
 Allgemein sind für die Bestückung von SMD-Bauteilen per Hand fortgeschrittene Lötkenntnisse und eine feine Motorik erforderlich.
-Sofern keine Verbindung per SPI-Bus zwischen BeagleBoard und ATmega1284P benötigt wird, kann auf die Bestückung von *IC2* auch verzichtet werden.
+Sofern keine Verbindung per SPI-Bus zwischen BeagleBoard und ATmega1284P benötigt wird, kann auf die Bestückung von _IC2_ auch verzichtet werden.
 * Das Interface-Board lässt sich alternativ auch auf einer Lochraster-Platine aufbauen, welche jedoch sehr kompakt bestückt werden sollte, sodass sie die Abmessungen des BeagleBoards möglichst nicht überschreitet und auf den Bot passt.
+
 
 #### Schaltplan & Stückliste
 
@@ -167,7 +197,7 @@ Sofern keine Verbindung per SPI-Bus zwischen BeagleBoard und ATmega1284P benöti
 | C16, C17                        | Elektrolyt-Kondensator 220 µF                     |
 | D1 - D4                         | Schalt-Diode 1N4148                               |
 | IC1                             | Mikrocontroller ATmega1284P                       |
-| IC2                             | [SN74AVC4T774](http://www.ti.com/product/sn74avc4t774)|
+| IC2                             | 4-bit dual-supply bus transceiver SN74AVC4T774    |
 | IC3                             | 4-Bit Bidirectional Voltage-Level Shifter TXB0104 |
 | IC4                             | Dual Power Amplifier TDA2822M                     |
 | J4 - J8                         | Stiftleiste 1x8                                   |
@@ -186,92 +216,359 @@ Sofern keine Verbindung per SPI-Bus zwischen BeagleBoard und ATmega1284P benöti
 | R10, R12                        | Widerstand 4,7 kΩ                                 |
 
 
-
 ### Montage
 
-* ATmega auf der Bot-Hauptplatine entfernen.
-* Interface-Board anstelle des [originalen Erweiterungsmoduls](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md) montieren, längere Abstandsbolzen verwenden, Kabel auf J4 bis J8 verbinden.
-* BeagleBoard auf Interface-Board montieren, elektrische Verbindung über BB-Extension-Header.
-* Display mit zusätzlichen Abstandsbolzen oberhalb des BeagleBoards anbringen.
+Zunächst ist das [originale Erweiterungsmoduls](../../_tmp_trac_wiki_export/ct-Bot-Erweiterung/ct-Bot-Erweiterung.md) von der c't-Bot Hauptplatine, sowie auch der ATmega Mikrocontroller vom Mainboard zu entfernen.
+Anschließend wird das Interface-Board anstelle des c't-Bot Erweiterungsboards montiert wofür längere Abstandsbolzen erforderlich sind.
+Danach sind die Kabel auf J4 bis J8 zu verbinden.
+Das BeagleBoard selbst wird auf Interface-Board gesteckt.
+Die elektrische Verbindung erfolgt dabei über den BeagleBoard-Extension-Header.
+Mit Hilfe von zusätzlichen Abstandsbolzen lässt sich zum Schluss noch das Display oberhalb des BeagleBoards anbringen.
+
 
 ## Toolchain
 
-*Die Anleitung für die Toolchain wurde für Ubuntu 12.04 LTS / hardfloat-ABI aktualisiert. Die alte Version für Ubuntu 11.04 ist [wiki:BeagleBoard?version=23 hier] zu finden.*
+Um den c't-Bot Code (oder andere Programme) für die ARM-Architektur des BeagleBoards zu übersetzen, wird ein Cross-Compiler benötigt.
+Alternativ lässt sich der entsprechende Code auch direkt auf dem BeagleBoard übersetzen, wenn dort die architekturspezifische gcc-Toolchain installiert ist, was allerdings deutlich umständlicher und langsamer ist.
 
-Um den c't-Bot Code (oder andere Programme) für die ARM-Architektur des BeagleBoards zu übersetzen, wird ein Cross-Compiler benötigt. Alternativ lässt sich der entsprechende Code auch direkt auf dem BeagleBoard übersetzen, wenn dort gcc & Co. installiert sind, was allerdings deutlich umständlicher und langsamer ist.
 
 ### Cross-Compiler Linux
 
-Unter Ubuntu (getestet 12.04 LTS oder neuer) wird die nötige Cross-Toolchain für die BeagleBoard-Plattform *arm-linux-gnueabihf* durch das Paket **g++-arm-linux-gnueabihf** installiert: `sudo apt-get install g++-arm-linux-gnueabihf`.
+Unter Ubuntu 12.04 LTS oder neuer wird die nötige Cross-Toolchain für die BeagleBoard-Plattform _arm-linux-gnueabihf_ (ABI hardfloat) durch das Paket **g++-arm-linux-gnueabihf** installiert: `sudo apt-get install g++-arm-linux-gnueabihf`.
+Andere Linux-Distributionen bieten entsprechend ähnliche Pakete an, wobei jedoch stets zu beachten ist, dass die _ABI hardfloat_ verwendet wird.
+Zum Kompilieren des Bot-Codes mit dem Cross-Compiler der Distribution ist als Target _Debug-ARM-Linux-BB_ auszuwählen sowie in den Projekteinstellungen für Compiler, Assembler und Linker jeweils `arm-linux-gnueabihf-gcc` einzutragen.
 
-Andere Linux-Distributionen bieten vermutlich ähnliche Pakete an, *Hinweise willkommen*. Wichtig ist dabei, dass die *hardflot*-ABI verwendet wird.
-
-Zum Compilieren des Bot-Codes mit dem Cross-Compiler der Distribution als Target *Debug-ARM-Linux-BB* auswählen und in den Projekteinstellungen für Compiler, Assembler und Linker `arm-linux-gnueabihf-gcc` eintragen.
 
 ### Cross-Compiler Windows
 
-Die [Linaro Toolchain](https://launchpad.net/linaro-toolchain-binaries) stellt einen kostenlosen Cross-Compiler für ARM-Linux (hardfloat) unter Windows zur Verfügung.
+Die [Linaro Toolchain](https://launchpad.net/linaro-toolchain-binaries) ist eine kostenlose Cross-Compiler-Toolchain für ARM-Linux (ABI hardfloat) die auch für Windows verfügbar ist.
+Der Installer kann [hier](https://launchpad.net/linaro-toolchain-binaries/+download) heruntergeladen werden. Getestete Version: _2012.05-20120523_win32.exe_.
+Zum Kompilieren des Bot-Codes unter Windows ist als Target _Debug-ARM-Linux-BB_ auszuwählen sowie in den Projekteinstellungen für Compiler, Assembler und Linker jeweils `arm-linux-gnueabihf-gcc` einzutragen.
+Der Installationspfad sollte in der Systemvariable $PATH eingetragen sein, da ansonsten in umständlicher Art und Weise stets der absolute Pfad anzugeben wäre.
 
-Als Installer [hier](https://launchpad.net/linaro-toolchain-binaries/+download) herunterladbar. Getestete Version: *2012.05-20120523_win32.exe*.
-
-Zum Compilieren des Bot-Codes unter Windows als Target *Debug-ARM-Linux-BB* auswählen und in den Projekteinstellungen für Compiler, Assembler und Linker `"arm-linux-gnueabihf-gcc"` eintragen (Installationspfad sollte im PATH eingetragen sein, ansonsten absoluten Pfad angeben).
 
 ### Libraries
 
 Derzeit werden die folgenden Libraries sowohl auf der Linux-Distribution des BeagleBoards, als auch auf dem Rechner zum Cross-Compilieren benötigt:
 
+
 #### Flite, Alsa
 
-Die Sprachsynthese-Bibliothek *Flite* kann optional zur Sprachausgabe benutzt werden. Dazu muss auf dem BeagleBoard die Bibliothek *Alsa* installiert sein (`sudo apt-get install alsa-base libasound2-dev`).
+Die Sprachsynthese-Bibliothek _Flite_ kann optional zur Sprachausgabe benutzt werden.
+Dazu muss auf dem BeagleBoard die Bibliothek _Alsa_ installiert sein (`sudo apt-get install alsa-base libasound2-dev`).
 
-* Cross-Compilieren aus dem Quelltext. Zuvor die Datei */usr/lib/arm-linux-gnueabihf/libasound.so.2.0.0* und das Verzeichnis */usr/include/alsa* der *Alsa-Bibliothek* vom BeagleBoard nach */usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/usr/lib* bzw. *usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/include/* kopieren. Außerdem nach `cd /usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/usr/lib` mit `sudo ln -s libasound.so.2.0.0 libasound.so` einen Link anlegen. Unter Linux oder Mac OS X sind dann diese Schritte nötig:
-* Archiv herunterladen und entpacken (*!ToDo: Link*)
-* `./configure --with-audio=alsa --host=arm-linux --enable-shared`
-* `make`
-* Dateien aus *lib* nach *ct-Bot/contrib/flite/lib/arm-linux-gnueabihf/* kopieren
+* Vorgehensweise zum Cross-Kompilieren aus dem Quelltext:
+
+1. Die Datei `/usr/lib/arm-linux-gnueabihf/libasound.so.2.0.0` nach `/usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/usr/lib` kopieren
+2. Das Verzeichnis `/usr/include/alsa` der _Alsa-Bibliothek_ vom BeagleBoard nach `/usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/include/` kopieren
+3. Verzeichnis wechseln: `cd /usr/local/arm-linux/arm-cortex_a8-linux-gnueabi/sysroot/usr/lib`
+4. Link anlegen: `sudo ln -s libasound.so.2.0.0 libasound.so`
+
+ Unter Linux oder Mac OS X sind dann diese Schritte nötig:
+
+1. Archiv herunterladen und entpacken:
+2. `./configure --with-audio=alsa --host=arm-linux --enable-shared`
+3. `make`
+4. Dateien aus _lib_ nach `ct-Bot/contrib/flite/lib/arm-linux-gnueabihf/` kopieren
+
 
 ## Software
 
-Auf dem BeagleBoard wird eine Linux-Distribution ausgeführt, die auf der SD-Karte installiert ist.
+Auf dem BeagleBoard wird eine Linux-Distribution ausgeführt, welche auf der SD-Karte installiert ist.
+Verwendet und getestet wurde hier mit Ubuntu **12.04 LTS** (_Precise Pangolin_).
 
-### Ubuntu (ARM)
+### Installation (Ubuntu 12.04 LTS für ARM)
 
-Getestete und empfohlene Version: **12.04 LTS** (*Precise Pangolin*).
+#### Vorbereitungen
 
-#### Installation
+1. Herunterladen des Disk-Images _Texas Instruments OMAP3 (Hard-Float) preinstalled server image_
+    * (_Support für TI OMAP3-based platform eingestellt; Disk-Image nicht mehr verfügbar_)_
+2. Entpacken und kopieren des Images auf eine Mikro-SD Karte: [Installing pre-installed OMAP4 Precise (12.04) Server Images](https://wiki.ubuntu.com/ARM/Server/Install#Copy_the_image_to_SD_card) _(Support für TI OMAP3-based platform eingestellt)_
+3. Serielle Schnittstelle des BeagleBoards mit dem PC verbinden.
+4. Ethernet-Port des BeagleBoards an ein LAN mit Internetzugang anschließen.
+5. Ein Terminal-Programm starten und die serielle Schnittstelle öffnen, an der das BeagleBoard angeschlossen ist.
+6. Mikro-SD-Karte in das BeagleBoard stecken und letzteres mit Strom versorgen (vorzugsweise ein **5V-Netzteil** benutzen, sodass das Board von der SD-Karte bootet.
+7. Die Ausgabe in der Terminal-Konsole sollte während des Bootens ungefähr so aussehen:
 
-Siehe [Installation von Ubuntu 12.04 LTS für ARM auf einem BeagleBoard](/BeagleBoardUbuntu1204Install.md).
+![Image: 'bb_setup_01.jpg'](../images/beagleboard/bb_setup_01.jpg)
 
-#### Anpassungen
+### Installation von Ubuntu
 
-Damit das BeagleBoard mit dem c't-Bot kommunizieren kann, sind ein paar Anpassungen am Linux-Kernel erforderlich. Sie sorgen dafür, dass die nötigen Schnittstellen auf die Erweiterungspins geroutet werden und konfigurieren die Schnittstellen entsprechend.
+Der Installationsassistent startet nach dem Booten automatisch. Dort sind die folgenden Einstellungen vorzunehmen:
 
-Zur Installation siehe [Ubuntu 12.04 Installationsanleitung](/BeagleBoardUbuntu1204Install.md#AngepasstenKernelinstallieren).
+* Sprache: 
 
-#### Konfiguration
+![Image: 'bb_setup_02.jpg'](../images/beagleboard/bb_setup_02.jpg)
 
-Siehe [Ubuntu 12.04 Installationsanleitung](../BeagleBoardUbuntu1204Install/BeagleBoardUbuntu1204Install.md#WLANkonfigurieren).
+* Region:
 
-### Low-level Bot-Code für ATmega
+| ![Image: 'bb_setup_03.jpg'](../images/beagleboard/bb_setup_03.jpg) | ![Image: 'bb_setup_04.jpg'](../images/beagleboard/bb_setup_04.jpg) | ![Image: 'bb_setup_05.jpg'](../images/beagleboard/bb_setup_05.jpg) |
+| ---                                                                | ---                                                                | ---                                                                |
 
-Der ATmega1284P auf dem Interface-Board führt den Low-level Code aus und stellt somit die Schnittstelle zur c't-Bot-Hardware bereit. Der Vorteil durch die Verwendung eines zusätzlichen Mikrocontrollers neben dem BeagleBoard besteht in der Kompatibilität zum originalen c't-Bot und der Wiederverwendbarkeit sämtlicher Treiber für die Bot-Hardware. Der Low-level Code besteht aus einer leicht modifizierten Untermenge des originalen c't-Bot Codes. Verzichtet wird dabei auf sämtlichen Verhaltenscode und weitere Features wie Kartographie oder Positionsspeicher, all das übernimmt der High-level Code, den die BeagleBoard-CPU ausführt. Zusätzlich implementiert ist eine CRC16-Prüfsumme, welche die Kommunikation mit dem BeagleBoard gegen Übertragungsfehler absichert. Um den Low-level Code zu aktivieren, muss in *ct-Bot.h* der Schalter `BOT_2_RPI_AVAILABLE` aktiviert werden.
+* Zeichenkodierung:
 
-### High-level Bot-Code für ARM
+![Image: 'bb_setup_06.jpg'](../images/beagleboard/bb_setup_06.jpg)
 
-Das BeagleBoard führt den für die ARM-Linux Architektur compilierten High-level Code aus und übernimmt somit die Ausführung von Verhalten, Kartographie usw.
+* Zeitzone:
 
-Um den c't-Bot Code für einen Bot mit BeagleBoard-Erweiterung zu übersetzen als Build-Konfiguration in Eclipse *Debug-ARM-Linux* wählen und den Schalter `ARM_LINUX_BOARD` in *ct-Bot.h* aktivieren.
+| ![Image: 'bb_setup_07.jpg'](../images/beagleboard/bb_setup_07.jpg) | ![Image: 'bb_setup_08.jpg'](../images/beagleboard/bb_setup_08.jpg) |
+| ---                                                                | ---                                                                |
 
-Die wesentlichen Unterschiede zum originalen ct-Bot-Code:
+* Anlegen eines Benutzers, mit dem man sich später am System anmelden kann:
 
-* CRC16-Prüfsumme für Kommunikation
-* Anpassungen für Kommunikation (Synchronisation, Anmeldung als realer Bot)
-* Anpassungen für Auswertung der Distanzsensoren (Umrechnung gemäß Kennlinie erfolgt bereits im Low-level Code)
-* Anpassungen für Motorsteuerung (1:1 Weitergabe der Geschwindigkeit)
-* Anpassungen für RC5-Code (Toggle-Bit Auswertung)
+| ![Image: 'bb_setup_09.jpg'](../images/beagleboard/bb_setup_09.jpg) | ![Image: 'bb_setup_10.jpg'](../images/beagleboard/bb_setup_10.jpg) | ![Image: 'bb_setup_11.jpg'](../images/beagleboard/bb_setup_11.jpg) | 
+| ---                                                                | ---                                                                | ---                                                                |
+
+| ![Image: 'bb_setup_12.jpg'](../images/beagleboard/bb_setup_12.jpg) | ![Image: 'bb_setup_13.jpg'](../images/beagleboard/bb_setup_13.jpg) |
+| ---                                                                | ---                                                                |
+ 
+* Hostname:
+
+![Image: 'bb_setup_14.jpg'](../images/beagleboard/bb_setup_14.jpg)
+
+* Installation eines SSH-Servers:
+
+![Image: 'bb_setup_15.jpg'](../images/beagleboard/bb_setup_15.jpg)
+
+* Nach Abschluss der Installation kann sich am System anmelden:
+
+| ![Image: 'bb_setup_16.jpg'](../images/beagleboard/bb_setup_16.jpg) | ![Image: 'bb_setup_17.jpg'](../images/beagleboard/bb_setup_17.jpg) | ![Image: 'bb_setup_18.jpg'](../images/beagleboard/bb_setup_18.jpg) | ![Image: 'bb_setup_19.jpg'](../images/beagleboard/bb_setup_19.jpg) |
+| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
+
+* Dann überprüft man am besten zunächst die Netzwerkkonfiguration mit `ifconfig`:
+
+![Image: 'bb_setup_20.jpg'](../images/beagleboard/bb_setup_20.jpg)
+
+
+### System aktualisieren
+
+* Systemaktualisierung mit `sudo aptitude update`:
+
+![Image: 'bb_setup_21.jpg'](../images/beagleboard/bb_setup_21.jpg)
+
+* Nach Eingabe des zuvor gewählten Passworts für den Benutzer werden die Paketquellen aktualisiert und der Status angezeigt:
+
+![Image: 'bb_setup_22.jpg'](../images/beagleboard/bb_setup_22.jpg)
+
+* Mit `sudo aptitude full-upgrade` startet man nun die Aktualisierung:
+
+![Image: 'bb_setup_23.jpg'](../images/beagleboard/bb_setup_23.jpg)
+
+* Die Sicherheitsabfrage beantwortet man mit `y`:
+
+![Image: 'bb_setup_24.jpg'](../images/beagleboard/bb_setup_24.jpg)
+
+* Die Ausgabe sollte ähnlich der Folgenden aussehen und es sollten keine Fehler angezeigt werden:
+
+![Image: 'bb_setup_25.jpg'](../images/beagleboard/bb_setup_25.jpg)
+
+* Neustart des Systems mit `sudo reboot`:
+
+![Image: 'bb_setup_26.jpg'](../images/beagleboard/bb_setup_26.jpg)
+
+* Anschließend erhält man erneut die Bootausgabe und kann sich wieder mit dem angelegten Benutzer anmelden:
+
+| ![Image: 'bb_setup_27.jpg'](../images/beagleboard/bb_setup_27.jpg) | ![Image: 'bb_setup_28.jpg'](../images/beagleboard/bb_setup_28.jpg) |
+| ---                                                                | ---                                                                |
+
+* Von jetzt an kann man sich per SSH über die Ethernet Verbindung einloggen, was deutlich komfortabler ist als über die serielle Verbindung.
+Dazu startet man von einer Shell aus ssh unter Angabe des Benutzernamens und der zugehörigen IP-Adresse, also z.B. `ssh bb@192.168.1.32`:
+
+![Image: 'bb_setup_29.jpg'](../images/beagleboard/bb_setup_29.jpg)
+
+* Da das System bisher noch unbekannt ist, stimmt man der Sicherheitsabfrage zu, gibt anschließend das Passwort des Benutzers ein und erhält eine Login-Shell auf dem BeagleBoard:
+
+| ![Image: 'bb_setup_30.jpg'](../images/beagleboard/bb_setup_30.jpg) | ![Image: 'bb_setup_31.jpg'](../images/beagleboard/bb_setup_31.jpg) |
+| ---                                                                | ---                                                                |
+
+
+### Angepassten Kernel installieren
+
+Damit das BeagleBoard mit mit der Hardware des c't-Bots kommunizieren kann, sind ein spezielle Anpassungen am Linux-Kernel erforderlich.
+Dadurch werden die nötigen Schnittstellen auf die Erweiterungspins geroutet und die Schnittstellen entsprechend konfiguriert und im Userspace zugänglich gemacht.
+
+Die folgenden Versionsnummern sind jeweils der verwendeten Kernelversion anzupassen! Diese jeweilige Kernelversion lässt sich wie folgt installieren:
+
+1. Verbindung zum BeagleBoard; z.B. über einen sftp-Client:
+
+![Image: 'bb_setup_31.jpg'](../images/beagleboard/bb_setup_31.jpg)
+
+2. Die heruntergeladenen Pakete für den Kernel auf das BeagleBoard (oder alternativ auf die FAT-Partition der SD-Karte) kopieren:
+
+![Image: 'bb_setup_32.jpg'](../images/beagleboard/bb_setup_32.jpg)
+
+3. In das Verzeichnis mit den kopierten Paketen wechseln (im Beispiel mit `cd kernel-3.2.17-x11_0.1`):
+
+![Image: 'bb_setup_33.jpg'](../images/beagleboard/bb_setup_33.jpg)
+
+4. Firmware-Image installieren mit `sudo dpkg --force-all -i ./linux-firmware-image_1.0cross_armhf.deb`:
+
+| ![Image: 'bb_setup_34.jpg'](../images/beagleboard/bb_setup_34.jpg) | ![Image: 'bb_setup_35.jpg'](../images/beagleboard/bb_setup_35.jpg) |
+| ---                                                                | ---                                                                |
+
+5. Kernel-Header installieren mit `sudo dpkg -i ./linux-headers-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_):
+
+![Image: 'bb_setup_36.jpg'](../images/beagleboard/bb_setup_36.jpg)
+
+6. libc-Header installieren mit `sudo dpkg -i ./linux-libc-dev_1.0cross_armhf.deb`:
+
+![Image: 'bb_setup_37.jpg'](../images/beagleboard/bb_setup_37.jpg)
+
+7. Kernel-Image installieren mit `sudo dpkg --force-all -i ./linux-image-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_):
+
+![Image: 'bb_setup_38.jpg'](../images/beagleboard/bb_setup_38.jpg)
+
+8. Da die bereitgestellten Pakete hier eine abweichende Architekturbezeichnung tragen, sind nun noch ein paar Dateien umzubenennen.
+Dazu mit `cd /boot` das Verzeichnis wechseln:
+
+![Image: 'bb_setup_39.jpg'](../images/beagleboard/bb_setup_39.jpg)
+
+9. Anschließend die folgenden Befehle ausführen (_Versionen entsprechend anpassen_):
+
+    `sudo mv vmlinux-3.2.17-x11 vmlinux-3.2.17-x11-omap`,
+    `sudo mv initrd.img-3.2.17-x11 initrd.img-3.2.17-x11-omap`,
+    `sudo mv config-3.2.17-x11 config-3.2.17-x11-omap` und
+    `sudo mv System.map-3.2.17-x11 System.map-3.2.17-x11-omap`
+    
+| ![Image: 'bb_setup_40.jpg'](../images/beagleboard/bb_setup_40.jpg) | ![Image: 'bb_setup_41.jpg'](../images/beagleboard/bb_setup_41.jpg) | ![Image: 'bb_setup_42.jpg'](../images/beagleboard/bb_setup_42.jpg) | ![Image: 'bb_setup_43.jpg'](../images/beagleboard/bb_setup_43.jpg) |
+| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
+
+10. Mit `sudo flash-kernel 3.2.17-x11-omap` wird dann der neue Kernel auf der Boot-Partition installiert (_Version entsprechend anpassen_):
+
+![Image: 'bb_setup_44.jpg'](../images/beagleboard/bb_setup_44.jpg)
+
+11. Neustart mit `sudo reboot`, wodurch der Kernel geladen wird:
+
+![Image: 'bb_setup_45.jpg'](../images/beagleboard/bb_setup_45.jpg)
+
+12. Nach dem Reboot und einem erneuten Login (s.o.) ist der Paketmanager so zu konfigurieren, dass die installierte Kernel-Version nicht durch Distributionsupdates überschrieben wird.
+Dazu dient die folgenden, mehrzeilige Eingabe (_Versionen entsprechend anpassen_):
+
+    ```shell
+    sudo dpkg --set-selections << EOF
+    linux-firmware-image hold
+    linux-headers-3.2.17-x11 hold
+    linux-image-3.2.17.x11 hold
+    linux-libc-dev hold
+    EOF
+    ```
+
+![Image: 'bb_setup_46.jpg'](../images/beagleboard/bb_setup_46.jpg)
+
+13. Anschließend kann man mit den folgenden Eingaben die alten Kernel-Versionen vollständig entfernen:
+`sudo aptitude purge linux-image-3.2.0-23-omap`,
+`sudo aptitude purge linux-image-omap` und
+`sudo dpkg -P linux-image-3.2.0-24-omap`
+
+Wichtig ist hierbei, dass die letzte Kernel-Version mit dpkg entfernt wird, damit der Paketmanager die zugehörigen Hilfspakete nicht ebenfalls entfernt:
+
+| ![Image: 'bb_setup_47.jpg'](../images/beagleboard/bb_setup_47.jpg) | ![Image: 'bb_setup_48.jpg'](../images/beagleboard/bb_setup_48.jpg) | ![Image: 'bb_setup_49.jpg'](../images/beagleboard/bb_setup_49.jpg) | ![Image: 'bb_setup_50.jpg'](../images/beagleboard/bb_setup_50.jpg) |
+| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
+
+
+### WLAN konfigurieren
+
+* Bevor ein USB-WLAN-Adapter angeschlossen wird, sollte man sich mit `lsusb`zuerst einen Überblick über die derzeit angeschlossenen USB-Geräte verschaffen:
+
+![Image: 'bb_setup_51.jpg'](../images/beagleboard/bb_setup_51.jpg)
+
+* Die Ausgabe sollte dem obigen Beispiel entsprechen.
+Wird nach dem Einstecken des WLAN-Adapters erneut `lsusb` ausgeführt, so sollte das Device nun mit aufgelistet werden:
+
+![Image: 'bb_setup_52.jpg'](../images/beagleboard/bb_setup_52.jpg)
+
+* Nun kann man die Pakete _wpasupplicant_ mit Hilfe von `sudo aptitude install wpasupplicant` und _wireless-tools_ via `sudo aptitude wireless-tools` installieren:
+
+| ![Image: 'bb_setup_53.jpg'](../images/beagleboard/bb_setup_53.jpg) | ![Image: 'bb_setup_54.jpg'](../images/beagleboard/bb_setup_54.jpg) | ![Image: 'bb_setup_55.jpg'](../images/beagleboard/bb_setup_55.jpg) |
+| ---                                                                | ---                                                                | ---                                                                |
+
+* Ein Aufruf von `iwconfig` sollte nun das Interface _wlan0_ anzeigen:
+
+| ![Image: 'bb_setup_56.jpg'](../images/beagleboard/bb_setup_56.jpg) | ![Image: 'bb_setup_57.jpg'](../images/beagleboard/bb_setup_57.jpg) |
+| ---                                                                | ---                                                                |
+
+* Im nächsten Schritt wird mit `wpa_passphrase <SSID>` der pre-shared Key für die WPA2-Verschlüsselung erzeugt, sobald das WPA2-Passwort eingegeben wurde:
+
+![Image: 'bb_setup_58.jpg'](../images/beagleboard/bb_setup_58.jpg)
+
+* Anschließend ist die Ausgabe des Programms in die Zwischenablage zu kopieren und `sudo nano /etc/wpa_supplicant.conf` aufzurufen:
+
+![Image: 'bb_setup_59.jpg'](../images/beagleboard/bb_setup_59.jpg)
+
+* Hier ist die kopierte Ausgabe dann wieder einzufügen:
+
+![Image: 'bb_setup_60.jpg'](../images/beagleboard/bb_setup_60.jpg)
+
+* Die Speicherung der Datei erfolgt mit _CTRL + o_ und _Enter_. Mit _CTRL + x_ wird der Editor wieder geschlossen:
+
+![Image: 'bb_setup_61.jpg'](../images/beagleboard/bb_setup_61.jpg)
+
+* Jetzt lässt sich die WLAN-Verbindung durch die Ausführung von `sudo wpa_supplicant -iwlan0 -c/etc/wpa_supplicant.conf -Dwext` testen:
+
+![Image: 'bb_setup_62.jpg'](../images/beagleboard/bb_setup_62.jpg)
+
+* Im Erfolgsfall bekommt man mit _CTRL-EVENT-CONNECTED_ die Bestätigung für einen korrekten Verbindungsaufbau.
+Mit _CTRL + c_ kann der Test beendet werden:
+
+![Image: 'bb_setup_63.jpg'](../images/beagleboard/bb_setup_63.jpg)
+
+* Nun ist das Interface _wlan0_ in `/etc/network/interfaces` einzutragen. Hierzu öffnet man mit `sudo nano /etc/network/interfaces` einen Editor:
+
+![Image: 'bb_setup_64.jpg'](../images/beagleboard/bb_setup_64.jpg)
+
+und ergänzt
+
+  ```shell
+  # The wifi interface
+  auto wlan0
+  iface wlan0 inet dhcp
+  wpa-driver wext
+  wpa-conf /etc/wpa_supplicant.conf
+  ```
+
+sodass die Datei wie folgt aussieht:
+
+![Image: 'bb_setup_65.jpg'](../images/beagleboard/bb_setup_65.jpg)
+
+* _CTRL + o_ speichert die Datei und _CTRL + x_ schließt den Editor wieder:
+
+![Image: 'bb_setup_66.jpg'](../images/beagleboard/bb_setup_66.jpg)
+
+* Das neu eingerichtete Interface wird mit `sudo ifup -v wlan0` aktiviert und getestet:
+
+![Image: 'bb_setup_67.jpg'](../images/beagleboard/bb_setup_67.jpg)
+
+* Die Ausgabe sollte ähnlich der Folgenden aussehen:
+
+![Image: 'bb_setup_68.jpg'](../images/beagleboard/bb_setup_68.jpg)
+
+* Mit `ifconfig` dlässt sich die Konfiguration des Interfaces überprüfen:
+
+![Image: 'bb_setup_69.jpg'](../images/beagleboard/bb_setup_69.jpg)
+
+* Nach einem Neustart mit `sudo reboot` kann man das Ethernet-Kabel entfernen und über ssh auf die IP-Adresse der WLAN-Schnittstelle wie gewohnt eine Verbindung zum Board aufbauen:
+
+| ![Image: 'bb_setup_70.jpg'](../images/beagleboard/bb_setup_70.jpg) | ![Image: 'bb_setup_71.jpg'](../images/beagleboard/bb_setup_71.jpg) | ![Image: 'bb_setup_72.jpg'](../images/beagleboard/bb_setup_72.jpg) |
+| ---                                                                | ---                                                                | ---                                                                |
+
+* Abschließend empfiehlt es sich, noch die Pakete _alsa-base_ und _libasound2-dev_ mit `sudo aptitude install alsa-base libasound2-dev` zu installieren:
+
+![Image: 'bb_setup_73.jpg'](../images/beagleboard/bb_setup_73.jpg)
+
+
+### System-Backup erstellen
+
+* Nach der Installation und Konfiguration wird empfohlen ein Backup des gesamten Systems durchzuführen, um später im Bedarfsfall leicht wieder zu diesem Stand zurückkehren zu können.
+Da das komplette System auf der (Micro-)SD-Karte installiert ist, bietet es sich an als Backup einfach ein Image der gesamten SD-Karte zu erstellen.
+Unter Linux bzw. macOS lässt sich das mit `dd if=/dev/sdb bs=8M | pbzip2 -c > beagle-sd-backup.iso.bz2` bzw. `dd if=/dev/rdisk4 bs=8m | pbzip2 -c > beagle-sd-backup.iso.bz2` erledigen:
+
+![Image: 'bb_setup_74.jpg'](../images/beagleboard/bb_setup_74.jpg)
+
+ `/dev/sdb` bzw. `/dev/rdisk4` ist entsprechend dem Gerät der SD-Karte anzupassen.
+
 
 ### BeagleBoard-Emulation
 
-Ein BeagleBoard lässt sich (inkl. Linux Installation) mit Qemu emulieren. Eine Installationsanleitung für Ubuntu Hosts ist [hier](http://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) zu finden.
+Ein BeagleBoard mit einem installierten Linux-System lässt sich auch mit Qemu emulieren, wie dieser [Installationsanleitung für Ubuntu Hosts](https://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) entnommen werden kann.
 
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

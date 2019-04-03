@@ -11,7 +11,7 @@ Der Adapter wurde als Bausatz und Platine mit vorbestücktem SMD-Chip von Segor 
 
 Als USB-Chip findet hier der Controller [FTDI232RL](https://www.ftdichip.com/Products/ICs/FT232R.htm) Verwendung.
 
-![Image: 'usb-2-bot_01.jpg'](../images/usb-2-bot_01.jpg)
+![Image: 'usb-2-bot_01.jpg'](../images/usb-2-bot/usb-2-bot_01.jpg)
 
 
 ## Elektronik
@@ -44,8 +44,8 @@ Die Stiftleiste J2 ist für mögliche Erweiterungen gedacht und kann unbestückt
 
 In bestücktem Zustand sieht das Board wie folgt aus:
 
-| ![Image: 'usb-2-bot-02.jpg'](../images/usb-2-bot_02.jpg) | ![Image: 'usb-2-bot-03.jpg'](../images/usb-2-bot_03.jpg) |
-| ---                                                      | ---                                                      |
+| ![Image: 'usb-2-bot-02.jpg'](../images/usb-2-bot/usb-2-bot_02.jpg) | ![Image: 'usb-2-bot-03.jpg'](../images/usb-2-bot/usb-2-bot_03.jpg) |
+| ---                                                                | ---                                                                |
 
 Für die USB-Buchse und das Verbindungskabel zum Bot muss das mitgelieferte Gehäuse nachbearbeitet werden.
 Am praktikabelsten ist hier die Nutzung eines Teppichmessers.
@@ -57,12 +57,12 @@ Beim Schneiden des Materials empfiehlt es sich mit ruhiger Hand und keinesfalls 
 Am Besten ritzt man, wie in den folgenden Bildern gezeigt, mit dem Teppichmesser das Gehäuse an den vorgesehenen Stellen vorsichtig ein und bricht dann die überflüssigen Teile anschließend mit einer Zange heraus.
 Anschließend können die Ränder der Gehäuseaussparung mit der Messerklinge etwas nachprofiliert werden.
 
-| ![Image: 'usb-2-bot_05.jpg'](../images/usb-2-bot_05.jpg) | ![Image: 'usb-2-bot_06.jpg'](../images/usb-2-bot_06.jpg) | ![Image: 'usb-2-bot_07.jpg'](../images/usb-2-bot_07.jpg) | ![Image: 'usb-2-bot_08.jpg'](../images/usb-2-bot_08.jpg) |
-| ---                                                      | ---                                                      | ---                                                      | ---                                                      |
+| ![Image: 'usb-2-bot_05.jpg'](../images/usb-2-bot/usb-2-bot_05.jpg) | ![Image: 'usb-2-bot_06.jpg'](../images/usb-2-bot/usb-2-bot_06.jpg) | ![Image: 'usb-2-bot_07.jpg'](../images/usb-2-bot/usb-2-bot_07.jpg) | ![Image: 'usb-2-bot_08.jpg'](../images/usb-2-bot/usb-2-bot_08.jpg) |
+| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
 
 Je nach Toleranzen kann es erforderlich sein, nach dem Aufstecken des Flachkabels von dessen Stecker ein wenig Material abzufeilen, damit das Gehäuse sauber schließt.
 
-![Image: 'usb-2-bot_04.jpg'](../images/usb-2-bot_04.jpg)
+![Image: 'usb-2-bot_04.jpg'](../images/usb-2-bot/usb-2-bot_04.jpg)
 
 Die beiden LEDs sind für eine erste Funktionskontrolle des Adapters mit geöffnetem Gehäuse sinnvoll.
 Bei der späteren Verwendung des Adapters müssen sie nicht unbedingt sichtbar sein.
@@ -78,7 +78,7 @@ Hierbei empfiehlt es sich die einzelnen Adern mit ein wenig Schrumpfschlauch zu 
 Die Buchsenleiste wird später auf die Steckerleiste J4 der Bot-Hauptplatine aufgesteckt.
 Pin 1 zeigt hier zum benachbarten Quarz. Ein verdrehtes Aufstecken ist bei einem Akku-versorgten Robot in der Regel unschädlich, allerdings kommen dann aufgrund der falschen Signalzuordnung keine Daten an.
 
-![Image: 'usb-2-bot_09.jpg'](../images/usb-2-bot_09.jpg)
+![Image: 'usb-2-bot_09.jpg'](../images/usb-2-bot/usb-2-bot_09.jpg)
 
 
 ## Anschlussbelegung (Pinout)
