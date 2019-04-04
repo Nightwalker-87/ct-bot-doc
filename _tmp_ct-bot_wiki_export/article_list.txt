@@ -43,7 +43,7 @@ Sandbox
 Servo
 Transportfach
 UART
->> USB-Modul
+USB-Modul
 Vivanco
 WinAVR
 Zusammenbau

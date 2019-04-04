@@ -2,15 +2,17 @@
 
 * Die Liste aller [c't-Artikel](wiki_pages/ct_articles.md) zum Projekt.
 * [Projekt-Historie](wiki_pages/project_history.md)
+* [Medien-Gallerie](wiki_pages/gallery.md)
 * Anforderung der [Code-Richtlinien](wiki_pages/coding_conventions.md)
 
 
 ## c't-Bot:
 * Sourcecode:
-   * [Code-Optionen in ct-Bot.h](wiki_pages/ct-bot_h.md)
-   * [Logging-Funktionen](wiki_pages/logging.md)
-   * [USB-2-Bot-Adapter](wiki_pages_deprecated/usb-2-bot.md) _(deprecated)_
-   * [BeagleBoard-Erweiterung](wiki_pages_deprecated/beagleboard.md) _(deprecated)_
+    * [Code-Optionen in ct-Bot.h](wiki_pages/ct-bot_h.md)
+    * [Logging-Funktionen](wiki_pages/logging.md)
+    * [USB-2-Bot-Adapter](wiki_pages_deprecated/usb-2-bot.md) _(deprecated)_
+    * [BeagleBoard-Erweiterung](wiki_pages_deprecated/beagleboard.md) _(deprecated)_
+    * [virtuelle Speicherverwaltung für SD-Karten](wiki_pages_deprecated/mmc_vm.md) _(deprecated)_
 
 
 ### Lizenzbestimmungen:

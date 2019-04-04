@@ -13,7 +13,7 @@ c't-Bot und c't-Sim gehören zusammen und sind ein Roboterprojekt der Zeitschrif
 
 ## c't-Bot in Aktion
 
-Zur Einstimmung gibt es in der **[Galerie](../Galerie/Galerie.md)** Videos und Bilder rund um das Projekt.
+Zur Einstimmung gibt es in der **[Galerie](../../doc/wiki_pages/gallery.md)** Videos und Bilder rund um das Projekt.
 
 ## Anlaufstellen
 

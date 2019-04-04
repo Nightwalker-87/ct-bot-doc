@@ -1,5 +1,8 @@
 # CPU-Erweiterung für den c't-Bot mit einem BeagleBoard
 
+**Hinweis: Diese Hardware-Erweiterung wurde im Bot-Code durch die Raspberry Pi CPU-Erweiterung abgelöst.**
+
+
 ## Einleitung
 
 Die Standard-Hardware des c't-Bots lässt sich mit dem umfangreichen Software-Framework inzwischen nahezu vollständig ausreizen.
