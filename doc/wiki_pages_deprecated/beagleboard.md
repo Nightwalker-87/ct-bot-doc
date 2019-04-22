@@ -295,97 +295,67 @@ Verwendet und getestet wurde hier mit Ubuntu **12.04 LTS** (_Precise Pangolin_).
 
 ![Image: 'bb_setup_01.jpg'](../images/beagleboard/bb_setup_01.jpg)
 
-### Installation von Ubuntu
+#### Installation von Ubuntu
 
 Der Installationsassistent startet nach dem Booten automatisch. Dort sind die folgenden Einstellungen vorzunehmen:
 
-* Sprache: 
-
-![Image: 'bb_setup_02.jpg'](../images/beagleboard/bb_setup_02.jpg)
-
+* Sprache: `English`
 * Region:
-
-| ![Image: 'bb_setup_03.jpg'](../images/beagleboard/bb_setup_03.jpg) | ![Image: 'bb_setup_04.jpg'](../images/beagleboard/bb_setup_04.jpg) | ![Image: 'bb_setup_05.jpg'](../images/beagleboard/bb_setup_05.jpg) |
-| ---                                                                | ---                                                                | ---                                                                |
-
+   * Country, territory or area: `other`
+   * Continent or region: `Europe`
+   * Country, territory or area: `Germany`
 * Zeichenkodierung:
-
-![Image: 'bb_setup_06.jpg'](../images/beagleboard/bb_setup_06.jpg)
-
+   * Country to base the default locale settings on: `United States - en_US.UTF-8`
 * Zeitzone:
-
-| ![Image: 'bb_setup_07.jpg'](../images/beagleboard/bb_setup_07.jpg) | ![Image: 'bb_setup_08.jpg'](../images/beagleboard/bb_setup_08.jpg) |
-| ---                                                                | ---                                                                |
-
+   * Zeitzone einstellen: `Europe/Berlin`
+   * System clock set to UTC? `<Yes>`
 * Anlegen eines Benutzers, mit dem man sich später am System anmelden kann:
-
-| ![Image: 'bb_setup_09.jpg'](../images/beagleboard/bb_setup_09.jpg) | ![Image: 'bb_setup_10.jpg'](../images/beagleboard/bb_setup_10.jpg) | ![Image: 'bb_setup_11.jpg'](../images/beagleboard/bb_setup_11.jpg) | 
-| ---                                                                | ---                                                                | ---                                                                |
-
-| ![Image: 'bb_setup_12.jpg'](../images/beagleboard/bb_setup_12.jpg) | ![Image: 'bb_setup_13.jpg'](../images/beagleboard/bb_setup_13.jpg) |
-| ---                                                                | ---                                                                |
- 
-* Hostname:
-
-![Image: 'bb_setup_14.jpg'](../images/beagleboard/bb_setup_14.jpg)
-
-* Installation eines SSH-Servers:
-
-![Image: 'bb_setup_15.jpg'](../images/beagleboard/bb_setup_15.jpg)
+   * Full name for the new user
+   * Username for your account
+   * Choose a password for the new user
+   * Re-enter password to verify
+* Hostname für System vergeben
+* Software selection: Installation eines SSH-Servers: `OpenSSH server`
 
 * Nach Abschluss der Installation kann sich am System anmelden:
 
-| ![Image: 'bb_setup_16.jpg'](../images/beagleboard/bb_setup_16.jpg) | ![Image: 'bb_setup_17.jpg'](../images/beagleboard/bb_setup_17.jpg) | ![Image: 'bb_setup_18.jpg'](../images/beagleboard/bb_setup_18.jpg) | ![Image: 'bb_setup_19.jpg'](../images/beagleboard/bb_setup_19.jpg) |
-| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
+![Image: 'bb_setup_02.jpg'](../images/beagleboard/bb_setup_02.jpg)
 
-* Dann überprüft man am besten zunächst die Netzwerkkonfiguration mit `ifconfig`:
+* Dann überprüft man am Besten zunächst die Netzwerkkonfiguration mit `ifconfig`:
 
-![Image: 'bb_setup_20.jpg'](../images/beagleboard/bb_setup_20.jpg)
+![Image: 'bb_setup_03.jpg'](../images/beagleboard/bb_setup_03.jpg)
 
 
-### System aktualisieren
+#### System aktualisieren
 
 * Systemaktualisierung mit `sudo aptitude update`:
 
-![Image: 'bb_setup_21.jpg'](../images/beagleboard/bb_setup_21.jpg)
+![Image: 'bb_setup_04.jpg'](../images/beagleboard/bb_setup_04.jpg)
 
-* Nach Eingabe des zuvor gewählten Passworts für den Benutzer werden die Paketquellen aktualisiert und der Status angezeigt:
+* Nach Eingabe des zuvor gewählten Passworts für den Benutzer werden die Paketquellen aktualisiert und der Status angezeigt.
 
-![Image: 'bb_setup_22.jpg'](../images/beagleboard/bb_setup_22.jpg)
+* Mit `sudo aptitude full-upgrade` startet man nun die Aktualisierung und beantwortet die nachfolgende Sicherheitsabfrage mit `y`:
 
-* Mit `sudo aptitude full-upgrade` startet man nun die Aktualisierung:
-
-![Image: 'bb_setup_23.jpg'](../images/beagleboard/bb_setup_23.jpg)
-
-* Die Sicherheitsabfrage beantwortet man mit `y`:
-
-![Image: 'bb_setup_24.jpg'](../images/beagleboard/bb_setup_24.jpg)
+![Image: 'bb_setup_05.jpg'](../images/beagleboard/bb_setup_05.jpg)
 
 * Die Ausgabe sollte ähnlich der Folgenden aussehen und es sollten keine Fehler angezeigt werden:
 
-![Image: 'bb_setup_25.jpg'](../images/beagleboard/bb_setup_25.jpg)
+![Image: 'bb_setup_06.jpg'](../images/beagleboard/bb_setup_06.jpg)
 
-* Neustart des Systems mit `sudo reboot`:
-
-![Image: 'bb_setup_26.jpg'](../images/beagleboard/bb_setup_26.jpg)
+* Neustart des Systems mit `sudo reboot`
 
 * Anschließend erhält man erneut die Bootausgabe und kann sich wieder mit dem angelegten Benutzer anmelden:
 
-| ![Image: 'bb_setup_27.jpg'](../images/beagleboard/bb_setup_27.jpg) | ![Image: 'bb_setup_28.jpg'](../images/beagleboard/bb_setup_28.jpg) |
-| ---                                                                | ---                                                                |
+![Image: 'bb_setup_07.jpg'](../images/beagleboard/bb_setup_07.jpg)
 
 * Von jetzt an kann man sich per SSH über die Ethernet Verbindung einloggen, was deutlich komfortabler ist als über die serielle Verbindung.
-Dazu startet man von einer Shell aus ssh unter Angabe des Benutzernamens und der zugehörigen IP-Adresse, also z.B. `ssh bb@192.168.1.32`:
+Dazu startet man von einer Shell aus ssh unter Angabe des Benutzernamens und der zugehörigen IP-Adresse, also z.B. `ssh bb@192.168.1.32`.
+Da das System bisher noch unbekannt ist, stimmt man der Sicherheitsabfrage zu, gibt anschließend das Passwort des Benutzers ein und erhält eine Login-Shell auf dem BeagleBoard:
 
-![Image: 'bb_setup_29.jpg'](../images/beagleboard/bb_setup_29.jpg)
-
-* Da das System bisher noch unbekannt ist, stimmt man der Sicherheitsabfrage zu, gibt anschließend das Passwort des Benutzers ein und erhält eine Login-Shell auf dem BeagleBoard:
-
-| ![Image: 'bb_setup_30.jpg'](../images/beagleboard/bb_setup_30.jpg) | ![Image: 'bb_setup_31.jpg'](../images/beagleboard/bb_setup_31.jpg) |
-| ---                                                                | ---                                                                |
+![Image: 'bb_setup_08.jpg'](../images/beagleboard/bb_setup_08.jpg)
 
 
-### Angepassten Kernel installieren
+#### Angepassten Kernel installieren
 
 Damit das BeagleBoard mit mit der Hardware des c't-Bots kommunizieren kann, sind ein spezielle Anpassungen am Linux-Kernel erforderlich.
 Dadurch werden die nötigen Schnittstellen auf die Erweiterungspins geroutet und die Schnittstellen entsprechend konfiguriert und im Userspace zugänglich gemacht.
@@ -394,60 +364,40 @@ Die folgenden Versionsnummern sind jeweils der verwendeten Kernelversion anzupas
 
 1. Verbindung zum BeagleBoard; z.B. über einen sftp-Client:
 
-![Image: 'bb_setup_31.jpg'](../images/beagleboard/bb_setup_31.jpg)
+![Image: 'bb_setup_09.jpg'](../images/beagleboard/bb_setup_09.jpg)
 
 2. Die heruntergeladenen Pakete für den Kernel auf das BeagleBoard (oder alternativ auf die FAT-Partition der SD-Karte) kopieren:
 
-![Image: 'bb_setup_32.jpg'](../images/beagleboard/bb_setup_32.jpg)
+![Image: 'bb_setup_10.jpg'](../images/beagleboard/bb_setup_10.jpg)
 
-3. In das Verzeichnis mit den kopierten Paketen wechseln (im Beispiel mit `cd kernel-3.2.17-x11_0.1`):
+3. In das Verzeichnis mit den kopierten Paketen wechseln (im Beispiel mit `cd kernel-3.2.17-x11_0.1`) und Firmware-Image mit `sudo dpkg --force-all -i ./linux-firmware-image_1.0cross_armhf.deb` installieren:
 
-![Image: 'bb_setup_33.jpg'](../images/beagleboard/bb_setup_33.jpg)
+![Image: 'bb_setup_11.jpg'](../images/beagleboard/bb_setup_11.jpg)
 
-4. Firmware-Image installieren mit `sudo dpkg --force-all -i ./linux-firmware-image_1.0cross_armhf.deb`:
+4. Installation von:
+   * Kernel-Header mit `sudo dpkg -i ./linux-headers-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_)
+   * libc-Header mit `sudo dpkg -i ./linux-libc-dev_1.0cross_armhf.deb`
+   * Kernel-Image mit `sudo dpkg --force-all -i ./linux-image-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_)
 
-| ![Image: 'bb_setup_34.jpg'](../images/beagleboard/bb_setup_34.jpg) | ![Image: 'bb_setup_35.jpg'](../images/beagleboard/bb_setup_35.jpg) |
-| ---                                                                | ---                                                                |
+![Image: 'bb_setup_12.jpg'](../images/beagleboard/bb_setup_12.jpg)
 
-5. Kernel-Header installieren mit `sudo dpkg -i ./linux-headers-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_):
+5. Da die bereitgestellten Pakete hier eine abweichende Architekturbezeichnung tragen, sind nun noch ein paar Dateien umzubenennen.
+Dazu mit `cd /boot` das Verzeichnis wechseln und die folgenden Befehle ausführen (_Versionen entsprechend anpassen_):
+   * `sudo mv vmlinux-3.2.17-x11 vmlinux-3.2.17-x11-omap`,
+   * `sudo mv initrd.img-3.2.17-x11 initrd.img-3.2.17-x11-omap`,
+   * `sudo mv config-3.2.17-x11 config-3.2.17-x11-omap` und
+   * `sudo mv System.map-3.2.17-x11 System.map-3.2.17-x11-omap`
 
-![Image: 'bb_setup_36.jpg'](../images/beagleboard/bb_setup_36.jpg)
+![Image: 'bb_setup_13.jpg'](../images/beagleboard/bb_setup_13.jpg)
 
-6. libc-Header installieren mit `sudo dpkg -i ./linux-libc-dev_1.0cross_armhf.deb`:
+6. Mit `sudo flash-kernel 3.2.17-x11-omap` wird dann der neue Kernel auf der Boot-Partition installiert (_Version entsprechend anpassen_). Ein anschließender Neustart mit `sudo reboot` sorgt dafür, dass der Kernel geladen wird:
 
-![Image: 'bb_setup_37.jpg'](../images/beagleboard/bb_setup_37.jpg)
+![Image: 'bb_setup_14.jpg'](../images/beagleboard/bb_setup_14.jpg)
 
-7. Kernel-Image installieren mit `sudo dpkg --force-all -i ./linux-image-3.2.17-x11_1.0cross_armhf.deb` (_Version entsprechend anpassen_):
-
-![Image: 'bb_setup_38.jpg'](../images/beagleboard/bb_setup_38.jpg)
-
-8. Da die bereitgestellten Pakete hier eine abweichende Architekturbezeichnung tragen, sind nun noch ein paar Dateien umzubenennen.
-Dazu mit `cd /boot` das Verzeichnis wechseln:
-
-![Image: 'bb_setup_39.jpg'](../images/beagleboard/bb_setup_39.jpg)
-
-9. Anschließend die folgenden Befehle ausführen (_Versionen entsprechend anpassen_):
-
-    `sudo mv vmlinux-3.2.17-x11 vmlinux-3.2.17-x11-omap`,
-    `sudo mv initrd.img-3.2.17-x11 initrd.img-3.2.17-x11-omap`,
-    `sudo mv config-3.2.17-x11 config-3.2.17-x11-omap` und
-    `sudo mv System.map-3.2.17-x11 System.map-3.2.17-x11-omap`
-    
-| ![Image: 'bb_setup_40.jpg'](../images/beagleboard/bb_setup_40.jpg) | ![Image: 'bb_setup_41.jpg'](../images/beagleboard/bb_setup_41.jpg) | ![Image: 'bb_setup_42.jpg'](../images/beagleboard/bb_setup_42.jpg) | ![Image: 'bb_setup_43.jpg'](../images/beagleboard/bb_setup_43.jpg) |
-| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
-
-10. Mit `sudo flash-kernel 3.2.17-x11-omap` wird dann der neue Kernel auf der Boot-Partition installiert (_Version entsprechend anpassen_):
-
-![Image: 'bb_setup_44.jpg'](../images/beagleboard/bb_setup_44.jpg)
-
-11. Neustart mit `sudo reboot`, wodurch der Kernel geladen wird:
-
-![Image: 'bb_setup_45.jpg'](../images/beagleboard/bb_setup_45.jpg)
-
-12. Nach dem Reboot und einem erneuten Login (s.o.) ist der Paketmanager so zu konfigurieren, dass die installierte Kernel-Version nicht durch Distributionsupdates überschrieben wird.
+7. Nach dem Reboot und einem erneuten Login (s.o.) ist der Paketmanager so zu konfigurieren, dass die installierte Kernel-Version nicht durch Distributionsupdates überschrieben wird.
 Dazu dient die folgenden, mehrzeilige Eingabe (_Versionen entsprechend anpassen_):
 
-    ```shell
+    ```
     sudo dpkg --set-selections << EOF
     linux-firmware-image hold
     linux-headers-3.2.17-x11 hold
@@ -456,72 +406,57 @@ Dazu dient die folgenden, mehrzeilige Eingabe (_Versionen entsprechend anpassen_
     EOF
     ```
 
-![Image: 'bb_setup_46.jpg'](../images/beagleboard/bb_setup_46.jpg)
+![Image: 'bb_setup_15.jpg'](../images/beagleboard/bb_setup_15.jpg)
 
-13. Anschließend kann man mit den folgenden Eingaben die alten Kernel-Versionen vollständig entfernen:
+8. Anschließend kann man mit den folgenden Eingaben die alten Kernel-Versionen vollständig entfernen:
 `sudo aptitude purge linux-image-3.2.0-23-omap`,
 `sudo aptitude purge linux-image-omap` und
 `sudo dpkg -P linux-image-3.2.0-24-omap`
 
 Wichtig ist hierbei, dass die letzte Kernel-Version mit dpkg entfernt wird, damit der Paketmanager die zugehörigen Hilfspakete nicht ebenfalls entfernt:
 
-| ![Image: 'bb_setup_47.jpg'](../images/beagleboard/bb_setup_47.jpg) | ![Image: 'bb_setup_48.jpg'](../images/beagleboard/bb_setup_48.jpg) | ![Image: 'bb_setup_49.jpg'](../images/beagleboard/bb_setup_49.jpg) | ![Image: 'bb_setup_50.jpg'](../images/beagleboard/bb_setup_50.jpg) |
-| ---                                                                | ---                                                                | ---                                                                | ---                                                                |
+| ![Image: 'bb_setup_16.jpg'](../images/beagleboard/bb_setup_16.jpg) | ![Image: 'bb_setup_17.jpg'](../images/beagleboard/bb_setup_17.jpg) | ![Image: 'bb_setup_18.jpg'](../images/beagleboard/bb_setup_18.jpg) |
+| ---                                                                | ---                                                                | ---                                                                |
 
 
-### WLAN konfigurieren
+#### WLAN konfigurieren
 
-* Bevor ein USB-WLAN-Adapter angeschlossen wird, sollte man sich mit `lsusb`zuerst einen Überblick über die derzeit angeschlossenen USB-Geräte verschaffen:
-
-![Image: 'bb_setup_51.jpg'](../images/beagleboard/bb_setup_51.jpg)
-
-* Die Ausgabe sollte dem obigen Beispiel entsprechen.
+* Bevor ein USB-WLAN-Adapter angeschlossen wird, sollte man sich mit `lsusb`zuerst einen Überblick über die derzeit angeschlossenen USB-Geräte verschaffen.
 Wird nach dem Einstecken des WLAN-Adapters erneut `lsusb` ausgeführt, so sollte das Device nun mit aufgelistet werden:
 
-![Image: 'bb_setup_52.jpg'](../images/beagleboard/bb_setup_52.jpg)
+![Image: 'bb_setup_19.jpg'](../images/beagleboard/bb_setup_19.jpg)
 
 * Nun kann man die Pakete _wpasupplicant_ mit Hilfe von `sudo aptitude install wpasupplicant` und _wireless-tools_ via `sudo aptitude wireless-tools` installieren:
 
-| ![Image: 'bb_setup_53.jpg'](../images/beagleboard/bb_setup_53.jpg) | ![Image: 'bb_setup_54.jpg'](../images/beagleboard/bb_setup_54.jpg) | ![Image: 'bb_setup_55.jpg'](../images/beagleboard/bb_setup_55.jpg) |
-| ---                                                                | ---                                                                | ---                                                                |
+![Image: 'bb_setup_20.jpg'](../images/beagleboard/bb_setup_20.jpg)
 
-* Ein Aufruf von `iwconfig` sollte nun das Interface _wlan0_ anzeigen:
+* Ein Aufruf von `iwconfig` sollte nun das Interface _wlan0_ anzeigen.
+Danach wird mit `wpa_passphrase <SSID>` der pre-shared Key für die WPA2-Verschlüsselung erzeugt, sobald das WPA2-Passwort eingegeben wurde:
 
-| ![Image: 'bb_setup_56.jpg'](../images/beagleboard/bb_setup_56.jpg) | ![Image: 'bb_setup_57.jpg'](../images/beagleboard/bb_setup_57.jpg) |
-| ---                                                                | ---                                                                |
-
-* Im nächsten Schritt wird mit `wpa_passphrase <SSID>` der pre-shared Key für die WPA2-Verschlüsselung erzeugt, sobald das WPA2-Passwort eingegeben wurde:
-
-![Image: 'bb_setup_58.jpg'](../images/beagleboard/bb_setup_58.jpg)
+![Image: 'bb_setup_21.jpg'](../images/beagleboard/bb_setup_21.jpg)
 
 * Anschließend ist die Ausgabe des Programms in die Zwischenablage zu kopieren und `sudo nano /etc/wpa_supplicant.conf` aufzurufen:
 
-![Image: 'bb_setup_59.jpg'](../images/beagleboard/bb_setup_59.jpg)
+![Image: 'bb_setup_22.jpg'](../images/beagleboard/bb_setup_22.jpg)
 
 * Hier ist die kopierte Ausgabe dann wieder einzufügen:
 
-![Image: 'bb_setup_60.jpg'](../images/beagleboard/bb_setup_60.jpg)
+![Image: 'bb_setup_23.jpg'](../images/beagleboard/bb_setup_23.jpg)
 
 * Die Speicherung der Datei erfolgt mit _CTRL + o_ und _Enter_. Mit _CTRL + x_ wird der Editor wieder geschlossen:
 
-![Image: 'bb_setup_61.jpg'](../images/beagleboard/bb_setup_61.jpg)
+![Image: 'bb_setup_24.jpg'](../images/beagleboard/bb_setup_24.jpg)
 
-* Jetzt lässt sich die WLAN-Verbindung durch die Ausführung von `sudo wpa_supplicant -iwlan0 -c/etc/wpa_supplicant.conf -Dwext` testen:
-
-![Image: 'bb_setup_62.jpg'](../images/beagleboard/bb_setup_62.jpg)
-
-* Im Erfolgsfall bekommt man mit _CTRL-EVENT-CONNECTED_ die Bestätigung für einen korrekten Verbindungsaufbau.
-Mit _CTRL + c_ kann der Test beendet werden:
-
-![Image: 'bb_setup_63.jpg'](../images/beagleboard/bb_setup_63.jpg)
-
+* Jetzt lässt sich die WLAN-Verbindung durch die Ausführung von `sudo wpa_supplicant -iwlan0 -c/etc/wpa_supplicant.conf -Dwext` testen.
+Im Erfolgsfall bekommt man hier mit _CTRL-EVENT-CONNECTED_ die Bestätigung für einen korrekten Verbindungsaufbau.
+Mit _CTRL + c_ kann der Test wieder beendet werden.
 * Nun ist das Interface _wlan0_ in `/etc/network/interfaces` einzutragen. Hierzu öffnet man mit `sudo nano /etc/network/interfaces` einen Editor:
 
-![Image: 'bb_setup_64.jpg'](../images/beagleboard/bb_setup_64.jpg)
+![Image: 'bb_setup_25.jpg'](../images/beagleboard/bb_setup_25.jpg)
 
 und ergänzt
 
-  ```shell
+  ```
   # The wifi interface
   auto wlan0
   iface wlan0 inet dhcp
@@ -531,32 +466,31 @@ und ergänzt
 
 sodass die Datei wie folgt aussieht:
 
-![Image: 'bb_setup_65.jpg'](../images/beagleboard/bb_setup_65.jpg)
+![Image: 'bb_setup_26.jpg'](../images/beagleboard/bb_setup_26.jpg)
 
 * _CTRL + o_ speichert die Datei und _CTRL + x_ schließt den Editor wieder:
 
-![Image: 'bb_setup_66.jpg'](../images/beagleboard/bb_setup_66.jpg)
+![Image: 'bb_setup_27.jpg'](../images/beagleboard/bb_setup_27.jpg)
 
 * Das neu eingerichtete Interface wird mit `sudo ifup -v wlan0` aktiviert und getestet:
 
-![Image: 'bb_setup_67.jpg'](../images/beagleboard/bb_setup_67.jpg)
+![Image: 'bb_setup_28.jpg'](../images/beagleboard/bb_setup_28.jpg)
 
 * Die Ausgabe sollte ähnlich der Folgenden aussehen:
 
-![Image: 'bb_setup_68.jpg'](../images/beagleboard/bb_setup_68.jpg)
+![Image: 'bb_setup_29.jpg'](../images/beagleboard/bb_setup_29.jpg)
 
-* Mit `ifconfig` dlässt sich die Konfiguration des Interfaces überprüfen:
+* Mit `ifconfig` lässt sich die Konfiguration des Interfaces überprüfen:
 
-![Image: 'bb_setup_69.jpg'](../images/beagleboard/bb_setup_69.jpg)
+![Image: 'bb_setup_30.jpg'](../images/beagleboard/bb_setup_30.jpg)
 
 * Nach einem Neustart mit `sudo reboot` kann man das Ethernet-Kabel entfernen und über ssh auf die IP-Adresse der WLAN-Schnittstelle wie gewohnt eine Verbindung zum Board aufbauen:
 
-| ![Image: 'bb_setup_70.jpg'](../images/beagleboard/bb_setup_70.jpg) | ![Image: 'bb_setup_71.jpg'](../images/beagleboard/bb_setup_71.jpg) | ![Image: 'bb_setup_72.jpg'](../images/beagleboard/bb_setup_72.jpg) |
-| ---                                                                | ---                                                                | ---                                                                |
+![Image: 'bb_setup_31.jpg'](../images/beagleboard/bb_setup_31.jpg)
 
 * Abschließend empfiehlt es sich, noch die Pakete _alsa-base_ und _libasound2-dev_ mit `sudo aptitude install alsa-base libasound2-dev` zu installieren:
 
-![Image: 'bb_setup_73.jpg'](../images/beagleboard/bb_setup_73.jpg)
+![Image: 'bb_setup_32.jpg'](../images/beagleboard/bb_setup_32.jpg)
 
 
 ### System-Backup erstellen
@@ -565,9 +499,14 @@ sodass die Datei wie folgt aussieht:
 Da das komplette System auf der (Micro-)SD-Karte installiert ist, bietet es sich an als Backup einfach ein Image der gesamten SD-Karte zu erstellen.
 Unter Linux bzw. macOS lässt sich das mit `dd if=/dev/sdb bs=8M | pbzip2 -c > beagle-sd-backup.iso.bz2` bzw. `dd if=/dev/rdisk4 bs=8m | pbzip2 -c > beagle-sd-backup.iso.bz2` erledigen:
 
-![Image: 'bb_setup_74.jpg'](../images/beagleboard/bb_setup_74.jpg)
+![Image: 'bb_setup_33.jpg'](../images/beagleboard/bb_setup_33.jpg)
 
  `/dev/sdb` bzw. `/dev/rdisk4` ist entsprechend dem Gerät der SD-Karte anzupassen.
+
+
+### Anwendungsbeispiel: Ausführung des c't-Bot-Codes auf dem Beagle-Board
+
+![Image: 'bb_example_01.jpg'](../images/beagleboard/bb_example_01.jpg)
 
 
 ### BeagleBoard-Emulation
