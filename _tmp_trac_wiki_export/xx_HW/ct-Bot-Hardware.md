@@ -1,17 +1,16 @@
 # Die Hardware des c't-Bot
 
->> **Trac-2-Markdown Konvertierung:** *unchecked*
-
 ## Schnellstart
 
-Erst einmal ein weniger schnuppern während der Lötkolben vorheizt? Dann helfen die **[ersten Schritte](../FirstSteps/FirstSteps.md)** -- auch wenn die Teile für den realen Bot noch gar nicht da sind.
+Erst einmal ein weniger schnuppern während der Lötkolben vorheizt?
+Dann helfen die [ersten Schritte](../../_tmp_trac_wiki_export/FirstSteps/FirstSteps.md) - auch wenn die Teile für den realen Bot noch gar nicht da sind.
 
 ## Aufbau und Montage
 
-Zu allererst hilft hier leider gar nichts außer das Lesen dieser **beiden** Artikel:
+Zu Beginn hilft hier das Lesen dieser **beiden** Artikel:
 
-* c't-Artikel: **[Aufbau des c't-Bot](https://www.heise.de/ct/artikel/Hallo-Welt-290314.html)**
-* Aufbauanleitung der **[Basisversion](../ct-Bot-Aufbau/ct-Bot-Aufbau.md)** mit Fotos
+* c't-Artikel: [Aufbau des c't-Bot](../../ct_articles_heise/04_Aufbau_und_Inbetriebnahme.pdf)
+* Aufbauanleitung der [Basisversion](ct-Bot-Aufbau.md) mit Fotos
 
 Wenn es dann doch mal klemmt:
 

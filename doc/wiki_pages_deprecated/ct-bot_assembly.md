@@ -1,30 +1,58 @@
 # Aufbauanleitung für den c't-Bot
 
->> **Trac-2-Markdown Konvertierung:** *unchecked*
-
-Da zwischenzeitlich einige veschiedene Aufbauanleitungen im Umlauf waren, haben wir hier nun nochmals die offizielle zusammengestellt. Sie entspricht der in c't 04/06. Lediglich zwei kleine Tipps sowie eine ganze Reihe von Fotos sind dazugekommen. Alle anderen Anleitungen bitte nicht mehr beachten. Auf der Hardware-Seite finden sich alle aktuellen Schalt- und Bestückungspläne, sowie ein überarbeitete Stückliste. *Stand: 13.02.2006*
+Diese offizielle Aufbauanleitung entspricht jener in der c't 04/06. Lediglich zwei kleine Tipps sowie eine ganze Reihe von Fotos sind dazugekommen.
+Alle aktuellen Schalt- und Bestückungspläne finden sich im [Hardware-Repository](https://github.com/tsandmann/ct-bot-hw/tree/master/v1).
 
 ## Schritt für Schritt
 
-Der Reflexkoppler U1 auf der Hauptplatine soll später den Schwenkarm zur Verriegelung des Transportfachs detektieren und wird als einziges Bauteil von unten mit der Platine verlötet (Bauteilestempelung in Richtung IC10). Alle anderen Bauteile kommen auf die Oberseite (Bestückungsdruck). Die Kabelbäume werden durch die Schlitze in der Platine nach unten geführt. Das vereinfacht die Montage. Es folgen die Dioden (D1 bis D3); ihr Kennring muss in die vom Bestückungsdruck angegebene Richtung zeigen. Die IC-Sockel besitzen eine Kerbe, die später die korrekte Polung der ICs anzeigt. Mit dem Einsetzen der ICs wartet man jedoch bis ganz zum Schluss.
+Der Reflexkoppler U1 auf der Hauptplatine soll später den Schwenkarm zur Verriegelung des Transportfachs detektieren und wird als einziges Bauteil von unten mit der Platine verlötet.
+Die Bauteilestempelung muss hierbei in Richtung von IC10 zeigen.
+Alle anderen Bauteile kommen auf die Oberseite (Bestückungsdruck).
+Die Kabelbäume werden durch die Schlitze in der Platine nach unten geführt, was die Montage vereinfacht.
+Es folgen die Dioden (D1 bis D3); ihr Kennring muss in die vom Bestückungsdruck angegebene Richtung zeigen.
+Die IC-Sockel besitzen eine Kerbe, die später die korrekte Polung der ICs anzeigt.
+Mit dem Einsetzen der ICs wartet man jedoch bis ganz zum Schluss.
 
-Die Polung der Keramikkondensatoren C1 bis C4 spielt keine Rolle, ebenso wenig die der Spule (L1) oder des Quarzes (Q1). Der erhält eine Isolierscheibe als Unterlage. Bei den acht Leuchtdioden kennzeichnet das längere Beinchen die Anode (Pluspol). Den Spannungswandler (IC10) knickt man so ab, dass die Kühlfahne rund 1 mm über der Platine schwebt. So bekommt der Wandler auch ein wenig Luft von unten und berührt keine Durchkontaktierungen.
+Die Polung spielt für die Keramikkondensatoren C1 bis C4, die Spule (L1) und für den Quarz (Q1) keine Rolle.
+Letzterer erhält eine Isolierscheibe als Unterlage.
+Bei den acht Leuchtdioden kennzeichnet das längere Beinchen die Anode (Pluspol).
+Den Spannungswandler (IC10) knickt man so ab, dass die Kühlfahne rund 1 mm über der Platine steht.
+So bekommt der Wandler auch von unten ein wenig Luft und berührt keine Durchkontaktierungen.
 
-Die lichtempfindliche abgerundete Seite des IR-Empfängers (IC9) braucht freie Sicht nach hinten. Danach lötet man die Stiftleisten J1 bis J8, SW1, SW2 und BR1 sowie die Transistoren (TR1 bis TR6) ein. Ein Jumper auf BR1 aktiviert später die Hintergrundbeleuchtung des Displays.
+Die lichtempfindliche abgerundete Seite des IR-Empfängers (IC9) braucht freie Sicht nach hinten.
+Danach lötet man die Stiftleisten J1 bis J8, SW1, SW2 und BR1 sowie die Transistoren (TR1 bis TR6) ein.
+Ein Jumper auf BR1 aktiviert später die Hintergrundbeleuchtung des Displays.
 
-Den Platz des Widerstandes R29 nimmt eine Zenerdiode mit 2,4 V ein. Ihr Kennring zeigt in Richtung IC10. Bei den restlichen Widerständen spielt die Ausrichtung keine Rolle, sie haben jedoch nur stehend genug Platz. In welche Richtung die zwei Fotowiderstände (LDR1, LDR2) Licht messen sollen, muss jeder selbst entscheiden. Bei den Steckverbindern ST1 bis ST9 und dem Elektrolytkondensator C5 muss man wieder auf die Polung achten. Nun fehlen nur noch das Potenziometer für den Display-Kontrast POT1 und die DC-Buchse P1.
+Den Platz des Widerstandes R29 nimmt eine Zenerdiode mit 2,4 V ein.
+Ihr Kennring zeigt in Richtung IC10.
+Bei den restlichen Widerständen spielt die Orientierung keine Rolle, sie haben jedoch nur stehend genug Platz.
+In welche Richtung die zwei Fotowiderstände (LDR1, LDR2) Licht messen sollen, kann jeder für sich selbst entscheiden.
+Bei den Steckverbindern ST1 bis ST9 und dem Elektrolytkondensator C5 muss man wieder auf die Polung achten.
+Nun fehlen nur noch das Potentiometer POT1 für den Display-Kontrast und die DC-Buchse P1.
 
 ## Erster Test
 
-Bevor man die empfindlichen ICs einsteckt, empfiehlt sich ein Funktionstest der Spannungsversorgung. Dazu hängt man entweder einen Akkupack aus fünf Mignon-Zellen an ST1 oder ein Netzteil mit 6 Volt Gleichspannung an P1. Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 5,0 Volt an, arbeitet der Spannungsregler korrekt. Zwischen Pin 2 und Pin 3 liegt hingegen direkt die Eingangsspannung. Achtung, die Belegung des DC-Steckers hat sich gegenüber dem ersten Schaltplan geändert: Masse muss nun außen und nicht mehr innen liegen. Eine Schutzdiode (D3) bewahrt jedoch die Schaltung vor Schäden durch Verpolung. Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man die verbleibenden ICs einsetzen.
+Bevor man die empfindlichen ICs einsteckt, empfiehlt sich ein Funktionstest der Spannungsversorgung.
+Dazu hängt man entweder einen Akkupack aus fünf AA-Mignon-Zellen an ST1 oder ein Netzteil mit 6 Volt Gleichspannung an P1.
+Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 5,0 Volt an, arbeitet der Spannungsregler korrekt.
+Zwischen Pin 2 und Pin 3 liegt hingegen direkt die Eingangsspannung.
+Achtung, die Belegung des DC-Steckers hat sich gegenüber dem ursprünglichen Schaltplan geändert:
+Masse muss nun außen und nicht mehr innen liegen.
+Eine Schutzdiode (D3) bewahrt jedoch die Schaltung vor Schäden durch Verpolung.
+Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man nun die verbleibenden ICs einsetzen.
 
 ## Ausführlicherer Test der Hauptplatine
 
-Nachdem die Hauptplatine fertig bestückt und der [erste Test](#Erster-Test) bestanden wurde, empfiehlt es sich, die Spannungsversorgung an den Bauteilen der Hauptplatine zu überprüfen, bevor der Bot weiter aufgebaut wird. Kaum ein Bot wird auf Anhieb fehlerfrei funktionieren und die Fehlersuche bei späteren Problemen gestaltet sich sehr viel einfacher, wenn davon ausgegangen werden kann, dass die Hauptplatine weitesgehend fehlerfrei funktioniert (frustrierend dagegen ist, den Bot bei Problemen wieder komplett zerlegen zu müssen).
+Nachdem die Hauptplatine fertig bestückt und der erste Test bestanden wurde, empfiehlt es sich, die Spannungsversorgung an den Bauteilen der Hauptplatine zu überprüfen, bevor der Bot weiter aufgebaut wird.
+Kaum ein Bot wird wohl auf Anhieb fehlerfrei funktionieren.
+Die Fehlersuche bei späteren Problemen gestaltet sich jedoch sehr viel einfacher, wenn davon ausgegangen werden kann, dass die Hauptplatine weitestgehend fehlerfrei funktioniert.
+(Frustrierend dagegen ist, den Bot bei Problemen dann wieder komplett zerlegen zu müssen.)
 
-Eine Hilfe zum Testen der korrekten Spannungsversorgung der Hauptplatine ist dieses Messprotokoll, das in der ODT-Version auch leicht an eigene Bedürfnisse angepasst werden kann: [ct-bot_messprotokoll.pdf](ct-bot_messprotokoll.pdf) und [ct-bot_messprotokoll.odt](ct-bot_messprotokoll.odt).
+Eine Hilfe zum Testen der korrekten Spannungsversorgung der Hauptplatine ist dieses Messprotokoll, das in der ODT-Version auch leicht an eigene Bedürfnisse angepasst werden kann:
+[Messprotokoll (pdf)](../documents/measurement_protocol.pdf) und [Messprotokoll (odt)](../documents/measurement_protocol.odt)
 
-Eine Orientierungshilfe für die Bauteile der Hauptplatine bietet diese Kombination aus Bestückungs- und Schaltplan: [ct-bot_bestueckungs-schaltplan.pdf](ct-bot_bestueckungs-schaltplan.pdf), [ct-bot_bestueckungs-schaltplan.odt](ct-bot_bestueckungs-schaltplan.odt).
+Eine Orientierungshilfe für die Bauteile der Hauptplatine bietet diese Kombination aus Bestückungs- und Schaltplan:
+[Schaltplan-Bestückung (pdf)](../documents/schematic_assembly.pdf), [Schaltplan-Bestückung (odt)](../documents/schematic_assembly.odt).
 
 ## Fühler
 

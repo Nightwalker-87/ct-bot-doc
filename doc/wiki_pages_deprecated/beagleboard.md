@@ -504,7 +504,7 @@ Unter Linux bzw. macOS lässt sich das mit `dd if=/dev/sdb bs=8M | pbzip2 -c > b
  `/dev/sdb` bzw. `/dev/rdisk4` ist entsprechend dem Gerät der SD-Karte anzupassen.
 
 
-### Anwendungsbeispiel: Ausführung des c't-Bot-Codes auf dem Beagle-Board
+### Anwendungsbeispiel: Ausführung des c't-Bot-Codes auf dem BeagleBoard
 
 ![Image: 'bb_example_01.jpg'](../images/beagleboard/bb_example_01.jpg)
 
