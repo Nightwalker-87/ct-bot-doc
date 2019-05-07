@@ -7,7 +7,7 @@ Atmel ATmega32
 Atmel ATmega644
 Atmel AVR
 Avrdude
-Bausatz
+>>> Bausatz
 C't-Bot FAQ
 C't-Bot Links
 C't-Bot Simulation
@@ -15,7 +15,6 @@ C't-Sim Programmierung MacOSX
 CNY70
 Conrad
 Distanzsensoren
-Erweiterungs-Modul
 Erweiterungsport Belegung
 Fernbedienung mit AVRco
 Getriebemotor
@@ -46,4 +45,6 @@ UART
 USB-Modul
 Vivanco
 WinAVR
-Zusammenbau
+
+>>> Erweiterungs-Modul
+>>> Zusammenbau

@@ -1,7 +1,8 @@
 # Aufbauanleitung für den c't-Bot
 
-Diese offizielle Aufbauanleitung entspricht jener in der c't 04/06. Lediglich zwei kleine Tipps sowie eine ganze Reihe von Fotos sind dazugekommen.
+Diese offizielle Aufbauanleitung entspricht inhaltlich jener in der c't 04/06. Ergänzt wurden unter anderem zwei kleine Tipps sowie eine ganze Reihe von Fotos.
 Alle aktuellen Schalt- und Bestückungspläne finden sich im [Hardware-Repository](https://github.com/tsandmann/ct-bot-hw/tree/master/v1).
+
 
 ## Schritt für Schritt
 
@@ -9,37 +10,42 @@ Der Reflexkoppler U1 auf der Hauptplatine soll später den Schwenkarm zur Verrie
 Die Bauteilestempelung muss hierbei in Richtung von IC10 zeigen.
 Alle anderen Bauteile kommen auf die Oberseite (Bestückungsdruck).
 Die Kabelbäume werden durch die Schlitze in der Platine nach unten geführt, was die Montage vereinfacht.
-Es folgen die Dioden (D1 bis D3); ihr Kennring muss in die vom Bestückungsdruck angegebene Richtung zeigen.
-Die IC-Sockel besitzen eine Kerbe, die später die korrekte Polung der ICs anzeigt.
+Es folgen die Dioden (D1 bis D3), deren Kennring in die vom Bestückungsdruck angegebene Richtung zeigen muss.
+Die IC-Sockel besitzen eine Kerbe, die später die korrekte Positionierung der ICs anzeigt.
 Mit dem Einsetzen der ICs wartet man jedoch bis ganz zum Schluss.
+
+![Image: '01_mainboard_sockets.jpg'](../images/assembly_parts/01_mainboard_sockets.jpg)
 
 Die Polung spielt für die Keramikkondensatoren C1 bis C4, die Spule (L1) und für den Quarz (Q1) keine Rolle.
 Letzterer erhält eine Isolierscheibe als Unterlage.
-Bei den acht Leuchtdioden kennzeichnet das längere Beinchen die Anode (Pluspol).
-Den Spannungswandler (IC10) knickt man so ab, dass die Kühlfahne rund 1 mm über der Platine steht.
-So bekommt der Wandler auch von unten ein wenig Luft und berührt keine Durchkontaktierungen.
+Bei den acht Leuchtdioden kennzeichnet das längere Beinchen jeweils die Anode (Pluspol).
+Den Spannungswandler (IC10) knickt man am Besten so ab, dass die Kühlfahne rund 1 mm über der Platine steht.
+Dadurch bekommt der Wandler auch von unten ein wenig Luft und berührt keine Durchkontaktierungen.
 
-Die lichtempfindliche abgerundete Seite des IR-Empfängers (IC9) braucht freie Sicht nach hinten.
-Danach lötet man die Stiftleisten J1 bis J8, SW1, SW2 und BR1 sowie die Transistoren (TR1 bis TR6) ein.
+Die lichtempfindliche, abgerundete Seite des IR-Empfängers (IC9) erfordert eine freie Sicht nach hinten.
+Anschließend lötet man die Stiftleisten J1 bis J8, SW1, SW2 und BR1 sowie die Transistoren (TR1 bis TR6) ein.
 Ein Jumper auf BR1 aktiviert später die Hintergrundbeleuchtung des Displays.
 
-Den Platz des Widerstandes R29 nimmt eine Zenerdiode mit 2,4 V ein.
-Ihr Kennring zeigt in Richtung IC10.
-Bei den restlichen Widerständen spielt die Orientierung keine Rolle, sie haben jedoch nur stehend genug Platz.
-In welche Richtung die zwei Fotowiderstände (LDR1, LDR2) Licht messen sollen, kann jeder für sich selbst entscheiden.
-Bei den Steckverbindern ST1 bis ST9 und dem Elektrolytkondensator C5 muss man wieder auf die Polung achten.
-Nun fehlen nur noch das Potentiometer POT1 für den Display-Kontrast und die DC-Buchse P1.
+Den Platz des Widerstandes R29 nimmt eine Zenerdiode mit 2,4 Volt ein, deren Kennring in Richtung IC10 zeigt.
+Bei den restlichen Widerständen spielt die Orientierung keine Rolle, sie lassen sich von der Geometrie her allerdings nur stehend platzieren.
+In welche Richtung die zwei Fotowiderstände (LDR1, LDR2) Licht messen sollen, sei jedem selbst überlassen.
+Bei den Steckverbindern ST1 bis ST9 und dem Elektrolytkondensator C5 muss man wieder die Polung beachten.
+Nun fehlen nur noch das Potentiometer POT1 für den Display-Kontrast und die Hohlstecker-Buchse P1.
+
 
 ## Erster Test
 
 Bevor man die empfindlichen ICs einsteckt, empfiehlt sich ein Funktionstest der Spannungsversorgung.
-Dazu hängt man entweder einen Akkupack aus fünf AA-Mignon-Zellen an ST1 oder ein Netzteil mit 6 Volt Gleichspannung an P1.
-Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 5,0 Volt an, arbeitet der Spannungsregler korrekt.
+Dazu hängt man entweder einen Akkupack bestehend aus fünf AA-Mignon-Zellen an Stecker ST1 oder ein Netzteil mit 6 Volt Gleichspannung an die Hohlstecker-Buchse P1.
+Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 +5,0 Volt an, arbeitet der Spannungsregler korrekt.
 Zwischen Pin 2 und Pin 3 liegt hingegen direkt die Eingangsspannung.
-Achtung, die Belegung des DC-Steckers hat sich gegenüber dem ursprünglichen Schaltplan geändert:
-Masse muss nun außen und nicht mehr innen liegen.
-Eine Schutzdiode (D3) bewahrt jedoch die Schaltung vor Schäden durch Verpolung.
+
+**Achtung:** Die Belegung des Hohlsteckers und der zugehörigen Buchse hat sich gegenüber dem ursprünglichen Schaltplan geändert.
+Masse (GND) muss nun außen und nicht mehr innen liegen.
+
+Zur Sicherheit bewahrt eine Schutzdiode (D3) die Schaltung im Fehlerfall vor Schäden durch Verpolung.
 Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man nun die verbleibenden ICs einsetzen.
+
 
 ## Ausführlicherer Test der Hauptplatine
 
@@ -48,29 +54,49 @@ Kaum ein Bot wird wohl auf Anhieb fehlerfrei funktionieren.
 Die Fehlersuche bei späteren Problemen gestaltet sich jedoch sehr viel einfacher, wenn davon ausgegangen werden kann, dass die Hauptplatine weitestgehend fehlerfrei funktioniert.
 (Frustrierend dagegen ist, den Bot bei Problemen dann wieder komplett zerlegen zu müssen.)
 
-Eine Hilfe zum Testen der korrekten Spannungsversorgung der Hauptplatine ist dieses Messprotokoll, das in der ODT-Version auch leicht an eigene Bedürfnisse angepasst werden kann:
-[Messprotokoll (pdf)](../documents/measurement_protocol.pdf) und [Messprotokoll (odt)](../documents/measurement_protocol.odt)
+Eine Hilfe zum Testen der korrekten Spannungsversorgung der Hauptplatine ist dieses [Messprotokoll (pdf)](../documents/measurement_protocol.pdf),
+welches als [Messprotokoll (odt)](../documents/measurement_protocol.odt) auch leicht an eigene Bedürfnisse angepasst werden kann.
 
 Eine Orientierungshilfe für die Bauteile der Hauptplatine bietet diese Kombination aus Bestückungs- und Schaltplan:
-[Schaltplan-Bestückung (pdf)](../documents/schematic_assembly.pdf), [Schaltplan-Bestückung (odt)](../documents/schematic_assembly.odt).
+[Schaltplan-Bestückung (pdf)](../documents/schematic_assembly.pdf) oder [Schaltplan-Bestückung (odt)](../documents/schematic_assembly.odt)
 
-## Fühler
 
-![Image: 'ir-led.jpg'](ir-led.jpg)
+## Sensor-Platinen
 
-**Die IR-LED für die Lichtschranke hat ein leicht bläulich gefärbtes Gehäuse.**
+![Image: '02_ir-led.jpg'](../images/assembly_parts/02_ir-led.jpg)
 
-Auf den beiden kleinen Sensorplatinen zeigen Bauteile in drei verschiedene Richtungen. Je eine Reflexlichtschranke (U103, U104) beobachtet den Boden und bekommt die Platine zwischen ihre Beinchen gesteckt. Die Stempelung zeigt bei U104 zur Platine hin, bei U103 weg ? Achtung, an dieser Stelle stimmt der Bestückungsdruck auf der Platine nicht, der hier abgedruckte jedoch schon. Die anderen beiden (U101, U102) beobachten die Räder (siehe Foto). Die Leuchtdiode (LED101, rechte Platine) kommt auf die Unterseite, die Lichtschranke (U105, linke Platine) sitzt auf der Seite mit Bestückungsdruck. Die Lichtschranke muss dazu so abgewinkelt werden, dass ihre flache Seite später zur Leuchtdiode blickt. Das Verlöten aller Kabel hebt man sich bis zur Endmontage auf.
+**Hinweis:** Die IR-LED für die Lichtschranke hat ein leicht bläulich-gefärbtes Gehäuse.
+
+Auf den beiden kleinen Sensorplatinen zeigen Bauteile in drei verschiedene Richtungen.
+Je eine Reflexlichtschranke (U103, U104) beobachtet den Boden und bekommt die Platine zwischen ihre Beinchen gesteckt.
+Die Stempelung zeigt bei U104 zur Platine hin, bei U103 weg.
+
+**Achtung:** In der ursprünglichen Version stimmt der Bestückungsdruck auf der Platine nicht, der hier dargestellte Ansicht ist die korrigierte Version.
+
+Die anderen beiden Optokoppler (U101, U102) beobachten die Innenseite der Räder mit ihren Encoder-Scheiben.
+Die Leuchtdiode (LED101) auf der rechte Platine) kommt auf die Unterseite, während die Lichtschranke (U105) auf der linken Platine sitzt (auf der Seite mit dem Bestückungsdruck).
+Die Lichtschranke muss dazu so abgewinkelt werden, dass ihre flache Seite später zur Leuchtdiode blickt.
+
+Das Verlöten aller Kabel hebt man sich bis zur Endmontage auf.
+
 
 ## Mausbau
 
-![Image: 'mausled.jpg'](mausled.jpg)
+![Image: '03_maus-led.jpg'](../images/assembly_parts/03_maus-led.jpg)
 
-**Die transparente LED für den Maussensor strahlt rotes Licht aus.**
+**Hinweis:** Die transparente LED für den Maussensor strahlt rotes Licht aus.
 
-Damit der Roboter seine Position verfolgen kann, bekommt er seine eigene optische Maus. Dieses Sandwich aus einer Platine und drei FR4-Platten in drei Ebenen meldet Daten über Bewegungen in X- und Y-Richtung direkt an den Mikrocontroller. Die Kondensatoren (C1, C2) und Widerstände (Rxx) platziert man wie fast alle Bauteile auf der Seite ohne Leiterbahnen. Der Quarz Q1 bekommt wieder eine Isolierscheibe, der Transistor Q2 wird abgewinkelt, sodass seine flache Seite auf der Platine aufliegt. Die Stempelungen der beiden Liniensensoren (U1, U2) muss — anders als auf der Platine aufgedruckt — zu der Seite zeigen, an der auch der Quarz sitzt.
+Damit der Roboter seine Position verfolgen kann, bekommt er seine eigene optische Maus.
+
+
+======
+
+Dieses Sandwich aus einer Platine und drei FR4-Platten in drei Ebenen meldet Daten über Bewegungen in X- und Y-Richtung direkt an den Mikrocontroller. Die Kondensatoren (C1, C2) und Widerstände (Rxx) platziert man wie fast alle Bauteile auf der Seite ohne Leiterbahnen. Der Quarz Q1 bekommt wieder eine Isolierscheibe, der Transistor Q2 wird abgewinkelt, sodass seine flache Seite auf der Platine aufliegt. Die Stempelungen der beiden Liniensensoren (U1, U2) muss — anders als auf der Platine aufgedruckt — zu der Seite zeigen, an der auch der Quarz sitzt.
 
 Der Sensor-Chip (U3) kommt — nachdem man die Schutzfolie entfernt hat — von der Leiterbahnseite auf die Platine. Das für die Detektion benötigte Licht liefert die Leuchtdiode (LED1) aus einem Kunststoffträger heraus. Dieser sitzt zusammen mit dem Chip auf einer Seite. Die Linsenplatte kommt auf die andere Seite. Die zwei kleinen Platinenstreifen fixieren sie. Je eine PVCMutter und eine Unterlegscheibe sorgen für den richtigen Abstand und verhindern zu hohen Druck auf die Kunststoffteile.
+
+![Image: '05_mouse_sensor_top.jpg'](../images/assembly_parts/05_mouse_sensor_top.jpg)
+
 
 ## Schrauber
 
