@@ -1,9 +1,0 @@
-Video:
-H265 (HEVC)
-640x480p30 (VGA)
-
-Audio: (if available)
-HE-AAC
-Stereo (L R)
-48 kHz
-80 kBit/s
