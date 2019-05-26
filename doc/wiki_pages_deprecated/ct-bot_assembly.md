@@ -47,7 +47,7 @@ Zur Sicherheit bewahrt eine Schutzdiode (D3) die Schaltung im Fehlerfall vor Sch
 Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man nun die verbleibenden ICs einsetzen.
 
 
-## Ausführlicherer Test der Hauptplatine
+## Test der Hauptplatine
 
 Nachdem die Hauptplatine fertig bestückt und der erste Test bestanden wurde, empfiehlt es sich, die Spannungsversorgung an den Bauteilen der Hauptplatine zu überprüfen, bevor der Bot weiter aufgebaut wird.
 Kaum ein Bot wird wohl auf Anhieb fehlerfrei funktionieren.
@@ -87,68 +87,111 @@ Das Verlöten aller Kabel hebt man sich bis zur Endmontage auf.
 **Hinweis:** Die transparente LED für den Maussensor strahlt rotes Licht aus.
 
 Damit der Roboter seine Position verfolgen kann, bekommt er seine eigene optische Maus.
+Dieser Sensor meldet Daten über Bewegungen in X- und Y-Richtung direkt an den Mikrocontroller.
+
+Die Kondensatoren (C1, C2) und Widerstände (R1-R7) platziert man wie fast alle Bauteile auf der Seite der Platine die keine Leiterbahnen enthält.
+Der Quarz Q1 erhält wieder eine Isolierscheibe und der Transistor Q2 wird um 90° abgewinkelt, damit seine flache Seite auf der Platine aufliegt.
+Anders als auf der Platine aufgedruckt, müssen die Stempelungen der beiden Liniensensoren (U1, U2) beide zu der Seite zeigen, an der auch der Quarz sitzt.
+
+| ![Image: '04_line_sensors_frontview.jpg'](../images/assembly_parts/04_line_sensors_frontview.jpg) | ![Image: '05_line_sensors_rearview.jpg'](../images/assembly_parts/05_line_sensors_rearview.jpg) |
+| ---                                                                                               | ---                                                                                             |
+
+Der Sensor-Chip (U3) wird von der Leiterbahnseite aus auf die Platine aufgesteckt.
+Das für die Detektion benötigte Licht liefert nachher die Leuchtdiode (LED1), welche in einen zum Chip gehörenden Kunststoffträger eingesetzt wird.
+Nach dem Abwinkeln der LED-Kontakte um 90° wird der Träger auf der gleichen Seite der Platine gesteckt auf der auch der Sensor-IC sitzt.
+Für die beiden Kunststoffnoppen des Trägers wurden auf der Platine zwei Löcher vorgesehen.
+
+![Image: '06_mouse_sensor_top.jpg'](../images/assembly_parts/06_mouse_sensor_top.jpg)
+
+Bestandteil des Chip-Zubehörs ist auch eine Linsenplatte aus transparentem Kunststoff.
+Diese fokussiert das Licht der LED und reflektiert den Lichtstrahl über ein enthaltenens Prisma um 90°.
+Anschließend wird das Lichtbündel für die Detektionsebene unter der Sensoröffnung des Chips wieder optisch aufgeweitet.
+
+Nach dem Entfernen der Schutzfolie auf der Unterseite des Sensor-ICs wird die Linsenplatte von unten auf den IC aufgesetzt.
+
+Zwei kleine mit jeweils zwei PVC-Schrauben versehene Platinenstreifen fixieren deren Position und werden anschließend mit der Platine und einer Abschlussplatte zu einem Sandwich verschraubt.
+Je eine PVCMutter und eine Unterlegscheibe sorgen dabei für den richtigen Abstand und verhindern zu hohen Druck auf die Kunststoffteile.
 
 
-======
+## Mechanik
 
-Dieses Sandwich aus einer Platine und drei FR4-Platten in drei Ebenen meldet Daten über Bewegungen in X- und Y-Richtung direkt an den Mikrocontroller. Die Kondensatoren (C1, C2) und Widerstände (Rxx) platziert man wie fast alle Bauteile auf der Seite ohne Leiterbahnen. Der Quarz Q1 bekommt wieder eine Isolierscheibe, der Transistor Q2 wird abgewinkelt, sodass seine flache Seite auf der Platine aufliegt. Die Stempelungen der beiden Liniensensoren (U1, U2) muss — anders als auf der Platine aufgedruckt — zu der Seite zeigen, an der auch der Quarz sitzt.
+Vier Platinen sind bestückt und fast alle Teile haben ihren Platz gefunden.
+Einer Endmontage des Roboters steht nun also nichts mehr im Wege.
+Hier lohnt es sich den ganzen Roboter erst einmal lose zu montieren.
+Auf diese Weise kann man die Längen der einzelnen Verbindungskabel bequem ausmessen.
+Letztere sollten dabei möglichst dicht an den Alu-Trägern entlang verlaufen, um die Mechanik nicht zu behindern.
+Einlöten lassen sich die Kabel jedoch leichter im zerlegten Zustand.
 
-Der Sensor-Chip (U3) kommt — nachdem man die Schutzfolie entfernt hat — von der Leiterbahnseite auf die Platine. Das für die Detektion benötigte Licht liefert die Leuchtdiode (LED1) aus einem Kunststoffträger heraus. Dieser sitzt zusammen mit dem Chip auf einer Seite. Die Linsenplatte kommt auf die andere Seite. Die zwei kleinen Platinenstreifen fixieren sie. Je eine PVCMutter und eine Unterlegscheibe sorgen für den richtigen Abstand und verhindern zu hohen Druck auf die Kunststoffteile.
+Die Alu-Grundplatte besitzt bereits alle nötigen Bohrungen und Schlitze für die Räder, das Maus-Sandwich, die Motorflansche und die Aluminium-Träger.
+Die U-förmige Aussparung in Vorausrichtung dient später dem Roboter als Transportfach.
+Legt man die Grundplatte so vor sich, dass die Aussparung von einem weg weist, sollte nur links unten eine Bohrung für den Träger sein. Rechts fehlt sie, da die Grundplatte ist nicht symmetrisch ist.
 
-![Image: '05_mouse_sensor_top.jpg'](../images/assembly_parts/05_mouse_sensor_top.jpg)
-
-
-## Schrauber
-
-Vier Platinen sind bestückt, fast alle Teile haben ihren Platz gefunden. Einer Endmontage des Roboters steht nun nichts mehr im Wege. Es lohnt sich, den ganzen Roboter erst einmal lose zu montieren. Dann kann man die Längen der einzelnen Verbindungskabel bequem ausmessen. Sie sollten dabei möglichst dicht an den Alu-Trägern entlang verlaufen, um die Mechanik nicht zu behindern. Einlöten lassen sie sich jedoch leichter in zerlegtem Zustand.
-
-Die Alu-Grundplatte besitzt bereits alle nötigen Bohrungen und Schlitze für Räder, das Maus-Sandwich, die Motorflansche und die Alu-Träger. Die U-förmige Aussparung in Vorausrichtung dient später dem Roboter als Transportfach. Legt man die Alu-Platte so vor sich, dass die Aussparung von einem weg weist, sollte nur links unten eine Bohrung für den Alu-Träger sein. Rechts fehlt sie, die Grundplatte ist nicht symmetrisch.
 
 ## Endmontage
 
-![Image: 'gp2d12.gif'](gp2d12.gif)
+Zunächst befestigt man den Gleitpin mit einer Kreuzschlitzschraube, dann kommt das vorbereitete Maus-Sandwich von unten in die Aussparung.
+Die beiden Lichtschranken zeigen nach vorne, wobei je zwei Unterlegscheiben die Platine auf Abstand zur Aluminiumunterlage halten.
+Zwei Kunststoffmuttern pro Schraube fixieren die Konstruktion von oben.
+Darauf kommt zum Schutz das letzte noch ungenutzte Stück Platinenmaterial.
+Damit der Roboter später seine Räder überwachen kann, werden die beiliegenden Encoder-Scheiben mit abwechselnd hellen und dunklen Feldern auf die Innenseite der Räder geklebt.
+Bei jedem Übergang zwischen diesen Feldern liefern später die Lichtschranken U101 und U102 ein Signal.
+Nachdem die Motoren mit M2-Schrauben an ihren Flanschen befestigt und die Räder mit sanftem Druck aufgesteckt sind, sichert man diese mit je einer Madenschraube.
+M3-Schrauben von oben und Muttern von unten verbinden die Motorblöcke schließlich mit der Grundplatte.
 
-**Die GP2D12-Sensoren verzeihen keine Verpolung, daher ist beim Anlöten der Kabel unbedingt auf die korrekte Polung zu achten.**
+Die beiden vorderen Aluminium-Trägerpfosten halten auch die Sensorplatinen und die Abstandssensoren in Position.
+Eine Unterlegscheibe zwischen Schraubenkopf und Sensorplatine verhindert hier Kurzschlüsse.
+Die dreipoligen Stecker der Distanzsensoren zeigen nach links beziehungsweise rechts außen, sodass die Kabel nicht in das Transportfach hineinragen.
+Kurze Kabel verbinden sie mit den Sensorplatinen.
 
-Zunächst befestigt man den Gleitpin mit einer Kreuzschlitzschraube, dann kommt das vorbereitete Maus-Sandwich von unten in die Aussparung. Die beiden Lichtschranken zeigen nach vorne; je zwei Unterlegscheiben halten die Platine auf Abstand zum Aluminium. Zwei Kunststoffmuttern pro Schraube fixieren die Konstruktion von oben. Darauf kommt zum Schutz das letzte unbenutzte Stück Platinenmaterial. Damit der Roboter später seine Räder überwachen kann, klebt man auf die Innenseite der Räder Encoder-Scheiben mit abwechselnd hellen und dunklen Feldern. Bei jedem Übergang zwischen diesen Feldern liefern später die Lichtschranken U101 und U102 ein Signal. Am einfachsten kopiert man die hier abgedruckten Vorlagen auf eine transparente Folie. Wer sie lieber ausdruckt, findet eine Bilddatei auf der Projektseite. Der Schwärzungsgrad eines üblichen Laser-Druckers sollte für die CNY70-Sensoren ausreichen. Zur Not malt man die dunklen Streifen mit einem Folienstift nach. Hat man die Motoren mit M2-Schrauben an ihren Flanschen befestigt und die Räder aufgesteckt - bitte keine Gewalt anwenden - , sichert man diese mit je einer Madenschraube. M3-Schrauben von oben und Muttern von unten verbinden diese Motorblöcke mit der Grundplatte.
+**Achtung:** Die GP2D12-Sensoren verzeihen keine Verpolung. Daher ist beim Anlöten der Kabel unbedingt auf die korrekte Polung zu achten:
 
-Die beiden vorderen Alu-Träger halten die Sensorplatinen - eine Unterlegscheibe zwischen Schraubenkopf und Sensorplatine verhindert Kurzschlüsse - und die Abstandssensoren in Position. Deren dreipolige Stecker zeigen nach links beziehungsweise rechts außen, sodass die Kabel nicht in das Transportfach hineinragen. Kurze Kabel verbinden sie mit den Sensorplatinen. Achtung: Die GP2D12-Sensoren verzeihen keine Verpolung. Schaut man direkt in den Stecker hinein und zeigen die Sensoren nach oben, so liegt links Pin 1. Beim linken Sensor ist die rote Ader oben, beim rechten unten. Die rote Ader lötet man dann an dem Pad der Platine fest, das am weitesten vom Alu-Träger entfernt ist. Nach Möglichkeit sollte man vermeiden, dass der GP2D12 in direkten Kontakt mit den Lötstellen der Platinen kommt. Das Gehäuse ist nicht perfekt isolierend. Zuoberst thront dann die Hauptplatine.
+![Image: '07_dist_sensor_gp2d12.jpg'](../images/assembly_parts/07_dist_sensor_gp2d12.jpg)
+
+Blickt man direkt in den Stecker hinein, während die Sensorlinsen nach oben zeigen, so liegt Pin 1 auf der linken Seite.
+Im montierten Zustand ist beim linken Sensor die rote Ader oben, beim rechten dagegen unten.
+Die rote Ader wird dann an dem Pad der Sensorplatine festgelötet, welches am weitesten vom Aluminium-Pfosten entfernt ist.
+Hier sollte zudem vermieden werden, dass der GP2D12 in direkten Kontakt mit den Lötstellen der Platinen kommt.
+Wie sich gezeigt hat, ist das Gehäuse der Sensoren auch nicht perfekt isolierend, weshalb es sich empfiehlt bei deren Montage ebenfalls Unterlegscheiben vorzusehen.
+
+Oben auf die Trägerpfosten wird schließlich die Hauptplatine geschraubt.
+
 
 ## Kabelbaum
 
-Beim Verlegen der einseitig vorkonfektionierten Kabel für ST1 bis ST3 und ST7 bis ST9 sollte man oberhalb der Hauptplatine genug Spiel lassen, um die Stecker nachher abziehen zu können. Kabelschellen und -binder halten die Leitungen im Zaum. Dank der Schlitze in der Hauptplatine muss kein Kabel über den Umfang der Grundplatte hinausragen — der Roboter kann sich später nicht verheddern. Die Pinbelegung der doppelreihigen Lötfelder auf den Sensorplatinen entspricht der üblichen Zählweise — im Zickzack. Pin 1 (schwarzes Kabel) hat ein eckiges Löt-Pad. Bei beiden Motoren hängt das braune Kabel am Pluspol. Damit laufen sie gegensinnig, aber das korrigiert die Firmware des Mikrocontrollers.
-Die beiden Batteriehalter verklebt man zu einem Block, der später auf dem Maus-Sandwich ruht; Moosgummi-Pads und Klettband halten ihn in Position. Elektrisch hängen alle fünf Batterien in Reihe; dazu verbindet man den Pluspol des einen Päckchens mit dem Minuspol des anderen.
+Beim Verlegen der einseitig vorkonfektionierten Kabel für ST1 bis ST3 und ST7 bis ST9 sollte oberhalb der Hauptplatine genug Spiel gelassen werden, um die Stecker nachher abziehen zu können.
+Kabelschellen und -binder halten die Leitungen zusammen.
+Dank der Schlitze in der Hauptplatine muss kein Kabel über den Umfang der Grundplatte hinausragen — der Roboter kann sich später also nicht verheddern.
+Die Pinbelegung der doppelreihigen Lötfelder auf den Sensorplatinen entspricht der üblichen Zählweise — im Zickzack.
+Pin 1 (schwarzes Kabel) hat ein eckiges Löt-Pad.
+Bei beiden Motoren hängt das braune Kabel am Pluspol.
+Damit laufen sie gegensinnig, was die Firmware des Mikrocontrollers jedoch korrigiert.
+Die beiden Batteriehalter verklebt man zu einem Block, der später auf dem Maus-Sandwich ruht und mit Moosgummi-Pads und Klettband in Position gehalten wird.
+Elektrisch hängen alle fünf Batterien in Reihe, wozu der Pluspol des einen Päckchens mit dem Minuspol des anderen zu verbinden ist.
+
 
 ## Fotos
 
-Die hochauflösenden Fotos von den fertig bestückten Platinen sollten alle Zweifel über die Platzierung und Ausrichtung der Bauteile in Luft auflösen. Weitere finden sich in c't 04/06:
+Die hochauflösenden Fotos von den fertig bestückten Platinen sollten letztlich alle verbliebenen Unklarheiten bezüglich der Platzierung und Ausrichtung von Bauteilen ausräumen:
 
 * Oberseite Hauptplatine von vorne gesehen:
-  ![Image: 'hauptplatine_vorne.jpg'](hauptplatine_vorne.jpg)
+  ![Image: 'mainboard_front.jpg'](../images/assembled_boards/mainboard_front.jpg)
 * Oberseite Hauptplatine von hinten gesehen:
-  ![Image: 'hauptplatine_hinten.jpg'](hauptplatine_hinten.jpg)
+  ![Image: 'mainboard_rear.jpg'](../images/assembled_boards/mainboard_rear.jpg)
 * Oberseite Hauptplatine von links gesehen:
-  ![Image: 'hauptplatine_links.jpg](hauptplatine_links.jpg)
+  ![Image: 'mainboard_left.jpg](../images/assembled_boards/mainboard_left.jpg)
 * Oberseite Hauptplatine von rechts gesehen:
-  ![Image: 'hauptplatine_rechts.jpg'](hauptplatine_rechts.jpg)
+  ![Image: 'mainboard_right.jpg'](../images/assembled_boards/mainboard_right.jpg)
 * Oberseite unbestückte Hauptplatine mit IC-Sockeln:
-  ![Image: 'hauptplatine_unten.jpg'](hauptplatine_unten.jpg)
-* Oberseite Mausplatine:
-  ![Image: 'maussensor.jpg'](maussensor.jpg)
-* Innenseite linke Sensorplatine von hinten gesehen:
-  ![Image: 'sensorplatine_links_hinten_innen.jpg'](sensorplatine_links_hinten_innen.jpg)
+  ![Image: '01_mainboard_sockets.jpg'](../images/assembly_parts/01_mainboard_sockets.jpg)
 * Innenseite linke Sensorplatine von schräg vorne bzw. unten gesehen:
-  ![Image: 'sensorplatine_links_vorne_innen.jpg'](sensorplatine_links_vorne_innen.jpg)
+  ![Image: 'sensorboard_L_inside_front.jpg'](../images/assembled_boards/sensorboard_L_inside_front.jpg)
+* Innenseite linke Sensorplatine von hinten gesehen:
+  ![Image: 'sensorboard_L_inside_rear.jpg'](../images/assembled_boards/sensorboard_L_inside_rear.jpg)
 * Außenseite rechte Sensorplatine von hinten gesehen:
-  ![Image: 'sensorplatine_rechts_aussen_hinten.jpg'](sensorplatine_rechts_aussen_hinten.jpg)
+  ![Image: 'sensorboard_R_outside_rear.jpg'](../images/assembled_boards/sensorboard_R_outside_rear.jpg)
 * Unterseite Mausplatine:
-  ![Image: 'platine_a.jpg'](platine_a.jpg)
+    ![Image: 'sensorboard_mouse_bottom.jpg'](../images/assembled_boards/sensorboard_mouse_bottom.jpg)
 * Oberseite Mausplatine:
-  ![Image: 'platine_b.jpg'](platine_b.jpg)
-* Liniensensoren auf der Mausplatine:
-  * Der Bestückungsdruck ist falsch, beide Stempelungen der CNY70-Sensoren müssen in diesem Bild nach oben zeigen:
-    ![Image: 'det01.jpg'](det01.jpg)
-  * Beide CNY-70-Sensoren auf der Mausplatine müssen in die selbe Richtung orientiert sein:
-    ![Image: 'det02.jpg'](det02.jpg)
+    ![Image: 'sensorboard_mouse_top.jpg'](../images/assembled_boards/sensorboard_mouse_top.jpg)
 
 [![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
