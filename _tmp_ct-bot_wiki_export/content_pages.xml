@@ -42,44 +42,44 @@
       <model>wikitext</model>
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="2570">Die Portbelegung des [[Atmel_ATmega32|ATmega32]].
- 
+
 {|
-|'''Port''' 
+|'''Port'''
 |'''Pin'''
 |'''I/O'''
 |'''Funktion'''
 |'''Anmerkung'''
 |-
-|PB0       
-|1        
+|PB0
+|1
 |XCK/T0
 |SCHRANKE
-|[[Lichtschranke_und_Klappensensor|Lichtschranke]]  (IS471F)                         
+|[[Lichtschranke_und_Klappensensor|Lichtschranke]]  (IS471F)
 |-
-|PB1       
-|2         
+|PB1
+|2
 |T1
 |FERNBED
-|Fernbedienung Infrarot Empfänger                           
+|Fernbedienung Infrarot Empfänger
 |-
 |PB2
 |3
 |INT2/AIN0
-|FEHLER 
+|FEHLER
 |Spannungsüberwachung
 |-
 |PB3
-|4 
+|4
 |OC0/AIN1
-|PWM0 
+|PWM0
 |Geschwindigkeit, Richtung Servo 1 (Pulsweitenmodulation, PWM)
 |-
 |PB4
 |5
 |/SS
 |RADL
-|[[Radencoder]] links (Odometrie) ([[CNY70]]) 
-|- 
+|[[Radencoder]] links (Odometrie) ([[CNY70]])
+|-
 |PB5
 |6
 |MOSI
@@ -93,33 +93,33 @@
 |ISP, Maussensor
 |-
 |PB7
-|8 
-|SCK 
+|8
+|SCK
 |SCLK
 |ISP, Maussensor
 |-
-|PD0       
-|14       
+|PD0
+|14
 |RXD
-|RXD 
-|[[Glossar#UART|UART]] Empfänger                            
-|- 
-|PD1       
-|15        
+|RXD
+|[[Glossar#UART|UART]] Empfänger
+|-
+|PD1
+|15
 |TXD
 |TXD
-|[[Glossar#UART|UART]] Sender                           
+|[[Glossar#UART|UART]] Sender
 |-
 |PD2
 |16
 |INT0
-|CTS 
-|[[Glossar#UART|UART]] Clear to Send 
+|CTS
+|[[Glossar#UART|UART]] Clear to Send
 |-
 |PD3
-|17 
+|17
 |INT1
-|RADR 
+|RADR
 |[[Radencoder]] rechts (Odometrie) ([[CNY70]])
 |-
 |PD4
@@ -127,7 +127,7 @@
 |OC1B
 |PWM1B
 |Geschwindigkeit Motor L (Pulsweitenmodulation, PWM)
-|- 
+|-
 |PD5
 |19
 |OC1A
@@ -141,31 +141,31 @@
 |[[Lichtschranke_und_Klappensensor|Klappensensor]]
 |-
 |PD7
-|21 
-|OC2 
+|21
+|OC2
 |PWM2
 |Geschwindigkeit, Richtung Servo 2 (Pulsweitenmodulation PWM)
 |-
-|PA0       
-|40       
+|PA0
+|40
 |ADC0
-|ABSTL 
-|[[Distanzsensoren|Distanzsensor]] links (GP2D12)                            
-|- 
-|PA1       
-|39        
+|ABSTL
+|[[Distanzsensoren|Distanzsensor]] links (GP2D12)
+|-
+|PA1
+|39
 |ADC1
 |ABSTR
-|[[Distanzsensoren|Distanzsensor]] rechts (GP2D12)                               
+|[[Distanzsensoren|Distanzsensor]] rechts (GP2D12)
 |-
 |PA2
 |38
 |ADC2
-|MLINKS 
+|MLINKS
 |[[Liniensensor]] links ([[CNY70]])
 |-
 |PA3
-|37 
+|37
 |ADC3
 |MRECHTS
 |[[Liniensensor]] rechts ([[CNY70]])
@@ -175,7 +175,7 @@
 |ADC4
 |LDRL
 |[[Lichtsensor]] links
-|- 
+|-
 |PA5
 |35
 |ADC5
@@ -186,22 +186,22 @@
 |34
 |ADC6
 |KANTEL
-|[[Absturzdetektor]] links ([[CNY70]])  
+|[[Absturzdetektor]] links ([[CNY70]])
 |-
 |PA7
-|33 
-|ADC7 
+|33
+|ADC7
 |KANTER
-|[[Absturzdetektor]] rechts ([[CNY70]]) 
+|[[Absturzdetektor]] rechts ([[CNY70]])
 |-
-|PC0       
-|22       
+|PC0
+|22
 |SCL
 |PC0
 |[[Erweiterungsport_Belegung|LED-, LCD-, Enable- Port]]
-|- 
-|PC1       
-|23        
+|-
+|PC1
+|23
 |SDA
 |PC1
 |[[Erweiterungsport_Belegung|LED-, LCD-, Enable- Port]]
@@ -209,13 +209,13 @@
 |PC2
 |24
 |TCK
-|PC2 
+|PC2
 |[[Erweiterungsport_Belegung#LCD_Port|LCD Port]]
 |-
 |PC3
-|25 
+|25
 |TMS
-|PC3 
+|PC3
 |[[Erweiterungsport_Belegung#Enable_Port|Enable Port]]
 |-
 |PC4
@@ -223,7 +223,7 @@
 |TDO
 |PC4
 |[[Erweiterungsport_Belegung#LED_Port|LED Port]]
-|- 
+|-
 |PC5
 |27
 |TDI
@@ -233,12 +233,12 @@
 |PC6
 |28
 |TOSC1
-|PC6  
+|PC6
 |Richtung Motor L
 |-
 |PC7
-|29 
-|TOSC2 
+|29
+|TOSC2
 |PC7
 |Richtung Motor R
 |}
@@ -285,17 +285,17 @@ Vor dem ersten Beschreiben ist es sinnvoll, erst mal zu prüfen, ob die Verbindu
 Ein fabrikfrischer ATmega32 enthält kein Programm und die Fusebits sind auch nicht korrekt (interner Takt 1MHz, JTAG enabled)
 Damit der c't-Bot korrekt funktioniert müssen einmalig die Fusebits richtig gesetzt werden (externer Takt, JTAG disabled), was mit
  avrdude -p m32 -c stk200 -P lpt1 -u -U lfuse:w:lfuse.hex:i -U hfuse:w:hfuse.hex:i -U lock:w:lock.hex:i
-geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse. Auch die zusätzlich darin enthaltenen Dateien STK200.bat und STK200fuses.bat sollten zum Flashen und zum Setzen der Fuse-Bits verwendet werden. 
+geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse. Auch die zusätzlich darin enthaltenen Dateien STK200.bat und STK200fuses.bat sollten zum Flashen und zum Setzen der Fuse-Bits verwendet werden.
 Sind die Fuses nicht richtig gesetzt funktioniert auch der c't-Bot nicht richtig (z.B funktioniert das LCD-Modul nicht)
 
 
 Das beschreiben der Firmware erfolgt dann mit Hilfe des avrdude unter Windows:
  avrdude -p m32 -c stk200 -P lpt1 -U flash:w:%1:i
-wobei %1 für die Datei steht, die in den ATMega geflasht werden soll.  
+wobei %1 für die Datei steht, die in den ATMega geflasht werden soll.
 
 === Flashen mit Linux ===
 
-Zum Flashen unter Linux über den Parallelport wird ist das Gerät parport0 benötigt. Zudem werden Schreibrechte 
+Zum Flashen unter Linux über den Parallelport wird ist das Gerät parport0 benötigt. Zudem werden Schreibrechte
 für das Gerät parport benötigt. Das passiert mit:
  sudo mknod /dev/parport0 c 99 0
  sudo chmod a+rw /dev/parport0
@@ -322,11 +322,11 @@ Der Programmer kann in zwei verschiedenen Modi betrieben werden, dem Programmier
  |}
 
 
-Die Programmierung des ATMega32 erfolgt mit dem beiliegenden Kabel am ST6. Die DIP-Switches des Programmers sollten alle auf '''off''', also Richtung Stecker gestellt sein. Ausgeliefert wird der Programmer mit Switch 1 auf '''on'''. Man sollte auch diesen Schalter auf '''off''' stellen, da sonst der Bot mit Spannung aus der USB-Schnittstelle versorgt wird, was eventuell bei einigen Mainboards zu Problemen führen könnte. 
+Die Programmierung des ATMega32 erfolgt mit dem beiliegenden Kabel am ST6. Die DIP-Switches des Programmers sollten alle auf '''off''', also Richtung Stecker gestellt sein. Ausgeliefert wird der Programmer mit Switch 1 auf '''on'''. Man sollte auch diesen Schalter auf '''off''' stellen, da sonst der Bot mit Spannung aus der USB-Schnittstelle versorgt wird, was eventuell bei einigen Mainboards zu Problemen führen könnte.
 
 === Treiber Installation ===
 
-Für die Benutzung des mySmartUSB Programmers ist unter Windows ein Treiber erforderlich. Diesen findet man mit einer ausführlichen Installationsanleitung auf der myAVR Website unter [http://www.myavr.de/download.php?suchwort=treiber Downloads]. Für Linux braucht man keinen Treiber. 
+Für die Benutzung des mySmartUSB Programmers ist unter Windows ein Treiber erforderlich. Diesen findet man mit einer ausführlichen Installationsanleitung auf der myAVR Website unter [http://www.myavr.de/download.php?suchwort=treiber Downloads]. Für Linux braucht man keinen Treiber.
 
 Unter Windows muß man zuerst einmal den COM-Port herausfinden, unter dem sich der mySmartUSB Programmer angemeldet hat. Da der Programmer über USB angeschlossen ist, ist dieser COM-Port ein sogenannter virtueller COM-Port. Sobald der Programmer an einem freien USB-Port angesteckt wurde, findet man den entsprechenden COM-Port in der Systemsteuerung unter System - Hardware - Gerätemanager - 'Anschlüsse (COM und LPT)' von Windows bzw. im Verzeichnis /dev unter Linux. Den gefundenen COM-Port trägt man in die avrdude Befehlszeile bzw. den Batchfiles bzw. Bash-Skripten im CVS-Verzeichnis ct-Bot/contrib/flash_n_fuse ein.
 
@@ -338,13 +338,13 @@ Vor dem ersten Beschreiben ist es sinnvoll, erst mal zu prüfen, ob die Verbindu
 Ein fabrikfrischer ATmega32 enthält kein Programm und die Fusebits sind auch nicht korrekt (interner Takt 1MHz, JTAG enabled)
 Damit der c't-Bot korrekt funktioniert müssen einmalig die Fusebits richtig gesetzt werden (externer Takt, JTAG disabled), was mit
  avrdude -p m32 -c avr910 -P com3 -u -U lfuse:w:lfuse.hex:i -U hfuse:w:hfuse.hex:i -U lock:w:lock.hex:i
-geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse. 
+geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse.
 Ebenso kann man zum Setzen der Fusebits auch die Batchdatei setfuses.bat verwenden.
 Sind die Fuses nicht richtig gesetzt funktioniert auch der c't-Bot nicht richtig (z.B funktioniert das LCD-Modul nicht).
 
 Das beschreiben der Firmware erfolgt dann mit Hilfe des avrdude:
  avrdude -p m32 -c avr910 -P com3 -U flash:w:%1:i
-wobei %1 für die Datei steht, die in den ATMega geflasht werden soll, bzw. mit der Batchdatei flash.bat &lt;filename&gt; aus dem CVS-Verzeichnis ct-Bot/contrib/flash_n_fuse.  
+wobei %1 für die Datei steht, die in den ATMega geflasht werden soll, bzw. mit der Batchdatei flash.bat &lt;filename&gt; aus dem CVS-Verzeichnis ct-Bot/contrib/flash_n_fuse.
 
 === Flashen mit Linux ===
 
@@ -355,7 +355,7 @@ Auslesen des Firmware:
 
 Setzen der Fusebits (aus dem CVS Verzeichnis ct-Bot/contrib/flash_n_fuse) :
  avrdude -p m32 -c avr910 -P /dev/ttyUSB0 -u -U lfuse:w:lfuse.hex:i -U hfuse:w:hfuse.hex:i -U lock:w:lock.hex:i
-oder durch Aufruf des Skriptes setfuses.sh &lt;filename&gt;.  
+oder durch Aufruf des Skriptes setfuses.sh &lt;filename&gt;.
 
 Schreiben der Firmware:
  avrdude -p m32 -c avr910 -P /dev/ttyUSB0 -U flash:w:%1:i
@@ -387,7 +387,7 @@ Sollten hier Verbindungsprobleme auftreten so muss man noch die Option -B 10 anf
 Ein fabrikfrischer ATmega32 enthält kein Programm und die Fusebits sind auch nicht korrekt (interner Takt 1MHz, JTAG enabled)
 Damit der c't-Bot korrekt funktioniert müssen einmalig die Fusebits richtig gesetzt werden (externer Takt, JTAG disabled), was mit
  avrdude -p m32 -c avrispv2 -P usb -u -U lfuse:w:lfuse.hex:i -U hfuse:w:hfuse.hex:i -U lock:w:lock.hex:i
-geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse. 
+geschieht, wobei lfuse.hex, hfuse.hex und lock.hex sich im aktuellen Verzeichnis befinden müssen. Diese Dateien befinden sich im CVS-Verzeichnis unter ct-Bot/contrib/flash_n_fuse.
 Sind die Fuses nicht richtig gesetzt funktioniert auch der c't-Bot nicht richtig (z.B funktioniert das LCD-Modul nicht).
 
 Sollten hier Verbindungsprobleme auftreten so muss man noch die Option -B 10 anfügen. Die Zeile zum setzen würde dann wie folgt aussehen:
@@ -412,7 +412,7 @@ Zum Flashen markiert man im Projekt (C/C++ Projects) die HEX-Datei die geflasht 
 
 Es gibt zwei Möglichkeiten den Aufruf einzubinden:
 
-'''1.''' Man bindet das Batch-File ein und übergibt als Parameter das HEX-file. 
+'''1.''' Man bindet das Batch-File ein und übergibt als Parameter das HEX-file.
 
 {|
  |-
@@ -435,9 +435,9 @@ Es gibt zwei Möglichkeiten den Aufruf einzubinden:
 Weiterer Vorteil : Man sieht bei der Ausführung alle Meldungen im Eclipse-Konsolenfenster
 Die möglichen Variablen (z.B.:&quot;${resource_loc}&quot;) sind in der Hilfe von Eclipse gut beschrieben. (Außerdem gibts natürlich alle Batch-Möglichkeiten)
 
-Weiter ist noch wichtig, daß im Common-Tab des Extern Tools der Haken bei 'Display in Favorites menu' bei External Tools gesetzt wird. 
+Weiter ist noch wichtig, daß im Common-Tab des Extern Tools der Haken bei 'Display in Favorites menu' bei External Tools gesetzt wird.
 
-Übrigens kann man so auch bequem die ct-Bot.exe aufrufen, wenn man den Simulator gestartet hat 
+Übrigens kann man so auch bequem die ct-Bot.exe aufrufen, wenn man den Simulator gestartet hat
 
 Installationsanleitung von ct-Bot Forum User [http://www.ctbot.de/forum/benutzer-83.html rlishere]. Ins Wiki übernommen durch [[Benutzer:Marvin|Marvin]]
 
@@ -449,7 +449,7 @@ Installationsanleitung von ct-Bot Forum User [http://www.ctbot.de/forum/benutzer
 
 == Autor(en) ==
 
-[http://www.ctbot.de/forum/benutzer-276.html Galdo], [http://www.ctbot.de/forum/benutzer-150.html Nightwulf], 
+[http://www.ctbot.de/forum/benutzer-276.html Galdo], [http://www.ctbot.de/forum/benutzer-150.html Nightwulf],
 [[Benutzer:Marvin|Marvin]], [http://www.ctbot.de/forum/benutzer-83.html rlishere]
 
 [[Kategorie:Programmierung]]</text>
@@ -471,14 +471,14 @@ Installationsanleitung von ct-Bot Forum User [http://www.ctbot.de/forum/benutzer
       <comment>Kategorie korrigiert.</comment>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="5426">== Installation der AVR Tools unter Linux == 
+      <text xml:space="preserve" bytes="5426">== Installation der AVR Tools unter Linux ==
 ''Die Informationen auf dieser Seite sind leider nicht mehr aktuell.'' Um eine für den aktuellen Bot-Code funktionierende Toolchain zu bauen, stattdessen bitte dieser [http://www.heise.de/ct/projekte/machmit/ctbot/wiki/AVRToolchain Anleitung] folgen.
 
 
 Übersetzung aus dem englischen Original. Zu finden unter [http://www.nongnu.org/avr-libc/user-manual/install_tools.html www.nongnu.org/avr-libc]
 
 Dies ist ein HowTo zur Erstellung und Installation der kompletten Entwicklungsumgebung für AVR Prozessoren unter Linux.
- 
+
 Die Default-Installation erfolgt im Ordner /usr/local/avr. Dafür sind Root-Zugriffsrechte erforderlich. Wenn keine Root-Zugriffsrechte vorhanden sind kann die Installation auch im Home-Verzeichnis des Benutzers angelegt werden.
 
 == Benötigte Tools ==
@@ -546,13 +546,13 @@ Der nächste Schritt ist dann das Erstellen der binutils mit make:
 $ make
 &lt;/pre&gt;
 
-Wenn alle Tools ohne Fehler übersetzt wurden, werden diese anschließend installiert. 
+Wenn alle Tools ohne Fehler übersetzt wurden, werden diese anschließend installiert.
 
 &lt;pre&gt;
 $ make install
 &lt;/pre&gt;
 
-Wichtig für die nächsten Schritte ist es, den Pfad Umgebung anzupassen: 
+Wichtig für die nächsten Schritte ist es, den Pfad Umgebung anzupassen:
 
 &lt;pre&gt;
 $ PATH=$PATH:$PREFIX/bin
@@ -578,7 +578,7 @@ $ make install
 Sollte jemand bei make eine Fehlermeldung bekommen, kann er mal den 5. Schritt durch folgenden ersetzen:
 &lt;pre&gt;
 $ ../configure --target=avr --disable-nls --prefix=$PREFIX --with-gnu-ld --with-gnu-as \
-    --enable-languages=c --disable-libssp --with-dwarf2 
+    --enable-languages=c --disable-libssp --with-dwarf2
 &lt;/pre&gt;
 
 === AVR Libc ===
@@ -687,7 +687,7 @@ Durch das [[Erweiterungsport_Belegung#Enable_Port|Enable-Signal]] ENA_KANTLED k�
 
 == Probleme mit den Abgrundsensoren ==
 
-Die Abgrunderkennung ist in der Firmware des c't-Bots als Nebenverhalten aktiviert. Das kann bei bestimmten Untergründen dazu führen, das der Bot sein Fluchtverhalten aktiviert und ständig rückwärts fährt, da er denkt, vor einem Abgrund zu stehen. 
+Die Abgrunderkennung ist in der Firmware des c't-Bots als Nebenverhalten aktiviert. Das kann bei bestimmten Untergründen dazu führen, das der Bot sein Fluchtverhalten aktiviert und ständig rückwärts fährt, da er denkt, vor einem Abgrund zu stehen.
 
 Bei der Linienverfolgung führt dies ebenfalls dazu, das der Bot stehenbleibt wenn er mit den Absturzsensoren eine Linie als Abgrund erkennt.
 
@@ -744,25 +744,25 @@ Die Auflösung beträgt 400 dpi.
 Das Funktionsprinzip nennt sich 'Optisches Navigations Sytem' und beruht darauf, das der Bildsensor ständig mikroskopisch kleine Bilder von der Oberfläche aufnimmt, und der DSP diese Bilder ständig miteinander vergleicht. Aus den unterschiedlichen Bildern wird dann die Richtung und die zurück gelegte Strecke errechnet.
 
 === Pinbelegung ===
-{|  
+{|
 |[[Bild:adns2610_pinout.jpg|framed|ADNS-2610 Pinbelegung&lt;br&gt; Quelle:[http://www.agilent.com Agilent]]]
 |}
 
 === Blockdiagramm ===
 
-{|  
+{|
 |[[Bild:adns2610_blck.jpg|framed|ADNS-2610 Blockdiagramm&lt;br&gt; Quelle:[http://www.agilent.com Agilent]]]
 |}
 
 === Maussensor Modul Aufbau ===
 
-{|  
+{|
 |[[Bild:maussensor_assembly.jpg|framed|Maussensor Modul Aufbau&lt;br&gt; Quelle:[http://www.agilent.com Agilent]]]
 |}
- 
+
 === Maussensor Optik ===
 
-{|  
+{|
 |[[Bild:maussensor_optic.jpg|framed|Maussensor Optik&lt;br&gt; Quelle:[http://www.agilent.com Agilent]]]
 |}
 
@@ -770,13 +770,13 @@ Das Funktionsprinzip nennt sich 'Optisches Navigations Sytem' und beruht darauf,
 
 Beim c't-Bot treten einige Probleme mit den Maussensor auf:
 * Unzuverlässig Werte. Hier hilft das &quot;tieferlegen&quot; der Maus.
-* Nach dem Flashen keine Funktion. Der Maussensor hängt an den gleichen Signalleitungen wie die ISP-Schnittstelle. Beim Flashen eines neuen Programmes kann sich der Maussensor aufhängen. Dann hilft nur Power off/on.  
+* Nach dem Flashen keine Funktion. Der Maussensor hängt an den gleichen Signalleitungen wie die ISP-Schnittstelle. Beim Flashen eines neuen Programmes kann sich der Maussensor aufhängen. Dann hilft nur Power off/on.
 
 == Weblinks ==
 
 * [http://www.avagotech.com/docs/AV02-1184EN] - Optical Mouse Sensor Datenblatt
 * [http://www.avagotech.com/pages/en/navigation_interface_devices/navigation_sensors/led-based_sensors/adns-2610/ Avago ADNS-2610 Produkt Details]
-* [http://www.kronosrobotics.com/Anotes/Athena%20to%20Optical%20Mouse.pdf Kronos Robotics - Interface Athena to Optical Mouse] 
+* [http://www.kronosrobotics.com/Anotes/Athena%20to%20Optical%20Mouse.pdf Kronos Robotics - Interface Athena to Optical Mouse]
 * [http://de.wikipedia.org/wiki/Maus_(EDV) Maus (EDV) - Wikipedia]
 * [http://www.ctbot.de/viewtopic.php?&amp;t=215 c't-Bot Forum] - Thread: Maus tiefer-gelegt ...
 * [http://www.ctbot.de/viewtopic.php?&amp;t=136 c't-Bot Forum] - Thread: Programm zum Auslesen der Bildinformationen des Maussensors.
@@ -804,7 +804,7 @@ Beim c't-Bot treten einige Probleme mit den Maussensor auf:
       <model>wikitext</model>
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="1690">== Einleitung ==
-  
+
 Der ATmega32 Mikrocontroller der Firma [http://www.atmel.com Atmel] bildet das Herzstück des c't-Bots.
 Vom Steuer-Programm werden die Sensoren abgefragt und die Aktoren (Motoren, LEDs) eingestellt. Außerdem kümmert er sich noch um die Kommunikation mit dem PC oder anderen c't-Bots.
 
@@ -812,14 +812,14 @@ Falls der Speicher einmal knapp werden sollte, könnte als pin-kompatibler Mikro
 
 === Features ===
 
-Die wichtigsten Eigenschaften des ATmega32 im Überblick: 
- 
+Die wichtigsten Eigenschaften des ATmega32 im Überblick:
+
 * 32kByte internes Flash-Memory, mindestens 10000 Schreib/Lösch Zyklen
 * 1024 Byte EEPROM, mindestens 100000 Schreib/Lösch Zyklen
-* 2048 Byte SRAM 
+* 2048 Byte SRAM
 * bis zu 32 programmierbare I/O Ports
 * 8 10-bit AD-Wandler
-* 1 Analog Komparator 
+* 1 Analog Komparator
 * USART, JTAG, ISP, SPI und I2C(TWI) Schnittstelle
 * 2 8-bit und 1 16-bit Timer
 * 4 PWM Ausgänge
@@ -830,7 +830,7 @@ Die wichtigsten Eigenschaften des ATmega32 im Überblick:
 {|
 |[[Bild:atmega32.jpg|framed|ATmega32 Pinbelegung&lt;br&gt; Quelle: [http://www.atmel.com Atmel]]]
 |}
- 
+
 === Block Diagramm ===
 
 {|
@@ -842,10 +842,10 @@ Die wichtigsten Eigenschaften des ATmega32 im Überblick:
 * [[ATmega32_Portbelegung| Portbelegung des ATmega32]]
 * [[Erweiterungsport_Belegung| Belegung der Erweiterungsports]]
 
- 
+
 == Weblinks ==
 
-* [http://www.atmel.com/dyn/products/product_card.asp?part_id=2014 Atmel - ATmega32 Produkt Übersicht] 
+* [http://www.atmel.com/dyn/products/product_card.asp?part_id=2014 Atmel - ATmega32 Produkt Übersicht]
 * [http://www.atmel.com/dyn/resources/prod_documents/doc2503.pdf Atmel - Datenblatt des ATmega32]
 * [http://www.roboternetz.de/wissen/index.php/ATMega32 Roboternetz Wissen - ATmega32]
 
@@ -871,22 +871,22 @@ Die wichtigsten Eigenschaften des ATmega32 im Überblick:
       <model>wikitext</model>
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="1590">== Einleitung ==
-  
-Der ATmega644 Mikrocontroller der Firma [http://www.atmel.com Atmel], ist pinkompatibel zum [[Atmel_ATmega32|ATmega32]] und kann deshalb als Ersatztyp für diesen auf dem c't-Bot eingesetzt werden. 
+
+Der ATmega644 Mikrocontroller der Firma [http://www.atmel.com Atmel], ist pinkompatibel zum [[Atmel_ATmega32|ATmega32]] und kann deshalb als Ersatztyp für diesen auf dem c't-Bot eingesetzt werden.
 Hauptunterschied zu diesem ist der doppelte Speicher und interrupt-fähige I/O Ports
 
 Der ATmega644 ist mittlerweile auch in Deutschland lieferbar z.B. bei [http://www.reichelt.de Reichelt] (Stand Dez 2006).
 
 == Features ==
 
-Die wichtigsten Eigenschaften im Überblick: 
- 
+Die wichtigsten Eigenschaften im Überblick:
+
 * '''64kByte internes Flash-Memory''', bis zu 10000 Schreib-/Lösch-Zyklen
 * '''2048 Byte EEPROM''', bis zu 100000 Schreib-/Lösch-Zyklen
-* '''4096 Byte SRAM''' 
+* '''4096 Byte SRAM'''
 * bis zu 32 programmierbare I/O Ports, '''interruptfähig'''
 * 8 10-bit-AD-Wandler
-* 1 Analogkomparator 
+* 1 Analogkomparator
 * USART, JTAG, ISP, SPI und I2C(TWI)-Schnittstelle
 * 2 8-bit und 1 16-bit-Timer
 * '''6 PWM Ausgänge'''
@@ -904,7 +904,7 @@ Für den mega644 müssen im Eclipse Projekt die Einstellungen für die Ziel CPU 
 
 == Weblinks ==
 
-* [http://www.atmel.com/dyn/products/product_card.asp?part_id=3694 Atmel - ATmega644 Produktübersicht] 
+* [http://www.atmel.com/dyn/products/product_card.asp?part_id=3694 Atmel - ATmega644 Produktübersicht]
 * [http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf Atmel - Atmega164/324/644 Datenblatt]
 
 
@@ -1019,7 +1019,7 @@ Entsprechend sieht eine Parameterzeile von avrdude für das Schreiben der Firmwa
 
 Die einzelnen Parameter bedeuten:
 
-{| 
+{|
  |-
  |'''Parameter'''
  |'''Beschreibung'''
@@ -1681,7 +1681,7 @@ Die einzelnen Parameter bedeuten:
 !|Anzahl
 !|Bemerkung
 |----
-|Ct-Robot/ Hauptplatine 
+|Ct-Robot/ Hauptplatine
 |1
 |enthält die beiden seitlichen Sensorplatinen
 |----
@@ -1699,7 +1699,7 @@ Die einzelnen Parameter bedeuten:
 
 * [[LCD-Modul|LCD-Display]] beleuchtet mit Abstandsbolzen und Kabel (ct-Robot/Displaysatz)
 * Platine und Teilesatz für den BlueMP3/ISP-Programmieradapter (BlueMP3/ISP-Platine), (BlueMP3/ISP-Teilesatz) oder STK200/500 kompatibler [[AVR_ISP_Programmer|ISP Programmer]].
-* Platine und Teilesatz incl. Gehäuse für Diagnoseverbindung [[USB-Modul|Robot-USB]] mit FT232RL aufgelötet (USB-2-Bot/Platine), (USB-2-Bot/Teilesatz) 
+* Platine und Teilesatz incl. Gehäuse für Diagnoseverbindung [[USB-Modul|Robot-USB]] mit FT232RL aufgelötet (USB-2-Bot/Platine), (USB-2-Bot/Teilesatz)
 * [[RC_Univers_29|Universal-Fernbedienung]] (ct-Robot/Fernbedienung)
 * Mignon-Akkus 2500mAh Sanyo (5 Stück werden ggf. benötigt)
 
@@ -1718,22 +1718,22 @@ Die einzelnen Parameter bedeuten:
 |4 (8)
 |Abstandsbolzen mit Gewinde
 |----
-|M3x6K 
+|M3x6K
 |8 (100)
 |Schrauben
 |----
-|FB 16/BELDEN 
+|FB 16/BELDEN
 |15cm (1m)
 |Flachbandkabel
 |----
-|AWP 16 
+|AWP 16
 |1
 |Stecker
 |}
 
 
 [[Kategorie:C't-Bot]]
-[[Kategorie:Elektronik]] 
+[[Kategorie:Elektronik]]
 [[Kategorie:Mechanik]]</text>
       <sha1>q2g3500me487m97xwni2var2lbz4ch0</sha1>
     </revision>
@@ -1768,7 +1768,7 @@ Alle IR-Bauteile senden für Menschen unsichtbarer IR Licht aus. Mit einer Digit
 Dafür kann es mehrere Ursachen geben:
 
 * Kurzschluß oder Steckverbinder am Sharp Sensor verpolt. Das überleben die Sharp GP2D12 normalerweise nicht. Da hilft nur noch der Austausch.
-* Das Gehäuse der Sharp GP2D12 ist leitfähig. Deshalb jeden Kontakt zu den Sensorplatinen vermeiden. Am besten ein Stück isolierenden Kunststoff zwischen Sensorplatine und Distanzsensor klemmen. 
+* Das Gehäuse der Sharp GP2D12 ist leitfähig. Deshalb jeden Kontakt zu den Sensorplatinen vermeiden. Am besten ein Stück isolierenden Kunststoff zwischen Sensorplatine und Distanzsensor klemmen.
 
 === Die Distanzsensoren liefern stark schwankende Werte ===
 
@@ -1784,13 +1784,13 @@ Für schwankende Werte der Distanzsensoren gibt es mehrere Ursachen:
 Das Display zeigt gar nichts an:
 
 * Am Kontrastregler POT1 drehen (10-Gang Poti, mehrere Umdrehungen nötig). Man muß ziemlich lange am Poti im Uhrzeigersinn drehen bis der Text auf dem Bildschirm erscheint.
-* Evtl auch den Display Typ prüfen. Es gibt Displays für den erweiterten Temperaturbereich. Diese benötigen eine negative Kontrastspannung und können mit der Beschaltung funktionieren 
+* Evtl auch den Display Typ prüfen. Es gibt Displays für den erweiterten Temperaturbereich. Diese benötigen eine negative Kontrastspannung und können mit der Beschaltung funktionieren
 
 Das Display zeigt nur 2 schwarze Balken in der 1. und 3 Spalte an:
 
 * Fusebits nicht korrekt. JTAGEN muß auf disable und externer Quarz muß eingestellt sein. Siehe auch [[Ponyprog#Fuses setzen| Ponyprog Fusebits]]
 
-Die Hintergrundbeleuchtung funktioniert nicht: 
+Die Hintergrundbeleuchtung funktioniert nicht:
 
 * Evtl. liegt es an der Beschaltung des Displays. Es gibt Displays bei denen VCC und GND der Hintergrundbeleuchtung vertauscht sind.
 
@@ -1801,7 +1801,7 @@ Weitere mögliche Fehlerursachen:
 === Das LCD-Modul liefert nur wirre Anzeigen ===
 
 * Batteriespannung zu niedrig.
-* Seit einiger Zeit werden die c't-Bot Quellen mit Optimierung übersetzt (-Os). Das führt bei einigen Displays zu wirren Anzeigen. Abhilfe schafft hier das Abschalten der Optimierung (-O0). Der eigentliche Fehler ist aber die falsche Verdrahtung des Busy-Bits. Derzeit wird in der Software nur eine Warteschleife aufgerufen. Wenn man folgenden [viewtopic.php?&amp;t=200 LCD-Busy-Bit Patch] einbaut und die Software entsprechend anpasst, sollte das Display auch mit eingeschalteter Optimierung korrekt funktionieren. 
+* Seit einiger Zeit werden die c't-Bot Quellen mit Optimierung übersetzt (-Os). Das führt bei einigen Displays zu wirren Anzeigen. Abhilfe schafft hier das Abschalten der Optimierung (-O0). Der eigentliche Fehler ist aber die falsche Verdrahtung des Busy-Bits. Derzeit wird in der Software nur eine Warteschleife aufgerufen. Wenn man folgenden [viewtopic.php?&amp;t=200 LCD-Busy-Bit Patch] einbaut und die Software entsprechend anpasst, sollte das Display auch mit eingeschalteter Optimierung korrekt funktionieren.
 
 === Nach dem Flashen funktioniert der Maussensor nicht mehr ===
 
@@ -1823,7 +1823,7 @@ Dafür gibt es mehrere Ursachen:
 
 Die neuen Radencoderscheiben von Victor Dierks (V2) funktionieren bringen deutliche Besserung. Den neuen Bausätzen liegen diese bereits bei. Für ältere Bausätze bekommt man diese auf Anfrage kostenlos (gegen Freiumschlag) von Segor zugeschickt.
 
-=== Die Motoren laufen nur rückwärts === 
+=== Die Motoren laufen nur rückwärts ===
 
 * Motoranschlüsse wurden vertauscht.
 * Ein Grund dafür könnte auch das einprogrammierte Fluchtverhalten des c't-Bots sein. Dies wird durch die Abgrund- und Distanzsensoren aktiviert. Steht der Bot vor einen Abgrund, oder zu dicht vor einem Hindernis fährt er rückwärts.
@@ -1865,11 +1865,11 @@ Um ein Programm zum c't-Bot zu übertragen benötigt man einen [[Glossar#ISP|ISP
 
 === Welche Programmier Adapter kann man verwenden? ===
 
-Das hängt von den zur Verfügung stehenden PC-Schnittstellen ab. Man unterscheidet 2 Arten von [[AVR_ISP_Programmer|ISP Programmier Adapter]]. 
+Das hängt von den zur Verfügung stehenden PC-Schnittstellen ab. Man unterscheidet 2 Arten von [[AVR_ISP_Programmer|ISP Programmier Adapter]].
 
 Am preiswertesten und einfachsten sind die LPT Programmier Adapter, oft auch als STK200 kompatibler Adapter bezeichnet. Da keinerlei Intelligenz in diesen Adaptern steckt braucht man auch keine Treibersoftware. Der [[AVR_ISP_Programmer#BlueMP3_bzw._STK200_kompatible_Flasher|BlueMP3 ISP Adapter]] ist z.B. ein LPT Programmier Adapter.
 
-RS232 Adapter beruhen auf der Application Note AN910 von Atmel. Deshalb nennt man diese Adapter oft auch AN910 kompatibel. Auf diesen Adaptern sitzt ein kleiner AVR Controller der über die RS232 mit dem PC kommuniziert und auf der anderen Seite über ISP mit dem Zielsystem. 
+RS232 Adapter beruhen auf der Application Note AN910 von Atmel. Deshalb nennt man diese Adapter oft auch AN910 kompatibel. Auf diesen Adaptern sitzt ein kleiner AVR Controller der über die RS232 mit dem PC kommuniziert und auf der anderen Seite über ISP mit dem Zielsystem.
 
 Die USB Adapter sind ebenfalls AN910 kompatibel. Bei diesen Adaptern ist zusätzlich ein USB-UART Chip mit integriert. Es wird ein Hersteller-spezifischer USB-Treiber benötigt. Der [[AVR_ISP_Programmer#myAVR_mySmartUSB_bzw._AVR910_kompatible_Flasher|mySmartUSB Programmer]] ist z.B. ein USB Programmier Adapter.
 
@@ -1877,9 +1877,9 @@ Die USB Adapter sind ebenfalls AN910 kompatibel. Bei diesen Adaptern ist zusätz
 
 Wenn die Spannung am Prozessor anliegt (nachmessen!) und auch alle Pins zum ISP Port richtig verdrahtet sind (durchklingeln, auf Kurzschlüsse prüfen), kommen noch folgende Fehlerursachen in Betracht:
 
-* Falsche Einstellungen im [[Ponyprog#Setup|Ponyprog Setup]]. Unter Setup, Interface Setup überprüfen:  Parallel, AVR ISP-IO, LPTx, alle anderen Haken aus. Mit korrekten Interface Setup Einstellungen und Taste 'Probe' testen. Danach den Adapter mit der Taste 'Calibration' kalibrieren. Als Device stellt man AVR micro, ATmega32 oder Auto ein. 
+* Falsche Einstellungen im [[Ponyprog#Setup|Ponyprog Setup]]. Unter Setup, Interface Setup überprüfen:  Parallel, AVR ISP-IO, LPTx, alle anderen Haken aus. Mit korrekten Interface Setup Einstellungen und Taste 'Probe' testen. Danach den Adapter mit der Taste 'Calibration' kalibrieren. Als Device stellt man AVR micro, ATmega32 oder Auto ein.
 * Maussensor abziehen. Dieser hängt an den selben Leitungen wie der ISP.
-* Notebook LPT Schnittstellen machen manchmal Probleme. Mit Desktop PC versuchen. 
+* Notebook LPT Schnittstellen machen manchmal Probleme. Mit Desktop PC versuchen.
 * LPT-Einstellungen im BIOS überprüfen. (auf ECP oder EPP stellen)
 
 Wenn nichts davon hilft, ist der LPT-Programmer wohl selbst defekt.
@@ -1907,7 +1907,7 @@ Durch folgende Änderung klappt es auch auch als Benutzer mit eingeschränkten R
 === Nach dem Setzen der Fusebits wird der Atmega32 nicht mehr erkannt ===
 
 Dann wurden wohl die falschen Fusebits gesetzt, statt Externer Quarz wurde externer Oszillator eingestellt.
-Das heißt der Atmega32 erwartet dann einen sauberen externen Takt von einem Quarzoszillator. 
+Das heißt der Atmega32 erwartet dann einen sauberen externen Takt von einem Quarzoszillator.
 Ein Quarzoszillator erzeugt im Gegensatz zum Quarz oder Resonator direkt den Prozessortakt. Beim Quarz bzw. Resonator muß dieser zuerst vom Prozessor zum Schwingen angeregt werden, um dann den Prozessor Takt zu erzeugen. Unterscheiden kann man die Bauteile an der Anzahl der Pins und der Bauteil Größe. Quarzoszillator ist größer als ein Quarz und besitzt 4 Pins, der Quarz hingegen hat nur 2 Pins , ein Resonator hat 3 Pins (dort sind die beiden Kondensatoren bereits integriert). Beim c't-Bot wird ein Quarz mit 16MHz eingesetzt.
 
 Um den scheinbar &quot;toten&quot; Mikrocontroller wieder zum Leben zu erwecken, gibt es 4 Möglichkeiten:
@@ -1958,12 +1958,12 @@ Wem das alles zu viele Umstände macht, kann sich auch einen neuen Atmega32 kauf
 * [http://www.mikrocontroller.net/articles/AVR_Eclipse AVR Eclipse]
 * [http://cdk4avr.sourceforge.net/ CDK4AVR -- AVR Cross Development Kit]
 
-== Datenblätter == 
-  
+== Datenblätter ==
+
 * [http://cp.literature.agilent.com/litweb/pdf/5988-9774EN.pdf Avago/Agilent ADNS-2610] - Optical Mouse Sensor
 * [http://www.vishay.com/docs/83751/83751.pdf CNY70] - Opto-Reflex Koppler
 * [http://www.faulhaber-group.com/uploadpk/d_2619SR_FTB.pdf Faulhaber 2619] - DC-Getriebemotor
-* [http://cache.national.com/ds/LM/LM111.pdf LM311] - Voltage Comparator 
+* [http://cache.national.com/ds/LM/LM111.pdf LM311] - Voltage Comparator
 * [http://www.st.com/stonline/products/literature/ds/1330/l293d.pdf L293]  - Motortreiber IC
 * [http://www.sharp.co.jp/products/device/lineup/data/pdf/datasheet/is471f_j.pdf Sharp IS471F] - Optischer Näherungsschalter
 * [http://sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2d12_e.pdf Sharp GP2D12] - Optical Range Sensor 10-80cm
@@ -2025,7 +2025,7 @@ Während der Initialisierung in init() wird ein zweiter Thread bot_2_sim_thread 
       <comment>Kategorien angepasst.</comment>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="2038">Da der Simulator c't-Sim in Java geschrieben ist, ist der Betrieb prinzipiell auch unter MacOS X möglich. Gleiches gilt für den simulierten Bot, der in der Programmiersprache C geschrieben ist. 
+      <text xml:space="preserve" bytes="2038">Da der Simulator c't-Sim in Java geschrieben ist, ist der Betrieb prinzipiell auch unter MacOS X möglich. Gleiches gilt für den simulierten Bot, der in der Programmiersprache C geschrieben ist.
 
 ''Die hier aufgeführten Probleme sind inzwischen gelöst'', Bot und Sim funktionieren zu 100% auch unter Mac OS X. Für weitere Informationen zur Java3D Installation siehe [http://www.heise.de/ct/projekte/machmit/ctbot/wiki/Installationsanleitung#java3d Installationsanleitung Java3D].
 
@@ -2206,7 +2206,7 @@ Die Sensoren sind über die A/D Ports ADC0 (Abstand links ABSTL) und ADC1 (Absta
 
 == Funktionsweise ==
 
-Der Sensor besteht aus einem Infrarot-Sender /-Empfänger und arbeitet nach dem Triangulations Prinzip. 
+Der Sensor besteht aus einem Infrarot-Sender /-Empfänger und arbeitet nach dem Triangulations Prinzip.
 Der Sender sendet einen modulierten Infrarotstrahl aus. Das von einem Objekt reflektierte Licht, wird von einem sogenannten '''p'''osition '''s'''ensitive '''d'''evice (PSD) empfangen.
 Das zwischen Sender, Objekt und Empfänger entstandene Dreieck wird zur Bestimmung der Entfernung benutzt. D.h., nicht wie viel Licht von dem Objekt reflektiert wird, ist entscheidend, sondern in welchem Winkel es reflektiert wird. Dies hat den Vorteil, dass der Sensor relativ unabhändig von der Oberfläche des Objekts ist.
 Vom Empfänger wird dieser Winkel in eine analoge Spannung umgewandelt.
@@ -2251,7 +2251,7 @@ Vom Empfänger wird dieser Winkel in eine analoge Spannung umgewandelt.
 * Unkomplizierte Anbindung an Mikrocontroller. Ein A/D Port genügt, keine Takterzeugung notwendig.
 
 '''Contra'''
- 
+
 * Nicht lineare Ausgangsspannung
 * relativ hohe Stromaufnahme, da dauernd gemessen wird.
 * kleiner Messwinkel von etwa 3°.
@@ -2304,7 +2304,7 @@ Das Erweiterungsmodul erweitert den c't-Bot um folgende Funktionen:
 * MMC/SD Card Slot
 * WLAN Modul
 
-Das WLAN Modul ist optional und kann auch erst mal weggelassen werden. Die Funktion des Erweiterungs Moduls ist dadurch nicht beeinflußt. Es befindet sich ebenfalls noch ein zum [[USB-Modul|USB-2-Bot Adapter]] pinkompatibler Steckverbinder auf dem Erweiterungsmodul. 
+Das WLAN Modul ist optional und kann auch erst mal weggelassen werden. Die Funktion des Erweiterungs Moduls ist dadurch nicht beeinflußt. Es befindet sich ebenfalls noch ein zum [[USB-Modul|USB-2-Bot Adapter]] pinkompatibler Steckverbinder auf dem Erweiterungsmodul.
 
 ===MMC/SD Card Slot===
 
@@ -2342,9 +2342,9 @@ Als WLAN Modul kommt das WiPort Modul von Lantronix zum Einsatz. Das WiPort Modu
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="5533">== Einführung ==
 
-Die Porterweiterung wird beim c't-Bot durch drei Schieberegister realisiert. Ein Schieberegister ist im Prinzip ein Seriell zu Parallel Wandler. Synchron zu einem Taktsignal werden die Daten seriell über einen Port vom Prozessor in das Schieberegister geschoben. Nach Übertragung von 8 Bits liegt das Signal am 8-Bit Parallel Ausgangsport an. Während der Übertragung bleiben die Ausgangssiganle durch den Ausgangs Datenlatch des 74HC595 stabil. Jeweils 1 Prozessor Pin wird für die Selektierung (Enable) des entsprechenden Schiebregisters benötigt. 
+Die Porterweiterung wird beim c't-Bot durch drei Schieberegister realisiert. Ein Schieberegister ist im Prinzip ein Seriell zu Parallel Wandler. Synchron zu einem Taktsignal werden die Daten seriell über einen Port vom Prozessor in das Schieberegister geschoben. Nach Übertragung von 8 Bits liegt das Signal am 8-Bit Parallel Ausgangsport an. Während der Übertragung bleiben die Ausgangssiganle durch den Ausgangs Datenlatch des 74HC595 stabil. Jeweils 1 Prozessor Pin wird für die Selektierung (Enable) des entsprechenden Schiebregisters benötigt.
 
-Zur Ansteuerung der Schieberegister werden insgesamt 6 Prozessor Pins benötigt. 
+Zur Ansteuerung der Schieberegister werden insgesamt 6 Prozessor Pins benötigt.
 
 {|
 |'''Port'''
@@ -2371,20 +2371,20 @@ Zur Ansteuerung der Schieberegister werden insgesamt 6 Prozessor Pins benötigt.
 
 == LED Port ==
 
-Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen benutzen lassen. Über Port PC4 wird der LED Port enabled/disabled. Über Port PC0 werden die Daten seriell übertragen und synchron zum Takt von PC1 in dass Schieberegister geschoben. 
+Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen benutzen lassen. Über Port PC4 wird der LED Port enabled/disabled. Über Port PC0 werden die Daten seriell übertragen und synchron zum Takt von PC1 in dass Schieberegister geschoben.
 
 === Port Belegung ===
 
 {|
-|'''Port''' 
+|'''Port'''
 |'''Funktion'''
 |'''Anmerkung'''
 |-
-|P0       
+|P0
 |LED1
 |links, blau
 |-
-|P1       
+|P1
 |LED2
 |rechts, blau
 |-
@@ -2393,13 +2393,13 @@ Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen ben
 |rot
 |-
 |P3
-|LED4 
+|LED4
 |orange
 |-
 |P4
 |LED5
 |gelb
-|- 
+|-
 |P5
 |LED6
 |grün
@@ -2409,7 +2409,7 @@ Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen ben
 |blau
 |-
 |P7
-|LED8 
+|LED8
 |weiß
 |}
 
@@ -2419,20 +2419,20 @@ Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen ben
 
 == Enable Port ==
 
-Über den Enable Port können einzelne Baugruppen (Sensoren) des c't-Bots enabled/disabled werden. Das spart Strom. Über Port PC3 wird der Enable Port enabled/disabled. Über Port PC0 werden die Daten seriell übertragen und synchron zum Takt von PC1 in dass Schieberegister geschoben. 
+Über den Enable Port können einzelne Baugruppen (Sensoren) des c't-Bots enabled/disabled werden. Das spart Strom. Über Port PC3 wird der Enable Port enabled/disabled. Über Port PC0 werden die Daten seriell übertragen und synchron zum Takt von PC1 in dass Schieberegister geschoben.
 
 === Portbelegung ===
 
 {|
-|'''Port''' 
+|'''Port'''
 |'''Funktion'''
 |'''Anmerkung'''
 |-
-|P0       
+|P0
 |ENA_ABSTAND
 |Enable [[Distanzsensoren]] (GP2D12)
 |-
-|P1       
+|P1
 |ENA_RADLED
 |Enable [[Radencoder]] (Odometrie) LEDs ([[CNY70]])
 |-
@@ -2447,7 +2447,7 @@ Auf dem c't-Bot befinden sich insgesamt 8 LEDs, die sich für Statusanzeigen ben
 |P4
 |ENA_KLAPPLED
 |Enable [[Lichtschranke_und_Klappensensor|Klappensensor]] LED ([[CNY70]])
-|- 
+|-
 |P5
 |ENA_MAUS
 |Enable [[Liniensensor]] LEDs ([[CNY70]])
@@ -2474,15 +2474,15 @@ Durch eine [http://www.ctbot.de/forum/lcd-busybit-korrektur-t200.html Modifikati
 === Portbelegung ===
 
 {|
-|'''Port''' 
+|'''Port'''
 |'''Funktion'''
 |'''Anmerkung'''
 |-
-|P0       
+|P0
 |LCD1
 |Datenbus Bit0
 |-
-|P1       
+|P1
 |LCD2
 |Datenbus Bit1
 |-
@@ -2491,13 +2491,13 @@ Durch eine [http://www.ctbot.de/forum/lcd-busybit-korrektur-t200.html Modifikati
 |Datenbus Bit2
 |-
 |P3
-|LCD4 
+|LCD4
 |Datenbus Bit3
 |-
 |P4
 |LCD5
 |Datenbus Bit4
-|- 
+|-
 |P5
 |LCD6
 |Datenbus Bit5
@@ -2507,7 +2507,7 @@ Durch eine [http://www.ctbot.de/forum/lcd-busybit-korrektur-t200.html Modifikati
 |Datenbus Bit6
 |-
 |P7
-|LCD8 
+|LCD8
 |Datenbus Bit7
 |}
 
@@ -2519,34 +2519,34 @@ Das LCD-Modul selbst wird über einen 16poligen (2x8) Wannenstecker angeschlosse
 {|
 |'''Pin'''
 |'''Bezeichnung'''
-|'''Beschreibung''' 
+|'''Beschreibung'''
 |---
 |1
 |GND
 |Masse
 |---
-|2 
+|2
 |VCC
 |Spannungsversorgung +5V
 |---
 |3
 |VEE
 |Kontrast Poti 0..0,5V
-|--- 
+|---
 |4
 |RS
 |Register Select, 1=Daten schreiben / 0=Kommando senden.
-|---  
+|---
 |5
 |R/W
-|1=Read / 0=Write zum lesen / schreiben in das Display RAM 
+|1=Read / 0=Write zum lesen / schreiben in das Display RAM
 |---
 |6
 |Enable
 |Fallende Flanke -&gt; Übertragen des Kommandos oder der Daten, H-Pegel -&gt; Lesen von Daten aus dem Display
 |---
-|7 
-|DB0 
+|7
+|DB0
 |Datenbus Bit0 LSB
 |---
 |8
@@ -2590,7 +2590,7 @@ Das LCD-Modul selbst wird über einen 16poligen (2x8) Wannenstecker angeschlosse
 
 [[Bild:lcdport_schem2.png|800px|Schaltbild LCD Port]]
 
-'''Achtung:''' 
+'''Achtung:'''
 
 Fehler im Schaltplan. Der Port PC5 sollte eigentlich das Busy-Flag des LCD-Moduls abfragen. Dieses liegt aber an DB7 an, nicht an DB0. Derzeit ist die Abfrage des Busy-Flags deshalb nicht möglich. Abhilfe könnte der [http://www.ctbot.de/forum/lcd-busybit-korrektur-update-t200.html LCD Busy Patch] bringen, dies wird derzeit aber von offizieller Seite leider nicht empfohlen. Der aktuelle c't-Bot Code arbeitet weiterhin mit Delays.
 
@@ -2802,7 +2802,7 @@ Die Motoren des c't-Bot sind Getriebemotoren der Firma [http://www.faulhaber-gro
 |Faulhaber 2619 006 SR
 |-
 |'''Abmessungen:'''
-|Motor u. Getriebe: 19 mm Länge, 26 mm Durchmesser,&lt;br&gt;Welle: 10mm Länge, 3 mm Durchmesser, 
+|Motor u. Getriebe: 19 mm Länge, 26 mm Durchmesser,&lt;br&gt;Welle: 10mm Länge, 3 mm Durchmesser,
 |-
 |'''Nennspannung:'''
 |6 V
@@ -2845,13 +2845,13 @@ Die Motoren des c't-Bot sind Getriebemotoren der Firma [http://www.faulhaber-gro
 |'''Gewicht:'''
 |26g mit Getriebe
 |-
-|'''Gehäusewerkstoff:''' 
+|'''Gehäusewerkstoff:'''
 |Kunststoff
 |-
-|'''Zahnräderwerkstoff:''' 
+|'''Zahnräderwerkstoff:'''
 |Metall
 |-
-|'''Abtriebswellenlager:''' 
+|'''Abtriebswellenlager:'''
 |Messing-/Keramiklager
 |}
 
@@ -2985,7 +2985,7 @@ USB ist eine Abkürzung für ''&quot;'''U'''niversal '''S'''erial '''B'''us&quot
 
 == Fernbedien Codes ==
 
-Die Hauppauge Fernbedienung gibt es in zwei Ausführungen. 
+Die Hauppauge Fernbedienung gibt es in zwei Ausführungen.
 
 === Hauppauge MediaMPV ===
 
@@ -3025,14 +3025,14 @@ Auszug aus der Datei 'rc5-codes.h'. Dank an c't-Bot User [http://www.ctbot.de/fo
 	#define	RC5_CODE_RIGHT	(0x17D0 &amp; RC5_MASK)		/*!&lt; Taste VOL+ */
 
 	#define RC5_CODE_OK	(0x17E5 &amp; RC5_MASK)		/*!&lt; Taste OK */
-	
-	#define RC5_CODE_PWR    (0x17FD &amp; RC5_MASK)		/*!&lt; Taste An/Aus */ 
-	
+
+	#define RC5_CODE_PWR    (0x17FD &amp; RC5_MASK)		/*!&lt; Taste An/Aus */
+
 	#define RC5_CODE_RED    (0x17CB &amp; RC5_MASK)		/*!&lt; Taste Rot */
 	#define RC5_CODE_GREEN	(0x17EE &amp; RC5_MASK)		/*!&lt; Taste Gruen */
 	#define RC5_CODE_YELLOW	(0x17F8 &amp; RC5_MASK)		/*!&lt; Taste Gelb */
 	#define RC5_CODE_BLUE	(0x17E9 &amp; RC5_MASK)		/*!&lt; Taste Blau */
-	
+
 	#define RC5_CODE_FWD	(0x17F4 &amp; RC5_MASK)		/*!&lt; Taste &gt;&gt; */
 	#define RC5_CODE_BWD	(0x17F2 &amp; RC5_MASK)		/*!&lt; Taste &lt;&lt; */
 	#define RC5_CODE_PLAY	(0x17F5 &amp; RC5_MASK)		/*!&lt; Taste &gt; */
@@ -3041,11 +3041,11 @@ Auszug aus der Datei 'rc5-codes.h'. Dank an c't-Bot User [http://www.ctbot.de/fo
 	#define RC5_CODE_WAIT	(0x17F0 &amp; RC5_MASK)		/*!&lt; Taste Pause */
 	#define RC5_CODE_REPLAY	(0x17E4 &amp; RC5_MASK)		/*!&lt; Taste Anfang |&lt; */
 	#define RC5_CODE_SKIP	(0x17DE &amp; RC5_MASK)		/*!&lt; Taste Ende &gt;| */
-	
+
 	#define RC5_CODE_MUTE	(0x17CF &amp; RC5_MASK)		/*!&lt; Taste Mute */
 	#define RC5_CODE_VIEW	(0x17CC &amp; RC5_MASK)		/*!&lt; Taste View zwischen Mute und Full */
 	#define RC5_CODE_FULL	(0x17FC &amp; RC5_MASK)		/*!&lt; Taste Full */
-	
+
 	#define RC5_CODE_BACK	(0x17DF &amp; RC5_MASK)		/*!&lt; Taste Back/Exit */
 	#define RC5_CODE_MENU	(0x17CD &amp; RC5_MASK)		/*!&lt; Taste Menue */
 	#define RC5_CODE_GO	(0x17FB &amp; RC5_MASK)		/*!&lt; Taste GO */
@@ -3077,7 +3077,7 @@ Auszug aus der Datei 'rc5-codes.h'. Dank an c't-Bot User [http://www.ctbot.de/fo
 [[Bild:ctbot3.jpg|right|thumb|c't-Bot]]
 
 == Vorwort ==
-Der '''c't-Bot''' ist ein Projekt der Fachzeitschrift [http://www.heise.de/ct c't] aus dem Verlag [http://www.heise.de Heinz Heise]. Er soll möglichst vielen Lesern den Zugang zu dem spannenden Thema Robotik eröffnen. Daher besteht das Projekt aus zwei Teilen: Dem eigentlichen Roboter c't-Bot und dem passenden Simulator c't-Sim. 
+Der '''c't-Bot''' ist ein Projekt der Fachzeitschrift [http://www.heise.de/ct c't] aus dem Verlag [http://www.heise.de Heinz Heise]. Er soll möglichst vielen Lesern den Zugang zu dem spannenden Thema Robotik eröffnen. Daher besteht das Projekt aus zwei Teilen: Dem eigentlichen Roboter c't-Bot und dem passenden Simulator c't-Sim.
 
 Den c't-Bot gibt es nur als Bausatz. In der Grundversion besitzt er zwei Räder, hat eine runde Grundfläche vom Durchmesser einer CD und ist mit einer ganzen Reihe von Sensoren bestückt. Seine Intelligenz sitzt in einem Mikrocontroller, der in C programmiert wird. Mechanik und Intelligenz sind ein Tradeoff zwischen Preis, Eleganz und Stabilität. Ganz bewusst kommen keine SMD-Bauteile zum Einsatz, damit auch unerfahrene Löter eine Chance haben, sich ihren Spielgefährten aufzubauen.
 
@@ -3298,7 +3298,7 @@ Jedes Programm sollte in einem eignen Projekt und einem eigenen Ordner verwaltet
 
 === JDK ===
 
-Für den c't-Sim wird das [http://java.sun.com/j2se/1.5.0/download.jsp JDK 5.0] von [http://www.sun.com Sun] benötigt. 
+Für den c't-Sim wird das [http://java.sun.com/j2se/1.5.0/download.jsp JDK 5.0] von [http://www.sun.com Sun] benötigt.
 
 === Eclipse ===
 
@@ -3314,7 +3314,7 @@ Für die Anzeige der virtuellen Welt wird die [https://java3d.dev.java.net/binar
 === JD2XX Bibliothek ===
 
 Diese Bibliothek kann nur für USB-UART Geräte mit FTDI Chip, wie z.B. dem [[USB-Modul#USB-2-Bot|USB-2-Bot Adapters]], verwendet werden.
-Damit der D2XX-Treiber unter Linux funktioniert, benötigt man das Programm [http://www.dest-unreach.org/socat socat]. Mit Hilfe von socat kann man beliebige Geräte miteinander verbinden. 
+Damit der D2XX-Treiber unter Linux funktioniert, benötigt man das Programm [http://www.dest-unreach.org/socat socat]. Mit Hilfe von socat kann man beliebige Geräte miteinander verbinden.
 Folgender Befehl leitet die Daten vom Roboter an den c't-Sim weiter:
 &lt;pre&gt;
 socat TCP4:localhost:10001 /dev/ttyUSB0,raw,b9600
@@ -3322,13 +3322,13 @@ socat TCP4:localhost:10001 /dev/ttyUSB0,raw,b9600
 
 === RXTX Bibliothek ===
 
-Alternativ zur J2DXX Bibliothek kann auch die RXTX Bibliothek verwendet werden. 
+Alternativ zur J2DXX Bibliothek kann auch die RXTX Bibliothek verwendet werden.
 Dank eines Patches von Max Odenthal funktionieren damit sowohl [[USB-Modul|USB-UART Geräte]] mit anderen USB Chips als auch normale [[UART|RS232 Module]].
 Die Installation der RXTX Bibliothek erfolgt entweder anhand der Binaries oder durch neukompileren des Sourcecodes.
 
 === Installation mit Binaries ===
 
-Zur Installation stehen für einige Plattformen (x86, x86_64, ia64) die Bibliothek als Binary zur Verfügung. Dazu benötigt man nur 
+Zur Installation stehen für einige Plattformen (x86, x86_64, ia64) die Bibliothek als Binary zur Verfügung. Dazu benötigt man nur
 die Datei [ftp://ftp.qbang.org/pub/rxtx/rxtx-2.1-7-bins-r2.zip rxtx-2.1-7-bins-r2.zip].
 
 Daraus kopiert man folgende Dateien:
@@ -3336,7 +3336,7 @@ Daraus kopiert man folgende Dateien:
 &lt;pre&gt;
 RXTXcomm.jar       nach  /jre/lib/ext
 librxtxSerial.so   nach  /jre/lib/[machine type] (i386 z.B.)
-&lt;/pre&gt; 
+&lt;/pre&gt;
 
 === Installation aus dem Soureccode ===
 
@@ -3390,7 +3390,7 @@ Den CLASSPATH muss man nicht anpassen. Eclipse erkennt die Library auch so.
 
 === JDK ===
 
-Für den c't-Sim wird das [http://java.sun.com/j2se/1.5.0/download.jsp JDK 5.0] von [http://www.sun.com Sun] benötigt. 
+Für den c't-Sim wird das [http://java.sun.com/j2se/1.5.0/download.jsp JDK 5.0] von [http://www.sun.com Sun] benötigt.
 
 === Eclipse ===
 
@@ -3423,7 +3423,7 @@ Die Installation der RXTX Bibliothek erfolgt anhand der Binaries.
 
 '''1.''' aktuelle RXTX-Installationen holen.
 
-Zur Installation steht die Bibliothek als Binary für Windows, Linux, Solaris und Mac zur Verfügung. Dazu benötigt man nur 
+Zur Installation steht die Bibliothek als Binary für Windows, Linux, Solaris und Mac zur Verfügung. Dazu benötigt man nur
 die Datei [ftp://ftp.qbang.org/pub/rxtx/rxtx-2.1-7-bins-r2.zip rxtx-2.1-7-bins-r2.zip].
 (Darin stecken alle Dateien für alle Betriebssysteme)
 
@@ -3444,8 +3444,8 @@ RXTXcomm.jar in das Verzeichnis der JAVA-Installation .\jre\lib\ext\ kopieren.
  |-
  |}
 
-Hier lauern Abseitsfallen. 
-Wenn mehrere JDKs und JREs installiert sind, muß man in das installieren, 
+Hier lauern Abseitsfallen.
+Wenn mehrere JDKs und JREs installiert sind, muß man in das installieren,
 was von Eclipse verwendet wird.
 
 Das sieht bei mir in Eclipse unter WINDOW-PREFERENCES... z.B. so aus:
@@ -3484,7 +3484,7 @@ Wie man einen Patch einspielt, steht [http://www.heise.de/ct/ftp/projekte/ct-bot
  |-
  |}
 
-(Man erfährt den Port im Zweifel aus 
+(Man erfährt den Port im Zweifel aus
 START-SYSTEMSTEUERUNG-SYSTEM-HARDWARE-GERÄTE_MANAGER-Anschlüsse(COM und LPT))
 
 '''7.''' In ComConnection.java die rxtx-Komponenten bekannt machen.
@@ -3494,7 +3494,7 @@ eintragen
 
 und
 
- //import javax.comm.*; 
+ //import javax.comm.*;
 auskommentieren
 
 {|
@@ -3504,15 +3504,15 @@ auskommentieren
  |}
 
 
-Und was auch noch stimmen muß, 
+Und was auch noch stimmen muß,
 wenn man bisher den D2XX-Treiber für die FTDI-Chips benutzt hat:
 
-'''8.''' Für die oben beschriebene Konfiguration muß der USB/Seriell-Wandler natürlich einen 
+'''8.''' Für die oben beschriebene Konfiguration muß der USB/Seriell-Wandler natürlich einen
 COM-Port im Windows zur Verfügung stellen. Das macht der VCP-Treiber.
 Die neuesten CDM FTDI Treiber (ab Version 2.0.0) beinhalten jetzt die beide Treibertypen D2XX und VCP. Mit den älteren Treibern war es nicht möglich D2XX und VCP Treiber gleichzeitig zu installieren. Dies ist mit den neuen Teibern jetzt möglich .
-Alte FTDI Treiber sollte man vor der Installation unter SOFTWARE in der Systemsteuerung deinstallieren. (vorher den 
+Alte FTDI Treiber sollte man vor der Installation unter SOFTWARE in der Systemsteuerung deinstallieren. (vorher den
 USB-Stecker herausziehen).
-Dann den USB-Stecker wieder einstecken. Es folgt die bekannte Installationssession, wobei dann 
+Dann den USB-Stecker wieder einstecken. Es folgt die bekannte Installationssession, wobei dann
 D2XX und VCP-Treiber installiert werden.
 
 Ausführliche Anleitung gibt [http://www.ftdichip.com/Documents/InstallGuides/Windows_XP_Installation_Guide.pdf hier]
@@ -3595,22 +3595,22 @@ Das Ausgangssignal des [[CNY70]] Reflex-Opto-Koppler ist als Digital Signal an d
 
 Der Antrieb des c't-Bot wird von zwei DC-Getriebemotoren der Firma [http://www.faulhaber.com Faulhaber] gebildet.
 Da der [[Mikrocontroller]] diese Motoren nicht direkt betreiben kann, wird ein sogenannter Motor Treiber benötigt.
-Das ist in diesem Falle der L293D. 
+Das ist in diesem Falle der L293D.
 
 Der L293D IC beinhaltet 4 Halb-H-Brücken Treiber. Damit lassen sich 2 DC-Motoren bidirektional betreiben (als 2-fach H-Brücke), oder 1 Schrittmotor birektional. Die Belastbarkeit pro Halbbrücke beträgt 600mA. Der L293D beinhaltet im Gegensatz zum pin-kompatiblen L293 und dem großen Bruder L298 die interne Freilaufdioden. Diesen schützen den IC vor den, vom Motor ausgehenden, Spannungsspitzen.
 
 == Funktionsweise ==
- 
-Angesteuert wird der L293D durch 4 Eingangssignale des [[Mikrocontroller]]. 
+
+Angesteuert wird der L293D durch 4 Eingangssignale des [[Mikrocontroller]].
 
 === Drehrichtung ===
 
 Die beiden Eingangssignale PC6 und PC7 bestimmen die Richtung, in die die Motoren laufen.
-Das einzelne Richtungs-Signal vom [[Mikrocontroller]] wird dazu über ein invertierende Gatter dem L293D zugeführt. 
+Das einzelne Richtungs-Signal vom [[Mikrocontroller]] wird dazu über ein invertierende Gatter dem L293D zugeführt.
 
 === Geschwindigkeit ===
 
-Die beiden Eingangssignale PWM1A und PWM1B bestimmen die Geschwindigkeit, mit der die Motoren laufen. 
+Die beiden Eingangssignale PWM1A und PWM1B bestimmen die Geschwindigkeit, mit der die Motoren laufen.
 Am Enable Eingang des L293D liegt ein sogenanntes Pulsweitenmoduliertes (PWM) Signal. Dieses PWM Signal kann der Mikrocontroller mithilfe seiner Timer selbsttätig erzeugen. Vom Programm her muss nur noch das Verhältnis zwischen Signal und Signalpause geändert werden. Damit wird die Geschwindigkeit des Motors geregelt.
 
 == Schaltbild ==
@@ -3620,7 +3620,7 @@ Am Enable Eingang des L293D liegt ein sogenanntes Pulsweitenmoduliertes (PWM) Si
 '''Achtung:''' Nach Einschalten des c't-Bots, bzw. während Reset (z.B. beim Flashen), drehen beide Motoren mit voller Kraft, und der Bot dreht sich im Kreis. Das liegt daran, das während der Bootphase und solange das Reset Signal auf Low liegt, alle Ports des Mikrocontrollers auf Input geschaltet sind. Deshalb liegen auch die beiden Enable Ports am Motortreiber auf HIGH Pegel, und damit drehen die Motoren. Abhilfe schafft hier ein [http://www.ctbot.de/forum/motor-treiber-patch-t197.html Hardware Patch]. Dabei werden die beiden Enable Ports mit Pulldown Widerständen nach LOW gezogen. Damit bleiben die Motoren während der Bootphase bzw. bei Reset aus.
 
 == L293D ==
-  
+
 === Features ===
 
 * Großer Spannungsbereich von 4,5..36V
@@ -3703,34 +3703,34 @@ Die erste Erweiterungsmöglichkeit des c't-Bots besteht darin ein LCD-Modul anzu
 {|
 |'''Pin'''
 |'''Bezeichnung'''
-|'''Beschreibung''' 
+|'''Beschreibung'''
 |---
 |1
 |GND
 |Masse
 |---
-|2 
+|2
 |VCC
 |Spannungsversorgung +5V
 |---
 |3
 |VEE
 |Kontrast Poti 0..0,5V
-|--- 
+|---
 |4
 |RS
 |Register Select, 1=Daten schreiben / 0=Kommando senden.
-|---  
+|---
 |5
 |R/W
-|1=Read / 0=Write zum lesen / schreiben in das Display RAM 
+|1=Read / 0=Write zum lesen / schreiben in das Display RAM
 |---
 |6
 |Enable
 |Fallende Flanke -&gt; Übertragen des Kommandos oder der Daten, H-Pegel -&gt; Lesen von Daten aus dem Display
 |---
-|7 
-|DB0 
+|7
+|DB0
 |Datenbus Bit0 LSB
 |---
 |8
@@ -3837,7 +3837,7 @@ Der IS471F besteht aus einem IR Fototransistor, einer Auswertelogik und hat eine
 
 * [http://sharp-world.com/products/device/lineup/data/pdf/datasheet/is471f_e.pdf Sharp IS471F Datenblatt]
 
- 
+
 [[Kategorie:Elektronik]]
 [[Kategorie:Sensoren]]</text>
       <sha1>1pwem3ssjs3bz9afwk7x2vd4ya5fy0w</sha1>
@@ -3870,7 +3870,7 @@ Das Ausgangssignal der beiden [[Glossar#LDR|LDR]] ist direkt an die A/D Ports AD
 
 == Probleme mit den Lichsensoren ==
 
-Da die Lichtsensoren recht nahe neben den beiden vorderen blauen LEDs angebracht sind, kann es Einstreunungen auf die Lichtsensoren kommen. Abhilfe schafft hier, die Lichtsensoren z.B mit Schrumpfschlauch abzuschirmen, oder an der Unterseite der Grundplatine einzulöten.  
+Da die Lichtsensoren recht nahe neben den beiden vorderen blauen LEDs angebracht sind, kann es Einstreunungen auf die Lichtsensoren kommen. Abhilfe schafft hier, die Lichtsensoren z.B mit Schrumpfschlauch abzuschirmen, oder an der Unterseite der Grundplatine einzulöten.
 
 == Weblinks ==
 
@@ -4068,7 +4068,7 @@ var
 &lt;/c&gt;
 
 Die Drehrichtung der Motoren kann nun über die Zuweisung der Werte 0 oder 1 an die beiden Variablen motli und motre geändert werden. Zu beachten wäre noch dass, die Motoren bei gleicher Polung entgegengesetzt drehen. Für einfache Fahrversuche implmentieren wir zunächst 4 Prozeduren für die Fahrtrichtung: '''fwd''' für Vorwärtsfahrt, '''bwd''' für Rückwärtsfahrt '''turnle''' für Linkskurve (beide Räder drehen entgegengesetzt) '''turnre''' für Rechtskurve.
-Mit der Prozedur '''speed''' kann die Drehzahl der Motoren zwischen 0 und 255 verändert werden. 
+Mit der Prozedur '''speed''' kann die Drehzahl der Motoren zwischen 0 und 255 verändert werden.
 
 
 &lt;c&gt;
@@ -4127,7 +4127,7 @@ Damit der Roboter zunächst gerade aus, dann eine Linkskurve fährt und anhält 
     mdelay(2000);            {Fahrt für 2 Sekunden}
     speed(0,0);              {halt}
     turnre;                  {Rechtsdrehung}
-    speed(50,50);            
+    speed(50,50);
     mdelay(500);             {für 0.5 Sekunden}
     speed(0,0);              {halt}
 &lt;/c&gt;
@@ -4206,7 +4206,7 @@ Zum Ausführen von Ponyprog unter Windos werden Administrator Rechte benötigt. 
 
 Ponyprog war bis zur Version 1.17 als Open Source Projekt mit Quellcode verfügbar. Ab Version 2.0 gibt es nur noch Binär Versionen für einen Redhat Linux Kernel Versionen (Kernel 2.2.x, 2.4.x). Aktuelle Version ist v2.06c BETA. Ponyprog läuft aber auch unter aktuellen Linux Versionen mit 2.6.x Kernel. Dazu benötigt man das libstdc++2.10-glibc2.2 Package.
 
-Ab Version 3.0 ist das Projekt Qt basiert. Auch war das Fuse/Lock Fenster komplett überarbeitet. Es ist möglich, das Projekt aus einigen Linux-Repositories direkt zu installieren, z.B. Ubuntu 19.04, Debian 10. 
+Ab Version 3.0 ist das Projekt Qt basiert. Auch war das Fuse/Lock Fenster komplett überarbeitet. Es ist möglich, das Projekt aus einigen Linux-Repositories direkt zu installieren, z.B. Ubuntu 19.04, Debian 10.
 
 
 Für die Installation sind Rootrechte erforderlich:
@@ -4221,10 +4221,10 @@ Falls es beim Starten von Ponyprog zu folgender Fehlermeldung kommt,
 
   $ ponyprog2000: error while loading shared libraries: libstdc++-libc6.2-2.so.3: cannot open shared object file: No such file or directory
 
-fehlt das besagte libstdc++2.10-glibc2.2 Package. 
-Dieses Package installiert man mit: 
+fehlt das besagte libstdc++2.10-glibc2.2 Package.
+Dieses Package installiert man mit:
 
-  $ aptitude install libstdc++2.10-glibc2.2 
+  $ aptitude install libstdc++2.10-glibc2.2
 
 Falls es auch hier zu einer Fehlermeldung kommt, das das Paket nicht gefunden werden konnte, muß man wohl das Paket für die verwendete Linuxversion ergooglen. z.B. für [http://packages.debian.org/unstable/libs/libstdc++2.10-glibc2.2 Debian] oder [http://packages.ubuntulinux.org/hoary/libs/libstdc++2.10-glibc2.2 Ubuntu].
 
@@ -4258,7 +4258,7 @@ Hier bitte keine Experimente, sonst kann es passieren, daß man sich vom Prozess
 Man wählt den Menüpunkt '''Command''' | '''Security and Configuration Bits...''' oder das Icon [[Bild:ponyprog_fuses.jpg]] an.
 Mit '''Clear all''' löscht man alle eventuell gesetzte Häckchen. Keine Angst, wenn dabei auch der Haken bei SPIEN verschwindet. Damit würde man das ISP Interface abschalten. Dies geht aber mit einem ISP Programmer nicht (deshalb ist dieses Feld auch grau hinterlegt).
 Auch die Einstellungen der BOOTSZ0 und BOOOTSZ1 Flags, wie von der c't empfohlen, ist unerheblich, da noch kein Bootloader verwendet wird.
-Ein Klick auf den '''Write''' Knopf schreibt die Fuse-Bits. Jetzt kann man das erste Programm auf den c't-Bot flashen. 
+Ein Klick auf den '''Write''' Knopf schreibt die Fuse-Bits. Jetzt kann man das erste Programm auf den c't-Bot flashen.
 
 {|
  |-
@@ -4327,13 +4327,13 @@ Auszug aus der Datei 'rc5-codes.h'.
 
 &lt;c&gt;
 /*!
- * Default-Fernbedienung 
+ * Default-Fernbedienung
  * HQ RC Univers 29, Geraetecode 334
  */
 
 #ifdef RC_HAVE_HQ_RC_UNIVERS29_334
 	#define RC5_CODE_PWR		(0x118C &amp; RC5_MASK)		/*!&lt; Taste An/Aus */
-	
+
 	#define RC5_CODE_0		(0x1180 &amp; RC5_MASK)		/*!&lt; Taste 0 /10*/
 	#define RC5_CODE_1		(0x1181 &amp; RC5_MASK)		/*!&lt; Taste 1 */
 	#define RC5_CODE_2		(0x1182 &amp; RC5_MASK)		/*!&lt; Taste 2 */
@@ -4346,17 +4346,17 @@ Auszug aus der Datei 'rc5-codes.h'.
 	#define RC5_CODE_9		(0x1189 &amp; RC5_MASK)		/*!&lt; Taste 9 */
 	#define RC5_CODE_11		(0x118A &amp; RC5_MASK)		/*!&lt; Taste 11 /1-*/
 	#define RC5_CODE_12		(0x11A3 &amp; RC5_MASK)		/*!&lt; Taste 12 /2-*/
-		
+
 	#define RC5_CODE_GREEN		(0x01BA &amp; RC5_MASK)		/*!&lt; Gruene Taste */
 	#define RC5_CODE_RED		(0x01BD &amp; RC5_MASK)		/*!&lt; Rote Taste */
 	#define RC5_CODE_YELLOW		(0x01B1 &amp; RC5_MASK)		/*!&lt; Gelbe Taste */
 	#define RC5_CODE_BLUE		(0x01B0 &amp; RC5_MASK)		/*!&lt; Blaue Taste */
-	
+
 	#define RC5_CODE_I_II		(0x11AB &amp; RC5_MASK)		/*!&lt; I/II-Taste */
 	#define RC5_CODE_TV_VCR		(0x11B8 &amp; RC5_MASK)		/*!&lt; TV/VCR-Taste */
 
 	#define RC5_CODE_DOT		(0x11AB &amp; RC5_MASK)		/*!&lt; Taste mit rundem Punkt */
-	
+
 	#define RC5_CODE_PLAY		(0x11B5 &amp; RC5_MASK)		/*!&lt; PLAY-Taste */
 	#define RC5_CODE_STILL		(0x11A9 &amp; RC5_MASK)		/*!&lt; Pause Taste */
 	#define RC5_CODE_STOP		(0x11B6 &amp; RC5_MASK)		/*!&lt; Pause Taste */
@@ -4371,8 +4371,8 @@ Auszug aus der Datei 'rc5-codes.h'.
 
 	#define RC5_CH_PLUS		(0x11A0 &amp; RC5_MASK)		/*!&lt; Ch + Taste */
 	#define RC5_CH_MINUS		(0x11A1 &amp; RC5_MASK)		/*!&lt; Ch - Taste */
-	
-	
+
+
 	#define RC5_CODE_UP		RC5_CODE_STILL			/*!&lt; Taste Hoch */
 	#define RC5_CODE_DOWN		RC5_CODE_STOP			/*!&lt; Taste Runter */
 	#define RC5_CODE_LEFT		RC5_CODE_BWD				/*!&lt; Taste Links */
@@ -4380,13 +4380,13 @@ Auszug aus der Datei 'rc5-codes.h'.
 #endif
 
 /*!
- * Default-Fernbedienung 
+ * Default-Fernbedienung
  * HQ RC Univers 29, Geraetecode 335
  */
 
 #ifdef RC_HAVE_HQ_RC_UNIVERS29_335
 	#define RC5_CODE_PWR		(0x100C &amp; RC5_MASK)		/*!&lt; Taste An/Aus */
-	
+
 	#define RC5_CODE_0		(0x1000 &amp; RC5_MASK)		/*!&lt; Taste 0 /10*/
 	#define RC5_CODE_1		(0x1001 &amp; RC5_MASK)		/*!&lt; Taste 1 */
 	#define RC5_CODE_2		(0x1002 &amp; RC5_MASK)		/*!&lt; Taste 2 */
@@ -4399,17 +4399,17 @@ Auszug aus der Datei 'rc5-codes.h'.
 	#define RC5_CODE_9		(0x1009 &amp; RC5_MASK)		/*!&lt; Taste 9 */
 	#define RC5_CODE_11		(0x100A &amp; RC5_MASK)		/*!&lt; Taste 11 /1-*/
 	#define RC5_CODE_12		(0x1003 &amp; RC5_MASK)		/*!&lt; Taste 12 /2-*/
-		
+
 	#define RC5_CODE_GREEN		(0x101E &amp; RC5_MASK)		/*!&lt; Gruene Taste */
 	#define RC5_CODE_RED		(0x101D &amp; RC5_MASK)		/*!&lt; Rote Taste */
 	#define RC5_CODE_YELLOW		(0x1027 &amp; RC5_MASK)		/*!&lt; Gelbe Taste */
 	#define RC5_CODE_BLUE		(0x101C &amp; RC5_MASK)		/*!&lt; Blaue Taste */
-	
+
 	#define RC5_CODE_I_II		(0x1023 &amp; RC5_MASK)		/*!&lt; I/II-Taste */
 	#define RC5_CODE_TV_VCR		(0x1038 &amp; RC5_MASK)		/*!&lt; TV/VCR-Taste */
 
 	#define RC5_CODE_DOT		(0x1037 &amp; RC5_MASK)		/*!&lt; Taste mit rundem Punkt */
-	
+
 	#define RC5_CODE_PLAY		(0x11B5 &amp; RC5_MASK)		/*!&lt; PLAY-Taste */
 	#define RC5_CODE_STILL		(0x1029 &amp; RC5_MASK)		/*!&lt; Pause Taste */
 	#define RC5_CODE_STOP		(0x1036 &amp; RC5_MASK)		/*!&lt; Pause Taste */
@@ -4424,8 +4424,8 @@ Auszug aus der Datei 'rc5-codes.h'.
 
 	#define RC5_CH_PLUS		(0x1020 &amp; RC5_MASK)		/*!&lt; Ch + Taste */
 	#define RC5_CH_MINUS		(0x1021 &amp; RC5_MASK)		/*!&lt; Ch - Taste */
-	
-	
+
+
 	#define RC5_CODE_UP		RC5_CODE_STILL			/*!&lt; Taste Hoch */
 	#define RC5_CODE_DOWN		RC5_CODE_STOP			/*!&lt; Taste Runter */
 	#define RC5_CODE_LEFT		RC5_CODE_BWD				/*!&lt; Taste Links */
@@ -4471,7 +4471,7 @@ Anstelle des MAX232 kann auch der pinkompatible MAX202 oder der MAX232A verwende
 |[[Bild:rs232modul.jpg|thumb|400px|RS232 Modul]]
 |}
 
-Ein RS232 Pegelwandler Modul läßt sich recht einfach auf einem Stück Lochrasterplatine zusammenlöten. So hat man neben dem [[LCD-Modul]] eine weitere Debug Ausgabe wie mit dem [[USB-Modul|USB-2-Bot Adapter]], und zusätzlich auch eine Eingabe Möglichkeit. 
+Ein RS232 Pegelwandler Modul läßt sich recht einfach auf einem Stück Lochrasterplatine zusammenlöten. So hat man neben dem [[LCD-Modul]] eine weitere Debug Ausgabe wie mit dem [[USB-Modul|USB-2-Bot Adapter]], und zusätzlich auch eine Eingabe Möglichkeit.
 
 
 === Kommunikation mit c't-Sim ===
@@ -4520,9 +4520,9 @@ Beim Start des c't-Sim startet man über den Schalter 'SerialBot' die Kommunikat
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="3843">== Einführung ==
 
-Mit Hilfe seiner beiden Radencoder kann der c't-Bot die zurückgelegte Wegstrecke bestimmen, eine bestimmte Strecke geradeaus fahren,  sowie sich um einen bestimmten Winkel drehen. 
+Mit Hilfe seiner beiden Radencoder kann der c't-Bot die zurückgelegte Wegstrecke bestimmen, eine bestimmte Strecke geradeaus fahren,  sowie sich um einen bestimmten Winkel drehen.
 
-Auf der Innenseite der Räder sind Encoderscheiben aufgeklebt. Diese muß man sich beim Zusammenbau selbst herstellen, indem man die Vorlage in der richtigen Größe mit einem Laserdrucker auf Transparentfolie druckt. Dann schneidet man die Encoderscheiben aus und klebt sie mit durchsichtigem Alleskleber innen auf die Alu-Räder. Auf den Encoderscheiben sind insgesamt 30 schwarze Streifen kreisförmig angeordnet. Die Radencoder, bestehend aus zwei [[CNY70]] Opto-Reflex-Kopplern, sind so am Bot angebracht, das sie diese Streifen &quot;sehen&quot; können. Damit der [[Mikrocontroller]] diese Signale einfacher verarbeiten kann, werden diese durch ein invertierendes Schmitt-Trigger Gatter in Digitalsignale umgesetzt. Dann braucht der [[Mikrocontroller]] nur noch die Flankenwechsel von 'HIGH' nach 'LOW' zu zählen. 
+Auf der Innenseite der Räder sind Encoderscheiben aufgeklebt. Diese muß man sich beim Zusammenbau selbst herstellen, indem man die Vorlage in der richtigen Größe mit einem Laserdrucker auf Transparentfolie druckt. Dann schneidet man die Encoderscheiben aus und klebt sie mit durchsichtigem Alleskleber innen auf die Alu-Räder. Auf den Encoderscheiben sind insgesamt 30 schwarze Streifen kreisförmig angeordnet. Die Radencoder, bestehend aus zwei [[CNY70]] Opto-Reflex-Kopplern, sind so am Bot angebracht, das sie diese Streifen &quot;sehen&quot; können. Damit der [[Mikrocontroller]] diese Signale einfacher verarbeiten kann, werden diese durch ein invertierendes Schmitt-Trigger Gatter in Digitalsignale umgesetzt. Dann braucht der [[Mikrocontroller]] nur noch die Flankenwechsel von 'HIGH' nach 'LOW' zu zählen.
 
 === Wegstrecke messen ===
 
@@ -4538,16 +4538,16 @@ Zusammen mit dem Radumfang wird daraus die zurückgelegte Wegdifferenz berechnet
 Beim c't-Bot befinden sich auf der Encoderscheibe 30 schwarze Streifen, das ergibt 60 Encoderschritte pro Radumdrehung. Der Raddurchmesser beträgt 57 mm. Mit einer Radumdrehung legt der c't-Bot eine Strecke von 179mm (Pi * d) zurück. Der zurückgelegte Weg je Encoderschritt beträgt ca. 3 mm (U / 60).
 
 {|
-|Reifendurchmesser: 
-|57 mm 
+|Reifendurchmesser:
+|57 mm
 |--
-|Reifenumfang: 
-|179 mm 
+|Reifenumfang:
+|179 mm
 |--
-|Radabstand: 
-|97 mm 
+|Radabstand:
+|97 mm
 |--
-|Encoder/Weg-Auflösung: 
+|Encoder/Weg-Auflösung:
 |ca 3 mm
 |}
 
@@ -4616,7 +4616,7 @@ Normaler Text
 
 * Listen sind praktisch
 ** sogar mit Unter-Hierarchie
-*** und Unter-Unter-Hierarchie 
+*** und Unter-Unter-Hierarchie
 * usw...
 == Tabellen ==
 
@@ -4624,7 +4624,7 @@ Tabellen lassen sich auf viele Arten erstellen:
 
 === Tabelle ohne Rahmen ===
 
-{| 
+{|
  |zelle1
  |zelle2
  |-
@@ -4757,7 +4757,7 @@ Mit Hilfe der Transportfachs kann der c't-Bot Gegenstände einsammeln. Damit er 
 * [[Lichtschranke und Klappensensor]]
 * [[Servo|Servos]]
 
-==Weblinks== 
+==Weblinks==
 
 * [http://www.ctbot.de/viewtopic.php?&amp;t=519 c't-Bot Forum alternative Transportklappe] - Transportfach Visier
 
@@ -4782,7 +4782,7 @@ Mit Hilfe der Transportfachs kann der c't-Bot Gegenstände einsammeln. Damit er 
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="1628">== Einleitung ==
 
-Zur Kommunikation mit der Außenwelt steht dem c't-Bot eine [[Glossar#UART|UART]] zur Verfügung. 
+Zur Kommunikation mit der Außenwelt steht dem c't-Bot eine [[Glossar#UART|UART]] zur Verfügung.
 UART ist eine Abkürzung und bedeutet: '''U'''niversal '''A'''synchronous '''R'''eceiver '''T'''ransmitter. Übersetzt bedeutet das Universeller asynchroner Empfänger und Sender. Die Datenübertragung erfolgt seriell. Asynchron bedeutet, es wird kein Takt mitübertragen, der Empfänger muß anhand der Daten den Takt rückgewinnen.
 
 == Die UART beim c't-Bot ==
@@ -4851,12 +4851,12 @@ Beim c't-Bot liegen die UART-Signale nur als TTL-Pegel auf dem Steckverbinder J4
       <format>text/x-wiki</format>
       <text xml:space="preserve" bytes="4566">== Einführung ==
 
-Das USB-Modul ist eine USB-UART Bridge. Über einen virtuellen COM-Port (VCP) Treiber wird dem PC vorgegaukelt, das eine zusätzliche serielle Schnittstelle im PC vorhanden ist. Auf diese serielle Schnittstelle können dann PC-Programme wie über jeden normalen seriellen Port zugreifen. Auf der UART Seite der USB-UART Bridge wird der c't-Bot über J4 angeschlossen. 
+Das USB-Modul ist eine USB-UART Bridge. Über einen virtuellen COM-Port (VCP) Treiber wird dem PC vorgegaukelt, das eine zusätzliche serielle Schnittstelle im PC vorhanden ist. Auf diese serielle Schnittstelle können dann PC-Programme wie über jeden normalen seriellen Port zugreifen. Auf der UART Seite der USB-UART Bridge wird der c't-Bot über J4 angeschlossen.
 
 === mySmartUSB Flasher ===
 
 Wer bereits den [[AVR_ISP_Programmer#myAVR_mySmartUSB_bzw._AVR910_kompatible_Flasher|mySmartUSB Programmer]] besitzt, kann diesen ebenso als Diagnose Tool verwenden wie den USB-2-Bot Adapter.
-Über die DIP Schalter kann man den mySmartUSB Programmer in den sogennanten Daten-Modus schalten. Damit wird der Programmer zur USB-UART Bridge. 
+Über die DIP Schalter kann man den mySmartUSB Programmer in den sogennanten Daten-Modus schalten. Damit wird der Programmer zur USB-UART Bridge.
 
 {|
  |-
@@ -4877,12 +4877,12 @@ So sieht das Verbindungskabel zwischen mySmartUSB und c't-Bot aus:
 
 &lt;pre&gt;
 mySmartUSB    &lt;---&gt;    c't-Bot J4
-Pin 10  GND   -----    GND Pin 8 
-Pin  8  RXD   -----    TXD Pin 3        
+Pin 10  GND   -----    GND Pin 8
+Pin  8  RXD   -----    TXD Pin 3
 Pin  7  TXD   -----    RXD Pin 2
 &lt;/pre&gt;
 
-Als USB-Chip wird hier der [http://www.silabs.com/public/documents/tpub_doc/dsheet/Microcontrollers/Interface/en/CP2102.pdf CP2102] von [http://www.silabs.com/tgwWebApp/public/index.htm Silicon Laboratories] verwendet. Man benötigt die entsprechenden Treiber des Herstellers 
+Als USB-Chip wird hier der [http://www.silabs.com/public/documents/tpub_doc/dsheet/Microcontrollers/Interface/en/CP2102.pdf CP2102] von [http://www.silabs.com/tgwWebApp/public/index.htm Silicon Laboratories] verwendet. Man benötigt die entsprechenden Treiber des Herstellers
 
 == Kommunikation mit dem c't-Sim ==
 
@@ -4902,7 +4902,7 @@ Unter Linux das entsprechende Device:
 &lt;SerialBot port=&quot;/dev/ttyUSB0&quot;/&gt;
 &lt;/pre&gt;
 
-Beim Start des c't-Sim startet man über den Schalter 'SerialBot' die Kommunikation zum c't-Bot. 
+Beim Start des c't-Sim startet man über den Schalter 'SerialBot' die Kommunikation zum c't-Bot.
 
 Natürlich funktioniert diese Lösung auch mit dem [[UART|RS232-Modul]] und wohl auch mit jedem Funk-Modul das über virtuelle COM-Port Treiber verfügt.
 
@@ -4913,7 +4913,7 @@ Natürlich funktioniert diese Lösung auch mit dem [[UART|RS232-Modul]] und wohl
 * [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/schaltplan-usb-2-bot.pdf Schaltplan USB-2-Bot Adapter]
 * [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/bestueckung-usb-2-bot.pdf Bestückungsplan USB-2-Bot Adapter]
 * [http://www.ftdichip.com/FTDrivers.htm FTDI Treiber]
-* [http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf FTDI232RL Datenblatt]  
+* [http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf FTDI232RL Datenblatt]
 * [http://www.silabs.com/tgwWebApp/public/index.htm Silicon Laboratories]
 * [http://www.silabs.com/public/documents/tpub_doc/dsheet/Microcontrollers/Interface/en/CP2102.pdf CP2102 Datenblatt]
 * [http://users.frii.com/jarvi/rxtx/ rxtx Bibliothek]
@@ -4949,18 +4949,18 @@ Die Vivanco UR89 ist eine 8-in-1 Universalbedienung. Die Fernbedienung ist erhä
 
 {|
 |[[Bild:Vivanco_UR89.jpg|framed|Vivanco UR89. Quelle: [http://www.conrad.de Conrad]]]
-|} 
+|}
 
 === Fernbedien Codes ===
 
-Zur Verwendung der Vivanco UR89 Fernbedienung, muß in der Datei 'rc5-codes.h' folgendes Define vorhanden sein. 
+Zur Verwendung der Vivanco UR89 Fernbedienung, muß in der Datei 'rc5-codes.h' folgendes Define vorhanden sein.
 Außerdem muß man die UR89 im TV Mode auf den Code 089 stellen.
 
 &lt;c&gt;
 #define RC_HAVE_VIVANCO_UR89
 &lt;/c&gt;
 
-Auszug aus der Datei &quot;rc5-codes.h&quot;. Dank an c't-Bot User [http://www.ctbot.de/forum/benutzer-159.html Staudi]. 
+Auszug aus der Datei &quot;rc5-codes.h&quot;. Dank an c't-Bot User [http://www.ctbot.de/forum/benutzer-159.html Staudi].
 
 &lt;c&gt;
 /*!
@@ -5055,116 +5055,11 @@ Die aktuelle Version von WinAVR findet man bei [http://sourceforge.net/projects/
       <minor/>
       <model>wikitext</model>
       <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="5789">== Die Verkabelung des Bots ==
-'''Verkabeln der linken und rechten Sensorplatinen'''
-
-Zuerst betrachten wir die linke Platine (vom Bot aus gesehen). Wenn man die Distanzsensoren verbinden will, muss man den Stecker zuerst mit dem roten Kabel nach oben in den Anschluss stecken. Auf der Platine muss das rote Kabel an Pin3 von J103 eingelötet werden. Danach folgen braun und schwarz auf Pin2 und Pin1 (eckiges Lötpad). Pin3 ist am weitesten vom Aluträger entfernt.
-Auf der rechten Seite (vom Bot aus gesehen) ist das ganze genau andersrum. Hier sitzt das schwarze Kabel ganz oben und auf Pin1 auf J104 (eckiges Lötpad). Auf Pin2 und Pin3 folgen dann Braun und Rot. Auch hier ist Pin3 am weitesten vom Aluträger entfernt. 
-
-'''''Als Anmerkung:''' Zum besseren Sitz der Stecker ist es empfehlenswert die Kabel genau spiegelverkehrt in den Anschluss einzustecken, da so die Stecker besser halten - die Verkabelung muss dann natürlich entsprechend verdreht werden (links &lt;-&gt; rechts).''
-
-'''Achtung:''' Das Gehäuse der Distanzsensoren ist leitfähig. Deshalb unbedingt jeden Kontakt des Gehäuses mit den Sensorplatinen vermeiden. Sonst liefern die Sensoren keine brauchbaren Werte. Am besten ein Stück Plastik-Folie in der Größe der Sensorplatine zwischen Sensorplatine und Aluträger klemmen.
-
-{|
-|-
-|[[Bild:distanzsensor_l.jpg|thumb|Distanzsensor Verkabelung.&lt;br /&gt;Posted by [http://www.ctbot.de/forum/benutzer-15.html marvin]]]
-|-
-|}
-
-Als nächstes betrachten wir die Stecker für ST8 und ST9. Diese werden im ZickZack-Verfahren an J101 bzw. J102 angelötet. Hierbei ist das Zickzack verfahren so zu verstehen, dass (im Regelfall) das schwarze Kabel (Pin1 am Stecker) an den Pin1 am J101 bzw. J102 eingelötet wird. Danach folgt das nachste Kabel in der unteren Reihe von J101 bzw. J102. Somit ergibt das einen Anschluss, dass in einer Reihe entweder nur &quot;gerade&quot; oder &quot;ungerade&quot; Kabel angelötet sind oder anders ausgedrückt: Es werden Pärchen von immer Zwei nebeneinanderliegenden Kabeln am Stecker gebildet, die dann in einer Spalte am entsprechenden J-Anschluss angelötet werden.
-
-'''Achtung:''' Die Farbe der Drähte ist von Version zu Version unterschiedlich! Deshalb nicht blind auf die Bilder vertrauen. 
-
-{|
-|-
-|[[Bild:drahtfarben.gif|thumb|200px|Drahtfarben.&lt;br&gt;Posted by [http://www.ctbot.de/forum/benutzer-83.html rlishere]]]
-|[[Bild:drahtfarben_neu.gif|thumb|300px|Alternative Drahtfarben.&lt;br /&gt;Posted by [http://www.ctbot.de/forum/benutzer-337.html asujata]]]
-|-
-|}
-
-Im allgemeinen Fall befinden sich also schwarz, rot, gelb, blau, grau und braun, orange, grün, violett und weiß in einer Reihe.
-{|
-|-
-|[[Bild:Bild2.JPG|thumb]]
-|[[Bild:Bild3.JPG|thumb]]
-|[[Bild:Bild4.JPG|thumb|im Bild ist ein Kondensator zusehen, der nicht Original ist]]
-|[[Bild:Bild5.JPG|thumb|im Bild ist ein Kondensator zusehen, der nicht Original ist]]
-|-
-|}
-
-
-'''Verkabeln der Mausplatine'''
-
-Das gleiche ZickZack-Schema wie bereits erwähnt gilt auch beim Anschluss der Mausplatine an den ST7. Wieder ist das schwarze Kabel Pin1 und es werden mit den gleichen Gruppierungen alle Kabel an J1 eingelötet.
-
-
-
-'''Verkabel des Akkupack'''
-
-Die Erfahrung hat bei mir ergeben, dass Fehler in der Spannungsversorgung durchaus am Akkuhalter bzw. an der inneren Verbindung der beiden Glieder liegen können. Bei mir habe ich das Akkupack mit Kabeln einfach in Reihe verbunden, ohne die Lötlaschen zu verwenden. Das braune Kabel symbolisiert hierbei den Pluspol der Akkureihe und wird mit dem Stecker an ST1 eingesteckt.
-{|
-|-
-|[[Bild:Kabel_akku.JPG|thumb|]]
-|[[Bild:batteriefach2.jpg|thumb|Batteriefach.&lt;br /&gt;Posted by [http://www.ctbot.de/forum/benutzer-15.html marvin]]]
-|-
-|}
-
-
-'''Verkabeln der Motoren'''
-
-Zum Verkabeln der Motoren werden jeweils die braunen Kabel der zwei-Adrigen Stecker an den Pluspol und die schwarzen an den Minuspol der Motoren angelötet und mit den jeweiligen Steckern ST2 und ST3 verbunden.
-
-
-'''Verkabeln des Displays'''
-
-Da Pin1 am Stecker des Bots für das Display (ST4) mit einem Pfeil markiert ist, ist diese Verkabelung ganz einfach. Der Rote Anschluss am Kabel entspricht vorzugsweiße Pin1 und wird damit auch einfach an Pin 1 des Displays gelötet. Die weiteren Kabel folgen einfach der Reihe nach. Es sei empfohlen die Kabel von unten über das Loch anzulöten, und nicht von oben auf die Markierungen, da die Kabel so besser vor Beschädigung geschützt sind.
-
-Ebenfalls sei hier darauf hingewiesen, dass das Display in den meisten Fällen nicht defekt ist. Auch eine falsche Verkabelung kann ausgeschlossen werden. Um was auf dem Display erkennen zu können muss mit Hilfe des Potentiometers Pot1 eine Spannung von ca. einem halben Volt eingestellt werden. Auch die Kontrolle der Drehrichtung am Poti ist dabei wichtig.
-
-'''Wer in die falsche Richtung dreht, sieht auch nicht mehr :-D'''
-{|
-|-
-|[[Bild:kabel_display_new1.jpg|thumb]]
-|[[Bild:kabel_display_new2.jpg|thumb]]
-|[[Bild:kabel_display_new4.jpg|thumb]]
-|[[Bild:kabel_display_new3.jpg|thumb]]
-|-
-|}
-
-==Weblinks==
-* [http://www.heise.de/ct/projekte/machmit/ctbot/wiki/ct-Bot-Aufbau Original Aufbauanleitung mit Stückliste und Fotos]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/schaltplan-final.pdf Schaltplan - Hauptplatine]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/schaltplan-sensoren.pdf Schaltplan - Sensorplatine]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/schaltplan-maus.pdf Schaltplan - Maussensorplatine]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/bestueckung.pdf Bestückungsplan - Haupt- und Sensorplatine]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/bestueckung_maus.pdf Bestückungsplan - Maussensorplatine]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/download/vorlage_radencoder_scheiben-01.zip Druckvorlage des Radencoders]
-
-[[Kategorie:C't-Bot]]</text>
-      <sha1>5jqm951uu1b3spj8q9e5i2w7rs4g36u</sha1>
-    </revision>
-  </page>
-  <page>
-    <title>Vorlage:TOC</title>
-    <ns>10</ns>
-    <id>1302</id>
-    <revision>
-      <id>3407</id>
-      <parentid>3406</parentid>
-      <timestamp>2010-05-03T18:35:39Z</timestamp>
-      <contributor>
-        <username>Melwood</username>
-        <id>2</id>
-      </contributor>
-      <minor/>
-      <comment>Schützte „[[Vorlage:TOC]]“ ([edit=autoconfirmed] (unbeschränkt) [move=autoconfirmed] (unbeschränkt))</comment>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="401">&lt;div&gt;
+      <text xml:space="preserve" bytes="5789">&lt;div&gt;
 __NOTOC__
 
-{| border=&quot;0&quot; class=&quot;hintergrundfarbe1 rahmenfarbe1&quot; style=&quot;border-style: solid; padding:5px;&quot; align=center	 	
-| '''Inhaltsverzeichnis''' [[#A|A]] [[#B|B]] [[#C|C]] [[#D|D]] [[#E|E]] [[#F|F]] [[#G|G]] [[#H|H]] [[#I|I]] [[#J|J]] [[#K|K]] [[#L|L]] [[#M|M]] [[#N|N]] [[#O|O]] [[#P|P]] [[#Q|Q]] [[#R|R]] [[#S|S]] [[#T|T]] [[#U|U]] [[#V|V]] [[#W|W]] [[#X|X]] [[#Y|Y]] [[#Z|Z]]	 	
+{| border=&quot;0&quot; class=&quot;hintergrundfarbe1 rahmenfarbe1&quot; style=&quot;border-style: solid; padding:5px;&quot; align=center
+| '''Inhaltsverzeichnis''' [[#A|A]] [[#B|B]] [[#C|C]] [[#D|D]] [[#E|E]] [[#F|F]] [[#G|G]] [[#H|H]] [[#I|I]] [[#J|J]] [[#K|K]] [[#L|L]] [[#M|M]] [[#N|N]] [[#O|O]] [[#P|P]] [[#Q|Q]] [[#R|R]] [[#S|S]] [[#T|T]] [[#U|U]] [[#V|V]] [[#W|W]] [[#X|X]] [[#Y|Y]] [[#Z|Z]]
 |}
 &lt;/div&gt;</text>
       <sha1/>
