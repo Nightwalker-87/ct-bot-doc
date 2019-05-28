@@ -26,16 +26,12 @@ Zum Projekt gibt es viel Doku, hier ein paar generelle Anlaufadressen:
 1. Die **[FAQ](http://www.heise.de/ct/artikel/FAQ-fuer-c-t-Bot-und-c-t-SIM-291940.html)**
 1. Das **[Heise Forum](http://www.heise.de/ct/foren/go.shtml?list=1&forum_id=89813)**
 1. Die **[Ersten Schritte](../FirstSteps/FirstSteps.md)**
-1. **Direkter Kontakt** über:
-    * das Matrix-Netzwerk mit **[Riot.im](https://riot.im/app/#/room/#ctbot:matrix.org)** (auch als Gast ohne Registrierung nutzbar)
-    * oder **[Slack](https://ct-bot-slack.herokuapp.com)**
-    * Matrix/Riot.im und Slack sind synchronisiert, zeigen also immer dieselben Inhalte und können je nach persönlicher Präferenz gewählt werden.
+1. Das **[Heise Forum](https://www.heise.de/forum/c-t/Kommentare-zu-c-t-Artikeln/c-t-Bot-und-c-t-Sim/forum-23074/)** (dient als Archiv)
+   * Das **[Archiv der Mailingliste](https://www.heise.de/ct/newsletter/archiv/ct-bot-entwickler/)**
+
 
 ## Schnelleinstieg in das Projekt
 
-1. Mal ausprobieren, wie das ganze so geht (auch ohne Geld auszugeben): **[Erste Schritte mit dem c't-Bot](../FirstSteps/FirstSteps.md)**
-1. c't-Bot **[aufbauen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Aufbau-und-Montage)**
-1. c't-Bot **[testen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)**
 1. Die Firmware für die eigene Hardware **[kalibrieren](../ct-Bot-Software/ct-Bot-Software.md#Kalibrierung)**
 1. Demo-Firmware **[ausprobieren](../ct-Bot-Software/ct-Bot-Software.md#Und-los-geht-es)**
 1. **[Eigenen Code](../ct-Bot-Software/ct-Bot-Software.md#Eigene-Schritte)** schreiben
@@ -53,10 +49,6 @@ Zum Projekt gibt es viel Doku, hier ein paar generelle Anlaufadressen:
 * c't-Bot **[testen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)**
 * Die Datenblätter für die Elektronik-Komponenten finden sich [hier](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/datasheets).
 * Herzstück des Funkmoduls [WiPort](http://www.lantronix.com/pdf/WiPort_UG.pdf)
-
-## Software
-
-**[Installationsanleitung](../InstallationsanleitungR23/InstallationsanleitungR23.md)** für c't-Bot und c't-Sim
 
 ### c't-Bot
 
@@ -82,7 +74,6 @@ Dieses Teilprojekt umfasst den Java-Code für den Simulator c't-Sim
 Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Damit eigener Code den Weg in das Repository findet, sollte er den **[Code Richtlinien](../../doc/wiki_pages/coding_conventions.md)** entsprechen.
 
 * Code Repository: Ab sofort findet sich der aktuelle Bot-Code in einem [Repository auf GitHub](https://github.com/tsandmann/ct-bot). Die URLs, um den Code in Eclipse oder andere Tools zu holen lauten: `https://github.com/tsandmann/ct-bot.git` und `https://github.com/tsandmann/ct-sim.git`.
-* **[Detailierte Beschreibung](../GITUndEclipse/GITUndEclipse.md)** zum Repository und der Integration in Eclipse.
 * Der aktuell stabile Code liegt jeweils im Branch **[master](https://github.com/tsandmann/ct-bot/tree/master)**, der Neueste (aber teilweise auch Experimentelle)  im Branch **[develop](https://github.com/tsandmann/ct-bot/tree/develop)**.
 * **[Zip-Files](https://github.com/tsandmann/ct-bot/releases)** mit dem Code der bisherigen Releases
 * Ältere **[Erweiterungen](../deprecated/Patches/Patches.md)** von Lesern
@@ -98,18 +89,37 @@ Aller Sourcecode steht in einem frei zugänglichen Git-Repository auf GitHub. Da
   * **[Installation der AVR-Toolchain](../AVRToolchain/AVRToolchain.md)** zur Entwicklung des Steuercodes eines *realen* c't-Bots
   * **[Hintergründe](../AVRToolchainInterna/AVRToolchainInterna.md)** zur AVR-Toolchain
   * **[AVR-Tools und Tricks](../AVRToolchain/AVRToolchain.md#Nützliche Tools für AVR)** für die (Bot-)Softwareentwicklung
+  1. c't-Bot compilieren [Bot compilieren, Simulator starten und c't-Bot starten](../InstallationsanleitungR23/InstallationsanleitungR23.md#ct-Sim-und-virtuelle-Bots-starten)
+  1. Fernbedienung öffnen und Wandfolger (Taste 5) starten
 
 ## Jagd auf den Fehlerteufel
 
 * **[Fehlerberichte und Erweiterungsvorschläge zum c't-Bot](https://github.com/tsandmann/ct-bot/issues)**
 * **[Fehlerberichte und Erweiterungsvorschläge zum c't-Sim](https://github.com/tsandmann/ct-sim/issues)**
 
-## Organisatorisches
-
-* Die **[Projekthistorie](../../doc/wiki_pages/project_history.md)**
-
 ## Leserprojekte
 * Diplomarbeit mit einer [Ladestation und WLAN](http://www.db-thueringen.de/servlets/DerivateServlet/Derivate-13826/Schmidt_Diplom_ct-Bot.pdf) sowie einer guten Einführung in den c't-Bot.
 
+# Erste Schritte mit dem c't-Bot
+
+Vorne weg ein paar [heitere Worte](https://www.heise.de/ct/artikel/Hallo-mein-Name-ist-Benjamin-Ich-bin-suechtig-290260.html) zur Motivation und eine [Einführung](https://www.heise.de/ct/artikel/Spielgefaehrten-290274.html) in das Projekt.
+
+Das c't-Bot-/c't-Sim-Projekt läuft schon eine ganze Weile und folglich gibt es auch eine ganze Menge an Dokumentation, Artikeln, FAQs und so weiter. Damit der Einstieg etwas leichter wird, haben wir hier ein paar nützliche Tipps und Literaturhinweise gesammelt.
+
+## Testen/Spielen ohne Geld für Hardware auszugeben
+
+Möchte man dem Bot eigene Kunststückchen beibringen, kommt man um die Installation der Toolchain nicht herum. Wie man den Bot programmiert haben wir bereits ausführlich beschrieben:
+
+1. c't-Artikel: [Idee des c't-Sim](https://www.heise.de/ct/artikel/Virtuelle-Spielgefaehrten-290294.html)
+1. c't-Artikel: [Interna des c't-Sim](https://www.heise.de/ct/artikel/Draengelnde-Spielgefaehrten-290334.html)
+1. c't-Artikel: [Programmierung](https://www.heise.de/ct/artikel/Hohe-Schule-290392.html) des (virtuellen) c't-Bot
+1. c't-Artikel: [Tutorial](https://www.heise.de/ct/artikel/Ausgang-gesucht-290460.html) für die Programmierung des c't-Bot
+1. c't-Artikel: [Eigene Welten](https://www.heise.de/ct/artikel/Genesis-290480.html) für den c't-Sim
+1. c't-Artikel: [Kartographie](https://www.heise.de/ct/artikel/An-der-naechsten-Ecke-links-290662.html) für den c't-Bot
+
+## Weitere externe Dokumentation
+
+1. Eine Bachelorarbeit zur [Entwicklung einer Bibliothek als Basis für die Programmierung und Steuerung des c't-Bots](http://users.informatik.haw-hamburg.de/~kvl/teske/bachelor_teske.pdf) der HAW Hamburg
+1. Eine Diplomarbeit zur [Konzeption und Umsetzung eines Remote Engineering Praktikums für mobile Roboter](https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00013826/Schmidt_Diplom_ct-Bot.pdf) der TU Ilmenau
 
 [![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
