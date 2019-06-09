@@ -3,7 +3,6 @@
 ## Aufbau und Montage
 
 * c't-Artikel: [Aufbau des c't-Bot](../../ct_articles_heise/04_Aufbau_und_Inbetriebnahme.pdf)
-* Aufbauanleitung der [Basisversion](ct-Bot-Aufbau.md) mit Fotos
 * c't-Artikel: **[Fehlersuche](https://www.heise.de/ct/artikel/Kammerjaeger-290506.html)** an der Hardware des c't-Bot
 * **[FAQ](https://www.heise.de/ct/artikel/FAQ-fuer-c-t-Bot-und-c-t-SIM-291940.html)-Einträge**
 * Empfehlenswerte **[Hardware-Modifikationen](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md)**
