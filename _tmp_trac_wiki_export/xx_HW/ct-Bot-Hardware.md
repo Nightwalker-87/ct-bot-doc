@@ -8,8 +8,6 @@
 * Empfehlenswerte **[Hardware-Modifikationen](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md)**
 
 Ist die Hardware soweit fertig, muss die Firmware auf den Bot:
-
-* Software in den c't-Bot **[flashen](../Flash/Flash.md)**
 * **[Programmieradapter](http://www.heise.de/ct/Redaktion/cm/klangcomputer/index1.htm)** (Achtung, diese Beschreibung des Adapters entstammt dem Klangcomputer-Projekt, das andere Einstellungen für die Fuse-Bits verwendet als der c't-Bot!)
 
 ## Test eines frisch aufgebauten ct-Bots
@@ -41,11 +39,6 @@ Die Aufbauanleitung und die Korrekturhinweise, die den Teilesätzen beiliegen, d
 * Schaltplan Sensorplatinen (aus c't 04/06)
 * Bestückungsdruck Hauptplatine (aus c't 04/06)
 * Schaltplan Hauptplatine (aus c't 02/06)
-
-Nach wie vor aktuell, und hier der Vollständigkeithalber nochmals aufgeführt:
-
-* Schaltplan Maussensor (aus c't 04/06)
-* Bestückungsplan Maussensor aus c'2 04/06
 
 Wer bereits angefangen hat zu bauen findet hier eine Zusammenfassung der wichtigsten Korrekturen:
 

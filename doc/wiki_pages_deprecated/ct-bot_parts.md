@@ -1,28 +1,25 @@
+# Teilelisten & Design-Dokumente für den c't-Bot
 
+## Schaltpläne
 
-## Schaltpläne <a name="Schaltplaene"></a>
-
-* [Hauptplatine](schaltplan-final.pdf) Stand: 13.02.2006
-* [Sensorplatinen](schaltplan-sensoren.pdf) Stand: 13.02.2006
-* [Maussensor](schaltplan-maus.pdf) Stand: 13.02.2006
-* [USB-2-Bot-Adapter](schaltplan-usb-2-bot.pdf) Stand: 20.03.2006
-* [Erweiterungsmodul](schaltplan-erweiterung.pdf) Stand: 06.01.2007
+* [Hauptplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/01_mainboard.pdf)
+* [Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/02_sensorboard_L_R.pdf)
+* [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/03_sensorboard_mouse.pdf)
+* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/05_extensionboard.pdf)
 
 ## Bestückungspläne
 
-* [Hauptplatine und Sensorplatinen](bestueckung.pdf) Stand: 13.02.2006
-* [USB-2-Bot-Adapter](bestueckung-usb-2-bot.pdf) Stand: 20.03.2006
-* [Erweiterungsmodul](bestueckung-erweiterung.pdf) Stand: 06.01.2007
+* [Hauptplatine mit Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/01_pcb_mainboard.pdf)
+* [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/03_sensorboard_mouse.pdf)
+* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/05_extensionboard.pdf)
 
-## Mechanische Teile des Bot
+## Mechanische Teile
 
-* [Grundplatte](grundplatte_bemassung.pdf) Stand: 13.02.2006
+* [Technische Zeichnung der Grundplatte](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/drawings/baseplate.pdf)
 
-## Stücklisten <a name="Stuecklisten"></a>
+## Stücklisten
 
 ### Bauteile des Erweiterungsmoduls
-
-Stand: 06.01.2007
 
 <table>
   <tr>

@@ -23,8 +23,6 @@ C't-Bot FAQ
 C't-Bot Links
 C't-Bot Simulation
 C't-Sim Programmierung MacOSX
-Glossar
-Hauptseite
 Installation unter Windows
 Java Programierung Linux
 Java Programierung Windows
@@ -50,3 +48,6 @@ Liniensensor
 Radencoder
 Servo
 Transportfach
+
+Glossar
+Hauptseite

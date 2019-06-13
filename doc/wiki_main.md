@@ -33,8 +33,8 @@ Der komplette Sourcecode liegt in einem frei zugänglichen Git-Repository auf Gi
 
 Die Dokumentation des Hardware-Designs liegt in einem frei zugänglichen Git-Repository auf GitHub. Hier finden sich auch alle technischen Datenblätter für die Elektronik-Komponenten:
 
-* **Git-Repository und Direktlink-URL:**
-    * [ct-bot-hw](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/) (`https://github.com/tsandmann/ct-bot-hw.git`)
+**Git-Repository und Direktlink-URL:**
+* [ct-bot-hw](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/) (`https://github.com/tsandmann/ct-bot-hw.git`)
 
 ## Issue-Tracking für Hinweise und Fehlermeldungen zum Code:
 
@@ -45,15 +45,5 @@ Die Dokumentation des Hardware-Designs liegt in einem frei zugänglichen Git-Rep
 
 * P. Teske (2009): ["Entwicklung einer Bibliothek als Basis für die Programmierung und Steuerung des c't-Bots"](http://users.informatik.haw-hamburg.de/~kvl/teske/bachelor_teske.pdf), Bachelorarbeit (HAW Hamburg)
 * F. Schmidt (2007): ["Konzeption und Umsetzung eines Remote Engineering Praktikums für mobile Roboter"](https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00013826/Schmidt_Diplom_ct-Bot.pdf), Diplomarbeit (TU Ilmenau) (gute Einführung in den c't-Bot, inkl. einer Ladestation aus Eigenentwicklung)
-
----
-
-**Lizenzbestimmungen:** Diese digitale Enzyklopädie (Wiki) unterliegt den CC-BY-SA-Lizenzbestimmungen (siehe unten).
-
-__Die obigen Lizenzbestimmungen sind zur Kenntnis zu nehmen und bestehen auch bei der Vervielfältigung und/oder Verwendung von Inhalten aus diesem Wiki auf unbestimmte Zeit fort.__
-
-**Licensing terms:** This digital encyclopedia (wiki) is licensed under the terms of CC-BY-SA (see below).
-
-__The above-mentioned license terms are to be acknowledged and remain valid indefinitely for any reproduction and/or use of content from this source.__
 
 [![License: CC BY-SA 4.0](../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
