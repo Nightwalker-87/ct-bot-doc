@@ -49,12 +49,11 @@ Nun fehlen nur noch das Potentiometer POT1 für den Display-Kontrast und die Hoh
 ## Erster Test
 
 Bevor man die empfindlichen ICs einsteckt, empfiehlt sich ein Funktionstest der Spannungsversorgung.
-Dazu hängt man entweder einen Akkupack bestehend aus fünf AA-Mignon-Zellen an Stecker ST1 oder ein Netzteil mit 6 Volt Gleichspannung an die Hohlstecker-Buchse P1.
+Dazu hängt man entweder einen Akkupack bestehend aus fünf AA-Zellen (Mignon) an Stecker ST1 oder ein Netzteil mit 6 Volt Gleichspannung an die Hohlstecker-Buchse P1.
 Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 +5,0 Volt an, arbeitet der Spannungsregler korrekt.
 Zwischen Pin 2 und Pin 3 liegt hingegen direkt die Eingangsspannung.
 
-**Achtung:** Die Belegung des Hohlsteckers und der zugehörigen Buchse hat sich gegenüber dem ursprünglichen Schaltplan geändert.
-Masse (GND) muss nun außen und nicht mehr innen liegen.
+**Achtung:** Die Belegung des Hohlsteckers und der zugehörigen Buchse hat sich gegenüber dem in c't 2/2006 abgedruckten Schaltplan geändert: Masse (GND) muss nun außen und nicht mehr innen liegen. Im Schaltplan aus dem [Hardware-Repository](https://github.com/tsandmann/ct-bot-hw/tree/master/v1) ist dies bereits korrigiert.
 
 Zur Sicherheit bewahrt eine Schutzdiode (D3) die Schaltung im Fehlerfall vor Schäden durch Verpolung.
 Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man nun die verbleibenden ICs einsetzen.
@@ -86,7 +85,7 @@ Die Stempelung zeigt bei U104 zur Platine hin, bei U103 weg.
 
 **Achtung:** In der ursprünglichen Version stimmt der Bestückungsdruck auf der Platine nicht, der hier dargestellte Ansicht ist die korrigierte Version.
 
-Die anderen beiden Optokoppler (U101, U102) beobachten die Innenseite der Räder mit ihren Encoder-Scheiben.
+Die anderen beiden Reflexlichtschranke (U101, U102) beobachten die Innenseite der Räder mit den Encoder-Scheiben.
 Die Leuchtdiode (LED101) auf der rechte Platine) kommt auf die Unterseite, während die Lichtschranke (U105) auf der linken Platine sitzt (auf der Seite mit dem Bestückungsdruck).
 Die Lichtschranke muss dazu so abgewinkelt werden, dass ihre flache Seite später zur Leuchtdiode blickt.
 
@@ -102,7 +101,7 @@ Das Verlöten aller Kabel hebt man sich bis zur Endmontage auf.
 Damit der Roboter seine Position verfolgen kann, bekommt er seine eigene optische Maus.
 Dieser Sensor meldet Daten über Bewegungen in X- und Y-Richtung direkt an den Mikrocontroller.
 
-Die Kondensatoren (C1, C2) und Widerstände (R1-R7) platziert man wie fast alle Bauteile auf der Seite der Platine die keine Leiterbahnen enthält.
+Die Kondensatoren (C1, C2) und Widerstände (R1-R7) platziert man wie fast alle Bauteile auf der Seite der Platine, die keine Leiterbahnen enthält.
 Der Quarz Q1 erhält wieder eine Isolierscheibe und der Transistor Q2 wird um 90° abgewinkelt, damit seine flache Seite auf der Platine aufliegt.
 Anders als auf der Platine aufgedruckt, müssen die Stempelungen der beiden Liniensensoren (U1, U2) beide zu der Seite zeigen, an der auch der Quarz sitzt.
 
@@ -128,6 +127,8 @@ Zwei kleine mit jeweils zwei PVC-Schrauben versehene Platinenstreifen fixieren d
 Je eine PVCMutter und eine Unterlegscheibe sorgen dabei für den richtigen Abstand und verhindern zu hohen Druck auf die Kunststoffteile.
 
 ![Image: '14_mouse_sensor_assembly.jpg'](../images/assembly/14_mouse_sensor_assembly.jpg)
+
+> ToDo: Bildquellen (13_mouse_sensor_optic.jpg und 14_mouse_sensor_assembly.jpg)? Laut [Wiki]((https://wiki.ctbot.de/index.php?title=Agilent_ADNS-2610)): "*Agilent*".
 
 
 ## Sensorplatinen
@@ -155,7 +156,7 @@ Auch auf dieser Sensorplatine ist Pin 3 am weitesten vom Aluminiumträger entfer
 
 **Hinweis:** Wie sich gezeigt hat, ist das _Gehäuse der Distanzsensoren nicht elektrisch isolierend_.
 Damit die Distanzsensoren später brauchbare Messwerte liefern, ist ein Kontakt des Gehäuses mit den Trägerpfosten wie auch mit den Lötstellen der Sensorplatinen unbedingt zu vermeiden.
-Am Besten gelingt dies bei der Montage mit Unterlegscheiben aus Kunststoff.
+Am Besten gelingt dies bei der Montage mit Unterlegscheiben und Schrauben aus Kunststoff.
 
 _Anmerkung: Für einen besseren Sitz der Stecker können die Kabel bei entsprechender Vertauschung der Anschlussadern Rot und Schwarz auf Wunsch auch spiegelverkehrt in den Sensor-Anschluss eingesteckt werden._
 
