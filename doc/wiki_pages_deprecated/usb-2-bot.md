@@ -9,7 +9,7 @@ Diese UART-Schnittstelle dient **nicht** zur *erstmaligen* Programmierung eines 
 
 Der Adapter wurde als Bausatz und Platine mit vorbestücktem SMD-Chip von Segor Electronics angeboten. _(Bausatz ist nicht mehr verfügbar)_
 
-Als USB-Chip findet hier der Controller [FTDI232RL](https://www.ftdichip.com/Products/ICs/FT232R.htm) Verwendung.
+Als USB-Chip findet hier der Controller FTDI232RL ([Datenblatt](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/datasheets/FT232R%20FTDI%202015-11.pdf)) Verwendung.
 
 ![Image: 'usb-2-bot_01.jpg'](../images/usb-2-bot/usb-2-bot_01.jpg)
 
@@ -109,7 +109,7 @@ Die ursprünglich vorgeschlagene Kommunikation über die JD2XX-Bibliothek und de
 Daher wurde die Kommunikation mit tatkräftiger Unterstützung einiger Leser auf die RXTX-Bibliothek umgestellt.
 
 Schließt man den USB-2-Bot-Adapter zum ersten Mal an einen Windows-PC an, so fragt das Betriebssystem nach einem Treiber.
-Hier wählt man den [VCP-Treiber](https://www.ftdichip.com/Drivers/VCP.htm) aus, der einen virtuellen COM-Port einrichtet.
+Hier wählt man den VCP-Treiber aus, der einen virtuellen COM-Port einrichtet.
 
 Aktuelle Linux-Kernel erkennen den FTDI-Chip bereits von Haus aus und machen ihn über /dev/ttyUSB0 zugänglich.
 

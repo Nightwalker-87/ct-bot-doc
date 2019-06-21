@@ -53,7 +53,9 @@ Dazu hängt man entweder einen Akkupack bestehend aus fünf AA-Zellen (Mignon) a
 Zeigt ein Voltmeter zwischen Pin 1 und Pin 3 der Leiste J3 +5,0 Volt an, arbeitet der Spannungsregler korrekt.
 Zwischen Pin 2 und Pin 3 liegt hingegen direkt die Eingangsspannung.
 
-**Achtung:** Die Belegung des Hohlsteckers und der zugehörigen Buchse hat sich gegenüber dem in c't 2/2006 abgedruckten Schaltplan geändert: Masse (GND) muss nun außen und nicht mehr innen liegen. Im Schaltplan aus dem [Hardware-Repository](https://github.com/tsandmann/ct-bot-hw/tree/master/v1) ist dies bereits korrigiert.
+**Achtung:** Die Belegung des Hohlsteckers und der zugehörigen Buchse hat sich gegenüber dem in c't 2/2006 abgedruckten Schaltplan geändert:
+Masse (GND) muss nun außen und nicht mehr innen liegen.
+Im [Schaltplan](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/schematics/01_mainboard.pdf) ist dies bereits korrigiert.
 
 Zur Sicherheit bewahrt eine Schutzdiode (D3) die Schaltung im Fehlerfall vor Schäden durch Verpolung.
 Nach erfolgreichem Spannungstest und Abklemmen der Stromversorgung kann man nun die verbleibenden ICs einsetzen.
@@ -119,16 +121,12 @@ Bestandteil des Chip-Zubehörs ist auch eine Linsenplatte aus transparentem Kuns
 Diese fokussiert das Licht der LED und reflektiert den Lichtstrahl über ein enthaltenens Prisma um 90°.
 Anschließend wird das Lichtbündel auf die Detektionsebene unter der Sensoröffnung des Chips projiziert.
 
-![Image: '13_mouse_sensor_optic.jpg'](../images/assembly/13_mouse_sensor_optic.jpg)
-
 Nach dem Entfernen der Schutzfolie auf der Unterseite des Sensor-ICs wird die Linsenplatte von unten auf den IC aufgesetzt.
 
 Zwei kleine mit jeweils zwei PVC-Schrauben versehene Platinenstreifen fixieren deren Position und werden anschließend mit der Platine und einer Abschlussplatte zu einem Sandwich verschraubt.
 Je eine PVCMutter und eine Unterlegscheibe sorgen dabei für den richtigen Abstand und verhindern zu hohen Druck auf die Kunststoffteile.
 
-![Image: '14_mouse_sensor_assembly.jpg'](../images/assembly/14_mouse_sensor_assembly.jpg)
-
-> ToDo: Bildquellen (13_mouse_sensor_optic.jpg und 14_mouse_sensor_assembly.jpg)? Laut [Wiki]((https://wiki.ctbot.de/index.php?title=Agilent_ADNS-2610)): "*Agilent*".
+Technische Zeichnungen zum beschriebenen Strahlverlauf und zum Zusammenbau des Maussensors finden sich im zugehörigen [Datenblatt](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/datasheets/_obsolete/ADNS-2610%20Agilent%202004-10.pdf) auf den Seiten 3 und 4.
 
 
 ## Sensorplatinen
@@ -140,7 +138,7 @@ Kurze Kabel verbinden sie mit den Sensorplatinen.
 
 **Achtung:** Die GP2D12-Sensoren verzeihen keine Verpolung. Daher ist beim Anlöten der Kabel unbedingt auf die korrekte Polung zu achten:
 
-![Image: '15_dist_sensor_pinout.jpg'](../images/assembly/15_dist_sensor_pinout.jpg)
+![Image: '13_dist_sensor_pinout.jpg'](../images/assembly/13_dist_sensor_pinout.jpg)
 
 Blickt man direkt in den Stecker hinein, während die Sensorlinsen nach oben zeigen, so liegt Pin 1 auf der linken Seite.
 Sofern die rote Ader des Anschlusskabels Pin 1 zugeordnet wird, zeigt im montierten Zustand und relativ zur Fahrtrichtung gesehen beim linken Sensor die rote Ader nach oben und beim rechten Sensor nach unten.
@@ -148,7 +146,7 @@ Sofern die rote Ader des Anschlusskabels Pin 1 zugeordnet wird, zeigt im montier
 Auf der linken Platine muss das rote Kabel auf der linken Sensorplatine dann an Pin 3 des Anschlussfeldes J103 eingelötet werden, welches am weitesten vom Trägerpfosten entfernt ist.
 Danach folgen entsprechend die braune und schwarze Ader auf Pin 2 und Pin 1 (eckiges Lötpad) von J103.
 
-![Image: '16_dist_sensor_L_cable.jpg'](../images/assembly/16_dist_sensor_L_cable.jpg)
+![Image: '14_dist_sensor_L_cable.jpg'](../images/assembly/14_dist_sensor_L_cable.jpg)
 
 Auf der vom Bot aus gesehen rechten Platine sitzt das schwarze Kabel ganz oben und platinenseitig auf Pin 1 (eckiges Lötauge) des Anschlussfeldes J104.
 Auf Pin 2 und Pin 3 folgen dann entsprechend die Adern Braun und Rot.
@@ -206,7 +204,7 @@ Hier wird das Ende des schwarzen Kabels (entspricht auf der Steckerseite ebenfal
 
 **Hinweis:** Die Belegung der farbigen Adern an den vorkonvektionierten Steckern kann bei einzelnen Versionen des Bausatzes abweichen!
 
-| ![Image: '17_wire_colours_v1.jpg'](../images/assembly/17_wire_colours_v1.jpg) | ![Image: '18_wire_colours_v2.jpg'](../images/assembly/18_wire_colours_v2.jpg) |
+| ![Image: '15_wire_colours_v1.jpg'](../images/assembly/15_wire_colours_v1.jpg) | ![Image: '16_wire_colours_v2.jpg'](../images/assembly/16_wire_colours_v2.jpg) |
 | ---                                                                           | ---                                                                           |
 
 
@@ -221,7 +219,7 @@ Somit drehen die Motoren gegenläufig, was die Firmware des Mikrocontrollers jed
 Die beiden Batteriehalter verklebt man zu einem Block, der später auf dem Maus-Sandwich ruht und mit Moosgummi-Pads und Klettband in Position gehalten wird.
 Elektrisch hängen alle fünf Batterien in Reihe, wozu der Pluspol des einen Päckchens mit dem Minuspol des anderen zu verbinden ist.
 
-![Image: '19_batterypack_assembled.jpg'](../images/assembly/19_batterypack_assembled.jpg)
+![Image: '17_batterypack_assembled.jpg'](../images/assembly/17_batterypack_assembled.jpg)
 
 
 ### Display
@@ -231,7 +229,7 @@ Die rote Ader des Flachbandkabels entspricht vorzugsweise Pin 1 und wird damit a
 Alle weiteren Kabel folgen dann einfach der Reihe nach.
 Es wird empfohlen am Display die Kabel von unten über die Lötaugen anzulöten, und nicht von von der Oberseite aus, da die Kabel so besser vor Beschädigung durch Abknicken geschützt sind.
 
-| ![Image: '20_display_cable_plug.jpg'](../images/assembly/20_display_cable_plug.jpg) | ![Image: '21_display_cable_soldered_side.jpg'](../images/assembly/21_display_cable_soldered_side.jpg) | ![Image: '22_display_cable_soldered_top.jpg'](../images/assembly/22_display_cable_soldered_top.jpg) |
+| ![Image: '18_display_cable_plug.jpg'](../images/assembly/18_display_cable_plug.jpg) | ![Image: '19_display_cable_soldered_side.jpg'](../images/assembly/19_display_cable_soldered_side.jpg) | ![Image: '20_display_cable_soldered_top.jpg'](../images/assembly/20_display_cable_soldered_top.jpg) |
 | ---                                                                                 | ---                                                                                                   | ---                                                                                          |
 
 Ebenfalls sei hier darauf hingewiesen, dass das Display in den meisten Fällen nicht defekt und durch obiges Vorgehen auch eine falsche Verkabelung ausgeschlossen ist.
@@ -240,7 +238,7 @@ Dies sollte bei einer Spannung von ca. einem halben Volt gegeben sein.
 
 **Hinweis:** Bei der Einstellung ist die Drehrichtung des Potentiometers zu beachten und auch, dass die Einstellschraube nicht überdreht wird.
 
-![Image: '23_display_assembled.jpg'](../images/assembly/23_display_assembled.jpg)
+![Image: '21_display_assembled.jpg'](../images/assembly/21_display_assembled.jpg)
 
 
 ## Fotos

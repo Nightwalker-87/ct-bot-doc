@@ -92,7 +92,7 @@ Zum Zeitpunkt der Erstellung dieser Seite gibt es zwei für das Vorhaben geeigne
     Hierbei handelt es sich um das ursprüngliche BeagleBoard; im Folgenden als _BeagleBoard_ bezeichnet wird.
 
     Spezifikationen:
-    * Super-scalar ARM Cortex-A8 ([OMAP3530](https://www.ti.com/lit/ds/symlink/omap3530.pdf)), CPU 720 MHz, DSP 520 MHz
+    * Super-scalar ARM Cortex-A8 ([OMAP3530](https://www.ti.com/lit/ds/symlink/omap3530.pdf)), CPU 720 MHz, DSP 520 MHz _(externer Link)_
     * 256 MB LPDDR RAM
     * 256 MB NAND Flash
     * High-speed USB 2.0 OTG port
@@ -108,7 +108,7 @@ Zum Zeitpunkt der Erstellung dieser Seite gibt es zwei für das Vorhaben geeigne
     Diese Version unterscheidet sich vom obigen Board im Wesentlichen durch einen schnelleren Prozessor, mehr Speicher und einen integrierten USB-Hub; im Folgenden als _BeagleBoard-xM_ bezeichnet
 
     Spezifikationen:
-    * Super-scalar ARM Cortex-A8 ([DM3730](https://www.ti.com/lit/ds/symlink/dm3730.pdf)), CPU 1 GHz, DSP 800 MHz
+    * Super-scalar ARM Cortex-A8 ([DM3730](https://www.ti.com/lit/ds/symlink/dm3730.pdf)), CPU 1 GHz, DSP 800 MHz _(externer Link)_
     * 512 MB LPDDR RAM
     * High-speed USB 2.0 OTG port
     * On-board four-port high-speed USB 2.0 hub with 10/100 MBit Ethernet
@@ -120,13 +120,13 @@ Zum Zeitpunkt der Erstellung dieser Seite gibt es zwei für das Vorhaben geeigne
     * Overvoltage Protection
     * Preis: 143 € (in Deutschland)
 
-Ein technischer Vergleich von _BeagleBoard-xM_ und _BeagleBone_ findet sich [hier](https://beagleboard.org/static/flyer_latest.pdf).
+Ein technischer Vergleich von _BeagleBoard-xM_ und _BeagleBone_ findet sich [hier](https://beagleboard.org/static/flyer_latest.pdf) _(externer Link)_.
 
 
 #### Reference Manuals
 
-* [BeagleBoard Reference Manual](https://beagleboard.org/static/BBSRM_latest.pdf)
-* [BeagleBoard-xM Reference Manual](https://beagleboard.org/static/BBxMSRM_latest.pdf)
+* [BeagleBoard Reference Manual](https://beagleboard.org/static/BBSRM_latest.pdf) _(externer Link)_
+* [BeagleBoard-xM Reference Manual](https://beagleboard.org/static/BBxMSRM_latest.pdf) _(externer Link)_
 
 
 #### Weblinks
@@ -144,9 +144,10 @@ Ein technischer Vergleich von _BeagleBoard-xM_ und _BeagleBone_ findet sich [hie
     * [BeagleBoard FAQ](http://elinux.org/BeagleBoardFAQ)
 
 * Sonstiges:
-    * Anleitung für die Installation von [Ubuntu auf ARM Server developer boards](https://wiki.ubuntu.com/ARM/Server/Install) _(Support für TI OMAP3-based platform eingestellt)_
+    * Anleitung für die Installation von [Ubuntu auf ARM Server developer boards](https://wiki.ubuntu.com/ARM/Server/Install) _(externer Link)_ _(Support für TI OMAP3-based platform eingestellt)_
     * Wissenschaftlich/technisches Paper welches ein älteres (600 MHz) BeagleBoard mit einem System auf Basis von Intels Atom CPU (N330) vergleicht und ein paar Hintergründe zur ARM Cortex-A8 Architektur erläutert:
         * [K. Roberts-Hoffman, P. Hegde (2009): "ARMCortex-A8 vs. Intel Atom: Architecturaland Benchmark Comparisons", University of Texas](http://caxapa.ru/thumbs/229665/armcortexa8vsintelatomarchitecturalandbe.pdf)
+
 
 ### WLAN
 
@@ -280,13 +281,15 @@ Dazu muss auf dem BeagleBoard die Bibliothek _Alsa_ installiert sein (`sudo apt-
 Auf dem BeagleBoard wird eine Linux-Distribution ausgeführt, welche auf der SD-Karte installiert ist.
 Verwendet und getestet wurde hier mit Ubuntu **12.04 LTS** (_Precise Pangolin_).
 
+
 ### Installation (Ubuntu 12.04 LTS für ARM)
+
 
 #### Vorbereitungen
 
 1. Herunterladen des Disk-Images _Texas Instruments OMAP3 (Hard-Float) preinstalled server image_
     * (_Support für TI OMAP3-based platform eingestellt; Disk-Image nicht mehr verfügbar_)_
-2. Entpacken und kopieren des Images auf eine Mikro-SD Karte: [Installing pre-installed OMAP4 Precise (12.04) Server Images](https://wiki.ubuntu.com/ARM/Server/Install#Copy_the_image_to_SD_card) _(Support für TI OMAP3-based platform eingestellt)_
+2. Entpacken und kopieren des Images auf eine Mikro-SD Karte: [Installing pre-installed OMAP4 Precise (12.04) Server Images](https://wiki.ubuntu.com/ARM/Server/Install#Copy_the_image_to_SD_card) _(externer Link)_ _(Support für TI OMAP3-based platform eingestellt)_
 3. Serielle Schnittstelle des BeagleBoards mit dem PC verbinden.
 4. Ethernet-Port des BeagleBoards an ein LAN mit Internetzugang anschließen.
 5. Ein Terminal-Programm starten und die serielle Schnittstelle öffnen, an der das BeagleBoard angeschlossen ist.
@@ -294,6 +297,7 @@ Verwendet und getestet wurde hier mit Ubuntu **12.04 LTS** (_Precise Pangolin_).
 7. Die Ausgabe in der Terminal-Konsole sollte während des Bootens ungefähr so aussehen:
 
 ![Image: 'bb_setup_01.jpg'](../images/beagleboard/bb_setup_01.jpg)
+
 
 #### Installation von Ubuntu
 
@@ -511,6 +515,6 @@ Unter Linux bzw. macOS lässt sich das mit `dd if=/dev/sdb bs=8M | pbzip2 -c > b
 
 ### BeagleBoard-Emulation
 
-Ein BeagleBoard mit einem installierten Linux-System lässt sich auch mit Qemu emulieren, wie dieser [Installationsanleitung für Ubuntu Hosts](https://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) entnommen werden kann.
+Ein BeagleBoard mit einem installierten Linux-System lässt sich auch mit Qemu emulieren, wie dieser [Installationsanleitung für Ubuntu Hosts](https://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) _(externer Link)_ entnommen werden kann.
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
