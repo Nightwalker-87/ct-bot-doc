@@ -15,6 +15,111 @@ Das Erweiterungsmodul erlaubt es dem c't-Bot per LAN und WLAN zu kommunizieren. 
 
 Stand: 15.01.2007
 
+### Bauteile des Erweiterungsmoduls
+
+<table>
+  <tr>
+    <td><b>Bauteil</b></td>
+    <td><b>Wert</b></td>
+  </tr>
+  <tr>
+    <td>C1,C2</td>
+    <td>470uF/16V</td>
+  </tr>
+  <tr>
+    <td>C3,C4,C5,C6,C7,C9</td>
+    <td>100nF</td>
+  </tr>
+  <tr>
+    <td>D1,D2,D3,D4,D5</td>
+    <td>1N4148</td>
+  </tr>
+  <tr>
+    <td>IC1</td>
+    <td>WiPort (WP2001000G)</td>
+  </tr>
+  <tr>
+    <td>IC2</td>
+    <td>LM3940IT-3,3</td>
+  </tr>
+  <tr>
+    <td>IC3</td>
+    <td>74HC74</td>
+  </tr>
+  <tr>
+    <td>IC4</td>
+    <td>74HCT125</td>
+  </tr>
+  <tr>
+    <td>IC5,IC6</td>
+    <td>74HCT4053</td>
+  </tr>
+  <tr>
+    <td>J4, J5, J6, J7</td>
+    <td>Buchsenleisten (Best&uuml;ckung erfolgt von unten)</td>
+  </tr>
+  <tr>
+    <td>J12</td>
+    <td>Stiftleiste, gewinkelt</td>
+  </tr>
+  <tr>
+    <td>J10</td>
+    <td>SD-Kartenschacht</td>
+  </tr>
+  <tr>
+    <td>J11</td>
+    <td>Einzelstift, gewinkelt</td>
+  </tr>
+  <tr>
+    <td>J14</td>
+    <td>Stiftwanne, gewinkelt</td>
+  </tr>
+  <tr>
+    <td>J15</td>
+    <td>nicht bestückt,</td>
+  </tr>
+  <tr>
+    <td>P1</td>
+    <td>RJ45-Buchse mit Ferrit</td>
+  </tr>
+  <tr>
+    <td>und</td>
+    <td>LED</td>
+  </tr>
+  <tr>
+    <td>R4,R6,R8</td>
+    <td>1,8 kOhm</td>
+  </tr>
+  <tr>
+    <td>R5,R7,R9</td>
+    <td>3,3 kOhm</td>
+  </tr>
+  <tr>
+    <td>R10,R11</td>
+    <td>220 Ohm</td>
+  </tr>
+  <tr>
+    <td>R12, R13, R16, R17</td>
+    <td>10 kOhm</td>
+  </tr>
+  <tr>
+    <td>R15</td>
+    <td>4,7 kOhm</td>
+  </tr>
+  <tr>
+    <td>ST51</td>
+    <td>Buchsenleiste, zweireihig</td>
+  </tr>
+  <tr>
+    <td>SW1</td>
+    <td>Schalter</td>
+  </tr>
+  <tr>
+    <td>Servo</td>
+    <td>Futaba S3107</td>
+  </tr>
+</table>
+
 Alle Bauteile sorgfältig einlöten. Dabei sollte man ST5 vor J14 einlöten. Bitte auch darauf achten, dass einige Buchsenleisten (J4, J5, J6, J7, ST5) von unten auf die Platine kommen.
 
 **Die Buchsenleisten J4, J5, J6, J7 und ST5 werden von unten eingelötet:**

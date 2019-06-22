@@ -7,527 +7,92 @@
 * [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/03_sensorboard_mouse.pdf)
 * [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/05_extensionboard.pdf)
 
+
 ## Bestückungspläne
 
 * [Hauptplatine mit Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/01_pcb_mainboard.pdf)
 * [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/03_sensorboard_mouse.pdf)
 * [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/05_extensionboard.pdf)
 
+
 ## Mechanische Teile
 
-* [Technische Zeichnung der Grundplatte](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/drawings/baseplate.pdf)
+| Bauteil                         | Anzahl | Bezeichnung                                                                                          |
+| :---                            |        |                                                                                                      |
+| Grundplatte                     |      1 | gemäß [Technischer Zeichnung](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/drawings/baseplate.pdf) |
+| Motorflansch                    |      2 | links / rechts identisch                                                                             |
+| Motor                           |      2 |                                                                                                      |
+| Rad                             |      2 | ohne Reifen                                                                                          |
+| Reifen                          |      2 |                                                                                                      |
+| Madenschraube M3x4 GWST         |      2 | für die Radfixierung auf der Motorachse                                                              |
+| Imbus-Schlüssel 1,5             |      1 | Werkzeug für die Madenschrauben                                                                      |
+| Schraube M2x6                   |      6 | für Motorflansche                                                                                    |
+| Teflongleiter                   |      1 | mit Gewinde                                                                                          |
+| Aluminiumträger                 |      3 |                                                                                                      |
+| Kreuzschlitzschraube M3x6K      |     19 |                                                                                                      |
+| Mutter M3                       |      4 | für die Befestigung der Motorflansche auf der Grundplatte                                            |
+| Kunststoffschrauben M3x18       |      4 | für Maussensor-Sandwich                                                                              |
+| Kunststoff-Unterlegscheiben 3,2 |     14 | 12x für Maussensor-Sandwich, je 1x für Sensorplatinen L/R                                            |
+| Kunststoff-Muttern M3           |     16 | für Maussensor-Sandwich                                                                              |
+| Kabel-Halteschellen             |      2 | für Maussensor-Kabelbaum an hinterem Aluminiumträger                                                 |
+| Kabelbinder                     |      2 | für Kabelbäume der Sensorplatinen an vorderen Aluminiumträgern                                       |
+|	Moosgummifüße                   |      4 | Auflage für Akkupack auf Abdeckplatte des Maussensor-Sandwichs                                       |
+|	Klettbinder                     |      1 | als Akkupack-Befestigung                                                                             |
+|	Batteriehalter 3x Mignon        |      1 |                                                                                                      |
+|	Batteriehalter 2x Mignon        |      1 |                                                                                                      |
+|	Encoderscheibe                  |      2 | seit der 5. Auflage enthalten                                                                        |
+
 
 ## Stücklisten
 
-### Bauteile des Erweiterungsmoduls
+### Hauptplatine
 
-<table>
-  <tr>
-    <td><b>Bauteil</b></td>
-    <td><b>Wert</b></td>
-  </tr>
-  <tr>
-    <td>C1,C2</td>
-    <td>470uF/16V</td>
-  </tr>
-  <tr>
-    <td>C3,C4,C5,C6,C7,C9</td>
-    <td>100nF</td>
-  </tr>
-  <tr>
-    <td>D1,D2,D3,D4,D5</td>
-    <td>1N4148</td>
-  </tr>
-  <tr>
-    <td>IC1</td>
-    <td>WiPort (WP2001000G)</td>
-  </tr>
-  <tr>
-    <td>IC2</td>
-    <td>LM3940IT-3,3</td>
-  </tr>
-  <tr>
-    <td>IC3</td>
-    <td>74HC74</td>
-  </tr>
-  <tr>
-    <td>IC4</td>
-    <td>74HCT125</td>
-  </tr>
-  <tr>
-    <td>IC5,IC6</td>
-    <td>74HCT4053</td>
-  </tr>
-  <tr>
-    <td>J4, J5, J6, J7</td>
-    <td>Buchsenleisten (Best&uuml;ckung erfolgt von unten)</td>
-  </tr>
-  <tr>
-    <td>J12</td>
-    <td>Stiftleiste, gewinkelt</td>
-  </tr>
-  <tr>
-    <td>J10</td>
-    <td>SD-Kartenschacht</td>
-  </tr>
-  <tr>
-    <td>J11</td>
-    <td>Einzelstift, gewinkelt</td>
-  </tr>
-  <tr>
-    <td>J14</td>
-    <td>Stiftwanne, gewinkelt</td>
-  </tr>
-  <tr>
-    <td>J15</td>
-    <td>nicht bestückt,</td>
-  </tr>
-  <tr>
-    <td>P1</td>
-    <td>RJ45-Buchse mit Ferrit</td>
-  </tr>
-  <tr>
-    <td>und</td>
-    <td>LED</td>
-  </tr>
-  <tr>
-    <td>R4,R6,R8</td>
-    <td>1,8 kOhm</td>
-  </tr>
-  <tr>
-    <td>R5,R7,R9</td>
-    <td>3,3 kOhm</td>
-  </tr>
-  <tr>
-    <td>R10,R11</td>
-    <td>220 Ohm</td>
-  </tr>
-  <tr>
-    <td>R12, R13, R16, R17</td>
-    <td>10 kOhm</td>
-  </tr>
-  <tr>
-    <td>R15</td>
-    <td>4,7 kOhm</td>
-  </tr>
-  <tr>
-    <td>ST51</td>
-    <td>Buchsenleiste, zweireihig</td>
-  </tr>
-  <tr>
-    <td>SW1</td>
-    <td>Schalter</td>
-  </tr>
-  <tr>
-    <td>Servo</td>
-    <td>Futaba S3107</td>
-  </tr>
-</table>
+| Bauteil           | Bezeichnung                                                  | Bemerkungen                                                               |
+| :---              | :---                                                         | :---                                                                      |
+| C1, C2            | Keramik-Kondensator 22 pF                                    |                                                                           |
+| C3, C4            | Keramik-Kondensator 100 nF                                   | Stempelung 104                                                            |
+| C5                | Elektrolyt-Kondensator 100 µF                                | Polung beachten                                                           |
+| D1, D2            | Diode 1N4148                                                 | Polung beachten                                                           |
+| D3                | Diode SB140                                                  | Polung beachten                                                           |
+| IC1               | ATmega-Mikrocontroller                                       | mit IC-Sockel; kompatible Modelle: ATmega1284P / 644P / 644 / 32          |
+| IC2               | Push-Pull 4 Channel Driver with Diodes L293D                 | mit IC-Sockel                                                             |
+| IC3               | Hex Schmitt-Trigger Inverter 74HC14N                         | mit IC-Sockel                                                             |
+| IC4, IC5, IC6     | 8-Bit Schieberegister mit 3-State Output Registern 74HC595N  | jeweils mit IC-Sockel                                                     |
+| IC7, IC8          | Komparator LM311N                                            | jeweils mit IC-Sockel                                                     |
+| IC9               | FB-Empfänger TSOP34836                                       |                                                                           |
+| IC10              | Spannungsregler L4940V5                                      |                                                                           |
+| J1 - J8           | Stiftleiste                                                  | jeweils passend zuschneiden                                               |
+| LDR1, LDR2        | Helligkeitssensor MPY54C569                                  |                                                                           |
+| LED1, LED2, LED7  | LED (blau)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
+| LED3              | LED (rot)                                                    | kurzes Bein ist die Kathode (Minus)                                       |
+| LED4              | LED (orange)                                                 | kurzes Bein ist die Kathode (Minus)                                       |
+| LED5              | LED (gelb)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
+| LED6              | LED (grün)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
+| LED8              | LED (weiß)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
+| L1                | Drossel 100 µH SMCC 5%                                       | Farbring-Kennung: braun-schwarz-braun-gold                                |
+| POT1              | Trimmpotentiometer 5kOhm                                     | für die Einstellung des Displaykontrasts                                  |
+| P1                | DC-Hohlstecker-Buchse 2,1-R                                  |                                                                           |
+| Q1                | Quarz 16 MHz LP                                              | mit Abstandshalter; alternativ 20 MHz Quarz                               |
+| R1                | Widerstand 10 kΩ 1%                                          | Farbring-Kennung: braun-schwarz-rot-braun                                 |
+| R2                | Widerstand 20 Ω 1%                                           | Farbring-Kennung: rot-schwarz-schwarz-gold-braun; alternativ: Drahtbrücke |
+| R3, R4, R8        | Widerstand 4,7 kΩ 1%                                         | Farbring-Kennung: gelb-violett-schwarz-braun-braun                        |
+| R5 - R7, R30, R31 | Widerstand 47 kΩ 1%                                          | Farbring-Kennung: gelb-violett-schwarz-rot-braun                          |
+| R9 - R16          | Widerstand 160 Ω 1%                                          | Farbring-Kennung: braun-blau-schwarz-schwarz-braun                        |
+| R17, R18, R32     | Widerstand 39 kΩ 1%                                          | Farbring-Kennung: orange-weiß-schwarz-rot-braun                           |
+| R19, R20          | Widerstand 6,2 kΩ 1%                                         | Farbring-Kennung: blau-rot-schwarz-braun-braun                            |
+| R21, R22          | Widerstand 470 kΩ 1%                                         | Farbring-Kennung: gelb-violett-schwarz-orange-braun                       |
+| R23 - R26         | Widerstand 180 Ω 1%                                          | Farbring-Kennung: braun-grau-schwarz-schwarz-braun                        |
+| R27               | Widerstand 100 Ω 1%                                          | Farbring-Kennung: braun-schwarz-schwarz-schwarz-braun                     |
+| R28               | MOX-Widerstand 6,8 Ω 5%                                      | Farbring-Kennung: blau-grau-gold-gold                                     |
+| R29               | Zener-Diode 2,4 V 0,5 W                                      | Polung beachten                                                           |
+| R33               | Widerstand 1 kΩ 1%                                           | Farbring-Kennung: braun-schwarz-schwarz-braun-braun                       |
+| R34               | Widerstand 5,1 kΩ 1%                                         | Farbring-Kennung: grün-braun-schwarz-braun-braun                          |
+
 
 ### Bauteile des c't-Bot Basispakets
 
-Stand: 13.02.2006
-
 <table>
 <tr>
-<th align="left">Rubrik</th>
-<th align="left">Bezeichnung</th>
-<th align="left">Anzahl</th>
-<th align="left">Bemerkung</th>
-</tr>
-<tr>
-<td class="mitlinie"><em>Mechanik</em></td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Grundplatte</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>Motorflansch</td>
-<td align="right">2</td>
-<td>links/rechts identisch</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Motor</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>Rad</td>
-<td align="right">2</td>
-<td>ohne Reifen</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Reifen</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">2</td>
-<td>Madenschraube f&uuml;r Rad auf Motorachse</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">1</td>
-<td>f&uuml;r Madenschraube</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">6</td>
-<td>Schraube f&uuml;r Motor in Motorflansch</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Gleiter</td>
-<td align="right">1</td>
-<td>Teflongleiter mit Gewinde</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>Alu-Tr&auml;ger</td>
-<td align="right">3</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">19</td>
-<td>Kreuzschlitzschraube - 1 Gr&ouml;&szlig;e f&uuml;r fast alles</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">4</td>
-<td>f&uuml;r Motorflansche an Grundplatte</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">4</td>
-<td>Kunststoffschrauben f&uuml;r Maussensor-Sandwich</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">14</td>
-<td>Kunststoffscheiben 12 x f&uuml;r Maussensor-Sandwich, je 1x
-Sensorplatine links/rechts</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">16</td>
-<td>Kunststoffmuttern f&uuml;r Maussensor-Sandwich</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">2</td>
-<td>Halteschellen Maussensor-Kabelbaum an hinteren Alu-Tr&auml;ger</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">2</td>
-<td>Kabelbinder Sensorplatinen-Kabelb&auml;ume an vordere
-Alu-Tr&auml;ger</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">4</td>
-<td>Moosgummif&uuml;&szlig;e zwischen Abdeckplatte und Akkupack</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">1</td>
-<td>Klettbinder als Akkupack-Halterung</td>
-</tr>
-<tr>
-<td>Batteriehalter</td>
-<td>3xMignon</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>Batteriehalter</td>
-<td>2xMignon</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td class="mitlinie"><em>ELEKTRONIK Hauptplatine</em></td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>C1,C2</td>
-<td>22pF</td>
-<td align="right">2</td>
-<td>Richtung beliebig</td>
-</tr>
-<tr>
-<td>C3,C4</td>
-<td>100nF</td>
-<td align="right">2</td>
-<td>Stempelung 104, Richtung beliebig</td>
-</tr>
-<tr class="hellgrau">
-<td>C5</td>
-<td>100uF</td>
-<td align="right">1</td>
-<td>Polung beachten</td>
-</tr>
-<tr>
-<td>D1,D2</td>
-<td>1N4148</td>
-<td align="right">2</td>
-<td>Polung beachten</td>
-</tr>
-<tr class="hellgrau">
-<td>D3</td>
-<td>SB140</td>
-<td align="right">1</td>
-<td>Polung beachten</td>
-</tr>
-<tr>
-<td>IC1</td>
-<td>ATmega32-16PU</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">1</td>
-<td>Sockel f&uuml;r IC1</td>
-</tr>
-<tr>
-<td>IC2</td>
-<td>L293D</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>IC3</td>
-<td>74HC14N</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>IC4,IC5,IC6</td>
-<td>74HC595N</td>
-<td align="right">3</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">4</td>
-<td>Sockel f&uuml;r IC2,4,5,6</td>
-</tr>
-<tr class="hellgrau">
-<td>IC7,IC8</td>
-<td>LM311N</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">2</td>
-<td>Sockel f&uuml;r IC7,8</td>
-</tr>
-<tr class="hellgrau">
-<td>IC9</td>
-<td>TSOP34836</td>
-<td align="right">1</td>
-<td>FB-Empf&auml;nger</td>
-</tr>
-<tr>
-<td>IC10</td>
-<td>L4940V5</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>J1-J8</td>
-<td>Stiftleiste</td>
-<td align="right">2</td>
-<td>schneiden</td>
-</tr>
-<tr>
-<td>LDR1,LDR2</td>
-<td>MPY54C569</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>LED1,LED2,LED7</td>
-<td>LEDblau</td>
-<td align="right">3</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr>
-<td>LED3</td>
-<td>LEDrot</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr class="hellgrau">
-<td>LED4</td>
-<td>LEDorange</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr>
-<td>LED5</td>
-<td>LEDgelb</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr class="hellgrau">
-<td>LED6</td>
-<td>LEDgr&uuml;n</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr>
-<td>LED8</td>
-<td>LEDwei&szlig;</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr class="hellgrau">
-<td>L1</td>
-<td>100uH-SMCC</td>
-<td align="right">1</td>
-<td>dicker Widerstand, braun-schwarz-braun-gold</td>
-</tr>
-<tr>
-<td>POT1</td>
-<td>67W 5k</td>
-<td align="right">1</td>
-<td>Trimmpoti Displaykontrast</td>
-</tr>
-<tr class="hellgrau">
-<td>P1</td>
-<td>DCBU 2,1-R</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Q1</td>
-<td>Q 16,0-LP</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Abstandshalter</td>
-<td align="right">1</td>
-<td>f&uuml;r Q1</td>
-</tr>
-<tr>
-<td>R1</td>
-<td>10kOhm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-rot-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R2</td>
-<td>20 Ohm</td>
-<td align="right">1</td>
-<td>rot-schwarz-schwarz-gold-braun oder Drahtbr&uuml;cke
-(Displaybeleuchtung)</td>
-</tr>
-<tr>
-<td>R3,R4,R8</td>
-<td>4,7kOhm</td>
-<td align="right">3</td>
-<td>gelb-violett-schwarz-braun-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R5,R6,R7,R30,R31</td>
-<td>47kOhm</td>
-<td align="right">5</td>
-<td>gelb-violett-schwarz-rot-braun</td>
-</tr>
-<tr>
-<td>R9-R16</td>
-<td>160 Ohm</td>
-<td align="right">8</td>
-<td>braun-blau-schwarz-schwarz-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R17,R18,R32</td>
-<td>39 kOhm</td>
-<td align="right">3</td>
-<td>orange-wei&szlig;-schwarz-rot-braun</td>
-</tr>
-<tr>
-<td>R19,R20</td>
-<td>6,2 kOhm</td>
-<td align="right">2</td>
-<td>blau-rot-schwarz-braun-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R21,R22</td>
-<td>470 kOhm</td>
-<td align="right">2</td>
-<td>gelb-violett-schwarz-orange-braun</td>
-</tr>
-<tr>
-<td>R23,R24,R25,R26</td>
-<td>180 Ohm</td>
-<td align="right">4</td>
-<td>braun-grau-schwarz-schwarz-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R27</td>
-<td>100 Ohm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-schwarz-braun</td>
-</tr>
-<tr>
-<td>R28</td>
-<td>6,8 Ohm</td>
-<td align="right">1</td>
-<td>blau-grau-gold-gold</td>
-</tr>
-<tr>
-<td>R33</td>
-<td>1 kOhm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-braun-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R34</td>
-<td>5,1 kOhm</td>
-<td align="right">1</td>
-<td>gr&uuml;n-braun-schwarz-braun-braun</td>
-</tr>
-<tr>
-<td>R29</td>
-<td>ZD 2V4 0,5W</td>
-<td align="right">1</td>
-<td>Polung beachten</td>
-</tr>
 <tr class="hellgrau">
 <td>ST1,ST2,ST3</td>
 <td>Stecker+Buchse mit Kabel</td>

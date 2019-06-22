@@ -52,5 +52,3 @@ Die Funktion *Compare With* lässt sich analog benutzen um Änderungen nachzuver
 ## Eigene Beiträge: Forks und Pull-Requests
 
 ToDo
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

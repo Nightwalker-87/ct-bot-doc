@@ -260,5 +260,3 @@ ToDo
 ### test_and_set()
 
 ToDo
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

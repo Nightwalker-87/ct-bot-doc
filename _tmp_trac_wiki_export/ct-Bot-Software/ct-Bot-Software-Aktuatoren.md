@@ -97,5 +97,3 @@ Es sei noch angemerkt, dass die Priorität dieses Log-Verfahrens zum Entstehungs
 ## Klappe des Transportfachs
 
 ToDo
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

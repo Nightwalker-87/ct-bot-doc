@@ -246,5 +246,3 @@ Um den Build-Prozess auf Mehrkernsystemen zu beschleunigen, bietet es sich an, p
 
 * Emulator starten: Damit nun der avr-gdb, der von Eclipse aufgerufen wird, den Code in der AVR-Umgebung ausführen kann, muss *simulavr* im Hintergrund laufen. In einer Shell startet man deshalb:
  `simulavr -g -p 1212 -d atmega32 -c 16000000`
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

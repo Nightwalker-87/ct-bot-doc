@@ -78,5 +78,3 @@ Ein paar weitere Ideen fanden auf der Mailingliste bereits [Erwähnung](http://w
 ## Zur Hardware
 
 Siehe [Hardware-Erweiterungen](../ct-Bot-Hardware/ct-Bot-Hardware.md#Erweiterungen).
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

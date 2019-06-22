@@ -107,7 +107,7 @@ Um das Projekt mit Eclipse compilieren zu können, muss das [AVR Eclipse Plugin]
 ## Simulation
 
 Die IR-Baken und der BPS-Sensor lassen sich auch im c't-Sim simulieren. Hierzu muss in der globalen Konfigurationsdatei [config/ct-sim.xml](https://github.com/tsandmann/ct-sim/blob/master/config/ct-sim.xml) der Paramter `BPSSensor` auf den Wert `true` gesetzt werden.
-Weiterhin benötigt man eine Welt, in der mindestens drei Baken vorhanden sind, wie z.B. [test_localization.xml](https://github.com/tsandmann/ct-sim/blob/master/parcours/test_localization.xml). Die Barken lassen sich über den Typ `l` (kleines *L* für **L**andmarke) einfügen, der Sim errechnet dabei automatisch eine ID, aus der die Position der Landmarke bestimmt werden kann. Die Reichweite einer Bake beträgt (in der Standardeinstellung) 2 m.
+Weiterhin benötigt man eine Welt, in der mindestens drei Baken vorhanden sind, wie z.B. [test_localization.xml](https://github.com/tsandmann/ct-sim/blob/master/parcours/test_localization.xml). Die Barken lassen sich über den Typ `l` (kleines *L* für **L** andmarke) einfügen, der Sim errechnet dabei automatisch eine ID, aus der die Position der Landmarke bestimmt werden kann. Die Reichweite einer Bake beträgt (in der Standardeinstellung) 2 m.
 Auf Grund der unterschiedlichen Ausrichtung der Koordinatensysteme von Bot und Sim ergeben sich im Sim folgende globale Koordinaten:
 
   ![Image: 'baken-sim.png'](baken-sim.png)
@@ -115,5 +115,3 @@ Auf Grund der unterschiedlichen Ausrichtung der Koordinatensysteme von Bot und S
 Ein Sim-Feld ist 240 mm x 240 mm groß, die Position einer Bake ist der Mittelpunkt ihres Feldes.
 
 Hinweis: Die simulierten Baken "leuchten" durch die Wände der Welt hindurch. Eine Absorption des Bakenlichts an den Wänden würde einen umfangreichen Umbau am Welt-Code und einen deutlich höheren Rechenaufwand für die Simulation bedeuten.
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

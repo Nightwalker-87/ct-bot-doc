@@ -89,5 +89,3 @@ Wenn man BotFS-Dateien am PC erzeugen und auf dem echten Bot verwenden möchte, 
 * Der Map-Code ist jetzt (mit `BOT_FS_AVAILABLE`) nicht mehr darauf angewiesen, dass eine Map-Datei (MiniFAT) auf der SD-Karte bereits vorhanden ist. Sobald das BotFS-Volume einmal auf der SD-Karte eingerichtet ist (s.o.), regelt der Map-Code den Rest automatisch. Insbesondere das Löschen einer alten Map (beim Start) geht mit `BOT_FS_AVAILABLE` dann auch deutlich schneller.
 * Möchte man Daten zwischen dem echten und einem simulierten Bot austauschen, kann man die *botfs.img*-Datei beliebig zwischen diesen kopieren, oder den simulierten Bot mit dem Parameter *-i* und der Image-Datei (z.B. auch direkt von der eingelegten SD-Karte) starten.
 * In der BotFS-Verwaltung (über `ct-Bot(.exe) -f [Pfad zur Image-Datei]` aufzurufen) zeigt das Kommando `help` eine Übersicht aller verfuegbaren Tools an. Wird im Normalbetrieb aber eigentlich nicht benötigt.
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

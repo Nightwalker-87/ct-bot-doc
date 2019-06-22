@@ -101,5 +101,3 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 ## Ideen und mehr
 
 * [Ideen und Diskussionen](../NeueVerhalten/NeueVerhalten.md) für neue Verhalten und Aufgaben
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

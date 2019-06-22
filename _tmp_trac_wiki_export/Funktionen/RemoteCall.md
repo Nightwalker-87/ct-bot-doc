@@ -234,7 +234,7 @@ Für den Fall, dass wir ein Big-Endian-System haben, müssen wir sämtliche Para
 #endif // MCU
 ```
 
-Eine zweite Hilfsfunktion ist **`getRemoteCall`**, die in der Remote-Call-Tabelle nach einem Funktionsnamen sucht und die zugehörige ID zurückliefert:
+Eine zweite Hilfsfunktion ist **`getRemoteCall`** , die in der Remote-Call-Tabelle nach einem Funktionsnamen sucht und die zugehörige ID zurückliefert:
 
 ```C
 static uint8 getRemoteCall(char * call) {
@@ -292,5 +292,3 @@ Abschließend aktualisieren wir lediglich noch den internen Status und lassen da
  running_behaviour = REMOTE_CALL_SCHEDULED;
 }
 ```
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

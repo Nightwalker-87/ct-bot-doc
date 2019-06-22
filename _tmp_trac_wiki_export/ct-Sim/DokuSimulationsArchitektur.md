@@ -77,5 +77,3 @@ public void run() {
 ### Wo kommt der MasterSimulator eines Bots her?
 
 Wenn ein neuer Bot zur World hinzugefügt wird, ruft sie ihre Methode `createSimulator()` auf. Diese erzeugt für einen CtBotSimTcp einen MasterSimulator, für einen CtBotSimTest einen leeren Simulator, der nichts tut.
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

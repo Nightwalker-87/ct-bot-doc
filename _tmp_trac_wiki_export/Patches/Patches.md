@@ -172,5 +172,3 @@ Bevor Sie einen Patch einreichen, sollten Sie folgende Dinge prüfen. Patches, d
 * Benötigt der Patch zusätzliche **Dokumentation** hier im Wiki?
 * Wenn der Patch Code von Dritten enthält: Ist geprüft, ob deren Code in einem GPL-Projekt veröffentlicht werden darf? Sind die Namen der ursprünglichen Autoren genannt?
 * Enthält die Mail zum Einreichen des Patches folgende **Informationen**: Zweck und Motivation des Patches, den Patch selbst (als eine komprimierte Zip-Datei) und eine Beschreibung der durchgeführten Tests?
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

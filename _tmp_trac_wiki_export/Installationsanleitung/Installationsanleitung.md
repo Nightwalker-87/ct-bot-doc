@@ -279,5 +279,3 @@ Wir empfehlen, den Code für c't-Bot und c't-Sim aus dem SVN zu benutzen -- dies
 Wenn Sie trotzdem auf das Zip-Archiv zugreifen wollen oder müssen, laden Sie es sich auf den eigenen Rechner und packen es aus. Nach dem Start von Eclipse kann unter dem Menüpunkt *File / Import* die Option *Existing Project into Workspace* ausgewählt werden. Als *root directory* muss dann der Ordner ct-Sim oder ct-Bot angeben werden.
 
 [Zurück zum Überblick](#ueberblick)
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
