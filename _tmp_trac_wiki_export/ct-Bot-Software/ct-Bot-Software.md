@@ -18,9 +18,9 @@ Soll es mit dem eigenen Code richtig losgehen, sind erst einmal ein paar Vorraus
 ## Erste Geh- und Modifikationsversuche mit der Demo-Firmware
 
 Damit die hier beschriebenen Schritte Sinn ergeben, sollte man entweder einen **[realen Bot](../ct-Bot-Hardware/ct-Bot-Hardware.md)** **[aufgebaut](../ct-Bot-Hardware/ct-Bot-Hardware.md#Aufbau-und-Montage) und [erfolgreich getestet](../ct-Bot-Hardware/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)** haben. Solange die beschriebenen Testprogramme nicht einwandfrei laufen, handelt man sich mit unten beschriebenen Gehversuchen nur Ärger und Frust ein. Auch die empfohlenen **[Hardware-Mods](../ct-Bot-Modifikationen/ct-Bot-Modifikationen.md)** sollten eingebaut sein.
-**Bitte beachten:** Die auf dem Display angezeigten absoluten Sensorwerte sind nicht korrekt, solange die [Kalibrierung](#Kalibrierung) noch nicht durchgeführt wurde! Gleiches gilt für den Gleichlauf der Motoren.
+**Bitte beachten:** Die auf dem Display angezeigten absoluten Sensorwerte sind nicht korrekt, solange die Kalibrierung noch nicht durchgeführt wurde! Gleiches gilt für den Gleichlauf der Motoren.
 
-Alle erwähnten Code-Optionen finden sich in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)*. Siehe auch: [Übersicht der optionalen Codeteile](../ctBotH/ctBotH.md)
+Alle erwähnten Code-Optionen finden sich in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)*. Siehe auch: [Übersicht der optionalen Codeteile](../../doc/wiki_pages/ct-bot_h.md)
 
 Nach jeder Änderung am Code muss dieser übersetzt (ct-Bot.hex) und auf den Bot **[übertragen](../Flash/Flash.md)** werden. Zusätzlich muss auch das EEPROM-Abbild dort hin.
 
@@ -39,7 +39,7 @@ Damit der Demo-Code korrekt arbeitet sind ein paar Anpassungen an den eigenen Bo
 
 Nun sind alle Sensoren kalibriert und man kann mit den Verhalten im Beispielcode spielen:
 
-1. gewünschte Code-Optionen in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)* ein- oder ausschalten: [Übersicht der optionalen Codeteile](../ctBotH/ctBotH.md)
+1. gewünschte Code-Optionen in *[ct-Bot.h](https://github.com/tsandmann/ct-bot/blob/master/ct-Bot.h)* ein- oder ausschalten: [Übersicht der optionalen Codeteile](../../doc/wiki_pages/ct-bot_h.md)
 1. gewünschte Verhalten in *[include/bot-logic/available_behaviours.h](https://github.com/tsandmann/ct-bot/blob/master/include/bot-logic/available_behaviours.h)* auswählen: [Übersicht der verfügbaren Verhalten](../Verhalten/Verhalten.md)
 
 ### Erweiterungsmodul
@@ -69,7 +69,7 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 
 ## Dokumentation
 
-* Übersicht und Beschreibung der konfigurierbaren [Optionen](../ctBotH/ctBotH.md) des Bot-Codes
+* Übersicht und Beschreibung der konfigurierbaren [Optionen](../../doc/wiki_pages/ct-bot_h.md) des Bot-Codes
 * Übersicht der im Code verfügbaren [Roboterverhalten](../Verhalten/Verhalten.md)
 * Funktionsweise und Kalibrierung der [Sensoren](../ct-Bot-Software-Sensoren/ct-Bot-Software-Sensoren.md) des c't-Bot
 * Funktionsweise und Kalibrierung der [Aktuatoren](../ct-Bot-Software-Aktuatoren/ct-Bot-Software-Aktuatoren.md) des c't-Bot
@@ -82,6 +82,7 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 * Dokumentation zum Verhalten [bot_drive_area](../DokuDriveArea/DokuDriveArea.md)
 * Dokumentation zur [Lokalisierung](../Localization/Localization.md)
 * Dokumentation zur [Programmierung des c't-Bots in weiteren Programmiersprachen](../DokuScriptLanguages/DokuScriptLanguages.md)
+* Dokumentation zum [Neuronalen Netz für den c't-Bot](../DokuNeuralnet/dok_bot_nn.htm)
 
 ### Deprecated Doku
 
@@ -93,12 +94,10 @@ Wenn die Beispielverhalten funktionieren, kann man beginnen, eigene zu programmi
 ## Howto
 
 * [Firmware](../Flash/Flash.md) auf den c't-Bot übertragen
-* [Protokollieren](../Logging/Logging.md) von Messdaten vom c't-Bot aus
+* [Protokollieren](../../doc/wiki_pages/logging.md) von Messdaten vom c't-Bot aus
 * [Hintergründe](../AVRToolchainInterna/AVRToolchainInterna.md) zur AVR-Toolchain
-* [AVR-Tools und Tricks](../Utils/Utils.md) für die (Bot-)Softwareentwicklung
+* [AVR-Tools und Tricks](../AVRToolchain/AVRToolchain.md#Nützliche Tools für AVR) für die (Bot-)Softwareentwicklung
 
 ## Ideen und mehr
 
 * [Ideen und Diskussionen](../NeueVerhalten/NeueVerhalten.md) für neue Verhalten und Aufgaben
-
-[![License: CC BY-SA 4.0](../license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

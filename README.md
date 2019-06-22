@@ -1,12 +1,23 @@
-# ct-bot-doku
-Documentation for the c't-Bot project.
+# Offizielle Portalseite für das c't-Bot- und c't-Sim-Projekt
 
-A temporary markdown version of the former wiki can be found **[here](_tmp_trac_wiki_export/WikiStart/WikiStart.md)**.
+## Dokumentation
+* **[Projekt-Wiki](doc/wiki_main.md)** --> neue Wiki-Hauptseite
+* **[heise Trac-Wiki](_tmp_trac_wiki_export/readme.md)** --> Backup des Wikis aus dem ehemaligen Trac-System von Heise (seit Februar 2019 offline)
 
-## Notice on licensing terms:
+### Lizenzbestimmungen
+Diese digitale Enzyklopädie (Wiki) unterliegt den CC-BY-SA-Lizenzbestimmungen wie sie in LICENSE.md angegeben sind.
+**Die obigen Lizenzbestimmungen sind zur Kenntnis zu nehmen und bestehen auch bei der Vervielfältigung und/oder Verwendung von Inhalten aus diesem Wiki auf unbestimmte Zeit fort.**
 
-In general the licensing terms which can be found in LICENSE.md apply to this project, with the following __exception__:
+**Externe Links und externe Quellen sind von den obigen Lizenzbestimmungen ausgeschlossen.
+Diese verbleiben unter den jeweils geltenden rechtlichen Bestimmungen und Rechten der Urheber.
+Für externe Inhalte wird keine Haftung übernommen.**
 
-_All content in the directories "/images" and "/videos" is excluded from this license. Instead the latter content is licensed under the individual open licenses available in the respective sub-directories as determined by each individual contributor._
+### Licensing terms
+This digital encyclopedia (wiki) is licensed under the terms of CC-BY-SA, which can be found in LICENSE.md.
+**The above-mentioned license terms are to be acknowledged and remain valid indefinitely for any reproduction and/or use of content from this source.**
 
-Content that does not comply with a free license which also allows free redistribution will not be hosted within this project.
+**External links and external sources are excluded from the license terms mentioned above.
+Such content remains under the applicable legal provisions and rights of the individual author(s).
+No liability is assumed for any external content.**
+
+[![License: CC BY-SA 4.0](license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
