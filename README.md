@@ -2,7 +2,7 @@
 
 ## Dokumentation
 * **[Projekt-Wiki](doc/wiki_main.md)** --> neue Wiki-Hauptseite
-* **[heise Trac-Wiki](_tmp_trac_wiki_export/readme.md)** --> Backup des Wikis aus dem ehemaligen Trac-System von Heise (seit Februar 2019 offline)
+* **[heise Trac-Wiki](_tmp_wikis_export/readme.md)** --> Backup des Wikis aus dem ehemaligen Trac-System von Heise (seit Februar 2019 offline)
 
 ### Lizenzbestimmungen
 Diese digitale Enzyklopädie (Wiki) unterliegt den CC-BY-SA-Lizenzbestimmungen wie sie in LICENSE.md angegeben sind.
@@ -20,4 +20,4 @@ This digital encyclopedia (wiki) is licensed under the terms of CC-BY-SA, which 
 Such content remains under the applicable legal provisions and rights of the individual author(s).
 No liability is assumed for any external content.**
 
-[![License: CC BY-SA 4.0](license.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![License: CC BY-SA 4.0](LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

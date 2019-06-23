@@ -19,6 +19,7 @@
 Die Dokumentation des Hardware-Designs liegt in einem frei zugänglichen Git-Repository auf GitHub. Hier finden sich auch alle technischen Datenblätter für die Elektronik-Komponenten:
 
 * Git-Repository: [ct-bot-hw](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/) (URL:`https://github.com/tsandmann/ct-bot-hw.git`)
+* [Teilelisten & Design-Dokumente für den c't-Bot](wiki_pages_deprecated/ct-bot_parts.md) _(deprecated)_
 * [Aufbauanleitung für den c't-Bot](wiki_pages_deprecated/ct-bot_assembly.md) _(deprecated)_
 * [Teilelisten & Design-Dokumente für den c't-Bot](wiki_pages_deprecated/ct-bot_parts.md) _(deprecated)_
 * [USB-2-Bot-Adapter](wiki_pages_deprecated/usb-2-bot.md) _(deprecated)_
@@ -58,6 +59,6 @@ Der komplette Sourcecode liegt in einem frei zugänglichen Git-Repository auf Gi
 
 * P. Teske (2009): ["Entwicklung einer Bibliothek als Basis für die Programmierung und Steuerung des c't-Bots"](http://users.informatik.haw-hamburg.de/~kvl/teske/bachelor_teske.pdf), Bachelorarbeit (HAW Hamburg)
 * F. Schmidt (2007): ["Konzeption und Umsetzung eines Remote Engineering Praktikums für mobile Roboter"](https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00013826/Schmidt_Diplom_ct-Bot.pdf), Diplomarbeit (TU Ilmenau)
-    * gute Einführung in den c't-Bot, inkl. einer Ladestation aus Eigenentwicklung)
+    * gute Einführung in den c't-Bot, inkl. einer Ladestation aus Eigenentwicklung
 
 [![License: CC BY-SA 4.0](../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

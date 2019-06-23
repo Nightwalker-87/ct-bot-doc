@@ -21,7 +21,7 @@
 | ---                                                                          | ---                                                                          | ---                                                      |
 
 | Bauteil                         | Anzahl | Bezeichnung                                                                                                 |
-| :---                            |        |                                                                                                             |
+| :---                            | :---   | :---                                                                                                        |
 | Grundplatte                     |      1 | gemäß [Technischer Zeichnung](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/drawings/baseplate.pdf) |
 | Motorflansch                    |      2 | links / rechts identisch                                                                                    |
 | Motor                           |      2 |                                                                                                             |
@@ -39,11 +39,11 @@
 | Kunststoff-Muttern M3           |     16 | für Maussensor-Sandwich                                                                                     |
 | Kabel-Halteschellen             |      2 | für Maussensor-Kabelbaum an hinterem Aluminiumträger                                                        |
 | Kabelbinder                     |      2 | für Kabelbäume der Sensorplatinen an vorderen Aluminiumträgern                                              |
-|	Moosgummifüße                   |      4 | Auflage für Akkupack auf Abdeckplatte des Maussensor-Sandwichs                                              |
-|	Klettbinder                     |      1 | als Akkupack-Befestigung                                                                                    |
-|	Batteriehalter 3x Mignon        |      1 |                                                                                                             |
-|	Batteriehalter 2x Mignon        |      1 |                                                                                                             |
-|	Encoderscheibe                  |      2 | seit der 5. Auflage enthalten                                                                               |
+| Moosgummifüße                   |      4 | Auflage für Akkupack auf Abdeckplatte des Maussensor-Sandwichs                                              |
+| Klettbinder                     |      1 | als Akkupack-Befestigung                                                                                    |
+| Batteriehalter 3x Mignon        |      1 |                                                                                                             |
+| Batteriehalter 2x Mignon        |      1 |                                                                                                             |
+| Encoderscheibe                  |      2 | seit der 5. Auflage enthalten                                                                               |
 
 
 ## Platinensatz
@@ -144,3 +144,7 @@
 | LED1              | Leuchtdiode (rot) HLMP-ED80-K0T00                            | für Maussensor; kurzes Bein ist die Kathode (Minus)                       |
 | U1, U2            | Optischer Reflexionssensor CNY70                             |                                                                           |
 | U3                | Optischer Navigationssensor ADNS2610                         | inkl. Klammer für LED (HDNS-2200) & Linsenplatte (HDNS-2100)              |
+
+Bildquellen: Peter Recktenwald
+
+[![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
