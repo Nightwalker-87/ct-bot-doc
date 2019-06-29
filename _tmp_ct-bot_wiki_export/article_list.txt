@@ -33,7 +33,6 @@ UART
 USB-Modul
 
 >>> Erweiterungs-Modul
->>> Bausatz
 
 Agilent ADNS-2610
 Absturzdetektor
