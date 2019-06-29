@@ -79,5 +79,41 @@ Nun schaltet man in [include/bot-local.h](https://github.com/tsandmann/ct-bot/bl
 
 Siehe [Lokalisierung des c't-Bots](../Localization/Localization.md) mit Zusatzhardware.
 
+== Optionale Bausätze und Bauteile ==
+
+* [[LCD-Modul|LCD-Display]] beleuchtet mit Abstandsbolzen und Kabel (ct-Robot/Displaysatz)
+* Platine und Teilesatz für den BlueMP3/ISP-Programmieradapter (BlueMP3/ISP-Platine), (BlueMP3/ISP-Teilesatz) oder STK200/500 kompatibler [[AVR_ISP_Programmer|ISP Programmer]].
+* Platine und Teilesatz incl. Gehäuse für Diagnoseverbindung [[USB-Modul|Robot-USB]] mit FT232RL aufgelötet (USB-2-Bot/Platine), (USB-2-Bot/Teilesatz)
+* [[RC_Univers_29|Universal-Fernbedienung]] (ct-Robot/Fernbedienung)
+* Mignon-Akkus 2500mAh Sanyo (5 Stück werden ggf. benötigt)
+
+=== LCD-Display Bausatz===
+
+{|
+!|Segor-Bezeichnung
+!|Anzahl
+!|Bemerkung
+|----
+|LCD 4x20-LED
+|1
+|
+|----
+|M3x40 II
+|4 (8)
+|Abstandsbolzen mit Gewinde
+|----
+|M3x6K
+|8 (100)
+|Schrauben
+|----
+|FB 16/BELDEN
+|15cm (1m)
+|Flachbandkabel
+|----
+|AWP 16
+|1
+|Stecker
+|}
+
 
 [![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

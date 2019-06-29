@@ -17,33 +17,53 @@
 
 ## Mechanische Teile
 
-| Bauteil                         | Anzahl | Bezeichnung                                                                                          |
-| :---                            |        |                                                                                                      |
+| ![Image: '10_mechanic_parts_1.jpg'](../images/parts/10_mechanic_parts_1.jpg) | ![Image: '11_mechanic_parts_2.jpg'](../images/parts/11_mechanic_parts_2.jpg) | ![Image: '12_screws.jpg'](../images/parts/12_screws.jpg) |
+| ---                                                                          | ---                                                                          | ---                                                      |
+
+| Bauteil                         | Anzahl | Bezeichnung                                                                                                 |
+| :---                            |        |                                                                                                             |
 | Grundplatte                     |      1 | gemäß [Technischer Zeichnung](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/drawings/baseplate.pdf) |
-| Motorflansch                    |      2 | links / rechts identisch                                                                             |
-| Motor                           |      2 |                                                                                                      |
-| Rad                             |      2 | ohne Reifen                                                                                          |
-| Reifen                          |      2 |                                                                                                      |
-| Madenschraube M3x4 GWST         |      2 | für die Radfixierung auf der Motorachse                                                              |
-| Imbus-Schlüssel 1,5             |      1 | Werkzeug für die Madenschrauben                                                                      |
-| Schraube M2x6                   |      6 | für Motorflansche                                                                                    |
-| Teflongleiter                   |      1 | mit Gewinde                                                                                          |
-| Aluminiumträger                 |      3 |                                                                                                      |
-| Kreuzschlitzschraube M3x6K      |     19 |                                                                                                      |
-| Mutter M3                       |      4 | für die Befestigung der Motorflansche auf der Grundplatte                                            |
-| Kunststoffschrauben M3x18       |      4 | für Maussensor-Sandwich                                                                              |
-| Kunststoff-Unterlegscheiben 3,2 |     14 | 12x für Maussensor-Sandwich, je 1x für Sensorplatinen L/R                                            |
-| Kunststoff-Muttern M3           |     16 | für Maussensor-Sandwich                                                                              |
-| Kabel-Halteschellen             |      2 | für Maussensor-Kabelbaum an hinterem Aluminiumträger                                                 |
-| Kabelbinder                     |      2 | für Kabelbäume der Sensorplatinen an vorderen Aluminiumträgern                                       |
-|	Moosgummifüße                   |      4 | Auflage für Akkupack auf Abdeckplatte des Maussensor-Sandwichs                                       |
-|	Klettbinder                     |      1 | als Akkupack-Befestigung                                                                             |
-|	Batteriehalter 3x Mignon        |      1 |                                                                                                      |
-|	Batteriehalter 2x Mignon        |      1 |                                                                                                      |
-|	Encoderscheibe                  |      2 | seit der 5. Auflage enthalten                                                                        |
+| Motorflansch                    |      2 | links / rechts identisch                                                                                    |
+| Motor                           |      2 |                                                                                                             |
+| Rad                             |      2 | ohne Reifen                                                                                                 |
+| Reifen                          |      2 |                                                                                                             |
+| Madenschraube M3x4 GWST         |      2 | für die Radfixierung auf der Motorachse                                                                     |
+| Imbus-Schlüssel 1,5             |      1 | Werkzeug für die Madenschrauben                                                                             |
+| Schraube M2x6                   |      6 | für Motorflansche                                                                                           |
+| Teflongleiter                   |      1 | mit Gewinde                                                                                                 |
+| Aluminiumträger                 |      3 |                                                                                                             |
+| Kreuzschlitzschraube M3x6K      |     19 |                                                                                                             |
+| Mutter M3                       |      4 | für die Befestigung der Motorflansche auf der Grundplatte                                                   |
+| Kunststoffschrauben M3x18       |      4 | für Maussensor-Sandwich                                                                                     |
+| Kunststoff-Unterlegscheiben 3,2 |     14 | 12x für Maussensor-Sandwich, je 1x für Sensorplatinen L/R                                                   |
+| Kunststoff-Muttern M3           |     16 | für Maussensor-Sandwich                                                                                     |
+| Kabel-Halteschellen             |      2 | für Maussensor-Kabelbaum an hinterem Aluminiumträger                                                        |
+| Kabelbinder                     |      2 | für Kabelbäume der Sensorplatinen an vorderen Aluminiumträgern                                              |
+|	Moosgummifüße                   |      4 | Auflage für Akkupack auf Abdeckplatte des Maussensor-Sandwichs                                              |
+|	Klettbinder                     |      1 | als Akkupack-Befestigung                                                                                    |
+|	Batteriehalter 3x Mignon        |      1 |                                                                                                             |
+|	Batteriehalter 2x Mignon        |      1 |                                                                                                             |
+|	Encoderscheibe                  |      2 | seit der 5. Auflage enthalten                                                                               |
 
 
-## Stücklisten
+## Platinensatz
+
+* Hauptplatine; inkl. der beiden seitlichen Sensorplatinen
+* Maussensorplatine; inkl. der beiden Trägerstreifen
+* Abdeckplatte
+
+| ![Image: '01_pcb_main+sb.jpg'](../images/parts/01_pcb_main+sb.jpg) | ![Image: '02_pcb_mouse.jpg'](../images/parts/02_pcb_mouse.jpg) |
+| ---                                                                | ---                                                            |
+
+
+## Elektronik-Komponenten & Stücklisten
+
+| ![Image: '03_sockets.jpg'](../images/parts/03_sockets.jpg) | ![Image: '04_plugs+batterypack.jpg'](../images/parts/04_plugs+batterypack.jpg) | ![Image: '05_cables.jpg'](../images/parts/05_cables.jpg) |
+| ---                                                        | ---                                                                            | ---                                                      |
+
+| ![Image: '06_passive_elements'](../images/parts/06_passive_elements.jpg) | ![Image: '07_ics.jpg'](../images/parts/07_ics.jpg) | ![Image: '08_sensors.jpg'](../images/parts/08_sensors.jpg) |
+| ---                                                                      | ---                                                | ---                                                        |
+
 
 ### Hauptplatine
 
@@ -63,17 +83,17 @@
 | IC10              | Spannungsregler L4940V5                                      |                                                                           |
 | J1 - J8           | Stiftleiste                                                  | jeweils passend zuschneiden                                               |
 | LDR1, LDR2        | Helligkeitssensor MPY54C569                                  |                                                                           |
-| LED1, LED2, LED7  | LED (blau)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
-| LED3              | LED (rot)                                                    | kurzes Bein ist die Kathode (Minus)                                       |
-| LED4              | LED (orange)                                                 | kurzes Bein ist die Kathode (Minus)                                       |
-| LED5              | LED (gelb)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
-| LED6              | LED (grün)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
-| LED8              | LED (weiß)                                                   | kurzes Bein ist die Kathode (Minus)                                       |
+| LED1, LED2, LED7  | Leuchtdiode (blau)                                           | kurzes Bein ist die Kathode (Minus)                                       |
+| LED3              | Leuchtdiode (rot)                                            | kurzes Bein ist die Kathode (Minus)                                       |
+| LED4              | Leuchtdiode (orange)                                         | kurzes Bein ist die Kathode (Minus)                                       |
+| LED5              | Leuchtdiode (gelb)                                           | kurzes Bein ist die Kathode (Minus)                                       |
+| LED6              | Leuchtdiode (grün)                                           | kurzes Bein ist die Kathode (Minus)                                       |
+| LED8              | Leuchtdiode (weiß)                                           | kurzes Bein ist die Kathode (Minus)                                       |
 | L1                | Drossel 100 µH SMCC 5%                                       | Farbring-Kennung: braun-schwarz-braun-gold                                |
 | POT1              | Trimmpotentiometer 5kOhm                                     | für die Einstellung des Displaykontrasts                                  |
 | P1                | DC-Hohlstecker-Buchse 2,1-R                                  |                                                                           |
-| Q1                | Quarz 16 MHz LP                                              | mit Abstandshalter; alternativ 20 MHz Quarz                               |
-| R1                | Widerstand 10 kΩ 1%                                          | Farbring-Kennung: braun-schwarz-rot-braun                                 |
+| Q1                | Quarz 16 MHz LP/GW                                           | mit Abstandshalter / Isolierscheibe; alternativ 20 MHz Quarz              |
+| R1                | Widerstand 10 kΩ 1%                                          | Farbring-Kennung: braun-schwarz-schwarz-rot-braun                         |
 | R2                | Widerstand 20 Ω 1%                                           | Farbring-Kennung: rot-schwarz-schwarz-gold-braun; alternativ: Drahtbrücke |
 | R3, R4, R8        | Widerstand 4,7 kΩ 1%                                         | Farbring-Kennung: gelb-violett-schwarz-braun-braun                        |
 | R5 - R7, R30, R31 | Widerstand 47 kΩ 1%                                          | Farbring-Kennung: gelb-violett-schwarz-rot-braun                          |
@@ -87,196 +107,40 @@
 | R29               | Zener-Diode 2,4 V 0,5 W                                      | Polung beachten                                                           |
 | R33               | Widerstand 1 kΩ 1%                                           | Farbring-Kennung: braun-schwarz-schwarz-braun-braun                       |
 | R34               | Widerstand 5,1 kΩ 1%                                         | Farbring-Kennung: grün-braun-schwarz-braun-braun                          |
+| ST1 - ST3         | 2-poliger Stecker                                            | mit passendem vorkonfektioniertem 2-adrigem Kabel                         |
+| ST4               | 16-poliger Wannenstecker                                     | Stecker für Displayanschluss                                              |
+| ST5               | 6-poliger Wannenstecker                                      | Stecker für ISP-Programmierung; Pinbelegung nach Atmel-Standard)          |
+| ST6               | 10-poliger Wannenstecker                                     | Stecker für ISP-Programmierung; für BlueMP3-Programmer)                   |
+| ST7 - ST9         | 10-poliger Stecker                                           | mit passendem vorkonfektioniertem 10-adrigem Kabel                        |
+| SW1               | Taster                                                       | Reset-Taster                                                              |
+| SW2               | Kippschalter                                                 |                                                                           |
+| TR1 - TR6         | P-Channel MOSFET BS250                                       |                                                                           |
+| U1                | Optischer Reflexionssensor CNY70                             |                                                                           |
 
 
-### Bauteile des c't-Bot Basispakets
+### Sensorplatinen links/rechts
 
-<table>
-<tr>
-<tr class="hellgrau">
-<td>ST1,ST2,ST3</td>
-<td>Stecker+Buchse mit Kabel</td>
-<td align="right">3</td>
-<td>Set aus Stiftleiste und Buchse mit Kabeln</td>
-</tr>
-<tr>
-<td>ST4</td>
-<td>Stiftwanne</td>
-<td align="right">1</td>
-<td>Displayanschlu&szlig;</td>
-</tr>
-<tr class="hellgrau">
-<td>ST5</td>
-<td>Stiftwanne</td>
-<td align="right">1</td>
-<td>isp-Programmierstecker nach Atmel-Standard</td>
-</tr>
-<tr>
-<td>ST6</td>
-<td>Stiftwanne</td>
-<td align="right">1</td>
-<td>isp-Programmierstecker f&uuml;r BlueMP3/ISP</td>
-</tr>
-<tr class="hellgrau">
-<td>ST7,ST8,ST9</td>
-<td>Stecker+Buchse mit Kabel</td>
-<td align="right">3</td>
-<td>Set aus Stiftleiste und Buchse mit Kabeln</td>
-</tr>
-<tr>
-<td>SW1</td>
-<td>Taster</td>
-<td align="right">1</td>
-<td>Reset-Taster</td>
-</tr>
-<tr class="hellgrau">
-<td>SW2</td>
-<td>Kippschalter</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>TR1-TR6</td>
-<td>BS250</td>
-<td align="right">6</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>U1</td>
-<td>CNY70</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td class="mitlinie"><em>ELEKTRONIK Sensorplatinen links/rechts</em></td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-<td class="mitlinie">&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>U101-U104</td>
-<td>CNY70</td>
-<td align="right">4</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>U105</td>
-<td>IS471F</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>LED101</td>
-<td>LD274-3</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Abstandssensor</td>
-<td>GP2D12</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td align="right">2</td>
-<td>Kabelsatz f&uuml;r Abstandssensor</td>
-</tr>
-<tr>
-<td><em>ELEKTRONIK Maussensor-Platine</em></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>C1</td>
-<td>100nF</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>C2</td>
-<td>1uF</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>LED1</td>
-<td>HLMP-ED80-K0T00</td>
-<td align="right">1</td>
-<td>kurzes Bein ist Kathode (Minus)</td>
-</tr>
-<tr>
-<td>Klammer f&uuml;r LED</td>
-<td>HDNS-2200</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>Linsenplatte</td>
-<td>HDNS-2100</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Q1</td>
-<td>Q24,0-LP/GW</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>&nbsp;</td>
-<td>Abstandshalter</td>
-<td align="right">1</td>
-<td>f&uuml;r Q1</td>
-</tr>
-<tr>
-<td>Q2</td>
-<td>BC557B</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>R1.R4</td>
-<td>180 Ohm</td>
-<td align="right">2</td>
-<td>braun-grau-schwarz-schwarz-braun</td>
-</tr>
-<tr>
-<td>R2.R3</td>
-<td>47 kOhm</td>
-<td align="right">2</td>
-<td>gelb-violett-schwarz-rot-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R5</td>
-<td>100 Ohm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-schwarz-braun</td>
-</tr>
-<tr>
-<td>R6</td>
-<td>100 kOhm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-orange-braun</td>
-</tr>
-<tr class="hellgrau">
-<td>R7</td>
-<td>1 kOhm</td>
-<td align="right">1</td>
-<td>braun-schwarz-schwarz-braun-braun</td>
-</tr>
-<tr>
-<td>U1,U2</td>
-<td>CNY70</td>
-<td align="right">2</td>
-<td>&nbsp;</td>
-</tr>
-<tr class="hellgrau">
-<td>U</td>
-<td>ADNS2610</td>
-<td align="right">1</td>
-<td>&nbsp;</td>
-</tr>
-</table>
+| Bauteil           | Bezeichnung                                                  | Bemerkungen                                                               |
+| :---              | :---                                                         | :---                                                                      |
+| U101 - U104       | Optischer Reflexionssensor CNY70                             |                                                                           |
+| U105              | Infrarot-Empfänger IS471F                                    | für Transportfach-Lichtschranke                                           |
+| LED101            | Leuchtdiode (Infrarot) LD274-3                               | für Transportfach-Lichtschranke; kurzes Bein ist die Kathode (Minus)      |
+| -                 | Infrarot-Abstandssensor GP2D12                               | je ein Sensor für die linke und die rechte Sensorplatine; mit Kabelsatz   |
+
+
+### Maussensorplatine
+
+| Bauteil           | Bezeichnung                                                  | Bemerkungen                                                               |
+| :---              | :---                                                         | :---                                                                      |
+| C1                | Keramik-Kondensator 100 nF                                   | Stempelung 104                                                            |
+| C2                | Keramik-Kondensator 1 uF                                     | Stempelung 105                                                            |
+| R1, R4            | Widerstand 180 Ω 1%                                          | Farbring-Kennung: braun-grau-schwarz-schwarz-braun                        |
+| R2, R3            | Widerstand 47 kΩ 1%                                          | Farbring-Kennung: gelb-violett-schwarz-rot-braun                          |
+| R5                | Widerstand 100 Ω 1%                                          | Farbring-Kennung: braun-schwarz-schwarz-schwarz-braun                     |
+| R6                | Widerstand 100 kΩ 1%                                         | Farbring-Kennung: braun-schwarz-schwarz-orange-braun                      |
+| R7                | Widerstand 1 kΩ 1%                                           | Farbring-Kennung: braun-schwarz-schwarz-braun-braun                       |
+| Q1                | Quarz 24 MHz LP/GW                                           | mit Abstandshalter / Isolierscheibe                                       |
+| Q2                | PNP-Bipolar-Transistor BC557B                                |                                                                           |
+| LED1              | Leuchtdiode (rot) HLMP-ED80-K0T00                            | für Maussensor; kurzes Bein ist die Kathode (Minus)                       |
+| U1, U2            | Optischer Reflexionssensor CNY70                             |                                                                           |
+| U3                | Optischer Navigationssensor ADNS2610                         | inkl. Klammer für LED (HDNS-2200) & Linsenplatte (HDNS-2100)              |
