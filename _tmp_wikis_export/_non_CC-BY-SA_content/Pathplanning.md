@@ -1,4 +1,4 @@
-**Da der Maintainer nicht der Autor folgender Inhalte ist, welche bereits zuvor als freie Inhalte veröffentlicht worden sind, übernimmt er für diese keine Haftung und handelt gemäß der vorhandenen Lizenzbestimmungen (CC-BY-SA 4.0) für diese Inhalte nach bestem Wissen und Gewissen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
+**Da der Maintainer nicht der Autor folgender Inhalte ist, welche dem Projekt ohne Lizenzbestimmungen zur Nutzung überlassen wurden, übernimmt er für diese keine Haftung und handelt nach bestem Wissen und Gewissen. Dieser Artikel ist bis auf Weiteres explizit von den CC-BY-SA Lizenzbestimmungen ausgenommen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
 
 # Pfadplanungs-Verhalten behaviour_pathplaning
 
@@ -12,7 +12,7 @@ Das Verhalten wurde realisiert nach dem Prinzip der Wellenausbreitung (wave-fron
 * Ausgehend von der Zielzelle werde alle Nachbarn in *GW_empty* mit *3* markiert. Alle Nachbarn dieser *3*-Zellen, die noch *0* enthalten, werden mit *4* markiert usw. bis die Zelle, in der der Startpunkt liegt, markiert wurde. *GW_empty* beschreibt nun ein Potentialfeld und in jeder Zelle von *GW_empty* steht die minimale Distanz zum Ziel.
 * Ausgehend vom Startpunkt sucht der Planer nun jeweils die Zelle mit der nächst kleineren Entfernung, bis er am Ziel angekommen ist (--> Gradientenabstieg).
 
-  ![Image: 'image001.png'](image001.png)
+  ![Image: 'image001a.png'](image001a.png)
 
 **Pro:**
 
@@ -44,11 +44,11 @@ Step 4: Wenn die Welle die Botposition erreicht hat, wird diese zurückverfolgt 
 
 Die Planungskarte hat dann folgendes Aussehen:
 
-  ![Image: 'image001.png'](image001.png)
+  ![Image: 'image001a.png'](image001a.png)
 
 ## Screen der Pfadplanung
 
-  ![Image: 'image003.png'](image003.png)
+  ![Image: 'image003a.png'](image003a.png)
 
 Taste 4: Löschen der Planungskarte (macht das Verhalten aber auch selbst).
 

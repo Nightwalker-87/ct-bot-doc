@@ -282,3 +282,5 @@ Die hochauflösenden Fotos von den fertig bestückten Platinen sollten letztlich
 Bildquellen: Heise Verlag & Peter Recktenwald
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Peter Recktenwald, anonybot, Nightwalker-87

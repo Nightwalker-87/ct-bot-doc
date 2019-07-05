@@ -11,8 +11,8 @@
 ## Bestückungspläne
 
 * [Hauptplatine mit Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/01_pcb_mainboard.pdf)
-* [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/03_sensorboard_mouse.pdf)
-* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/05_extensionboard.pdf)
+* [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/03_pcb_sensorboard_mouse.pdf)
+* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/05_pcb_extensionboard.pdf)
 
 
 ## Mechanische Teile
@@ -145,6 +145,6 @@
 | U1, U2            | Optischer Reflexionssensor CNY70                             |                                                                           |
 | U3                | Optischer Navigationssensor ADNS2610                         | inkl. Klammer für LED (HDNS-2200) & Linsenplatte (HDNS-2100)              |
 
-Bildquellen: Peter Recktenwald
-
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Timo Sandmann, Peter Recktenwald, Nightwalker-87

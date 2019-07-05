@@ -119,3 +119,5 @@ Aktuelle Linux-Kernel erkennen den FTDI-Chip bereits von Haus aus und machen ihn
 * [c't 7/2006, S.223](https://www.heise.de/ct/artikel/An-der-Leine-290394.html): An der Leine, Debuggen des c't-Bot über USB
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Timo Sandmann, Peter Recktenwald, anonybot, starkm, Nightwalker-87

@@ -51,3 +51,5 @@ Hier dreht sich ein Bot zwischen aufgestellten Büchern. (Datum: 23.03.2007):
 | ---                                                                                  | ---                                                                                  |
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Torsten Evers, Timo Sandmann, Morphi2k1, Nightwalker-87

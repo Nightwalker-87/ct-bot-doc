@@ -62,3 +62,5 @@ Der komplette Sourcecode liegt in einem frei zugänglichen Git-Repository auf Gi
     * gute Einführung in den c't-Bot, inkl. einer Ladestation aus Eigenentwicklung
 
 [![License: CC BY-SA 4.0](../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Hendrik Krauß, Timo Sandmann, Michael Frey, Nightwalker-87

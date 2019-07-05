@@ -516,3 +516,5 @@ Unter Linux bzw. macOS lässt sich das mit `dd if=/dev/sdb bs=8M | pbzip2 -c > b
 Ein BeagleBoard mit einem installierten Linux-System lässt sich auch mit Qemu emulieren, wie dieser [Installationsanleitung für Ubuntu Hosts](https://www.cnx-software.com/2011/09/26/beagleboard-emulator-in-ubuntu-with-qemu) _(externer Link)_ entnommen werden kann.
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Timo Sandmann, Nightwalker-87
