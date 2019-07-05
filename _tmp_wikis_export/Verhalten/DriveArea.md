@@ -1,4 +1,4 @@
-**Da der Maintainer nicht der Autor folgender Inhalte ist, welche bereits zuvor als freie Inhalte veröffentlicht worden sind, übernimmt er für diese keine Haftung und handelt gemäß der vorhandenen Lizenzbestimmungen (CC-BY-SA 4.0) für diese Inhalte nach bestem Wissen und Gewissen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
+**Da der Maintainer nicht der Autor folgender Inhalte ist, welche dem Projekt ohne Lizenzbestimmungen zur Nutzung überlassen wurden, übernimmt er für diese keine Haftung und handelt nach bestem Wissen und Gewissen. Dieser Artikel ist bis auf Weiteres explizit von den CC-BY-SA Lizenzbestimmungen ausgenommen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
 
 # Beschreibung des Verhaltens bot_drive_area
 

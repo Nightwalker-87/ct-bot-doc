@@ -18,7 +18,7 @@ DokuScriptLanguages.md: Timo Sandmann, CC BY-SA 4.0
 DokuSimulationsArchitektur.md: Hendrik Krauß (Heise), CC BY-SA 4.0
 EclipseInstallation.md: Timo Sandmann, CC BY-SA 4.0
 EclipseTipps.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von Timo Sandmann
-FirstSteps.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+
 Flash.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
 GITUndEclipse.md: Timo Sandmann, CC BY-SA 4.0
 
@@ -55,6 +55,7 @@ deprecated/Patches.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
 
 =====
 
+<<< nur Verlinkungen, entfällt >>> FirstSteps.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
 <<< nur Verlinkungen, entfällt >>> Links.md: Benjamin Benz (Heise), CC BY-SA 4.0
 <<< nur Verlinkungen, entfällt >>> ct-Sim.md: Benjamin Benz (Heise), CC BY-SA 4.0
 <<< in BeagleBoard.md eingegliedert >>> deprecated/BeagleBoardUbuntu1204Install.md: Timo Sandmann, CC BY-SA 4.0
