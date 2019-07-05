@@ -29,3 +29,5 @@ Wohin die Log-Ausgaben gehen, stellt man in der Datei ct-Bot.h ein, indem man di
 ```
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Timo Sandmann

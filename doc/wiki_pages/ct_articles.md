@@ -21,3 +21,5 @@
  1. [c’t-Bot: Roboter selbst bauen](http://www.heise.de/hardware-hacks/inhalt/2012/1/108/) *Projektübersicht und Leserprojekte in c't-Hacks*
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Timo Sandmann

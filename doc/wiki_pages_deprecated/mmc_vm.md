@@ -139,3 +139,5 @@ Für die MCU gibt es keine entsprechende Ausgabemöglichkeit.
 * _VM_FILENAME_MAX_ ist die maximale Länge eines Dateinamens in Zeichen.
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Timo Sandmann, Nightwalker-87

@@ -47,3 +47,5 @@ Damit Patches für den Code möglichst kompatibel zueinander sind und überschau
 * Hast du an einer Datei etwas verändert (beispielsweise eine neue Methode hinzugefügt), kannst du dich unter dem Dokumentationstext der gesamten Klasse über das Tag `@author` mit Namen und E-Mail-Adresse verewigen.
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Timo Sandmann, Nightwalker-87

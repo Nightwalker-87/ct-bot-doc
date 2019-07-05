@@ -101,3 +101,5 @@ Beim simulierten Bot schaltet diese Option die emulierte MMC ein, welche die Dat
 * `POS_STORE_AVAILABLE`: Stellt einen globalen Speicher für Positionsdaten bereit, der von Verhalten benutzt werden kann. Die möglichen Policies sind FIFO und LIFO (Stack).
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Timo Sandmann, Nightwalker-87

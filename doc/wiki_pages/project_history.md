@@ -17,7 +17,7 @@
 
 **15.10.2016** Unterstützung für den ATmega32 Mikrocontroller entfernt.
 
-**09.07.2016** **Release 23** für den Bot- und Sim-Code 
+**09.07.2016** **Release 23** für den Bot- und Sim-Code
 
 **26.10.2015** **Release 22** für den Bot- und Sim-Code
 
@@ -166,7 +166,7 @@ Des Weiteren lässt sich der Speicher des Bots nun über MMC- oder SD-Karten sta
 Eine Klappe kann das Transportfach verriegeln.
 Dazu kommen noch diverse Erweiterungen des Source-Codes für den Mikrocontroller.
 Der überarbeitete c't-Sim kommuniziert nun einerseits wieder per USB-2-Bot mit dem Roboter, kann aber auch per LAN und WLAn die Statusinformationen von einem echten Bot empfangen.
-Eine Erweiterung im Kommunikationsprotokoll schafft die Grundlagen um dem c't-Bot auch aus der Ferne komplexe Aufgaben zu übermitteln. 
+Eine Erweiterung im Kommunikationsprotokoll schafft die Grundlagen um dem c't-Bot auch aus der Ferne komplexe Aufgaben zu übermitteln.
 
 **24.11.2006** In der Linkliste finden sich nun auch Einträge auf Seiten von Lesern sowie einige Videos zum Bot.
 Wer seine Seite dort vermisst, schickt uns einfach eine kurze Mail und wir nehmen sie gerne dort auf.
@@ -228,9 +228,9 @@ Details entnehmen Sie bitte dem Changelog.
 Der Sim hat deutlich an Performance gewonnen und ist jetzt wieder mit detaillierteren Anzeigen und der lange vermissten Fernbedienung ausgestattet.
 Die im Forum diskutierte Möglichkeit, den realistischen Kennlinien der Sensoren auf Seiten des Bot mit einem einfachen lookup-table zu begegnen, wird (leider ?) nicht mehr funktionieren.
 In der neuen Version des Sim extrapolieren die Sensoren jedoch auch beliebige Zwischenwerte.
-Im Wettbewerb muss der Steuercode des Bot also mit zweideutigen Werten umgehen können. 
+Im Wettbewerb muss der Steuercode des Bot also mit zweideutigen Werten umgehen können.
 
-**20.07.2006** Achim Pankalla, Peter Jonas und Frank Menzel haben weitere Patches für den c't-Bot beigesteuert, die unter anderem auch simulierte Bots mit einem virtuellen EEPROM zur Kalibrierung der Distanzsensoren ausstatten. 
+**20.07.2006** Achim Pankalla, Peter Jonas und Frank Menzel haben weitere Patches für den c't-Bot beigesteuert, die unter anderem auch simulierte Bots mit einem virtuellen EEPROM zur Kalibrierung der Distanzsensoren ausstatten.
 
 **18.07.2006** Christian Isensee hat einen Fehler im Simulator gefunden und per Patch behoben:
 Versehentlich wurden den Distanzsensoren des Bot - rechts wie links - der gleiche Abstandswert übergeben, welcher eigentlich nur für den linken Sensor gedacht war.
@@ -264,7 +264,7 @@ Details hierzu beschreibt der aktuelle c't-Artikel zum c't-Bot-Projekt.
 
 Derzeit ist der aktuelle Code von c't-Bot und c't-Sim identisch mit den Programmversionen, die im Wettbewerb zum Einsatz kommen.
 Wie man später gezielt von den Entwicklerversionen des Codes zu den Turniervarianten wechseln kann, beschreibt ein gesonderter Abschnitt der Installationsanleitung.
-Die neuesten Versionen von c't-Bot und c't-Sim sind aktuell nur über das CVS erhältlich - fertige ausführbare Dateien und Zip-Archive mit dem Code werden in Kürze auf dieser Seite veröffentlicht. 
+Die neuesten Versionen von c't-Bot und c't-Sim sind aktuell nur über das CVS erhältlich - fertige ausführbare Dateien und Zip-Archive mit dem Code werden in Kürze auf dieser Seite veröffentlicht.
 
 **28.06.2006:** Achim Pankalla hat einen Patch eingereicht, der für realitätsnahe Messwerte bei den Abstandssensoren im c't-Sim sorgt.
 Ein weiterer Patch sorgt dafür, dass der simulierte Bot mit Sensordaten dieser Art umgehen kann.
@@ -330,7 +330,7 @@ Doku-Patches nehmen wir genauso gerne entgegen wie Code-Patches.
 **20.03.2006** Dank Michail Brzitwa kann man nun mehrere Fernbedienungen erfassen und muss nur noch per #define-Schalter eine Bedienung auswählen.
 Patches mit weiteren RC5-Codes nehmen wir gerne entgegen.
 Der reale c't-Bot nimmt nun auch Fernbedienungs-Kommandos vom c't-Sim an.
-Der simulierte Bot erkennt nun auch den Maussensor. 
+Der simulierte Bot erkennt nun auch den Maussensor.
 
 **17.03.2006** c't-Bots trainieren jetzt Slalomfahrten – ganz ohne vorher wissen zu müssen, wie der Kurs sich drehen und wenden wird.
 Am Beispiel dieser Aufgabe zeigt der neue Code für den c't-Bot, wie sich komplexes Verhalten in Anlehnung an das Subsumptionsprinzip des Robotik-Pioniers Rodney Brooks realisieren lässt.
@@ -407,7 +407,7 @@ Viele Lösungen für Probleme, die in den letzten Tagen im Forum auftauchten, ha
 Der Simulator kommt jetzt mit mehreren virtuellen Robotern gleichzeitig klar, die sich gegenseitig als Hindernisse erkennen.
 Die simulierten Bots verfügen über neue Sensoren, um Licht, Linien, Abgründe oder die eigene Bewegung über Grund zu erkennen.
 Damit diese Sinne auch alle gefordert werden, enthält die Welt mehr Hindernisse als bisher - hinzugekommen sind Lampen, Linien und ein Loch im Boden.
-Der Code für den c't-Sim und den c't-Bot ist wie immer im CVS erhältlich, vorkompilierte ausführbare Dateien gibt es auch auch als ZIP-Datei. 
+Der Code für den c't-Sim und den c't-Bot ist wie immer im CVS erhältlich, vorkompilierte ausführbare Dateien gibt es auch auch als ZIP-Datei.
 
 **WICHTIG**: Kommende Versionen des c't-Sim werden Methoden benutzen, die erst ab **Java 5.0** verfügbar sind.
 Meldet Eclipse für den neuen Code Kompilierfehler, ist zu prüfen, ob die Java-Version innerhalb der Entwicklungsumgebung richtig gesetzt ist.
@@ -423,3 +423,5 @@ Die neueste Version findet sich wie immer im CVS, einige vorkompilierte Testprog
 Der Simulator kann jetzt mittels eines neuen Schiebereglers auch in Zeitlupe betrieben werden. Die neueste Version des Codes ist im CVS erhältlich.
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Autoren: Benjamin Benz, Hendrik Krauß, Timo Sandmann, Nightwalker-87
