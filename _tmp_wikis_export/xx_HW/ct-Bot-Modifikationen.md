@@ -67,5 +67,3 @@ Wenn Sie selbst eine Hardware-Erweiterung oder -Modifikation haben, dann schicke
 |Contra:|nichts bekannt|
 |Durchführung:|Über einen großen Widerstand (mindestens 10 kOhm) verbindet man Pin2 von J4 mit Masse (z.B. Pin8 von J4). Wer diesen Widerstand nicht direkt auf der Platine einlöten will, kann ihn genauso wie Modifikation 2 einbauen.|
 |Beispielfotos:|![Image: 'ct-bot_bsp-serielleschnittstelle-mod.png'](ct-bot_bsp-serielleschnittstelle-mod.png)|
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

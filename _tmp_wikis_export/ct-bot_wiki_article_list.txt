@@ -9,11 +9,7 @@ Avrdude
 Ponyprog
 WinAVR
 
-Conrad
-Hauppauge
-Philips
-RC Univers 29
-Vivanco
+Fernbedienungen Übersicht
 
 Fernbedienung mit AVRco
 Installation von AVRco
@@ -32,14 +28,11 @@ RS232-Modul
 UART
 USB-Modul
 
->>> Erweiterungs-Modul
-
 Agilent ADNS-2610
 Absturzdetektor
 CNY70
 Distanzsensoren
 Getriebemotor
-Klappensensor
 LCD-Modul
 Lichtschranke und Klappensensor
 Lichtsensor

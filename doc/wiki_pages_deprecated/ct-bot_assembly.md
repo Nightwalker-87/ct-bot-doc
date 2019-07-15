@@ -278,9 +278,6 @@ Die hochauflösenden Fotos von den fertig bestückten Platinen sollten letztlich
   ![Image: 'sensorboard_mouse_top.jpg'](../images/assembled_boards/sensorboard_mouse_top.jpg)
   ![Image: 'sensorboard_mouse_top_clip.jpg'](../images/assembled_boards/sensorboard_mouse_top_clip.jpg)
 
-
-Bildquellen: Heise Verlag & Peter Recktenwald
-
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Autoren: Benjamin Benz, Peter Recktenwald, anonybot, Nightwalker-87

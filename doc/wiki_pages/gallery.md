@@ -23,31 +23,31 @@ Videos von eax:
 * Karte zur Messung der Genauigkeit im ct-Sim.
 Dargestellt ist eine fünfmalige Fahrt durch den Testparcours. Im Vergleich zur älteren Karte ist der Fehler hier sehr gering und nicht wachsend. (Datum: 17.08.2007):
 
-![Image: 'map_accuracy.jpg'](../images/gallery/map_accuracy.jpg)
+![Image: 'map_accuracy.jpg'](../images/_gallery/map_accuracy.jpg)
 
 * Eine Karte mit Testmuster bei der Fahrt durch ein Labyrinth.
 Sie zeigt dank der Hilfslinien sehr gut den internen Aufbau der Karte in kleine quadratische Sections und riesige Macroblöcke. (Datum: 16.08.2007):
 
-![Image: 'map_with_testpattern.jpg'](../images/gallery/map_with_testpattern.jpg)
+![Image: 'map_with_testpattern.jpg'](../images/_gallery/map_with_testpattern.jpg)
 
 * Eine Karte, die zeigt, wo die Grenzen der Genauigkeit bei der Positionierung des Bots liegen.
 Aufgenommen mit einem leicht modizierten Wandfolger (regelmäßige 360 Drehungen) im testparcours2.xml, in dem die Lampen und das Zielfeld entfernt wurden. (Datum: 06.04.2007):
 
-![Image: 'map_borders.jpg'](../images/gallery/map_borders.jpg)
+![Image: 'map_borders.jpg'](../images/_gallery/map_borders.jpg)
 
 * Eine Karte, die mit einem echten Bot auf einer MMC aufgezeichnet wurde.
 Hier dreht sich ein Bot zwischen aufgestellten Büchern. (Datum: 23.03.2007):
 
-![Image: 'map_real_bot.jpg'](../images/gallery/map_real_bot.jpg)
+![Image: 'map_real_bot.jpg'](../images/_gallery/map_real_bot.jpg)
 
 * Zwei Karten die ein Bot beim Wandfolger-Verhalten aufgezeichnet hat (Datum: 23.03.2007):
 
-| ![Image: 'map_follow_wall_01.jpg'](../images/gallery/map_follow_wall_01.jpg) | ![Image: 'map_follow_wall_02.jpg'](../images/gallery/map_follow_wall_02.jpg) |
+| ![Image: 'map_follow_wall_01.jpg'](../images/gallery/_map_follow_wall_01.jpg) | ![Image: 'map_follow_wall_02.jpg'](../images/_gallery/map_follow_wall_02.jpg) |
 | ---                                                                          | ---                                                                          |
 
 * Zwei Karten die ein Bot beim Linienfolger-Verhalten aufgezeichnet hat:
 
-| ![Image: 'map_follow_line_enh_01.jpg'](../images/gallery/map_follow_line_enh_01.jpg) | ![Image: 'map_follow_line_enh_02.jpg'](../images/gallery/map_follow_line_enh_02.jpg) |
+| ![Image: 'map_follow_line_enh_01.jpg'](../images/_gallery/map_follow_line_enh_01.jpg) | ![Image: 'map_follow_line_enh_02.jpg'](../images/_gallery/map_follow_line_enh_02.jpg) |
 | ---                                                                                  | ---                                                                                  |
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

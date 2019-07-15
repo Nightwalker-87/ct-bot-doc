@@ -1594,49 +1594,7 @@ Beim c't-Bot treten einige Probleme mit den Sharp GP2D12 auf:
       <sha1>hmaywx640r6lheze35a3vijpssmupuv</sha1>
     </revision>
   </page>
-  <page>
-    <title>Erweiterungs-Modul</title>
-    <ns>0</ns>
-    <id>1572</id>
-    <revision>
-      <id>4264</id>
-      <parentid>4016</parentid>
-      <timestamp>2019-02-21T01:50:00Z</timestamp>
-      <contributor>
-        <username>Nightwalker-87</username>
-        <id>77</id>
-      </contributor>
-      <comment>Kategorien aktualisiert. Weblinks überprüft. Dead-Links entfernt.</comment>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="1320">==Einleitung==
-
-Das Erweiterungsmodul erweitert den c't-Bot um folgende Funktionen:
-
-* MMC/SD Card Slot
-* WLAN Modul
-
-Das WLAN Modul ist optional und kann auch erst mal weggelassen werden. Die Funktion des Erweiterungs Moduls ist dadurch nicht beeinflußt. Es befindet sich ebenfalls noch ein zum [[USB-Modul|USB-2-Bot Adapter]] pinkompatibler Steckverbinder auf dem Erweiterungsmodul.
-
-===MMC/SD Card Slot===
-
-Der MMC/SD Card Slot bietet die Möglichkeit eine MMC oder SD Card über SPI an den c't-Bot anzuschließen. Damit kann der c't-Bot z.B. Karten seiner Umgebung ablegen.
-
-===WLAN Modul===
-
-Als WLAN Modul kommt das WiPort Modul von Lantronix zum Einsatz. Das WiPort Modul ist ein Wireless embedded Device Server mit 802.11 b/g Wireless Netzwerk und 10/100Mb Ethernet Netzwerk Anschluß. Der Anschluß an den c't-Bot erfolgt über die serielle Schnittstelle.
-
-==Weblinks==
-
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/schaltplan-erweiterung.pdf Schaltplan Erweiterungsmodul]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/pdf/bestueckung-erweiterung.pdf Bestückungsplan Erweiterungsmodul]
-* [http://www.heise.de/ct/ftp/projekte/ct-bot/ct-bot.shtml#schaltplan c't-Bot Schaltpläne]
-* [http://www.lantronix.com/device-networking/embedded-device-servers/wiport.html Lantronix Wiport]
-
-[[Kategorie:Elektronik]]</text>
-      <sha1>6mhrjhsnjk6gtqfhb8avko4jzbdye61</sha1>
-    </revision>
-  </page>
+  
   <page>
     <title>Erweiterungsport Belegung</title>
     <ns>0</ns>
@@ -4350,31 +4308,6 @@ Die aktuelle Version von WinAVR findet man bei [http://sourceforge.net/projects/
 
 [[Kategorie:Programmierung]]</text>
       <sha1>7cgtyubl4k1x94tb9p7ruf53uj10352</sha1>
-    </revision>
-  </page>
-  <page>
-    <title>Zusammenbau</title>
-    <ns>0</ns>
-    <id>1376</id>
-    <revision>
-      <id>4228</id>
-      <parentid>4227</parentid>
-      <timestamp>2019-02-20T22:09:33Z</timestamp>
-      <contributor>
-        <username>Nightwalker-87</username>
-        <id>77</id>
-      </contributor>
-      <minor/>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-      <text xml:space="preserve" bytes="5789">&lt;div&gt;
-__NOTOC__
-
-{| border=&quot;0&quot; class=&quot;hintergrundfarbe1 rahmenfarbe1&quot; style=&quot;border-style: solid; padding:5px;&quot; align=center
-| '''Inhaltsverzeichnis''' [[#A|A]] [[#B|B]] [[#C|C]] [[#D|D]] [[#E|E]] [[#F|F]] [[#G|G]] [[#H|H]] [[#I|I]] [[#J|J]] [[#K|K]] [[#L|L]] [[#M|M]] [[#N|N]] [[#O|O]] [[#P|P]] [[#Q|Q]] [[#R|R]] [[#S|S]] [[#T|T]] [[#U|U]] [[#V|V]] [[#W|W]] [[#X|X]] [[#Y|Y]] [[#Z|Z]]
-|}
-&lt;/div&gt;</text>
-      <sha1/>
     </revision>
   </page>
 </mediawiki>

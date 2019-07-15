@@ -5,14 +5,12 @@
 * [Hauptplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/01_mainboard.pdf)
 * [Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/02_sensorboard_L_R.pdf)
 * [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/03_sensorboard_mouse.pdf)
-* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/05_extensionboard.pdf)
 
 
 ## Bestückungspläne
 
 * [Hauptplatine mit Sensorplatinen](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/01_pcb_mainboard.pdf)
 * [Maussensorplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/03_pcb_sensorboard_mouse.pdf)
-* [Erweiterungsplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/pcb-layout/05_pcb_extensionboard.pdf)
 
 
 ## Mechanische Teile
@@ -81,7 +79,8 @@
 | IC7, IC8          | Komparator LM311N                                            | jeweils mit IC-Sockel                                                     |
 | IC9               | FB-Empfänger TSOP34836                                       |                                                                           |
 | IC10              | Spannungsregler L4940V5                                      |                                                                           |
-| J1 - J8           | Stiftleiste                                                  | jeweils passend zuschneiden                                               |
+| J1 - J3           | Stiftleiste (3x1)                                            |                                                                           |
+| J4 - J8           | Stiftleiste (8x1)                                            |                                                                           |
 | LDR1, LDR2        | Helligkeitssensor MPY54C569                                  |                                                                           |
 | LED1, LED2, LED7  | Leuchtdiode (blau)                                           | kurzes Bein ist die Kathode (Minus)                                       |
 | LED3              | Leuchtdiode (rot)                                            | kurzes Bein ist die Kathode (Minus)                                       |
@@ -90,7 +89,7 @@
 | LED6              | Leuchtdiode (grün)                                           | kurzes Bein ist die Kathode (Minus)                                       |
 | LED8              | Leuchtdiode (weiß)                                           | kurzes Bein ist die Kathode (Minus)                                       |
 | L1                | Drossel 100 µH SMCC 5%                                       | Farbring-Kennung: braun-schwarz-braun-gold                                |
-| POT1              | Trimmpotentiometer 5kOhm                                     | für die Einstellung des Displaykontrasts                                  |
+| POT1              | Trimmpotentiometer 5 kΩ                                      | für die Einstellung des Displaykontrasts                                  |
 | P1                | DC-Hohlstecker-Buchse 2,1-R                                  |                                                                           |
 | Q1                | Quarz 16 MHz LP/GW                                           | mit Abstandshalter / Isolierscheibe; alternativ 20 MHz Quarz              |
 | R1                | Widerstand 10 kΩ 1%                                          | Farbring-Kennung: braun-schwarz-schwarz-rot-braun                         |

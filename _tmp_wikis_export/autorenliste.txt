@@ -37,7 +37,7 @@ Utils.md: Timo Sandmann, CC BY-SA 4.0
 Verhalten.md: Timo Sandmann, CC BY-SA 4.0
 
 
-ct-Bot-Erweiterung.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot
+
 ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
 ct-Bot-Modifikationen.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot
 ct-Bot-Software-Aktuatoren.md: Benjamin Benz (Heise), CC BY-SA 4.0

@@ -21,9 +21,7 @@ Ist die Hardware soweit fertig, muss die Firmware auf den Bot:
 
 ## Erweiterungen
 
-Das **[Erweiterungsmodul](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md)** beschert dem c't-Bot WLAN, MMC- oder SD-Karten und eine Transportklappe. Siehe auch:
-* **[c't 2/2007, S. 184](https://www.heise.de/ct/artikel/Aussendienstler-290830.html)** Außendienstler, Funkmodul, Massenspeicher und Klappe für den c't-Bot
-* **[Aufbauanleitung Erweiterungsmodul](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md)** und Klappe mit Fotos
+Das Erweiterungsmodul beschert dem c't-Bot WLAN, MMC- oder SD-Karten und eine Transportklappe. Siehe auch **[c't 2/2007, S. 184](https://www.heise.de/ct/artikel/Aussendienstler-290830.html)** Außendienstler, Funkmodul, Massenspeicher und Klappe für den c't-Bot
 
 Unter [Raspberry Pi](../RaspberryPi/RaspberryPi.md) finden sich Informationen über eine leistungsfähige CPU-Erweiterung des c't-Bots mit Hilfe eines Raspberry Pi.
 
@@ -116,6 +114,3 @@ Siehe [Lokalisierung des c't-Bots](../Localization/Localization.md) mit Zusatzha
 |1
 |Stecker
 |}
-
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

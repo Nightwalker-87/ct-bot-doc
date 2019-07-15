@@ -9,9 +9,9 @@
 Die Standard-Hardware des c't-Bots lässt sich mit dem umfangreichen Software-Framework inzwischen nahezu vollständig ausreizen. Um weitere Features implementieren zu können, entstand deshalb die Idee, den c't-Bot um eine CPU-Erweiterung zu ergänzen, die (für das [BeagleBoard](../deprecated/BeagleBoard/BeagleBoard.md)) auch im c't Sonderheft [c't Hardware Hacks](https://shop.heise.de/katalog/ct-hardware-hacks-1-2012) vorgestellt wird.
 
 Diese Wiki-Seite soll einen Einblick in die neuen Möglichkeiten bieten und grundlegende Informationen liefern, wie sich ein c't-Bot mit einem Raspberry Pi erweitern lässt und welche Anpassungen an Hard- und Software dafür nötig sind.
-Achtung, die Anleitung enthält keine einsteigerfreundlichen und vollständigen Schritt-für-Schritt-Anleitungen, da die CPU-Erweiterung den Bastel-Aspekt des c't-Bot Projekts in den Vordergrund stellt und aktuell keine abgeschlossene Baugruppe oder fertige Software umfasst. Vielmehr geht es darum, Ideen und Lösungsansätze zusammenzutragen, um die Erweiterung auf diese Weise auszubauen und zu optimieren. *Die Seite ist dementsprechend teilweise noch etwas unvollständig -- sie wird aber stetig ergänzt.*
+Achtung, die Anleitung enthält keine einsteigerfreundlichen und vollständigen Schritt-für-Schritt-Anleitungen, da die CPU-Erweiterung den Bastel-Aspekt des c't-Bot Projekts in den Vordergrund stellt und aktuell keine abgeschlossene Baugruppe oder fertige Software umfasst. Vielmehr geht es darum, Ideen und Lösungsansätze zusammenzutragen, um die Erweiterung auf diese Weise auszubauen und zu optimieren.
 
-*Herzlich willkommen sind neben Feedback und Fragen auch jederzeit *'eigene Ideen** und weitere **Vorschläge** oder **Verbesserungen***: ***.
+***Herzlich willkommen sind neben Feedback und Fragen auch jederzeit eigene Ideen und weitere Vorschläge oder Verbesserungen:***
 
 ## Idee
 
@@ -137,5 +137,3 @@ Die wesentlichen Unterschiede zum ct-Bot-Code für ATmega oder PC:
 * Anpassungen für Auswertung der Distanzsensoren (Umrechnung gemäß Kennlinie erfolgt bereits im Low-level Code)
 * Anpassungen für Motorsteuerung (1:1 Weitergabe der Geschwindigkeit)
 * Anpassungen für RC5-Code (Toggle-Bit Auswertung)
-
-[![License: CC BY-SA 4.0](../../License.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
