@@ -1,15 +1,15 @@
 # Erweiterungsmodul für den c't-Bot
 
 Das Erweiterungsmodul ergänzt den c't-Bot um einen Steckplatz für SD- oder MMC-Karten (Massenspeicher), einen zum [USB-2-Bot-Adapter](usb-2-bot.md) pinkompatiblen Steckverbinder und um eine Netzwerk-Schnittstelle.
-Letztere wird über den Embedded Wireless Device Server [https://www.lantronix.com/products/wiport/ WiPort] von Lantronix realisiert.
+Letztere wird über den Embedded Wireless Device Server [WiPort](https://www.lantronix.com/products/wiport/) von Lantronix realisiert. _(externer Link)_
 Zu dessen Funktionsumfang gehört unter anderem ein WLAN Accesspoint nach dem Standard 802.11 b/g und eine 10/100 Mbit Fast Ethernet Netzwerk Schnittstelle.
 Das Netzwerk-Modul ist über die serielle Schnittstelle mit dem Mikrocontroller auf der Hauptplatine verbunden und erlaubt so eine Kommunikation des c't-Bots per LAN oder WLAN.
 
 Bei der Netzwerk-Schnittstelle, inklusive der zugehörigen Komponenten (Netzwerkmodul und RJ45-Buchse), handelt es sich um eine Bestückungsoption, welche die Funktion des übrigen Erweiterungsmoduls nicht beeinträchtigt.
 Entsprechend kann je nach individuellem Wunsch auf die Bestückung dieser Teile auch verzichtet werden.
 
-Eine detaillierte Beschreibung des gesamten Erweiterungsmoduls findet sich im Artikel
-[c't 2/2007, S.184](https://www.heise.de/ct/artikel/Aussendienstler-290830.html): "Außendienstler - Funkmodul, Massenspeicher und Klappe für den c't-Bot".
+Eine detaillierte Beschreibung des gesamten Erweiterungsmoduls findet sich im c't-Artikel
+[c't 2/2007, S.184 ff](https://www.heise.de/ct/artikel/Aussendienstler-290830.html): "Außendienstler - Funkmodul, Massenspeicher und Klappe für den c't-Bot".
 
 
 ## Schaltplan & Bestückungsplan
@@ -148,6 +148,8 @@ Notwendig sind hierfür die folgenden Terminal-Einstellungen:
 
 Mit dieser Konfiguration startet der WiPort ein textbasiertes Setup-Menü, wenn das Modul während des Boot-Vorgangs unmittelbar nach dem Einschalten drei "x"-Zeichen empfängt.
 
+Das vollständige Benutzerhandbuch für den WiPort kann als [PDF-Datei](http://www.lantronix.com/wp-content/uploads/pdf/WiPort_UG.pdf) vom Hersteller Lantronix bezogen werden. _(externer Link)_
+
 
 # Transportfach-Erweiterung für den c't-Bot
 
@@ -158,7 +160,7 @@ Die Bolzen für das Display bleiben dabei stehen.
 Nun zieht man die drei 10-poligen Stecker von der Hauptplatine ab und löst die drei Befestigungsschrauben von derselben.
 Als Nächstes ist der dreipolige Stecker am rechten Distanzsensor (GP2D12) abzuziehen.
 
-Da die Tranportfach-Klappe mit diesem Stecker und seiner zugehörigen Buchse am Sensor kollidieren würde, müssen beide Teile entfernt werden.
+Da die Transportfach-Klappe mit diesem Stecker und seiner zugehörigen Buchse am Sensor kollidieren würde, müssen beide Teile entfernt werden.
 Hierfür lötet man die Steckerbuchse am Distanzsensor aus und knipst den Stecker am dreipoligen Sensorkabel ab.
 Die drei Kabel sind stattdessen direkt einzulöten:
 
@@ -249,5 +251,40 @@ Wer beide Teile nur mit Handschuhen anfasst und nach dem Löten mit einer dünne
 
 Nun schraubt man je zwei Abstandsbolzen (3x12) inneinander und erhält somit drei lange Bolzen mit denen man die Hauptplatine wieder festschraubt.
 
+== Optionale Bausätze und Bauteile ==
+
+* [[LCD-Modul|LCD-Display]] beleuchtet mit Abstandsbolzen und Kabel (ct-Robot/Displaysatz)
+* Platine und Teilesatz für den BlueMP3/ISP-Programmieradapter (BlueMP3/ISP-Platine), (BlueMP3/ISP-Teilesatz) oder STK200/500 kompatibler [[AVR_ISP_Programmer|ISP Programmer]].
+* Platine und Teilesatz incl. Gehäuse für Diagnoseverbindung [[USB-Modul|Robot-USB]] mit FT232RL aufgelötet (USB-2-Bot/Platine), (USB-2-Bot/Teilesatz)
+* [[RC_Univers_29|Universal-Fernbedienung]] (ct-Robot/Fernbedienung)
+* Mignon-Akkus 2500mAh Sanyo (5 Stück werden ggf. benötigt)
+
+=== LCD-Display Bausatz===
+
+{|
+!|Segor-Bezeichnung
+!|Anzahl
+!|Bemerkung
+|----
+|LCD 4x20-LED
+|1
+|
+|----
+|M3x40 II
+|4 (8)
+|Abstandsbolzen mit Gewinde
+|----
+|M3x6K
+|8 (100)
+|Schrauben
+|----
+|FB 16/BELDEN
+|15cm (1m)
+|Flachbandkabel
+|----
+|AWP 16
+|1
+|Stecker
+|}
 
 Autoren: Benjamin Benz, Peter Recktenwald, anonybot, Nightwalker-87

@@ -2,6 +2,8 @@
 
 # Willkommen beim c't-Bot- und c't-Sim-Projekt
 
+<img src="bot.jpg" style="float: right; margin-left:2em; height: 64px;" />
+
 Dies ist das Portal für die Reste der **alten, noch nicht aufbereitete Dokumentation**.
 Da es sich hierbei um zusammengetragene Inhalte aus unterschiedlichen Quellen und von verschiedenen Autoren innerhalb des Projekts handelt, sind noch nicht alle Inhalte gründlich gesichtet und überprüft. Das bedeutet auch, dass einige Verlinkungen nicht oder nicht mehr funktionieren.
 
@@ -15,11 +17,9 @@ Die neue, überarbeitete und geprüfte Dokumentation findet sich **[hier](../doc
 1. Das **[Mailingliste](https://www.heise.de/ct/newsletter/archiv/ct-bot-entwickler/)** (dient nur als Archiv)
 1. Ältere **[Erweiterungen](./Patches/Patches.md)** von Lesern
 
----
+=====
 
 ## Markdown Dokumentation
-
-<img src="bot.jpg" style="float: right; margin-left:2em; height: 64px;" />
 
 > **Hinweis:** Diese Dokumentationsseiten wurde aus dem ehemaligen Trac des Projekts exportiert und nach Markdown konvertiert, aber noch nicht auf Korrektheit überprüft! Daher können Fehler enthalten sein, außerdem sind einige Teile stark veraltet und nicht mehr aktuell, ihre Überarbeitung steht derzeit noch aus. Entsprechende Marker finden sich auf den jeweiligen Seiten:
 >>>> **Trac-2-Markdown Konvertierung:** *incomplete*
@@ -32,11 +32,7 @@ c't-Bot und c't-Sim gehören zusammen und sind ein Roboterprojekt der Zeitschrif
 
 ## Hardware
 
-* Überblick über die
-  * **[Erweiterungen](./xx_HW/ct-Bot-Hardware.md#Erweiterungen)**
-  * **[Firmware flashen](./Flash/Flash.md)**
-* c't-Bot **[testen](./xx_HW/ct-Bot-Hardware.md#Test-eines-frisch-aufgebauten-ct-Bots)**
-* Herzstück des Funkmoduls [WiPort](http://www.lantronix.com/pdf/WiPort_UG.pdf)
+* Überblick über die **[Hardware](./xx_HW/ct-Bot-Hardware.md)**
 
 ## Software
 

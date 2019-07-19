@@ -42,13 +42,13 @@ Hier dreht sich ein Bot zwischen aufgestellten Büchern. (Datum: 23.03.2007):
 
 * Zwei Karten die ein Bot beim Wandfolger-Verhalten aufgezeichnet hat (Datum: 23.03.2007):
 
-| ![Image: 'map_follow_wall_01.jpg'](../images/gallery/_map_follow_wall_01.jpg) | ![Image: 'map_follow_wall_02.jpg'](../images/_gallery/map_follow_wall_02.jpg) |
-| ---                                                                          | ---                                                                          |
+| ![Image: 'map_follow_wall_01.jpg'](../images/_gallery/map_follow_wall_01.jpg) | ![Image: 'map_follow_wall_02.jpg'](../images/_gallery/map_follow_wall_02.jpg) |
+| ---                                                                           | ---                                                                           |
 
 * Zwei Karten die ein Bot beim Linienfolger-Verhalten aufgezeichnet hat:
 
 | ![Image: 'map_follow_line_enh_01.jpg'](../images/_gallery/map_follow_line_enh_01.jpg) | ![Image: 'map_follow_line_enh_02.jpg'](../images/_gallery/map_follow_line_enh_02.jpg) |
-| ---                                                                                  | ---                                                                                  |
+| ---                                                                                   | ---                                                                                   |
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 

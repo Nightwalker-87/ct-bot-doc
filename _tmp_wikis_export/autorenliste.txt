@@ -22,7 +22,7 @@ EclipseTipps.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von Timo Sand
 Flash.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
 GITUndEclipse.md: Timo Sandmann, CC BY-SA 4.0
 
-HWErweiterungen.md: Timo Sandmann, CC BY-SA 4.0
+
 
 InstallationsanleitungR23.md: Timo Sandmann, CC BY-SA 4.0
 
@@ -60,3 +60,4 @@ deprecated/Patches.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
 <<< nur Verlinkungen, entfällt >>> ct-Sim.md: Benjamin Benz (Heise), CC BY-SA 4.0
 <<< in BeagleBoard.md eingegliedert >>> deprecated/BeagleBoardUbuntu1204Install.md: Timo Sandmann, CC BY-SA 4.0
 <<< teilweise in ct-bot_parts.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
+<<< in ct-Bot-Hardware.md eingegliedert >> HWErweiterungen.md: Timo Sandmann, CC BY-SA 4.0

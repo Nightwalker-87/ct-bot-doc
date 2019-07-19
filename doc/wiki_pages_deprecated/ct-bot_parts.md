@@ -1,5 +1,32 @@
 # Teilelisten & Design-Dokumente für den c't-Bot
 
+## Korrekturen und Hinweise
+
+Im Laufe des Projekts haben sich in der Dokumentation und, wie sich im Laufe der Zeit herausgestellt hat, auch im Hardware-Design ein paar kleinere Fehler eingeschlichen.
+Die ursprünglichen Urheber und Autoren bitten dadurch entstandene Umstände und Irrtümer zu entschuldigen.
+
+Bei der aktuellen Version der Dokumentation handelt es sich um eine gegenüber der originalen Aufbauanleitung aus dem c't-Artikel
+[c't 04/2006 S.208 ff](https://www.heise.de/ct/artikel/Hallo-Welt-290314.html): "Hallo Welt! - Aufbau und Inbetriebnahme des c't-Bots" beinigte Revision,
+die an den entsprechenden Stellen auf diese Fehler hinweist und entsprechende Korrekturhinweise liefert.
+
+Korrigiert und überarbeitet wurden die folgenden Design-Files:
+
+* Stückliste (aus c't 04/2006):
+    - R6, R32, Pot1 haben falsche Werte.
+    - Die LEDs sind in der Liste verrutscht.
+* Schaltplan der Maussensorplatine (aus c't 04/2006):
+    - U102 ist verpolt.
+* Bestückungsplan der Hauptplatine (aus c't 04/2006):
+    - R7 und R27 sind vertauscht.
+* Schaltplan der Hauptplatine (aus c't 02/2006) [Alle diese Änderungen sind bereits die c't Ausgabe 04/2006 dokumentiert.]:
+    - Änderungen diverser Widerstandswerte
+    - Schutzschaltung gegen das Verpolen der Spannungsversorgung hinzugefügt
+    - Umkehrung der Polung an der DC-Buchse
+* Die Montageanleitung der IR-Distanzsensoren im Beipackzettel ist fehlerhaft.
+
+Aufbauanleitungen und Korrekturhinweise, die den Teilesätzen beilagen, welche vor dem 12.02.2006 ausgeliefert wurden, sollten zu Gunsten dieser Dokumentation nicht mehr beachtet werden.
+
+
 ## Schaltpläne
 
 * [Hauptplatine](https://github.com/tsandmann/ct-bot-hw/tree/master/v1/schematics/01_mainboard.pdf)
