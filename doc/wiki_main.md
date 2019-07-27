@@ -22,6 +22,7 @@ Die Dokumentation des Hardware-Designs liegt in einem frei zugänglichen Git-Rep
 * [Teilelisten & Design-Dokumente für den c't-Bot](wiki_pages_deprecated/ct-bot_parts.md) _(deprecated)_
 * [Aufbauanleitung für den c't-Bot](wiki_pages_deprecated/ct-bot_assembly.md) _(deprecated)_
 * [Teilelisten & Design-Dokumente für den c't-Bot](wiki_pages_deprecated/ct-bot_parts.md) _(deprecated)_
+* [Erweiterungsmodul für den c't-Bot](wiki_pages_deprecated/ct-bot_extension.md) _(deprecated)_
 * [USB-2-Bot-Adapter](wiki_pages_deprecated/usb-2-bot.md) _(deprecated)_
 * [BeagleBoard-Erweiterung](wiki_pages_deprecated/beagleboard.md) _(deprecated)_
 

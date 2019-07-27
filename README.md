@@ -1,7 +1,15 @@
-# Offizielle Projektdokumentation für das c't-Bot & c't-Sim-Projekt
+# Offizielle Dokumentation für das c't-Bot- & c't-Sim-Projekt
 
-* **[Projekt-Wiki](doc/wiki_main.md)** --> neue Wiki-Hauptseite
-* **[heise Trac-Wiki](_tmp_wikis_export/readme.md)** --> Backup des Wikis aus dem ehemaligen Trac-System von Heise (seit Februar 2019 offline)
+**[Projekt-Wiki (Wiki-Hauptseite)](doc/wiki_main.md)**
+
+[![License: CC BY-SA 4.0](LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+-----
+
+**[heise Trac-Wiki](_tmp_wikis_export/readme.md)** --> Backup des alten Wikis aus dem ehemaligen Trac-System von Heise (seit Februar 2019 offline)
+
+(CC-BY-SA, but unrevised content)
+
 
 ## Lizenzbestimmungen
 Diese digitale Enzyklopädie (Wiki) unterliegt den CC-BY-SA-Lizenzbestimmungen wie sie in LICENSE.md angegeben sind.
@@ -15,6 +23,7 @@ Diese digitale Enzyklopädie (Wiki) unterliegt den CC-BY-SA-Lizenzbestimmungen w
 Diese verbleiben unter den jeweils geltenden rechtlichen Bestimmungen und Rechten der Urheber.
 Für externe Inhalte wird keine Haftung übernommen.**
 
+
 ## Licensing terms
 This digital encyclopedia (wiki) is licensed under the terms of CC-BY-SA, which can be found in LICENSE.md.
 **The above-mentioned license terms are to be acknowledged and remain valid indefinitely for any reproduction and/or use of content from this source.**
@@ -26,5 +35,3 @@ This digital encyclopedia (wiki) is licensed under the terms of CC-BY-SA, which 
 **are excluded from the license terms mentioned above.
 Such content remains under the applicable legal provisions and rights of the individual author(s).
 No liability is assumed for any external content.**
-
-[![License: CC BY-SA 4.0](LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)

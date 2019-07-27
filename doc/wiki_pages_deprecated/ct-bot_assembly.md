@@ -222,25 +222,6 @@ Elektrisch hängen alle fünf Batterien in Reihe, wozu der Pluspol des einen Pä
 ![Image: '17_batterypack_assembled.jpg'](../images/assembly/17_batterypack_assembled.jpg)
 
 
-### Display
-
-Eine Kennzeichnung von Pin 1 am Displaystecker (ST4) mit einem Pfeil vereinfacht nach der steckerseitigen Konfektionierung die Verkabelung auf der Displayseite:
-Die rote Ader des Flachbandkabels entspricht vorzugsweise Pin 1 und wird damit auch einfach an Pin 1 des Displays gelötet.
-Alle weiteren Kabel folgen dann einfach der Reihe nach.
-Es wird empfohlen am Display die Kabel von unten über die Lötaugen anzulöten, und nicht von von der Oberseite aus, da die Kabel so besser vor Beschädigung durch Abknicken geschützt sind.
-
-| ![Image: '18_display_cable_plug.jpg'](../images/assembly/18_display_cable_plug.jpg) | ![Image: '19_display_cable_soldered_side.jpg'](../images/assembly/19_display_cable_soldered_side.jpg) | ![Image: '20_display_cable_soldered_top.jpg'](../images/assembly/20_display_cable_soldered_top.jpg) |
-| ---                                                                                 | ---                                                                                                   | ---                                                                                          |
-
-Ebenfalls sei hier darauf hingewiesen, dass das Display in den meisten Fällen nicht defekt und durch obiges Vorgehen auch eine falsche Verkabelung ausgeschlossen ist.
-Um auf dem Display etwas erkennen zu können muss zunächst der Kontrast mit Hilfe des Potentiometers Pot1 eingestellt werden.
-Dies sollte bei einer Spannung von ca. einem halben Volt gegeben sein.
-
-**Hinweis:** Bei der Einstellung ist die Drehrichtung des Potentiometers zu beachten und auch, dass die Einstellschraube nicht überdreht wird.
-
-![Image: '21_display_assembled.jpg'](../images/assembly/21_display_assembled.jpg)
-
-
 ## Fotos
 
 Die hochauflösenden Fotos von den fertig bestückten Platinen sollten letztlich alle verbliebenen Unklarheiten bezüglich der Platzierung und Ausrichtung von Bauteilen ausräumen:
