@@ -265,48 +265,13 @@ Wer beide Teile nur mit Handschuhen anfasst und diese nach dem Löten reinigt un
 Zum Abschluss schraubt man noch je zwei Abstandsbolzen (3x12) ineinander und erhält dadurch drei lange Bolzen mit denen man die Hauptplatine wieder auf den Stützen des Roboters festschraubt.
 
 
-# LCD-Display-Modul
-
-## Mechanische Teile
-
-![Image: '09_display.jpg'](../images/parts/09_display.jpg)
-
-| Bezeichnung                        | Anzahl | Bemerkungen                                 |
-| ---                                | ---    | ---                                         |
-| LCD-Display DEM 20485 SYH-LY-CYR22 |      1 | 4x20 Zeichen mit LED-Hintergrundbeleuchtung |
-| Abstandsbolzen M3x40               |      4 | mit Gewinde                                 |
-| Schrauben M3x6K                    |      8 |                                             |
-| Flachbandkabel FB16/BELDEN         |      1 | benötigte Kabellänge: ca. 15 cm             |
-| Stecker AWP16                      |      1 |                                             |
-
-
-## Aufbauanleitung
-
-Eine Kennzeichnung von Pin 1 am Displaystecker (ST4) mit einem Pfeil vereinfacht nach der steckerseitigen Konfektionierung die Verkabelung auf der Displayseite:
-Die rote Ader des Flachbandkabels entspricht vorzugsweise Pin 1 und wird damit auch einfach an Pin 1 des Displays gelötet.
-Alle weiteren Kabel folgen dann einfach der Reihe nach.
-Es wird empfohlen am Display die Kabel von unten über die Lötaugen anzulöten, und nicht von von der Oberseite aus, da die Kabel so besser vor Beschädigung durch Abknicken geschützt sind.
-
-| ![Image: '18_display_cable_plug.jpg'](../images/assembly/18_display_cable_plug.jpg) | ![Image: '19_display_cable_soldered_side.jpg'](../images/assembly/19_display_cable_soldered_side.jpg) | ![Image: '20_display_cable_soldered_top.jpg'](../images/assembly/20_display_cable_soldered_top.jpg) |
-| ---                                                                                 | ---                                                                                                   | ---                                                                                          |
-
-Ebenfalls sei hier darauf hingewiesen, dass das Display in den meisten Fällen nicht defekt und durch obiges Vorgehen auch eine falsche Verkabelung ausgeschlossen ist.
-Um auf dem Display etwas erkennen zu können muss zunächst der Kontrast mit Hilfe des Potentiometers Pot1 eingestellt werden.
-Dies sollte bei einer Spannung von ca. einem halben Volt gegeben sein.
-
-**Hinweis:** Bei der Einstellung ist die Drehrichtung des Potentiometers zu beachten und auch, dass die Einstellschraube nicht überdreht wird.
-
-![Image: '21_display_assembled.jpg'](../images/assembly/21_display_assembled.jpg)
-
-
 # Sonstiges optionales Zubehör
 
-* USB-UART-Adapter für Diagnoseverbindung zum ct-Bot --> siehe [[USB-2-Bot-Adapter](usb-2-bot.md)
+* [LCD-Display](ct-bot_display.md)
+* [USB-UART-Adapter](usb-2-bot.md)
+* für den Batteriebetrieb: 5x AA-Mignon-Akkus (Typ: IEC HR6; empfohlene Kapazität: ≥ 2400 mAh)
+* Infrarot-Fernbedienung: Universal-Fernbedienung "RC_Univers_29"
 
-======
-
-* 5x AA-Mignon-Akkus (für den Batteriebetrieb): >= 2500 mAh Sanyo
-* Infrarot-Fernbedienung: [[RC_Univers_29|Universal-Fernbedienung]]
-* Platine und Teilesatz für den BlueMP3/ISP-Programmieradapter (BlueMP3/ISP-Platine), (BlueMP3/ISP-Teilesatz) oder STK200/500 kompatibler [[AVR_ISP_Programmer|ISP Programmer]].
+[![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 Autoren: Benjamin Benz, Peter Recktenwald, anonybot, Nightwalker-87

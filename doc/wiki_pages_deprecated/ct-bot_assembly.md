@@ -261,4 +261,4 @@ Die hochauflösenden Fotos von den fertig bestückten Platinen sollten letztlich
 
 [![License: CC BY-SA 4.0](../../LICENSE.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-Autoren: Benjamin Benz, Peter Recktenwald, anonybot, Nightwalker-87
+Autoren: Benjamin Benz, Peter Recktenwald, Galdo, Philipp, anonybot, Nightwalker-87
