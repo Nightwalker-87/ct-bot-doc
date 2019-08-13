@@ -3,7 +3,7 @@
 ## Einführung
 
 Eine Erweiterungsmöglichkeit des c't-Bots ist der Anschluss eines LCD-Displaymoduls, welches als entsprechender Bausatz mit allen benötigten Teilen verfügbar ist.
-Hierbei handelt es sich um das LCD Dot-Matrix-Modul "DEM 20485 SYH-LY-CYR22" von Display Elektronik ([Datenblatt](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/datasheets/DEM 20485 SYH-LY-CYR22 Display Elektronik 2008-08.pdf)).
+Hierbei handelt es sich um das LCD Dot-Matrix-Modul "DEM 20485 SYH-LY-CYR22" von Display Elektronik ([Datenblatt](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/datasheets/DEM_20485_SYH-LY-CYR22_Display_Elektronik_2008-08.pdf)).
 Dieses Modul mit den Abmessungen von 98 x 60 mm nutzt den Controller KS0076B/KS0063 (HD44780 kompatibel) um maximal 4x20 Zeichen darzustellen.
 
 Andere Baugleiche LCD-Module können aber ebenso verwendet werden, so z.B. das Modul "Displaytech 204A" oder das Modul "EA W204B-NLW" von Electronic Assembly.
