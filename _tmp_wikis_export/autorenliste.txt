@@ -38,7 +38,7 @@ Verhalten.md: Timo Sandmann, CC BY-SA 4.0
 
 
 
-ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
+
 ct-Bot-Modifikationen.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot
 ct-Bot-Software-Aktuatoren.md: Benjamin Benz (Heise), CC BY-SA 4.0
 ct-Bot-Software-Sensoren.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot und Timo Sandmann
@@ -55,9 +55,10 @@ deprecated/Patches.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
 
 =====
 
+<<< teilweise in readme.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
 <<< nur Verlinkungen, entfällt >>> FirstSteps.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
 <<< nur Verlinkungen, entfällt >>> Links.md: Benjamin Benz (Heise), CC BY-SA 4.0
 <<< nur Verlinkungen, entfällt >>> ct-Sim.md: Benjamin Benz (Heise), CC BY-SA 4.0
 <<< in BeagleBoard.md eingegliedert >>> deprecated/BeagleBoardUbuntu1204Install.md: Timo Sandmann, CC BY-SA 4.0
-<<< teilweise in ct-bot_parts.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
+<<< teilweise in ct-bot_parts.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von Timo Sandmann
 <<< in ct-Bot-Hardware.md eingegliedert >> HWErweiterungen.md: Timo Sandmann, CC BY-SA 4.0

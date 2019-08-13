@@ -2,11 +2,7 @@
 
 # Hardware-Modifikationen
 
->> **Trac-2-Markdown Konvertierung:** *unchecked*
-
 Auf dieser Seite haben wir einige Hardware-Modifikationen für den c't-Bot gesammelt. Bitte lesen Sie die Beschreibung der Modifikationen aufmerksam durch, bevor Sie diese nachbauen. Nicht jede ist für alle Einsatzgebiete sinnvoll. Alle Erweiterungen hier sind Anregungen für Modifikationen. Sie sind nicht in den regulären Schaltplänen enthalten. Diese beziehen sich auf den Auslieferungszustand der Bots.
-
-Wenn Sie selbst eine Hardware-Erweiterung oder -Modifikation haben, dann schicken Sie diese mit einem ausführlichen Kommentar an die Mailingliste.
 
 ## 1. Maussensor tiefer legen
 
@@ -67,3 +63,9 @@ Wenn Sie selbst eine Hardware-Erweiterung oder -Modifikation haben, dann schicke
 |Contra:|nichts bekannt|
 |Durchführung:|Über einen großen Widerstand (mindestens 10 kOhm) verbindet man Pin2 von J4 mit Masse (z.B. Pin8 von J4). Wer diesen Widerstand nicht direkt auf der Platine einlöten will, kann ihn genauso wie Modifikation 2 einbauen.|
 |Beispielfotos:|![Image: 'ct-bot_bsp-serielleschnittstelle-mod.png'](ct-bot_bsp-serielleschnittstelle-mod.png)|
+
+## 6. LCD-Busy-Bit Hardware-Patch
+
+Das Busy-Flag des LCD-Moduls liegt an _PC5_.
+Leider ist das Signal _PC5_ LCD-seitig am falschen Bit des Datenbusses angeschlossen und wird deshalb von der Software nicht ausgewertet.
+Durch eine [http://www.ctbot.de/viewtopic.php?&t=200 Modifikation (Hardware-Patch LCD Busy-Bit)] am c't-Bot lässt sich das Busy Signal an PC5 abfragen.

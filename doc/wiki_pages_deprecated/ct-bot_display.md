@@ -3,10 +3,16 @@
 ## Einführung
 
 Eine Erweiterungsmöglichkeit des c't-Bots ist der Anschluss eines LCD-Displaymoduls, welches als entsprechender Bausatz mit allen benötigten Teilen verfügbar ist.
-Hierbei handelt es sich um das LCD Dot-Matrix-Modul "DEM 20485 SYH-LY-CYR22" von Display Elektronik.
+Hierbei handelt es sich um das LCD Dot-Matrix-Modul "DEM 20485 SYH-LY-CYR22" von Display Elektronik ([Datenblatt](https://github.com/tsandmann/ct-bot-hw/blob/master/v1/datasheets/DEM 20485 SYH-LY-CYR22 Display Elektronik 2008-08.pdf)).
 Dieses Modul mit den Abmessungen von 98 x 60 mm nutzt den Controller KS0076B/KS0063 (HD44780 kompatibel) um maximal 4x20 Zeichen darzustellen.
-Andere Baugleiche LCD-Module können aber ebenso verwendet werden, so z.B. das Modul "Displaytech 204A" oder das Modul "EA W204B-NLW" von Electronic Assembly (Achtung: andere LED Spannungsbelegung!).
+
+Andere Baugleiche LCD-Module können aber ebenso verwendet werden, so z.B. das Modul "Displaytech 204A" oder das Modul "EA W204B-NLW" von Electronic Assembly.
 Vor dem Kauf eines anderen Displays empfiehlt sich der Blick in das entsprechende Datenblatt.
+
+**Achtung:** Besonders zu beachten ist dabei die Pinbelegung für die Hintergrundbeleuchtung, die sich von Modul zu Modul unterscheiden kann.
+Oftmals sind wie beispielsweise beim **Modul "EA W204B-NLW" die Pins 15 und 16 vertauscht**.
+Darüber hinaus gibt es LCD-Module für den erweiterten Temperaturbereich -20° ... +70°C.
+Diese benötigen eine negative Kontrastspannung und sind daher mit dem Elektronikdesign nicht kompatibel.
 
 
 ## Mechanische Teile
@@ -41,7 +47,7 @@ Dies sollte bei einer Spannung von ca. einem halben Volt gegeben sein.
 ![Image: '21_display_assembled.jpg'](../images/assembly/21_display_assembled.jpg)
 
 
-## Steckerbelegung
+## Pinbelegung
 
 | Pin | Bezeichnung | Beschreibung                                                                              |
 | --- | ---         | ---                                                                                       |

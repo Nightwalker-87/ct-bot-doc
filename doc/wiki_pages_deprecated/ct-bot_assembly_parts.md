@@ -42,8 +42,8 @@ Aufbauanleitungen und Korrekturhinweise, die den Teilesätzen beilagen, welche v
 
 ## Mechanische Teile
 
-| ![Image: '10_mechanic_parts_1.jpg'](../images/parts/10_mechanic_parts_1.jpg) | ![Image: '11_mechanic_parts_2.jpg'](../images/parts/11_mechanic_parts_2.jpg) | ![Image: '12_screws.jpg'](../images/parts/12_screws.jpg) |
-| ---                                                                          | ---                                                                          | ---                                                      |
+| ![Image: '10_mechanic_parts_1.jpg'](../images/assembly_parts/10_mechanic_parts_1.jpg) | ![Image: '11_mechanic_parts_2.jpg'](../images/assembly_parts/11_mechanic_parts_2.jpg) | ![Image: '12_screws.jpg'](../images/assembly_parts/12_screws.jpg) |
+| ---                                                                                   | ---                                                                                   | ---                                                               |
 
 | Bauteil                         | Anzahl | Bezeichnung                                                                                                 |
 | :---                            | :---   | :---                                                                                                        |
@@ -77,17 +77,17 @@ Aufbauanleitungen und Korrekturhinweise, die den Teilesätzen beilagen, welche v
 * Maussensorplatine; inkl. der beiden Trägerstreifen
 * Abdeckplatte
 
-| ![Image: '01_pcb_main+sb.jpg'](../images/parts/01_pcb_main+sb.jpg) | ![Image: '02_pcb_mouse.jpg'](../images/parts/02_pcb_mouse.jpg) |
-| ---                                                                | ---                                                            |
+| ![Image: '01_pcb_main+sb.jpg'](../images/assembly_parts/01_pcb_main+sb.jpg) | ![Image: '02_pcb_mouse.jpg'](../images/assembly_parts/02_pcb_mouse.jpg) |
+| ---                                                                         | ---                                                                     |
 
 
 ## Elektronik-Komponenten & Stücklisten
 
-| ![Image: '03_sockets.jpg'](../images/parts/03_sockets.jpg) | ![Image: '04_plugs+batterypack.jpg'](../images/parts/04_plugs+batterypack.jpg) | ![Image: '05_cables.jpg'](../images/parts/05_cables.jpg) |
-| ---                                                        | ---                                                                            | ---                                                      |
+| ![Image: '03_sockets.jpg'](../images/assembly_parts/03_sockets.jpg) | ![Image: '04_plugs+batterypack.jpg'](../images/assembly_parts/04_plugs+batterypack.jpg) | ![Image: '05_cables.jpg'](../images/assembly_parts/05_cables.jpg) |
+| ---                                                                 | ---                                                                                     | ---                                                               |
 
-| ![Image: '06_passive_elements'](../images/parts/06_passive_elements.jpg) | ![Image: '07_ics.jpg'](../images/parts/07_ics.jpg) | ![Image: '08_sensors.jpg'](../images/parts/08_sensors.jpg) |
-| ---                                                                      | ---                                                | ---                                                        |
+| ![Image: '06_passive_elements'](../images/assembly_parts/06_passive_elements.jpg) | ![Image: '07_ics.jpg'](../images/assembly_parts/07_ics.jpg) | ![Image: '08_sensors.jpg'](../images/assembly_parts/08_sensors.jpg) |
+| ---                                                                               | ---                                                         | ---                                                                 |
 
 
 ### Hauptplatine

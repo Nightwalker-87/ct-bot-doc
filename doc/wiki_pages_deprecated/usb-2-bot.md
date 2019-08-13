@@ -1,6 +1,5 @@
 # USB-2-Bot UART-Adapter
 
-
 ## Beschreibung
 
 Mit dem USB-2-Bot Adapter lässt sich ein c't-Bot über eine USB-Schnittstelle an einen PC anschließen.

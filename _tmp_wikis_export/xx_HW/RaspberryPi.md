@@ -2,16 +2,12 @@
 
 # CPU-Erweiterung für den c't-Bot mit einem Raspberry Pi
 
->> **Trac-2-Markdown Konvertierung:** *unchecked*
-
 ## Einleitung
 
-Die Standard-Hardware des c't-Bots lässt sich mit dem umfangreichen Software-Framework inzwischen nahezu vollständig ausreizen. Um weitere Features implementieren zu können, entstand deshalb die Idee, den c't-Bot um eine CPU-Erweiterung zu ergänzen, die (für das [BeagleBoard](../deprecated/BeagleBoard/BeagleBoard.md)) auch im c't Sonderheft [c't Hardware Hacks](https://shop.heise.de/katalog/ct-hardware-hacks-1-2012) vorgestellt wird.
+Die Standard-Hardware des c't-Bots lässt sich mit dem umfangreichen Software-Framework inzwischen nahezu vollständig ausreizen. Um weitere Features implementieren zu können, entstand deshalb die Idee, den c't-Bot um eine CPU-Erweiterung zu ergänzen, die (für das BeagleBoard auch im c't Sonderheft [c't Hardware Hacks](https://shop.heise.de/katalog/ct-hardware-hacks-1-2012) vorgestellt wird.
 
 Diese Wiki-Seite soll einen Einblick in die neuen Möglichkeiten bieten und grundlegende Informationen liefern, wie sich ein c't-Bot mit einem Raspberry Pi erweitern lässt und welche Anpassungen an Hard- und Software dafür nötig sind.
 Achtung, die Anleitung enthält keine einsteigerfreundlichen und vollständigen Schritt-für-Schritt-Anleitungen, da die CPU-Erweiterung den Bastel-Aspekt des c't-Bot Projekts in den Vordergrund stellt und aktuell keine abgeschlossene Baugruppe oder fertige Software umfasst. Vielmehr geht es darum, Ideen und Lösungsansätze zusammenzutragen, um die Erweiterung auf diese Weise auszubauen und zu optimieren.
-
-***Herzlich willkommen sind neben Feedback und Fragen auch jederzeit eigene Ideen und weitere Vorschläge oder Verbesserungen:***
 
 ## Idee
 
@@ -33,7 +29,6 @@ Achtung, die Anleitung enthält keine einsteigerfreundlichen und vollständigen 
 ## Hardware
 
 * Die CPU-Erweiterung für den c't-Bot umfasst nicht nur das CPU-Board, sondern auch ein notwendiges Interface-Board, das die Verbindung zur c't-Bot Hardware herstellt und insbesondere eine Konvertierung der Signal-Spannungspegel von 3.3 V (RPi) auf 5.0 V (c't-Bot Hardware) vornimmt.
-* Alternativ lässt sich die Verbindung zwischen ATmega und Raspberry Pi auch per [USB-2-Bot Adapter](../USB2Bot/USB2Bot.md) herstellen.
 
 ### Raspberry Pi
 
@@ -61,7 +56,7 @@ Achtung, die Anleitung enthält keine einsteigerfreundlichen und vollständigen 
 
 ### Interface-Board
 
-Das Interface-Board bindet den Raspberry Pi an die Hardware des c't-Bots an. Alternativ lässt sich auch der [USB-2-Bot Adapter](../USB2Bot/USB2Bot.md) verwenden, um die c't-Bot Hardware mit dem Raspberry Pi zu verbinden, dann ist kein Interface-Board erforderlich.
+Das Interface-Board bindet den Raspberry Pi an die Hardware des c't-Bots an. Alternativ lässt sich auch der USB-2-Bot Adapter verwenden, um die c't-Bot Hardware mit dem Raspberry Pi zu verbinden, dann ist kein Interface-Board erforderlich.
 
 Derzeit umfasst das Interface-Board die folgenden Subsysteme:
 
@@ -86,7 +81,7 @@ Hinweise zur derzeitigen Interface-Board Version:
 ### Montage
 
 * ATmega auf der Bot-Hauptplatine entfernen.
-* Interface-Board anstelle des [originalen Erweiterungsmoduls](../ct-Bot-Erweiterung/ct-Bot-Erweiterung.md) montieren, längere Abstandsbolzen verwenden, Kabel auf J4 bis J8 verbinden.
+* Interface-Board anstelle des originalen Erweiterungsmoduls montieren, längere Abstandsbolzen verwenden, Kabel auf J4 bis J8 verbinden.
 * Raspberry Pi auf Interface-Board montieren, elektrische Verbindung über RPi-Extension-Header.
 * Display mit zusätzlichen Abstandsbolzen oberhalb des RPis anbringen.
 
@@ -117,7 +112,7 @@ Auf dem Raspberry Pi wird eine Linux-Distribution ausgeführt, die auf der SD-Ka
 
 ### Raspberry Pi als WiPort-Ersatz
 
-Ein Raspberry Pi mit WLAN (on-board oder USB-Stick) kann als günstiger Ersatz für die WiPort-Lösung des [Erweiterungsmoduls](../ct-Bot-Hardware/ct-Bot-Hardware.md#Erweiterungsmodul) verwendet werden. Hierzu tunnelt man einfach die UART-Verbindung zum ATmega mit Hilfe des Programms *socat* über eine TCP-Verbindung:
+Ein Raspberry Pi mit WLAN (on-board oder USB-Stick) kann als günstiger Ersatz für die WiPort-Lösung des Erweiterungsmoduls verwendet werden. Hierzu tunnelt man einfach die UART-Verbindung zum ATmega mit Hilfe des Programms *socat* über eine TCP-Verbindung:
 `socat -b1 TCP-LISTEN:10002,fork,reuseaddr /dev/ttyAMA0,raw,echo=0,ospeed=115200,ispeed=115200`. Anschließend kann man (wie bei Verwendung des WiPort) den c't-Sim auf die IP-Adresse des Raspberry Pi und Port 10002 verbinden und den c't-Bot fernsteuern, überwachen, usw.
 
 ### Low-level Bot-Code für ATmega
